@@ -1,0 +1,1642 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  /* Motion-safe boot flag on <html>, set during head parse (before the body
+     paints). CSS keys :root.js-motion to suppress lines that main.js reveals
+     after first paint — chiefly the metrics attribution, which is split into
+     per-glyph typewriter spans and would otherwise flash its plain text for a
+     frame on load. Set only when JS runs AND reduced motion is not requested,
+     so the no-JS and reduced-motion paths keep their static, visible fallback
+     (they have no scroll ramp to reveal a hidden line). */
+  if (!window.matchMedia || !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.documentElement.classList.add('js-motion');
+  }
+</script>
+<title>Logitech Reach | Jakob Picciotto</title>
+<meta name="description" content="Wrote four segment-targeted lead-generation landing pages, the Indiegogo campaign, and the paid social copy for Logitech’s 2-in-1 webcam and overhead…">
+
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="canonical" href="https://work.jakobpicciotto.com/projects/logitech-reach/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jakob Picciotto">
+<meta property="og:title" content="Logitech Reach | Jakob Picciotto">
+<meta property="og:description" content="Wrote four segment-targeted lead-generation landing pages, the Indiegogo campaign, and the paid social copy for Logitech’s 2-in-1 webcam and overhead…">
+<meta property="og:url" content="https://work.jakobpicciotto.com/projects/logitech-reach/">
+<meta property="og:image" content="https://work.jakobpicciotto.com/assets/images/projects/logitech-reach-hero.webp">
+
+<meta property="og:image:width" content="695">
+<meta property="og:image:height" content="460">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Logitech Reach | Jakob Picciotto">
+<meta name="twitter:description" content="Wrote four segment-targeted lead-generation landing pages, the Indiegogo campaign, and the paid social copy for Logitech’s 2-in-1 webcam and overhead…">
+<meta name="twitter:image" content="https://work.jakobpicciotto.com/assets/images/projects/logitech-reach-hero.webp">
+
+<script src="/assets/debug/browser.js"></script>
+<link rel="preload" href="/assets/fonts/Raleway-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/SourceSans3-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="/assets/images/logos/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/css/fonts.css">
+<link rel="stylesheet" href="/assets/css/style.css">
+
+
+
+
+
+</head>
+<body class="project-page hero-metrics-2up">
+  
+  <script>
+    var _qs = new URLSearchParams(location.search);
+    var layout = _qs.get('layout');
+    if (/^(static|synced|interleaved)$/.test(layout || '')) document.body.classList.add('layout-' + layout);
+  </script>
+  <header class="site-header">
+  <div class="header-container">
+    <a href="/" class="site-logo" aria-label="Jakob Picciotto">
+      <svg class="site-logo-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1938.35 289.61" aria-hidden="true">
+        <defs>
+          <linearGradient id="logo-gradient-light" x1="0" y1="0" x2="304" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#4DB6AC"/>
+            <stop offset=".55" stop-color="#199488"/>
+            <stop offset="1" stop-color="#00796B"/>
+          </linearGradient>
+          <linearGradient id="logo-gradient-dark" x1="0" y1="0" x2="304" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#B2DFDB"/>
+            <stop offset=".55" stop-color="#5DBDB4"/>
+            <stop offset="1" stop-color="#26A69A"/>
+          </linearGradient>
+        </defs>
+        <g>
+          <path class="logo-monogram logo-monogram-light" fill="url(#logo-gradient-light)" fill-rule="evenodd" d="M88,0H128V224H88ZM198,0H238V288H198ZM128,112H198V152H128ZM238,0A66,66 0 0 1 238,132L238,92A26,26 0 0 0 238,40ZM128,224A64,64 0 0 1 0,224L40,224A24,24 0 0 0 88,224Z"/>
+          <path class="logo-monogram logo-monogram-dark" fill="url(#logo-gradient-dark)" fill-rule="evenodd" d="M88,0H128V224H88ZM198,0H238V288H198ZM128,112H198V152H128ZM238,0A66,66 0 0 1 238,132L238,92A26,26 0 0 0 238,40ZM128,224A64,64 0 0 1 0,224L40,224A24,24 0 0 0 88,224Z"/>
+          <g class="logo-text" fill="currentColor">
+            <path d="M482.89,211.42c-4.06,0-7.91-.62-11.54-1.84-3.63-1.23-6.89-3.13-9.78-5.69l9.3-14.59c1.18,1.17,2.62,2.06,4.33,2.64,1.71.59,3.42.88,5.13.88,2.78,0,5.18-.99,7.21-2.97,2.03-1.98,3.05-4.52,3.05-7.61v-86.24h21.48v84.64c0,4.49-.75,8.63-2.24,12.42-1.5,3.79-3.55,7.05-6.17,9.78-2.62,2.72-5.72,4.83-9.3,6.33-3.58,1.5-7.4,2.24-11.46,2.24ZM490.58,84.3v-21.32h21.48v21.32h-21.48Z"/>
+            <path d="M554.54,181.6c-4.06,0-7.85-.67-11.38-2-3.53-1.33-6.57-3.21-9.14-5.61-2.56-2.4-4.57-5.21-6.01-8.42-1.44-3.21-2.16-6.73-2.16-10.58s.88-7.61,2.65-10.98,4.22-6.22,7.37-8.58c3.15-2.35,6.92-4.19,11.3-5.53,4.38-1.33,9.19-2,14.43-2,3.74,0,7.4.32,10.98.96,3.58.64,6.76,1.55,9.54,2.73v-4.81c0-5.56-1.58-9.83-4.73-12.82-3.15-2.99-7.83-4.49-14.03-4.49-4.49,0-8.87.8-13.14,2.4-4.28,1.6-8.66,3.96-13.14,7.05l-6.57-13.63c10.79-7.16,22.44-10.74,34.95-10.74s21.45,2.96,28.13,8.9c6.68,5.93,10.02,14.51,10.02,25.73v26.13c0,2.24.4,3.85,1.2,4.81.8.96,2.11,1.5,3.93,1.6v18.27c-3.63.75-6.79,1.12-9.46,1.12-4.06,0-7.19-.91-9.38-2.72-2.19-1.82-3.55-4.22-4.09-7.21l-.48-4.65c-3.74,4.92-8.28,8.66-13.63,11.22-5.35,2.56-11.06,3.85-17.15,3.85ZM560.63,165.89c3.63,0,7.08-.64,10.34-1.92,3.26-1.28,5.8-2.99,7.61-5.13,2.35-1.82,3.53-3.85,3.53-6.09v-9.62c-2.56-.96-5.35-1.74-8.34-2.32-2.99-.59-5.88-.88-8.66-.88-5.56,0-10.1,1.26-13.63,3.77-3.53,2.51-5.29,5.69-5.29,9.54,0,3.63,1.39,6.65,4.17,9.06,2.78,2.4,6.2,3.61,10.26,3.61Z"/>
+            <path d="M681.01,180l-24.37-36.39-11.54,11.38v25.01h-21.48V62.98h21.48v71.01l33.66-37.83h22.92l-31.26,35.59,33.5,48.25h-22.92Z"/>
+            <path d="M747.53,181.6c-6.84,0-12.98-1.18-18.43-3.53s-10.07-5.53-13.87-9.54c-3.79-4.01-6.71-8.63-8.74-13.87-2.03-5.24-3.05-10.74-3.05-16.51s1.01-11.43,3.05-16.67c2.03-5.23,4.94-9.86,8.74-13.87,3.79-4.01,8.42-7.19,13.87-9.54,5.45-2.35,11.59-3.53,18.43-3.53s12.96,1.18,18.35,3.53c5.4,2.35,9.99,5.53,13.79,9.54,3.79,4.01,6.71,8.63,8.74,13.87,2.03,5.24,3.05,10.8,3.05,16.67s-1.02,11.28-3.05,16.51c-2.03,5.24-4.92,9.86-8.66,13.87-3.74,4.01-8.34,7.19-13.79,9.54s-11.6,3.53-18.43,3.53ZM725.57,138.16c0,3.74.56,7.13,1.68,10.18s2.67,5.69,4.65,7.93c1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.56,1.84,8.66,1.84s5.98-.61,8.66-1.84c2.67-1.23,4.99-2.97,6.97-5.21,1.98-2.24,3.53-4.91,4.65-8.01,1.12-3.1,1.68-6.52,1.68-10.26s-.56-7-1.68-10.1c-1.12-3.1-2.67-5.77-4.65-8.01-1.98-2.24-4.3-3.98-6.97-5.21-2.67-1.23-5.56-1.84-8.66-1.84s-5.99.64-8.66,1.92c-2.67,1.28-5,3.05-6.97,5.29-1.98,2.24-3.53,4.92-4.65,8.01-1.12,3.1-1.68,6.47-1.68,10.1Z"/>
+            <path d="M853.65,181.6c-6.41,0-12.13-1.44-17.15-4.33-5.02-2.88-8.98-6.84-11.86-11.86v14.59h-18.75V62.98h21.48v47.77c2.99-5.13,6.92-9.11,11.78-11.94,4.86-2.83,10.55-4.25,17.07-4.25,5.45,0,10.42,1.18,14.91,3.53,4.49,2.35,8.36,5.5,11.62,9.46,3.26,3.96,5.77,8.6,7.53,13.95,1.76,5.35,2.65,10.96,2.65,16.83s-.99,11.76-2.97,16.99c-1.98,5.24-4.73,9.81-8.26,13.71-3.53,3.9-7.69,6.97-12.5,9.22s-9.99,3.37-15.55,3.37ZM847.72,163.33c3.42,0,6.57-.67,9.46-2,2.89-1.33,5.34-3.13,7.37-5.37,2.03-2.24,3.61-4.86,4.73-7.85,1.12-2.99,1.68-6.2,1.68-9.62s-.54-6.68-1.6-9.78c-1.07-3.1-2.59-5.82-4.57-8.18-1.98-2.35-4.3-4.22-6.97-5.61-2.67-1.39-5.61-2.08-8.82-2.08-4.81,0-9.11,1.58-12.9,4.73-3.79,3.15-6.71,7.03-8.74,11.62v20.04c.75,2.14,1.84,4.06,3.29,5.77,1.44,1.71,3.07,3.18,4.89,4.41,1.82,1.23,3.79,2.19,5.93,2.89,2.14.7,4.22,1.04,6.25,1.04Z"/>
+            <path d="M957.84,181.6c-6.63,0-12.4-1.47-17.31-4.41-4.92-2.94-8.76-6.92-11.54-11.94v48.89h-21.48v-118.14h18.75v14.43c3.1-4.91,7.11-8.79,12.02-11.62,4.91-2.83,10.58-4.25,16.99-4.25,5.66,0,10.9,1.15,15.71,3.45,4.81,2.3,8.95,5.4,12.42,9.3,3.47,3.9,6.2,8.5,8.18,13.79,1.98,5.29,2.97,10.88,2.97,16.75s-.91,11.81-2.73,17.15c-1.82,5.34-4.36,9.99-7.61,13.95-3.26,3.96-7.13,7.05-11.62,9.3-4.49,2.24-9.4,3.37-14.75,3.37ZM950.63,163.33c3.21,0,6.17-.69,8.9-2.08,2.73-1.39,5.05-3.26,6.97-5.61,1.92-2.35,3.42-5.08,4.49-8.18,1.07-3.1,1.6-6.3,1.6-9.62,0-3.53-.59-6.81-1.76-9.86-1.18-3.05-2.81-5.69-4.89-7.93s-4.54-4.01-7.37-5.29c-2.83-1.28-5.91-1.92-9.22-1.92-2.03,0-4.12.35-6.25,1.04-2.14.7-4.12,1.68-5.93,2.97-1.82,1.28-3.45,2.78-4.89,4.49-1.44,1.71-2.54,3.58-3.29,5.61v19.72c1.92,4.81,4.86,8.79,8.82,11.94,3.95,3.15,8.23,4.73,12.82,4.73Z"/>
+            <path d="M1009.13,84.3v-21.32h21.48v21.32h-21.48ZM1009.13,180v-84h21.48v84h-21.48Z"/>
+            <path d="M1044.71,138c0-5.88,1.01-11.43,3.05-16.67,2.03-5.23,4.97-9.83,8.82-13.79,3.85-3.95,8.5-7.11,13.95-9.46,5.45-2.35,11.59-3.53,18.43-3.53,9.19,0,17.02,1.98,23.48,5.93,6.46,3.96,11.3,9.14,14.51,15.55l-21,6.41c-1.82-3.1-4.22-5.48-7.21-7.13-2.99-1.66-6.31-2.49-9.94-2.49-3.1,0-5.99.62-8.66,1.84-2.67,1.23-5,2.94-6.97,5.13-1.98,2.19-3.53,4.84-4.65,7.93-1.12,3.1-1.68,6.52-1.68,10.26s.59,7.16,1.76,10.26c1.17,3.1,2.75,5.77,4.73,8.01,1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.5,1.84,8.5,1.84,3.85,0,7.4-.96,10.66-2.89,3.26-1.92,5.53-4.27,6.81-7.05l21,6.41c-2.88,6.41-7.64,11.65-14.27,15.71-6.63,4.06-14.59,6.09-23.88,6.09-6.84,0-12.98-1.18-18.43-3.53s-10.1-5.53-13.95-9.54c-3.85-4.01-6.81-8.66-8.9-13.95s-3.13-10.82-3.13-16.59Z"/>
+            <path d="M1134.32,138c0-5.88,1.01-11.43,3.05-16.67,2.03-5.23,4.97-9.83,8.82-13.79,3.85-3.95,8.5-7.11,13.95-9.46,5.45-2.35,11.59-3.53,18.43-3.53,9.19,0,17.02,1.98,23.48,5.93,6.46,3.96,11.3,9.14,14.51,15.55l-21,6.41c-1.82-3.1-4.22-5.48-7.21-7.13-2.99-1.66-6.31-2.49-9.94-2.49-3.1,0-5.99.62-8.66,1.84-2.67,1.23-5,2.94-6.97,5.13-1.98,2.19-3.53,4.84-4.65,7.93-1.12,3.1-1.68,6.52-1.68,10.26s.59,7.16,1.76,10.26c1.17,3.1,2.75,5.77,4.73,8.01,1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.5,1.84,8.5,1.84,3.85,0,7.4-.96,10.66-2.89,3.26-1.92,5.53-4.27,6.81-7.05l21,6.41c-2.88,6.41-7.64,11.65-14.27,15.71-6.63,4.06-14.59,6.09-23.88,6.09-6.84,0-12.98-1.18-18.43-3.53s-10.1-5.53-13.95-9.54c-3.85-4.01-6.81-8.66-8.9-13.95s-3.13-10.82-3.13-16.59Z"/>
+            <path d="M1230.02,84.3v-21.32h21.48v21.32h-21.48ZM1230.02,180v-84h21.48v84h-21.48Z"/>
+            <path d="M1309.68,181.6c-6.84,0-12.98-1.18-18.43-3.53s-10.07-5.53-13.87-9.54c-3.79-4.01-6.71-8.63-8.74-13.87-2.03-5.24-3.05-10.74-3.05-16.51s1.01-11.43,3.05-16.67c2.03-5.23,4.94-9.86,8.74-13.87,3.79-4.01,8.42-7.19,13.87-9.54,5.45-2.35,11.59-3.53,18.43-3.53s12.96,1.18,18.35,3.53c5.4,2.35,9.99,5.53,13.79,9.54,3.79,4.01,6.71,8.63,8.74,13.87,2.03,5.24,3.05,10.8,3.05,16.67s-1.02,11.28-3.05,16.51c-2.03,5.24-4.92,9.86-8.66,13.87-3.74,4.01-8.34,7.19-13.79,9.54s-11.6,3.53-18.43,3.53ZM1287.72,138.16c0,3.74.56,7.13,1.68,10.18s2.67,5.69,4.65,7.93c1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.56,1.84,8.66,1.84s5.98-.61,8.66-1.84c2.67-1.23,5-2.97,6.97-5.21,1.98-2.24,3.53-4.91,4.65-8.01,1.12-3.1,1.68-6.52,1.68-10.26s-.56-7-1.68-10.1c-1.12-3.1-2.67-5.77-4.65-8.01-1.98-2.24-4.3-3.98-6.97-5.21-2.67-1.23-5.56-1.84-8.66-1.84s-5.99.64-8.66,1.92c-2.67,1.28-5,3.05-6.97,5.29-1.98,2.24-3.53,4.92-4.65,8.01-1.12,3.1-1.68,6.47-1.68,10.1Z"/>
+            <path d="M1417.23,175.67c-2.89,1.28-6.41,2.56-10.58,3.85-4.17,1.28-8.55,1.92-13.14,1.92-2.99,0-5.8-.38-8.42-1.12-2.62-.75-4.92-1.95-6.89-3.61-1.98-1.66-3.55-3.79-4.73-6.41-1.18-2.62-1.76-5.8-1.76-9.54v-48.25h-11.06v-16.51h11.06v-27.25h21.48v27.25h17.63v16.51h-17.63v41.04c0,2.99.77,5.1,2.32,6.33,1.55,1.23,3.45,1.84,5.69,1.84s4.43-.37,6.57-1.12c2.14-.75,3.85-1.39,5.13-1.92l4.33,16.99Z"/>
+            <path d="M1478.78,175.67c-2.89,1.28-6.41,2.56-10.58,3.85-4.17,1.28-8.55,1.92-13.14,1.92-2.99,0-5.8-.38-8.42-1.12-2.62-.75-4.92-1.95-6.89-3.61-1.98-1.66-3.55-3.79-4.73-6.41-1.18-2.62-1.76-5.8-1.76-9.54v-48.25h-11.06v-16.51h11.06v-27.25h21.48v27.25h17.63v16.51h-17.63v41.04c0,2.99.77,5.1,2.33,6.33,1.55,1.23,3.45,1.84,5.69,1.84s4.43-.37,6.57-1.12c2.14-.75,3.85-1.39,5.13-1.92l4.33,16.99Z"/>
+            <path d="M1526.71,181.6c-6.84,0-12.98-1.18-18.43-3.53s-10.07-5.53-13.87-9.54c-3.79-4.01-6.71-8.63-8.74-13.87-2.03-5.24-3.05-10.74-3.05-16.51s1.01-11.43,3.05-16.67c2.03-5.23,4.94-9.86,8.74-13.87,3.79-4.01,8.42-7.19,13.87-9.54,5.45-2.35,11.59-3.53,18.43-3.53s12.96,1.18,18.35,3.53c5.39,2.35,9.99,5.53,13.79,9.54,3.79,4.01,6.71,8.63,8.74,13.87,2.03,5.24,3.05,10.8,3.05,16.67s-1.02,11.28-3.05,16.51c-2.03,5.24-4.92,9.86-8.66,13.87-3.74,4.01-8.33,7.19-13.79,9.54s-11.6,3.53-18.43,3.53ZM1504.75,138.16c0,3.74.56,7.13,1.68,10.18s2.67,5.69,4.65,7.93c1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.56,1.84,8.66,1.84s5.98-.61,8.66-1.84c2.67-1.23,4.99-2.97,6.97-5.21,1.98-2.24,3.53-4.91,4.65-8.01,1.12-3.1,1.68-6.52,1.68-10.26s-.56-7-1.68-10.1c-1.12-3.1-2.67-5.77-4.65-8.01-1.98-2.24-4.3-3.98-6.97-5.21-2.67-1.23-5.56-1.84-8.66-1.84s-5.99.64-8.66,1.92c-2.67,1.28-5,3.05-6.97,5.29-1.98,2.24-3.53,4.92-4.65,8.01-1.12,3.1-1.68,6.47-1.68,10.1Z"/>
+            <path d="M1584.58,180v-23.08h17.63v23.08h-17.63Z"/>
+            <path d="M1615.83,138c0-5.88,1.01-11.43,3.05-16.67,2.03-5.23,4.97-9.83,8.82-13.79,3.85-3.95,8.5-7.11,13.95-9.46,5.45-2.35,11.59-3.53,18.43-3.53,9.19,0,17.02,1.98,23.48,5.93,6.46,3.96,11.3,9.14,14.51,15.55l-21,6.41c-1.82-3.1-4.22-5.48-7.21-7.13-2.99-1.66-6.31-2.49-9.94-2.49-3.1,0-5.99.62-8.66,1.84-2.67,1.23-5,2.94-6.97,5.13-1.98,2.19-3.53,4.84-4.65,7.93-1.12,3.1-1.68,6.52-1.68,10.26s.59,7.16,1.76,10.26c1.17,3.1,2.75,5.77,4.73,8.01,1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.5,1.84,8.5,1.84,3.85,0,7.4-.96,10.66-2.89,3.26-1.92,5.53-4.27,6.81-7.05l21,6.41c-2.88,6.41-7.64,11.65-14.27,15.71-6.63,4.06-14.59,6.09-23.88,6.09-6.84,0-12.98-1.18-18.43-3.53s-10.1-5.53-13.95-9.54c-3.85-4.01-6.81-8.66-8.9-13.95s-3.13-10.82-3.13-16.59Z"/>
+            <path d="M1749.52,181.6c-6.84,0-12.98-1.18-18.43-3.53s-10.07-5.53-13.87-9.54c-3.79-4.01-6.71-8.63-8.74-13.87-2.03-5.24-3.05-10.74-3.05-16.51s1.01-11.43,3.05-16.67c2.03-5.23,4.94-9.86,8.74-13.87,3.79-4.01,8.42-7.19,13.87-9.54,5.45-2.35,11.59-3.53,18.43-3.53s12.96,1.18,18.35,3.53c5.4,2.35,9.99,5.53,13.79,9.54,3.79,4.01,6.71,8.63,8.74,13.87,2.03,5.24,3.05,10.8,3.05,16.67s-1.02,11.28-3.05,16.51c-2.03,5.24-4.92,9.86-8.66,13.87-3.74,4.01-8.34,7.19-13.79,9.54s-11.6,3.53-18.43,3.53ZM1727.56,138.16c0,3.74.56,7.13,1.68,10.18s2.67,5.69,4.65,7.93c1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.56,1.84,8.66,1.84s5.98-.61,8.66-1.84c2.67-1.23,5-2.97,6.97-5.21,1.98-2.24,3.53-4.91,4.65-8.01,1.12-3.1,1.68-6.52,1.68-10.26s-.56-7-1.68-10.1c-1.12-3.1-2.67-5.77-4.65-8.01-1.98-2.24-4.3-3.98-6.97-5.21-2.67-1.23-5.56-1.84-8.66-1.84s-5.99.64-8.66,1.92c-2.67,1.28-5,3.05-6.97,5.29-1.98,2.24-3.53,4.92-4.65,8.01-1.12,3.1-1.68,6.47-1.68,10.1Z"/>
+            <path d="M1938.35,180h-21.48v-47.13c0-6.73-1.15-11.65-3.45-14.75-2.3-3.1-5.48-4.65-9.54-4.65-4.28,0-8.28,1.63-12.02,4.89-3.74,3.26-6.41,7.51-8.01,12.74v48.89h-21.48v-47.13c0-6.73-1.15-11.65-3.45-14.75-2.3-3.1-5.48-4.65-9.54-4.65s-8.15,1.6-11.94,4.81c-3.79,3.21-6.49,7.43-8.1,12.66v49.05h-21.48v-84h19.4v15.55c3.1-5.45,7.35-9.64,12.74-12.58,5.4-2.94,11.57-4.41,18.51-4.41s12.5,1.71,16.35,5.13c3.85,3.42,6.3,7.64,7.37,12.66,3.42-5.77,7.75-10.18,12.98-13.22,5.23-3.05,11.22-4.57,17.95-4.57,5.13,0,9.35.96,12.66,2.88,3.31,1.92,5.88,4.44,7.69,7.53,1.82,3.1,3.07,6.63,3.77,10.58.69,3.96,1.04,7.96,1.04,12.02v52.42Z"/>
+          </g>
+        </g>
+      </svg>
+    </a>
+    <svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+      <defs>
+        <filter id="glass-refract" x="0%" y="0%" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.015" numOctaves="3" seed="5" result="noise"/>
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+        </filter>
+      </defs>
+    </svg>
+    <nav class="site-nav">
+      <a href="/projects/" class="nav-link" data-nav="projects">Projects</a>
+      
+    </nav>
+    <a href="#contact" class="nav-contact" data-nav="contact" aria-label="Contact">
+      <svg class="nav-contact-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+        <rect x="2.25" y="4.25" width="15.5" height="11.5" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M3.5 6.5l6.5 4.6 6.5-4.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="nav-contact-label">Contact</span>
+    </a>
+    <script>
+      (function() {
+        var path = location.pathname;
+        var active = path.startsWith('/projects') ? 'projects'
+                   : path.startsWith('/about') ? 'about'
+                   : null;
+        if (active) document.querySelector('[data-nav="' + active + '"]').classList.add('active');
+      })();
+    </script>
+  </div>
+</header>
+<script src="/assets/js/header-glass.js" defer></script>
+<script src="/assets/js/nav-submenu.js" defer></script>
+
+
+    <nav class="project-hud" aria-label="Project navigation">
+      <div class="container project-hud-inner">
+        
+        <div class="hud-side">
+          
+          <a class="hud-prev" href="/projects/omnilux/">
+            <span class="hud-prev-arrow" aria-hidden="true">&larr;</span>
+            <span class="hud-prev-label">Prev</span>
+            <span class="hud-prev-title">Omnilux</span>
+          </a>
+          
+        </div>
+        <div class="hud-center">
+          <div class="hud-identity">
+            <span class="hud-title">Logitech Reach</span>
+            
+            
+          </div>
+          <span class="hud-section" aria-hidden="true"></span>
+        </div>
+        <div class="hud-actions">
+          
+          <a class="hud-next" href="/projects/carealert/">
+            <span class="hud-next-label">Next</span>
+            <span class="hud-next-title">CareAlert</span>
+            <span class="hud-next-arrow" aria-hidden="true">&rarr;</span>
+          </a>
+          
+          <button class="hud-top" type="button" aria-label="Back to top">
+            <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M2 7.5 6 3.5 10 7.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+
+  <main class="main-content">
+    
+    <section class="project-hero-section hero-scrolly hero-scrolly--scrim-boost" style="--hero-scrim-boost: 1.15;">
+      <div class="scrolly-scene" data-scene="1">
+        <div class="scrolly-bg">
+          <picture>
+            <source media="(max-width: 768px)" srcset="/assets/images/projects/logitech-reach-reel-mobile.webp">
+            <img id="glass-source-hero" src="/assets/images/projects/logitech-reach-reel-desktop.webp" alt="" fetchpriority="high" decoding="async" data-focal-y="0.45">
+          </picture>
+          
+          <video class="scrolly-bg-video" autoplay loop muted playsinline preload="auto"
+                 poster="/assets/images/projects/logitech-reach-hero-loop-poster.webp"
+                 aria-hidden="true" style="--hero-video-pos-mobile: 50% 50%;">
+            <source src="/assets/images/projects/logitech-reach-hero-loop.webm" type="video/webm">
+            <source src="/assets/images/projects/logitech-reach-hero-loop.mp4" type="video/mp4">
+          </video>
+          
+          <div class="scrolly-overlay"></div>
+        </div>
+      </div>
+
+      <div class="scrolly-content">
+
+        <div class="scrolly-step" data-step="hero">
+          <div class="container">
+            <h1 class="project-title">Logitech Reach</h1>
+
+            
+            <a href="#campaign-walkthrough" class="hero-campaign-link hero-campaign-link--centered hero-campaign-link--below-title hero-campaign-link--sample">
+              Skip to work sample ↓
+            </a>
+            
+
+            <div class="hero-above-fold">
+              <div class="project-info-card">
+                <div class="hero-card-top">
+                  
+                  <div class="hero-role">
+                    <span class="info-card-label">My Role</span>
+                    <span class="hero-role-value">Senior Copywriter</span>
+                    
+                    <span class="hero-role-agency-credit">at
+                      <img src="/assets/images/logos/Rainfactory_logo.webp"
+                           alt="Rainfactory"
+                           width="450" height="98"
+                           class="hero-role-agency-logo">
+                    </span>
+                    
+                  </div>
+                  
+
+                  
+                  <div class="hero-client">
+                    <span class="info-card-label">Client</span>
+                    <div class="client-logos">
+                      <img src="/assets/images/logos/Logitech_logo.svg"
+                           alt="Logitech"
+                           width="1000" height="304"
+                           class="client-logo">
+                      
+                    </div>
+                  </div>
+                  
+                </div>
+
+                
+                <p class="impact-summary">Wrote four segment-targeted lead-generation landing pages, the Indiegogo campaign, and the paid social copy for Logitech’s 2-in-1 webcam and overhead camera.</p>
+                
+
+                
+                <div class="hero-deliverables">
+                  <span class="info-card-label">Deliverables</span>
+                  <div class="info-card-deliverables">
+                    
+                    
+                    <a href="#pre-launch-board" class="deliverable-badge deliverable-badge--link">Pre-Launch Landing Pages</a>
+                    
+                    
+                    
+                    <a href="#campaign-walkthrough" class="deliverable-badge deliverable-badge--link">Indiegogo Campaign Page</a>
+                    
+                    
+                    
+                    <a href="#paid-social" class="deliverable-badge deliverable-badge--link">Facebook &amp; Instagram Ads</a>
+                    
+                    
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="hero-metrics-floor">
+            <div class="container">
+              <div class="metrics-heading-group">
+                <h2 class="metrics-heading">Key Results</h2>
+                
+                
+              </div>
+              <div class="metrics-grid">
+                
+                <div class="metric">
+                  <span class="metric-value">$616,788</span>
+                  <span class="metric-label">In pre-orders</span>
+                </div>
+                
+                
+                <div class="metric">
+                  <span class="metric-value">2,162</span>
+                  <span class="metric-label">Backers</span>
+                </div>
+                
+                
+                
+                
+              </div>
+              
+              <div class="scrolly-hero-image">
+                <img src="/assets/images/projects/Logitech-Reach.webp" alt="Logitech Reach" width="695" height="460">
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+
+        
+        <div class="scrolly-pin-spacer" aria-hidden="true"></div>
+        
+
+        
+
+        
+
+        <div class="scrolly-bottom-fade" aria-hidden="true"></div>
+      </div>
+
+    </section>
+
+    
+  <script>
+    // Metric labels, injected inline right after the hero markup so they exist
+    // at first paint and the columns distribute with no post-load reflow.
+    // Content is data-driven from the project's heroMetricLabels field
+    // (build.js emits it as a JS literal, "null" when absent) — layout comes
+    // from the hero-metrics body class, but the label copy lives with the
+    // project data so each hero (Gringotts 3-up, Screeneo 2-up) reads
+    // correctly. One line per tile: the muted `sub` line was cut 2026-09-13
+    // (Jakob, smts3gkco1pz2: "I don't think I'll ever use subs for key
+    // results metrics"). Per-item leadDesktop optionally swaps the lead for
+    // one self-sufficient line at >=769px ("Email sign-up rate").
+    (function () {
+      var LABELS = [{"lead":"In pre-orders"},{"lead":"Backers"}];
+      if (!LABELS || !LABELS.length) return;
+      var grid = document.querySelector('.hero-metrics-floor .metrics-grid');
+      if (!grid) return;
+      var metrics = grid.querySelectorAll('.metric');
+      for (var i = 0; i < metrics.length; i++) {
+        var label = metrics[i].querySelector('.metric-label');
+        var parts = LABELS[i];
+        if (!label || !parts) continue;
+        label.textContent = '';
+        var lead = document.createElement('span');
+        lead.className = 'metric-label-lead';
+        lead.textContent = parts.lead;
+        label.appendChild(lead);
+        if (parts.leadDesktop) {
+          lead.classList.add('metric-label-lead--mobile');
+          var leadDesktop = document.createElement('span');
+          leadDesktop.className = 'metric-label-lead metric-label-lead--desktop';
+          leadDesktop.textContent = parts.leadDesktop;
+          label.insertBefore(leadDesktop, lead);
+        }
+      }
+    })();
+  </script>
+
+    
+
+    
+
+    
+
+    
+    <section id="pre-launch" class="prelaunch-section" data-hud-label="Pre-Launch">
+      
+      
+      
+
+
+      
+      
+      
+      <div class="plsb-runway" id="pre-launch-board">
+      <div class="plsb-stage" role="region" aria-roledescription="carousel" aria-label="Pre-launch story highlights">
+      <div class="plsb plsb--xl" aria-label="Pre-launch story beats">
+        
+        <article class="plsb-panel plsb-panel--media" data-dwell="8500" aria-roledescription="slide" aria-label="The brief">
+
+          
+          <div class="plsb-canvas plsb-canvas--establish" style="--scrim-ink: 23, 21, 13;">
+            
+            
+            <picture>
+              
+              <source media="(max-width: 760px)" srcset="/assets/images/projects/logitech-reach-hand-mobile.webp">
+              
+              <img class="plsb-canvas-media" src="/assets/images/projects/logitech-reach-hand-desktop.webp"
+                   alt="A hand holding the Logitech Reach camera head where it mounts to the end of the articulating arm, against a plain olive backdrop." loading="lazy"
+                   width="2000" height="1125"
+                   style="--canvas-pos: 56% 46%; --canvas-scale-m: 1.22;">
+            </picture>
+            
+            <div class="plsb-canvas-scrim plsb-canvas-scrim--establish" aria-hidden="true"></div>
+            
+            <div class="prelaunch-heading prelaunch-heading--canvas">
+              
+              <h2 class="prelaunch-title">Finding the Buyer</h2>
+              
+              <p class="prelaunch-thesis">Everybody could use a 2-in-1 “show and tell” camera — and <b>“everybody” is not a pitch</b>.</p>
+              
+              
+              
+              
+              <ul class="plsb-context" aria-label="Project context">
+                
+                <li style="--i: 0"><b>The product</b><span>A full-HD webcam and overhead desk camera on one articulating arm</span></li>
+                
+              </ul>
+              
+              
+            </div>
+          </div>
+          
+
+
+          
+        </article>
+        
+        <article class="plsb-panel plsb-panel--quad" data-dwell="13000" aria-roledescription="slide" aria-label="Four landing pages">
+
+          
+
+
+          
+          
+          
+          
+          <div class="plsb-quad">
+            <div class="plsb-quad-grid" role="img" aria-label="Four scenes from the launch film, one per audience: a teacher&#39;s desk of workbooks (education), a professional demoing the camera at an office desk (business), a gamer&#39;s overhead rig beside a chessboard (gaming), and a crafter filming herself knitting (streaming).">
+              
+              <figure class="plsb-quad-cell" style="--i: 0">
+                <img src="/assets/images/projects/logitech-reach-seg-education.webp" alt="" loading="lazy"
+                     style="object-position: 50% 45%">
+                <span class="plsb-quad-labelbox"><b class="plsb-quad-label">Education</b></span>
+              </figure>
+              
+              <figure class="plsb-quad-cell" style="--i: 1">
+                <img src="/assets/images/projects/logitech-reach-seg-business.webp" alt="" loading="lazy"
+                     style="object-position: 40% 32%">
+                <span class="plsb-quad-labelbox"><b class="plsb-quad-label">Business</b></span>
+              </figure>
+              
+              <figure class="plsb-quad-cell" style="--i: 2">
+                <img src="/assets/images/projects/logitech-reach-seg-gaming.webp" alt="" loading="lazy"
+                     style="object-position: 50% 42%">
+                <span class="plsb-quad-labelbox"><b class="plsb-quad-label">Gaming</b></span>
+              </figure>
+              
+              <figure class="plsb-quad-cell" style="--i: 3">
+                <img src="/assets/images/projects/logitech-reach-seg-streaming.webp" alt="" loading="lazy"
+                     style="object-position: 46% 30%">
+                <span class="plsb-quad-labelbox"><b class="plsb-quad-label">Streaming</b></span>
+              </figure>
+              
+            </div>
+            <div class="plsb-quad-center">
+              <h3>Four landing pages</h3>
+              <p>Before launch, each audience got its own <b class="plsb-gold">landing page</b>, all asking for the same thing: an email address.</p>
+            </div>
+          </div>
+          
+          
+          
+          
+          
+        </article>
+        
+        <article class="plsb-panel plsb-panel--bg" style="--bg-ink: 22, 18, 14;" data-dwell="13000" aria-roledescription="slide" aria-label="The headline test">
+
+          
+
+
+          
+          
+          <div class="plsb-bg plsb-bg--strong plsb-bg--inked" aria-hidden="true">
+            <img src="/assets/images/projects/logitech-reach-arm-detail.webp" alt="" loading="lazy">
+            <div class="plsb-bg-scrim"></div>
+          </div>
+          
+          
+          
+          
+          
+          
+          
+          <div class="plsb-body">
+            <div class="plsb-copy">
+              <h3>The headline test</h3>
+              <p>The general page ran four slugs. /a kept the “show and tell” metaphor in the headline; /b, /c, and /d went literal and rotated the tagline.</p>
+              
+              
+              
+              
+              
+            </div>
+
+            
+            
+            
+            
+            
+            
+            
+            <div class="plsb-vis plsb-vis--test">
+              <div class="plsb-test plsb-test--page" role="group" aria-label="A browser frame recreating the lead-generation page hero — a teacher presenting a globe to the overhead camera, from the page&#39;s own background film — with each test variant&#39;s headline and tagline over it. Page /a — The most flexible “Show and Tell” camera. Pages /b, /c and /d — Pro 2-in-1 Webcam, Overhead Camera, each with a different tagline. Buttons below the frame switch between the four variants.">
+                <div class="plsb-test-frame">
+                  <div class="pf-node-bar">
+                    <span class="pf-bdots"><i></i><i></i><i></i></span>
+                    <span class="pf-burl">reachcamera.logi.com<b class="plsb-test-path">/a</b><b class="plsb-test-path">/b</b><b class="plsb-test-path">/c</b><b class="plsb-test-path">/d</b></span>
+                  </div>
+                  <div class="plsb-test-view">
+                    
+                    <img class="plsb-test-bg" src="/assets/images/projects/logitech-reach-lg-hero.webp" alt=""
+                         loading="lazy" width="1600" height="666"
+                         style="object-position: 8% 50%">
+                    <span class="plsb-test-scrim" aria-hidden="true"></span>
+                    
+                    <div class="plsb-test-hero">
+                      <span class="plsb-test-eyebrow">Logitech Reach</span>
+                      <div class="plsb-test-stack">
+                        
+                        <div class="plsb-test-variant">
+                          <b class="plsb-test-head">The most flexible “Show and Tell” camera</b>
+                          <span class="plsb-test-tag">2-in-1 full HD webcam &amp; overhead camera for creators, gamers, educators, &amp; professionals.</span>
+                        </div>
+                        
+                        <div class="plsb-test-variant">
+                          <b class="plsb-test-head">Pro 2-in-1 Webcam, Overhead Camera</b>
+                          <span class="plsb-test-tag">The most flexible “Show &amp; Tell” camera…</span>
+                        </div>
+                        
+                        <div class="plsb-test-variant">
+                          <b class="plsb-test-head">Pro 2-in-1 Webcam, Overhead Camera</b>
+                          <span class="plsb-test-tag">Get a full professional setup. Flexible 1080p HD capture. Smoothly shift from tabletop to streaming.</span>
+                        </div>
+                        
+                        <div class="plsb-test-variant">
+                          <b class="plsb-test-head">Pro 2-in-1 Webcam, Overhead Camera</b>
+                          <span class="plsb-test-tag">Turn key professional webcam &amp; streaming camera. Seamless tabletop to streaming in full 1080p HD.</span>
+                        </div>
+                        
+                      </div>
+                      
+                      <span class="plsb-test-ctas" aria-hidden="true">
+                        <span class="plsb-test-cta">Get Discount</span><span class="plsb-test-cta plsb-test-cta--ghost"><i class="plsb-test-play"></i>Watch Video</span>
+                      </span>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="plsb-test-pills" role="group" aria-label="Show a test variant">
+                  <button type="button" class="plsb-test-pill plsb-hold" disabled>/a</button><button type="button" class="plsb-test-pill plsb-hold" disabled>/b</button><button type="button" class="plsb-test-pill plsb-hold" disabled>/c</button><button type="button" class="plsb-test-pill plsb-hold" disabled>/d</button>
+                </div>
+              </div>
+            </div>
+            
+            
+            
+            
+          </div>
+          
+          
+          
+        </article>
+        
+      </div>
+      <button type="button" class="plsb-arrow plsb-arrow--prev" aria-label="Previous slide" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 5.5 L8 12 L14.5 18.5"/></svg>
+      </button>
+      <button type="button" class="plsb-arrow plsb-arrow--next" aria-label="Next slide" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 5.5 L16 12 L9.5 18.5"/></svg>
+      </button>
+      <div class="plsb-nav" role="group" aria-label="Pre-launch story beats" hidden>
+        <div class="plsb-nav-pill">
+          
+          <button type="button" class="plsb-dot" aria-label="The brief — Logitech Reach"></button>
+          
+          <button type="button" class="plsb-dot" aria-label="Four landing pages"></button>
+          
+          <button type="button" class="plsb-dot" aria-label="The headline test"></button>
+          
+        </div>
+        <button type="button" class="plsb-ctl" data-state="paused" aria-label="Play highlights" hidden>
+          <svg class="plsb-ctl-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5 L18 12 L8 18.5 Z"/></svg>
+          <svg class="plsb-ctl-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 6 V18 M15.5 6 V18"/></svg>
+        </button>
+      </div>
+      </div>
+      </div>
+      
+      
+
+
+      
+
+      <div class="container">
+
+        
+
+
+        
+
+
+        
+        <div class="pl-handoff-strip">
+          
+          
+          
+          
+          <p class="plsb-bridge">Below, the campaign page, annotated section by section.</p>
+          
+          <a class="pl-handoff-arrow" href="#campaign-walkthrough" aria-label="Continue to the campaign walkthrough">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 9 L12 15.5 L18.5 9"/></svg>
+          </a>
+          
+        </div>
+        
+      </div>
+    </section>
+    
+
+
+
+
+    
+
+
+
+
+
+
+    
+    <section id="campaign-walkthrough" class="campaign-walkthrough-section" data-hud-label="Indiegogo Campaign Page">
+      <div class="campaign-walkthrough-runway">
+        <div class="campaign-walkthrough-sticky">
+          
+          <div class="container container--wide">
+            <div class="campaign-walkthrough-layout">
+
+              <div class="campaign-walkthrough-phone">
+                <div class="wt-phone">
+                  <div class="wt-phone-screen">
+                    <div class="wt-phone-scroll">
+                      <div class="igg-content">
+
+  <div class="igg-block" data-focus="hero">
+    <div style="background:#1b1b1f;padding:1px 12px 18px;">
+      <div class="igg-hero-heading">
+        <p class="igg-hero-title" style="color:#b9a1f7;" data-callout="hero-title">Logitech Reach: Pro 2-in-1 Webcam, Overhead Camera</p>
+        <p class="igg-hero-byline" style="color:#e6e6e6;">by <strong>Logitech</strong></p>
+        <p class="igg-hero-tagline" style="color:#c9c9c9;">Turnkey professional webcam &amp; streaming camera. Seamless tabletop to streaming in full 1080p HD.</p>
+      </div>
+      <img width="1320" height="820" src="/assets/images/projects/logitech-reach-walkthrough/hero.webp" alt="Mobile campaign hero: featured gallery image of the Logitech Reach arm being adjusted over a tabletop of school workbooks, overlaid with orange arrows tracing every articulation point." data-callout="hero-gallery" style="margin-bottom:6px;">
+    </div>
+  </div>
+
+
+  <div class="igg-block" data-focus="opening">
+    <img width="695" height="149" src="/assets/images/projects/logitech-reach-walkthrough/headline-capture-share.png" alt="Capture &amp; share like never before" class="igg-headline-img">
+    <p data-callout="opening-para"><span data-callout="show-and-tell"><span class="wt-underline wt-underline--own">Logitech Reach is the next-gen show-and-tell camera that picks up what you put down.</span> Seamlessly switch between tabletop and presenter modes, so you can explain concepts and share experiences in more immersive ways than ever.</span></p>
+    <p data-callout="segmentation">A 2-in-1 full HD webcam &amp; overhead camera for <span class="wt-underline">creators, gamers, educators, &amp; professionals</span>.</p>
+    <video width="900" height="480" muted loop playsinline preload="metadata" class="wt-lazy-video" src="/assets/images/projects/logitech-reach-walkthrough/demo-hero.mp4"></video>
+  </div>
+
+  <div class="igg-block">
+    <div style="background:#F0F0F1;padding:6% 4%;">
+      <img width="695" height="667" src="/assets/images/projects/logitech-reach-walkthrough/design-icons.webp" alt="Stunning design meets unmatched flexibility — the StreamCam camera head, with feature icons: plug &amp; play, 1080p up to 60 fps, dual pro omnidirectional mics, premium glass lens, smart auto-focus." style="margin-bottom:0;">
+    </div>
+  </div>
+
+  <div class="igg-block igg-block--joined">
+    <img width="695" height="208" src="/assets/images/projects/logitech-reach-walkthrough/headline-first-only.png" alt="First &amp; only solution of its kind" class="igg-headline-img">
+    <p>Logitech Reach builds on the Logitech StreamCam&rsquo;s premium 1080p / 60fps webcam and provides ultimate content sharing flexibility at your table.</p>
+  </div>
+  <div class="igg-block" data-focus="first-only-proof">
+    <video width="716" height="374" muted loop playsinline preload="metadata" class="wt-lazy-video" data-callout="fo-motion" src="/assets/images/projects/logitech-reach-walkthrough/demo-flexibility.mp4" poster="/assets/images/projects/logitech-reach-walkthrough/demo-flexibility-poster.webp"></video>
+    <p data-callout="fo-balance">Achieving this balance of flexibility and control is not possible in any camera mount experience available today, and existing solutions force trade offs around positioning or time taken to transition from one view to another.</p>
+  </div>
+
+  <div class="igg-block">
+    <img width="695" height="507" src="/assets/images/projects/logitech-reach-walkthrough/press-featured.webp" alt="Recently featured in: Tom's Guide, FastCompany, engadget, and The Verge — with pull quotes calling Reach a possible webcam of the year and a godsend for YouTubers." loading="lazy">
+  </div>
+
+  <div class="igg-block">
+    <img width="695" height="298" src="/assets/images/projects/logitech-reach-walkthrough/headline-adjustability.png" alt="High precision adjustability" class="igg-headline-img" loading="lazy">
+    <p>Use one hand to adjust horizontally or vertically, and swivel with full 360&deg; range to show and tell non-digital content to audiences in every context.</p>
+    <video width="600" height="412" muted loop playsinline preload="metadata" class="wt-lazy-video" src="/assets/images/projects/logitech-reach-walkthrough/demo-adjustability.mp4"></video>
+  </div>
+
+  <div class="igg-block" data-focus="quotes">
+    <div style="background:#FF7F2C;padding:6%;">
+      <img width="695" height="106" src="/assets/images/projects/logitech-reach-walkthrough/headline-camera-people.png" alt="The camera people love, now even more capable" style="padding:0 8% 10px;">
+      <p style="color:#fff;">See what creators and professionals are saying about StreamCam&trade;, the HD 1080p 60fps camera built into Reach.</p>
+      <div style="background:#F0F0F1;padding:5%;">
+        <img width="426" height="72" src="/assets/images/projects/logitech-reach-walkthrough/quote-best-webcam.png" alt="&ldquo;Best Webcam for Streaming&rdquo;" style="padding:0 15%;">
+        <p style="text-align:center;"><i>&ldquo;If you're looking to start making craft-focused content (or just sharing hobbies with friends around the world), I have not seen a more perfect camera solution!&rdquo;</i></p>
+      </div>
+      <div style="background:#F0F0F1;margin-top:4%;padding:5%;">
+        <img width="331" height="72" src="/assets/images/projects/logitech-reach-walkthrough/quote-wow-amazing.png" alt="&ldquo;Wow this is amazing!&rdquo;" style="padding:0 20%;">
+        <p style="text-align:center;"><i>&ldquo;I am absolutely over the moon excited about this as it's exactly what I've been looking for.&rdquo;</i></p>
+      </div>
+      <div style="background:#F0F0F1;margin-top:4%;padding:5%;">
+        <img width="379" height="72" src="/assets/images/projects/logitech-reach-walkthrough/quote-versatility.png" alt="&ldquo;Versatility for any angle!&rdquo;" style="padding:0 18%;">
+        <p style="text-align:center;margin-bottom:0;"><i>&ldquo;Its portability allowed me to display my student's classwork from anywhere in the classroom.&rdquo;</i></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="igg-block">
+    <img width="554" height="100" src="/assets/images/projects/logitech-reach-walkthrough/headline-two-ways.png" alt="Two ways to set up" class="igg-headline-img" loading="lazy">
+    <p>Logitech Reach is available with either a base mount or a clamp mount</p>
+    <img width="695" height="684" src="/assets/images/projects/logitech-reach-walkthrough/mounts-photo.webp" alt="Reach on a desk with the weighted base mount, and clamped to a table edge with the clamp mount." loading="lazy">
+  </div>
+
+  <div class="igg-block" data-focus="viewpoint">
+    <img width="695" height="264" src="/assets/images/projects/logitech-reach-walkthrough/headline-move-viewpoint.png" alt="Move your viewpoint to the content — not the other way around" class="igg-headline-img" data-callout="viewpoint-thesis" loading="lazy">
+    <p>No more acrobatics. Set up your non-digital content and your narrative, then easily adjust Reach to share your point of view.</p>
+    <video width="820" height="508" muted loop playsinline preload="metadata" class="wt-lazy-video" src="/assets/images/projects/logitech-reach-walkthrough/demo-move-viewpoint.mp4"></video>
+  </div>
+
+  <div class="igg-block">
+    <img width="695" height="294" src="/assets/images/projects/logitech-reach-walkthrough/headline-camera-ring.png" alt="Keep your image upright by simply grabbing the camera ring" class="igg-headline-img" loading="lazy">
+    <p>Don&rsquo;t get disoriented. Let the yellow dot guide you.</p>
+    <video width="742" height="460" muted loop playsinline preload="metadata" class="wt-lazy-video" src="/assets/images/projects/logitech-reach-walkthrough/demo-camera-ring.mp4"></video>
+  </div>
+
+  <div class="igg-block">
+    <img width="695" height="294" src="/assets/images/projects/logitech-reach-walkthrough/headline-zoom.png" alt="4.3x lossless zoom — see the big picture or get in close" class="igg-headline-img" loading="lazy">
+    <p>From a 12 x 21.5&rdquo; overhead area, to a 2.75&rdquo; x 5&rdquo; detailed view, use the lever button to fluidly demonstrate and change your audience&rsquo;s perspective.</p>
+    <video width="654" height="406" muted loop playsinline preload="metadata" class="wt-lazy-video" src="/assets/images/projects/logitech-reach-walkthrough/demo-zoom.mp4"></video>
+  </div>
+
+  <div class="igg-block">
+    <img width="695" height="154" src="/assets/images/projects/logitech-reach-walkthrough/headline-perspectives.png" alt="Pivot the camera head — unlock new perspectives" class="igg-headline-img" loading="lazy">
+    <p>Engage your audience by effectively sharing the content from your vantage point to create a fully immersive experience.</p>
+    <img width="695" height="431" src="/assets/images/projects/logitech-reach-walkthrough/lifestyle-globe.webp" alt="An educator points the Reach camera head at a globe beside her laptop." loading="lazy">
+  </div>
+
+  <div class="igg-block">
+    <img width="695" height="286" src="/assets/images/projects/logitech-reach-walkthrough/headline-any-scenario.png" alt="Any scenario — live, pre-recorded, or in-person" class="igg-headline-img" loading="lazy">
+    <p>Whether demonstrating your product on a conference call, creating a tutorial for your YouTube channel, or tutoring students on a science project, Reach provides ultimate flexibility.</p>
+    <img width="695" height="431" src="/assets/images/projects/logitech-reach-walkthrough/lifestyle-knitting.webp" alt="A creator knits on a beanbag while Reach films her hands from above." loading="lazy">
+  </div>
+
+  <div class="igg-block" data-focus="plug-play">
+    <img width="695" height="177" src="/assets/images/projects/logitech-reach-walkthrough/headline-plug-play.png" alt="True plug &amp; play — get going right away" class="igg-headline-img" loading="lazy">
+    <p>Use with most devices and conferencing platforms, with no additional setup, software, or installation.</p>
+    <img width="695" height="148" src="/assets/images/projects/logitech-reach-walkthrough/compatibility-logos.png" alt="Compatibility logos: macOS, Windows, Chrome OS, Zoom, Microsoft Teams, Google Meet, Webex — and many more." loading="lazy">
+    <img width="695" height="431" src="/assets/images/projects/logitech-reach-walkthrough/lifestyle-demo.webp" alt="A professional angles the Reach camera at headphones on her desk during a video call." loading="lazy">
+  </div>
+
+  <div class="igg-block" data-focus="audiences">
+    <img width="695" height="1335" src="/assets/images/projects/logitech-reach-walkthrough/audience-educators.webp" alt="For educators: explain concepts and record online classes, walk through steps, show experiments." loading="lazy">
+    <img width="695" height="1314" src="/assets/images/projects/logitech-reach-walkthrough/audience-professionals.webp" alt="For professionals: demonstrate your product, meeting room ready, collaborate remotely." loading="lazy">
+    <img width="695" height="1314" src="/assets/images/projects/logitech-reach-walkthrough/audience-creators.webp" alt="For creators: record tutorials, live stream in new ways, showcase your passion." loading="lazy">
+    <img width="695" height="1315" src="/assets/images/projects/logitech-reach-walkthrough/audience-gamers.webp" alt="For game lovers: live stream tournaments, play physical games remotely, cast to the big screen." loading="lazy">
+  </div>
+
+  <div class="igg-block" data-focus="about-logitech">
+    <div style="background:#F0F0F1;padding:6%;">
+      <img width="695" height="351" src="/assets/images/projects/logitech-reach-walkthrough/about-logitech.png" alt="Over four decades of excellence in innovation — Logitech." style="padding:0 10%;">
+      <p>A Swiss company focused on innovation and quality, Logitech has been producing premium consumer electronics and experiences for more than 40 years. We keep design at the center of everything we create, in every team and every discipline, to create truly unique and meaningful experiences.</p>
+      <p>With products sold in almost every country in the world, Logitech designs products that help businesses thrive and bring people together through music, gaming, streaming, video and computing.</p>
+      <p style="margin-bottom:0;" data-callout="about-close">With Logitech Reach, our approach was no different. Years in the making, we couldn&rsquo;t be more excited to transform the way professionals, creators, educators, and gamers connect and share.</p>
+    </div>
+  </div>
+
+</div>
+
+                    </div>
+                    <svg class="walkthrough-spot-svg" viewBox="0 0 492 1016" preserveAspectRatio="none" width="100%" height="100%" aria-hidden="true">
+                      <defs>
+                        <filter id="wt-spot-goo-0" filterUnits="userSpaceOnUse" x="-50" y="-50" width="592" height="1116">
+                          <feGaussianBlur in="SourceGraphic" stdDeviation="0.1" result="blur"/>
+                          <feColorMatrix in="blur" mode="matrix"
+                            values="1 0 0 0 0
+                                    0 1 0 0 0
+                                    0 0 1 0 0
+                                    0 0 0 24 -10" result="goo"/>
+                        </filter>
+                        <mask id="wt-spot-mask-0" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse" x="-50" y="-50" width="592" height="1116">
+                          <rect x="-50" y="-50" width="592" height="1116" fill="white"/>
+                          <g filter="url(#wt-spot-goo-0)">
+                            <rect class="wt-spot-blob wt-spot-blob--trail" fill="black" rx="8" ry="8"/>
+                            <line class="wt-spot-blob wt-spot-blob--bridge" stroke="black" stroke-width="0" stroke-linecap="round" x1="0" y1="0" x2="0" y2="0"/>
+                            <rect class="wt-spot-blob wt-spot-blob--lead"  fill="black" rx="8" ry="8"/>
+                          </g>
+                        </mask>
+                      </defs>
+                      <rect class="wt-spot-overlay" x="0" y="0" width="492" height="1016"
+                            fill="rgba(26,26,46,0.55)" mask="url(#wt-spot-mask-0)"/>
+                    </svg>
+                  </div>
+                  
+                  <svg class="wt-phone-bezel" viewBox="0 0 520 1044" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <mask id="wt-screen-cutout-0">
+                        <rect x="0" y="0" width="520" height="1044" fill="white"/>
+                        <rect x="14" y="14" width="492" height="1016" rx="28" ry="28" fill="black"/>
+                      </mask>
+                    </defs>
+                    <rect x="2" y="2" width="516" height="1040" rx="52" ry="52" fill="#1a1a1a" mask="url(#wt-screen-cutout-0)"/>
+                    <rect x="217" y="24" width="86" height="28" rx="14" ry="14" fill="#000"/>
+                    <rect x="516" y="250" width="6" height="52" rx="2" fill="#1a1a1a"/>
+                    <rect x="-2" y="190" width="6" height="40" rx="2" fill="#1a1a1a"/>
+                    <rect x="-2" y="250" width="6" height="70" rx="2" fill="#1a1a1a"/>
+                  </svg>
+                  
+                </div>
+              </div>
+
+              <div class="campaign-walkthrough-annotations">
+                <div class="walkthrough-heading">
+                  <h2 class="walkthrough-heading-title">Indiegogo Campaign Page</h2>
+                  <p class="walkthrough-heading-subtitle">What I wrote and why.</p>
+                  
+                  <a href="https://www.indiegogo.com/projects/logitech-reach-pro-2-in-1-webcam-overhead-camera#/" class="walkthrough-live-link" target="_blank" rel="noopener">View the live campaign on Indiegogo ↗</a>
+                  
+                </div>
+                <div class="walkthrough-annotation-slot">
+                  
+                  <div class="walkthrough-annotation" data-annotation="hero" data-callout-zoom="true">
+                    <span class="walkthrough-annotation-label">New Category, Few Words</span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="hero-title">Indiegogo caps titles at 50 characters, and I used exactly 50 to say what this unique product is and does. Burying that below the fold would have killed the attention we'd just earned.</p>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="hero-gallery">The title had no room for how many ways Reach moves, so I mocked up arrows on every articulation point. The design team built the production version.</p>
+                    
+                    
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="opening" data-callout-zoom="true">
+                    <span class="walkthrough-annotation-label">How the Page Opens</span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="opening-para">I led with what the product empowers the buyer to do — capturing, switching modes, and sharing.</p>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="show-and-tell">One sentence works twice: the camera literally picks up (captures) whatever you put down on the desk. </p>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="segmentation">Four audiences named early. The page pays each one off further down.</p>
+                    
+                    
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="first-only-proof" data-callout-zoom="true">
+                    <span class="walkthrough-annotation-label">Watch It Move</span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="fo-motion">My arrows from the hero — animated! Every articulation point is demonstrated instead of described.</p>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="fo-balance">Naming the trade-offs every existing setup forces is what makes the first-and-only claim concrete.</p>
+                    
+                    
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="quotes">
+                    <span class="walkthrough-annotation-label">Reviews Before Launch</span>
+                    
+                    <p class="walkthrough-annotation-text">Reviews of StreamCam, the camera inside Reach, stand in for a product nobody has held. They were picked from thousands.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="viewpoint">
+                    <span class="walkthrough-annotation-label">The Thesis Line</span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="viewpoint-thesis">One line flips the product's whole story — instead of you contorting objects up to a fixed lens, the camera's view goes to the content.</p>
+                    
+                    
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="plug-play" data-region-y="0" data-region-h="0.515">
+                    <span class="walkthrough-annotation-label">It Just Works</span>
+                    
+                    <p class="walkthrough-annotation-text">Teachers have lost hours of class time to uncooperative devices. The copy speaks straight to that.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="audiences" data-hold-offset="0.5" data-hold-scale="2">
+                    <span class="walkthrough-annotation-label">Four Doors In</span>
+                    
+                    <p class="walkthrough-annotation-text">One product, pitched four times, each captioned in that audience's verbs. It mirrors the four landing pages I wrote before launch.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="about-logitech">
+                    <span class="walkthrough-annotation-label">The Last Word</span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="about-close">The brand section is mine too. I closed it on the same four audiences the page opened with.</p>
+                    
+                    
+                    
+                  </div>
+                  
+                </div>
+                
+                
+                <div class="walkthrough-progress" role="group" aria-label="Walkthrough controls">
+                  <div class="walkthrough-progress-rail">
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="0" type="button" aria-label="Go to New Category, Few Words" title="New Category, Few Words"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="1" type="button" aria-label="Go to How the Page Opens" title="How the Page Opens"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="2" type="button" aria-label="Go to Watch It Move" title="Watch It Move"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="3" type="button" aria-label="Go to Reviews Before Launch" title="Reviews Before Launch"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="4" type="button" aria-label="Go to The Thesis Line" title="The Thesis Line"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="5" type="button" aria-label="Go to It Just Works" title="It Just Works"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="6" type="button" aria-label="Go to Four Doors In" title="Four Doors In"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="7" type="button" aria-label="Go to The Last Word" title="The Last Word"></button>
+                    
+                  </div>
+                  <div class="wt-ctl-row">
+                    <button class="walkthrough-progress-nav" data-progress-nav="prev" type="button" aria-label="Previous stop" title="Previous stop">
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 4l-4 4 4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <button class="wt-ctl-count" type="button" aria-expanded="false" aria-haspopup="true" title="All stops">
+                      <span class="wt-ctl-count-text">8 stops</span>
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 10l4-4 4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <button class="walkthrough-progress-nav" data-progress-nav="next" type="button" aria-label="Next stop" title="Next stop">
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <span class="wt-ctl-gap"></span>
+                    <button class="wt-ctl-btn wt-ctl-restart" type="button" title="Restart the walkthrough">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1 4v6h6M3.51 15a9 9 0 1 0 2.13-9.36L1 10" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      <span class="wt-ctl-label">Restart</span>
+                    </button>
+                    <button class="wt-ctl-btn wt-ctl-skip" type="button" title="Skip the walkthrough">
+                      Skip
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v10M3.5 8.5L8 13l4.5-4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                  </div>
+                  <ol class="wt-chapters" hidden>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="0" type="button">New Category, Few Words</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="1" type="button">How the Page Opens</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="2" type="button">Watch It Move</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="3" type="button">Reviews Before Launch</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="4" type="button">The Thesis Line</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="5" type="button">It Just Works</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="6" type="button">Four Doors In</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="7" type="button">The Last Word</button></li>
+                    
+                  </ol>
+                </div>
+                
+              </div>
+
+              <svg class="walkthrough-lines" aria-hidden="true"></svg>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+
+    
+    
+    <section id="paid-social" class="paid-social" data-hud-label="The ads" aria-label="Paid social ads">
+      <div class="container">
+        <div class="psoc-head">
+          
+          <p class="psoc-eyebrow section-label">Paid social</p>
+          
+          <h2 class="psoc-title">Paid Social</h2>
+          
+        </div>
+        
+        <div class="psoc-flight">
+          
+          
+          <div class="psoc-flight-head">
+            <h3 class="psoc-flight-label">Before launch <span class="psoc-flight-window">September to October 2023</span></h3>
+            
+          </div>
+          
+          <div class="psoc-grid psoc-grid--3">
+            
+            
+            <article class="adu" data-ad-id="1458791204854793">
+              <header class="adu-head">
+                
+                <img class="adu-avatar" src="/assets/images/projects/logitech-ads/logitech-avatar.webp" alt="" width="40" height="40" loading="lazy" decoding="async">
+                
+                <div class="adu-who">
+                  <span class="adu-name">Logitech<svg class="adu-verified" viewBox="0 0 40 40" role="img" aria-label="Verified"><title>Verified</title><path d="M19.998 3.094L14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v6.354h6.234L14.638 40l5.36-3.094L25.358 40l2.97-5.15h6.234v-6.354L40 25.359 36.905 20 40 14.641l-5.438-3.137V5.15h-6.234L25.359 0l-5.36 3.094z" fill="#1DA1F2"/><path d="M17.204 27.822l-6.626-6.428 2.744-2.664 3.882 3.764 8.272-8.018 2.744 2.664-11.016 10.682z" fill="#fff"/></svg></span>
+                  
+                  <span class="adu-meta">September 7, 2023 · <svg class="adu-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+                </div>
+              </header>
+              
+              <div class="adu-text">
+                
+                
+                <p class="adu-primary">Tired of performing acrobatics just to get the perfect shot? Let Reach do the heavy lifting. It&#39;s a camera, not a gymnastics class!</p>
+                
+                
+                <ul class="adu-checklist">
+                  
+                  <li>Full HD1080/60fps &amp; Autofocus<span class="adu-more-wrap">… <button type="button" class="adu-more" aria-expanded="false">See more</button></span></li>
+                  
+                  <li class="adu-fold">F/2.0, w/ 3.7mm F &amp; 78° DFOV</li>
+                  
+                  <li class="adu-fold">360° Swivel &amp; Independent Zoom</li>
+                  
+                  <li class="adu-fold">Plug &amp; Play Powered by Logitech StreamCam</li>
+                  
+                  <li class="adu-fold">Ultimate Flexibility &amp; Movement Control</li>
+                  
+                </ul>
+                
+              </div>
+              
+              <div class="adu-media">
+                
+                <video class="adu-video" muted loop playsinline preload="metadata" poster="/assets/images/projects/logitech-ads/video-a-poster.webp" width="900" height="900" aria-label="Logitech Reach ad clip: a hand tilts the camera head, then a purple end card reads Adjustable View Content Camera">
+                  <source src="/assets/images/projects/logitech-ads/video-a.webm" type="video/webm">
+                  <source src="/assets/images/projects/logitech-ads/video-a.mp4" type="video/mp4">
+                </video>
+                
+                <button type="button" class="adu-play" aria-label="Play this ad"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+                
+                
+              </div>
+              
+              
+              <div class="adu-card">
+                <div class="adu-card-text">
+                  <span class="adu-card-domain">LOGITECH.COM</span>
+                  <span class="adu-card-headline">Zoom In, Capture More!</span>
+                  <span class="adu-card-desc">Sign Up for Launch Day Deal</span>
+                </div>
+                
+                <span class="adu-card-cta" aria-hidden="true">Learn more</span>
+              </div>
+              
+              
+              
+              <footer class="adu-stats" aria-label="Engagement as captured">
+                
+                
+                <span class="adu-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>3.2K<span class="visually-hidden"> reactions</span></span>
+                <span class="adu-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>427<span class="visually-hidden"> comments</span></span>
+                <span class="adu-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 17 20 12 15 7"/><path d="M4 18v-2a4 4 0 0 1 4-4h12"/></svg>275<span class="visually-hidden"> shares</span></span>
+                
+                
+              </footer>
+              
+            </article>
+            
+            
+            <article class="adu" data-ad-id="840968367532587">
+              <header class="adu-head">
+                
+                <img class="adu-avatar" src="/assets/images/projects/logitech-ads/logitech-avatar.webp" alt="" width="40" height="40" loading="lazy" decoding="async">
+                
+                <div class="adu-who">
+                  <span class="adu-name">Logitech<svg class="adu-verified" viewBox="0 0 40 40" role="img" aria-label="Verified"><title>Verified</title><path d="M19.998 3.094L14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v6.354h6.234L14.638 40l5.36-3.094L25.358 40l2.97-5.15h6.234v-6.354L40 25.359 36.905 20 40 14.641l-5.438-3.137V5.15h-6.234L25.359 0l-5.36 3.094z" fill="#1DA1F2"/><path d="M17.204 27.822l-6.626-6.428 2.744-2.664 3.882 3.764 8.272-8.018 2.744 2.664-11.016 10.682z" fill="#fff"/></svg></span>
+                  
+                  <span class="adu-meta">Sponsored · <svg class="adu-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+                </div>
+              </header>
+              
+              <div class="adu-text">
+                
+                
+                <p class="adu-primary">Logitech Reach, the new 2-in-1 overhead camera and webcam. One-handed horizontal, vertical, and 360° adjustments, with plug &amp; play functionality at your fingertips.</p>
+                
+                
+                <ul class="adu-checklist">
+                  
+                  <li>Full HD1080/60fps &amp; Autofocus<span class="adu-more-wrap">… <button type="button" class="adu-more" aria-expanded="false">See more</button></span></li>
+                  
+                  <li class="adu-fold">F/2.0, w/ 3.7mm F &amp; 78° DFOV</li>
+                  
+                  <li class="adu-fold">360° Swivel &amp; Independent Zoom</li>
+                  
+                  <li class="adu-fold">Plug &amp; Play Powered by Logitech StreamCam</li>
+                  
+                  <li class="adu-fold">Ultimate Flexibility &amp; Movement Control</li>
+                  
+                </ul>
+                
+              </div>
+              
+              <div class="adu-media">
+                
+                <video class="adu-video" muted loop playsinline preload="metadata" poster="/assets/images/projects/logitech-ads/video-a-poster.webp" width="900" height="900" aria-label="Logitech Reach ad clip: a hand tilts the camera head, then a purple end card reads Adjustable View Content Camera">
+                  <source src="/assets/images/projects/logitech-ads/video-a.webm" type="video/webm">
+                  <source src="/assets/images/projects/logitech-ads/video-a.mp4" type="video/mp4">
+                </video>
+                
+                <button type="button" class="adu-play" aria-label="Play this ad"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+                
+                
+              </div>
+              
+              
+              <div class="adu-card">
+                <div class="adu-card-text">
+                  <span class="adu-card-domain">REACHCAMERA.LOGI.COM</span>
+                  <span class="adu-card-headline">360° Swivel? Meet Reach!</span>
+                  <span class="adu-card-desc">Sign Up for Launch Day Deal</span>
+                </div>
+                
+                <span class="adu-card-cta" aria-hidden="true">Learn more</span>
+              </div>
+              
+              
+              
+              <footer class="adu-stats" aria-label="Engagement as captured">
+                
+                
+                <span class="adu-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>565<span class="visually-hidden"> reactions</span></span>
+                <span class="adu-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>33<span class="visually-hidden"> comments</span></span>
+                <span class="adu-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 17 20 12 15 7"/><path d="M4 18v-2a4 4 0 0 1 4-4h12"/></svg>42<span class="visually-hidden"> shares</span></span>
+                
+                
+              </footer>
+              
+            </article>
+            
+            
+            <article class="adu" data-ad-id="6042475922519705">
+              <header class="adu-head">
+                
+                <img class="adu-avatar" src="/assets/images/projects/logitech-ads/logitech-avatar.webp" alt="" width="40" height="40" loading="lazy" decoding="async">
+                
+                <div class="adu-who">
+                  <span class="adu-name">Logitech<svg class="adu-verified" viewBox="0 0 40 40" role="img" aria-label="Verified"><title>Verified</title><path d="M19.998 3.094L14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v6.354h6.234L14.638 40l5.36-3.094L25.358 40l2.97-5.15h6.234v-6.354L40 25.359 36.905 20 40 14.641l-5.438-3.137V5.15h-6.234L25.359 0l-5.36 3.094z" fill="#1DA1F2"/><path d="M17.204 27.822l-6.626-6.428 2.744-2.664 3.882 3.764 8.272-8.018 2.744 2.664-11.016 10.682z" fill="#fff"/></svg></span>
+                  
+                  <span class="adu-meta">Sponsored · <svg class="adu-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+                </div>
+              </header>
+              
+              <div class="adu-text">
+                
+                
+                <p class="adu-primary">Tired of expensive camera experiences that don&#39;t live up to expectations? Switch to Reach – the affordable, flexible, movable camera powered by Logitech Streamcam. Perfect for content creators, streamers, &amp; influencers.</p>
+                
+                
+                <ul class="adu-checklist">
+                  
+                  <li>Full HD1080/60fps &amp; Autofocus<span class="adu-more-wrap">… <button type="button" class="adu-more" aria-expanded="false">See more</button></span></li>
+                  
+                  <li class="adu-fold">F/2.0, w/ 3.7mm F &amp; 78° DFOV</li>
+                  
+                  <li class="adu-fold">360° Swivel &amp; Independent Zoom</li>
+                  
+                  <li class="adu-fold">Plug &amp; Play Powered by Logitech StreamCam</li>
+                  
+                  <li class="adu-fold">Ultimate Flexibility &amp; Movement Control</li>
+                  
+                </ul>
+                
+              </div>
+              
+              <div class="adu-media">
+                
+                <video class="adu-video" muted loop playsinline preload="metadata" poster="/assets/images/projects/logitech-ads/video-b-poster.webp" width="900" height="900" aria-label="Logitech Reach ad clip: Meet Logitech Reach title, then the camera over a succulent, a toy car and a teacher&#39;s globe, ending on Engage your audience">
+                  <source src="/assets/images/projects/logitech-ads/video-b.webm" type="video/webm">
+                  <source src="/assets/images/projects/logitech-ads/video-b.mp4" type="video/mp4">
+                </video>
+                
+                <button type="button" class="adu-play" aria-label="Play this ad"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+                
+                
+              </div>
+              
+              
+              <div class="adu-card">
+                <div class="adu-card-text">
+                  <span class="adu-card-domain">REACHCAMERA.LOGI.COM</span>
+                  <span class="adu-card-headline">No More Acrobatics. Meet Reach</span>
+                  <span class="adu-card-desc">Sign Up for Launch Day Deal</span>
+                </div>
+                
+                <span class="adu-card-cta" aria-hidden="true">Learn more</span>
+              </div>
+              
+              
+              
+              <footer class="adu-stats" aria-label="Engagement as captured">
+                
+                
+                <span class="adu-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>334<span class="visually-hidden"> reactions</span></span>
+                <span class="adu-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>40<span class="visually-hidden"> comments</span></span>
+                <span class="adu-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 17 20 12 15 7"/><path d="M4 18v-2a4 4 0 0 1 4-4h12"/></svg>26<span class="visually-hidden"> shares</span></span>
+                
+                
+                <button type="button" class="adu-stat-link" data-act="0" data-stop="4" title="Jump to this line in the campaign page walkthrough">
+                  <span class="adu-stat-link-k">On the page</span> The Thesis Line
+                </button>
+                
+              </footer>
+              
+            </article>
+            
+            
+            <article class="adu" data-ad-id="704012988439073">
+              <header class="adu-head">
+                
+                <img class="adu-avatar" src="/assets/images/projects/logitech-ads/logitech-avatar.webp" alt="" width="40" height="40" loading="lazy" decoding="async">
+                
+                <div class="adu-who">
+                  <span class="adu-name">Logitech<svg class="adu-verified" viewBox="0 0 40 40" role="img" aria-label="Verified"><title>Verified</title><path d="M19.998 3.094L14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v6.354h6.234L14.638 40l5.36-3.094L25.358 40l2.97-5.15h6.234v-6.354L40 25.359 36.905 20 40 14.641l-5.438-3.137V5.15h-6.234L25.359 0l-5.36 3.094z" fill="#1DA1F2"/><path d="M17.204 27.822l-6.626-6.428 2.744-2.664 3.882 3.764 8.272-8.018 2.744 2.664-11.016 10.682z" fill="#fff"/></svg></span>
+                  
+                  <span class="adu-meta">September 14, 2023 · <svg class="adu-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+                </div>
+              </header>
+              
+              <div class="adu-text">
+                
+                
+                <p class="adu-primary">Struggling to capture every detail in your presentations? Reach is your solution! It&#39;s a multifaceted camera that makes showcasing physical content easy.</p>
+                
+                
+                <ul class="adu-checklist">
+                  
+                  <li>Full HD1080/60fps &amp; Autofocus<span class="adu-more-wrap">… <button type="button" class="adu-more" aria-expanded="false">See more</button></span></li>
+                  
+                  <li class="adu-fold">F/2.0, w/ 3.7mm F &amp; 78° DFOV</li>
+                  
+                  <li class="adu-fold">360° Swivel &amp; Independent Zoom</li>
+                  
+                  <li class="adu-fold">Plug &amp; Play Powered by Logitech StreamCam</li>
+                  
+                  <li class="adu-fold">Ultimate Flexibility &amp; Movement Control</li>
+                  
+                </ul>
+                
+              </div>
+              
+              <div class="adu-media">
+                
+                
+                <img src="/assets/images/projects/logitech-ads/engage-dark.webp" alt="Logitech Reach ad: Engage Your Audience, Adjustable View Content Camera, over a woman at a desk holding the camera head above her laptop" data-alt-source="visual" width="600" height="600" loading="lazy" decoding="async">
+                
+              </div>
+              
+              
+              <div class="adu-card">
+                <div class="adu-card-text">
+                  <span class="adu-card-domain">REACHCAMERA.LOGI.COM</span>
+                  <span class="adu-card-headline">Quality Uncompromised: Reach</span>
+                  <span class="adu-card-desc">Sign Up for Launch Day Deal</span>
+                </div>
+                
+                <span class="adu-card-cta" aria-hidden="true">Learn more</span>
+              </div>
+              
+              
+              
+              <footer class="adu-stats" aria-label="Engagement as captured">
+                
+                
+                <span class="adu-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>138<span class="visually-hidden"> reactions</span></span>
+                <span class="adu-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>29<span class="visually-hidden"> comments</span></span>
+                <span class="adu-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 17 20 12 15 7"/><path d="M4 18v-2a4 4 0 0 1 4-4h12"/></svg>10<span class="visually-hidden"> shares</span></span>
+                
+                
+              </footer>
+              
+            </article>
+            
+          </div>
+        </div>
+        
+        <div class="psoc-flight">
+          
+          
+          <div class="psoc-flight-head">
+            <h3 class="psoc-flight-label">During the campaign <span class="psoc-flight-window">December 2023</span></h3>
+            
+            <p class="psoc-flight-context">One seven-second clip over three different bands. The bands were mine, the footage the client&#39;s.</p>
+            
+          </div>
+          
+          <div class="psoc-grid psoc-grid--3">
+            
+            
+            <article class="adu" data-ad-id="373056838719056">
+              <header class="adu-head">
+                
+                <img class="adu-avatar" src="/assets/images/projects/logitech-ads/logitech-avatar.webp" alt="" width="40" height="40" loading="lazy" decoding="async">
+                
+                <div class="adu-who">
+                  <span class="adu-name">Logitech<svg class="adu-verified" viewBox="0 0 40 40" role="img" aria-label="Verified"><title>Verified</title><path d="M19.998 3.094L14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v6.354h6.234L14.638 40l5.36-3.094L25.358 40l2.97-5.15h6.234v-6.354L40 25.359 36.905 20 40 14.641l-5.438-3.137V5.15h-6.234L25.359 0l-5.36 3.094z" fill="#1DA1F2"/><path d="M17.204 27.822l-6.626-6.428 2.744-2.664 3.882 3.764 8.272-8.018 2.744 2.664-11.016 10.682z" fill="#fff"/></svg></span>
+                  
+                  <span class="adu-meta">December 19, 2023 · <svg class="adu-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+                </div>
+              </header>
+              
+              <div class="adu-text">
+                
+                
+                <p class="adu-primary">The camera experience you&#39;ve been waiting for. Logitech Reach gives creators, educators, &amp; professionals more flexibility and control than outdated alternatives. Live on Indiegogo Now 32% OFF!</p>
+                
+                
+                <ul class="adu-checklist">
+                  
+                  <li>Full HD1080/60fps &amp; Autofocus<span class="adu-more-wrap">… <button type="button" class="adu-more" aria-expanded="false">See more</button></span></li>
+                  
+                  <li class="adu-fold">F/2.0, w/ 3.7mm F &amp; 78° DFOV</li>
+                  
+                  <li class="adu-fold">360° Swivel &amp; Independent Zoom</li>
+                  
+                  <li class="adu-fold">Plug &amp; Play Powered by Logitech StreamCam</li>
+                  
+                  <li class="adu-fold">4-Point Flexibility &amp; Movement Control</li>
+                  
+                </ul>
+                
+              </div>
+              
+              <div class="adu-media">
+                
+                <video class="adu-video" muted loop playsinline preload="metadata" poster="/assets/images/projects/logitech-ads/dec-orange-poster.webp" width="900" height="900" aria-label="Logitech Reach ad clip over an orange band quoting FastCompany: Logitech&#39;s clever new camera is a godsend for YouTubers">
+                  <source src="/assets/images/projects/logitech-ads/dec-orange.webm" type="video/webm">
+                  <source src="/assets/images/projects/logitech-ads/dec-orange.mp4" type="video/mp4">
+                </video>
+                
+                <button type="button" class="adu-play" aria-label="Play this ad"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+                
+                
+              </div>
+              
+              
+              <div class="adu-card">
+                <div class="adu-card-text">
+                  <span class="adu-card-domain">INDIEGOGO.COM</span>
+                  <span class="adu-card-headline">Zoom In, Capture More!</span>
+                  <span class="adu-card-desc">Live on Indiegogo Now</span>
+                </div>
+                
+                <span class="adu-card-cta" aria-hidden="true">Shop now</span>
+              </div>
+              
+              
+              
+              <footer class="adu-stats" aria-label="Engagement as captured">
+                
+                
+                <span class="adu-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>23<span class="visually-hidden"> reactions</span></span>
+                
+                
+                
+                
+              </footer>
+              
+            </article>
+            
+            
+            <article class="adu" data-ad-id="4217623561857355">
+              <header class="adu-head">
+                
+                <img class="adu-avatar" src="/assets/images/projects/logitech-ads/logitech-avatar.webp" alt="" width="40" height="40" loading="lazy" decoding="async">
+                
+                <div class="adu-who">
+                  <span class="adu-name">Logitech<svg class="adu-verified" viewBox="0 0 40 40" role="img" aria-label="Verified"><title>Verified</title><path d="M19.998 3.094L14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v6.354h6.234L14.638 40l5.36-3.094L25.358 40l2.97-5.15h6.234v-6.354L40 25.359 36.905 20 40 14.641l-5.438-3.137V5.15h-6.234L25.359 0l-5.36 3.094z" fill="#1DA1F2"/><path d="M17.204 27.822l-6.626-6.428 2.744-2.664 3.882 3.764 8.272-8.018 2.744 2.664-11.016 10.682z" fill="#fff"/></svg></span>
+                  
+                  <span class="adu-meta">December 19, 2023 · <svg class="adu-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+                </div>
+              </header>
+              
+              <div class="adu-text">
+                
+                
+                <p class="adu-primary">You have the ideas, Logitech Reach makes them heard &amp; seen. Effortlessly. Live on Indiegogo Now 32% OFF!</p>
+                
+                
+                <ul class="adu-checklist">
+                  
+                  <li>Full HD1080/60fps &amp; Autofocus<span class="adu-more-wrap">… <button type="button" class="adu-more" aria-expanded="false">See more</button></span></li>
+                  
+                  <li class="adu-fold">F/2.0, w/ 3.7mm F &amp; 78° DFOV</li>
+                  
+                  <li class="adu-fold">360° Swivel &amp; Independent Zoom</li>
+                  
+                  <li class="adu-fold">Plug &amp; Play Powered by Logitech StreamCam</li>
+                  
+                  <li class="adu-fold">4-Point Flexibility &amp; Movement Control</li>
+                  
+                </ul>
+                
+              </div>
+              
+              <div class="adu-media">
+                
+                <video class="adu-video" muted loop playsinline preload="metadata" poster="/assets/images/projects/logitech-ads/dec-crimson-poster.webp" width="900" height="900" aria-label="Logitech Reach ad clip over a crimson band reading Unlock New Perspectives">
+                  <source src="/assets/images/projects/logitech-ads/dec-crimson.webm" type="video/webm">
+                  <source src="/assets/images/projects/logitech-ads/dec-crimson.mp4" type="video/mp4">
+                </video>
+                
+                <button type="button" class="adu-play" aria-label="Play this ad"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+                
+                
+              </div>
+              
+              
+              <div class="adu-card">
+                <div class="adu-card-text">
+                  <span class="adu-card-domain">INDIEGOGO.COM</span>
+                  <span class="adu-card-headline">Logitech REACH: Your New Ally</span>
+                  <span class="adu-card-desc">Live on Indiegogo Now</span>
+                </div>
+                
+                <span class="adu-card-cta" aria-hidden="true">Shop now</span>
+              </div>
+              
+              
+              
+              <footer class="adu-stats" aria-label="Engagement as captured">
+                
+                
+                <span class="adu-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>16<span class="visually-hidden"> reactions</span></span>
+                
+                
+                
+                
+              </footer>
+              
+            </article>
+            
+            
+            <article class="adu" data-ad-id="3152243475071034">
+              <header class="adu-head">
+                
+                <img class="adu-avatar" src="/assets/images/projects/logitech-ads/logitech-avatar.webp" alt="" width="40" height="40" loading="lazy" decoding="async">
+                
+                <div class="adu-who">
+                  <span class="adu-name">Logitech<svg class="adu-verified" viewBox="0 0 40 40" role="img" aria-label="Verified"><title>Verified</title><path d="M19.998 3.094L14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v6.354h6.234L14.638 40l5.36-3.094L25.358 40l2.97-5.15h6.234v-6.354L40 25.359 36.905 20 40 14.641l-5.438-3.137V5.15h-6.234L25.359 0l-5.36 3.094z" fill="#1DA1F2"/><path d="M17.204 27.822l-6.626-6.428 2.744-2.664 3.882 3.764 8.272-8.018 2.744 2.664-11.016 10.682z" fill="#fff"/></svg></span>
+                  
+                  <span class="adu-meta">December 27, 2023 · <svg class="adu-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+                </div>
+              </header>
+              
+              <div class="adu-text">
+                
+                
+                <p class="adu-primary">&quot;Logitech&#39;s clever new camera is a godsend for YouTubers&quot; Nate Berg - FastCompany</p>
+                
+                
+                <ul class="adu-checklist">
+                  
+                  <li>Full HD1080/60fps &amp; Autofocus<span class="adu-more-wrap">… <button type="button" class="adu-more" aria-expanded="false">See more</button></span></li>
+                  
+                  <li class="adu-fold">F/2.0, w/ 3.7mm F &amp; 78° DFOV</li>
+                  
+                  <li class="adu-fold">360° Swivel &amp; Independent Zoom</li>
+                  
+                  <li class="adu-fold">Plug &amp; Play Powered by Logitech StreamCam</li>
+                  
+                  <li class="adu-fold">Ultimate Flexibility &amp; Movement Control</li>
+                  
+                </ul>
+                
+              </div>
+              
+              <div class="adu-media">
+                
+                <video class="adu-video" muted loop playsinline preload="metadata" poster="/assets/images/projects/logitech-ads/dec-purple-poster.webp" width="900" height="900" aria-label="Logitech Reach ad clip over a purple band quoting FastCompany: Logitech&#39;s clever new camera is a godsend for YouTubers">
+                  <source src="/assets/images/projects/logitech-ads/dec-purple.webm" type="video/webm">
+                  <source src="/assets/images/projects/logitech-ads/dec-purple.mp4" type="video/mp4">
+                </video>
+                
+                <button type="button" class="adu-play" aria-label="Play this ad"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+                
+                
+              </div>
+              
+              
+              <div class="adu-card">
+                <div class="adu-card-text">
+                  <span class="adu-card-domain">INDIEGOGO.COM</span>
+                  <span class="adu-card-headline">Logitech REACH: Your New Ally</span>
+                  <span class="adu-card-desc">Live on Indiegogo Now</span>
+                </div>
+                
+                <span class="adu-card-cta" aria-hidden="true">Shop now</span>
+              </div>
+              
+              
+              
+              <footer class="adu-stats" aria-label="Engagement as captured">
+                
+                
+                <span class="adu-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>9<span class="visually-hidden"> reactions</span></span>
+                <span class="adu-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>3<span class="visually-hidden"> comments</span></span>
+                
+                
+                
+              </footer>
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <script src="/assets/js/ad-units.js" defer></script>
+    
+
+
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+    
+
+    
+
+
+    
+
+
+    
+
+    
+    <section class="project-pagination" data-hud-label="Up Next" aria-label="Project pagination">
+      <div class="container">
+        <div class="pagination-grid">
+          <a class="pagination-card pagination-card--prev" href="/projects/omnilux/" rel="prev">
+            <span class="pagination-direction" aria-hidden="true">&larr;</span>
+            <div class="pagination-meta">
+              <span class="pagination-label">Previous</span>
+              <span class="pagination-title">Omnilux</span>
+              <span class="pagination-client">Omnilux</span>
+            </div>
+            
+            <div class="pagination-thumb">
+              <img src="/assets/images/projects/omnilux-hero.webp" alt="" loading="lazy">
+            </div>
+            
+          </a>
+          <a class="pagination-card pagination-card--next" href="/projects/carealert/" rel="next">
+            <span class="pagination-direction" aria-hidden="true">&rarr;</span>
+            <div class="pagination-meta">
+              <span class="pagination-label">Next</span>
+              <span class="pagination-title">CareAlert</span>
+              <span class="pagination-client">Sensorscall</span>
+            </div>
+            
+            <div class="pagination-thumb">
+              <img src="/assets/images/projects/carealert-hero.webp" alt="" loading="lazy">
+            </div>
+            
+          </a>
+        </div>
+      </div>
+    </section>
+    
+
+
+    
+
+  </main>
+
+<footer class="site-footer" id="contact">
+  <div class="footer-container">
+    <div class="footer-contact">
+      <p class="section-label footer-eyebrow">Contact</p>
+      <svg class="footer-mark" viewBox="0 0 304 288" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="footer-mark-gradient" x1="0" y1="0" x2="304" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#B2DFDB"/>
+            <stop offset=".55" stop-color="#5DBDB4"/>
+            <stop offset="1" stop-color="#26A69A"/>
+          </linearGradient>
+        </defs>
+        <g fill="none" stroke="url(#footer-mark-gradient)" stroke-width="40">
+          <path d="M108,0V224A44,44 0 0 1 20,224" pathLength="1"/>
+          <path d="M218,0V288" pathLength="1"/>
+          <path d="M128,132H198" pathLength="1"/>
+          <path d="M238,20A46,46 0 0 1 238,112" pathLength="1"/>
+        </g>
+      </svg>
+      <nav class="footer-links" aria-label="Contact">
+        <a href="mailto:hello@jakobpicciotto.com" class="footer-link footer-link--email">hello@jakobpicciotto.com</a>
+        <a href="https://www.linkedin.com/in/jakob-picciotto/" class="footer-link" target="_blank" rel="noopener">linkedin.com/in/jakob-picciotto</a>
+      </nav>
+      <p class="footer-location">Seattle, WA</p>
+    </div>
+    <p class="footer-text">&copy; 2026 Jakob Picciotto</p>
+  </div>
+</footer>
+<script src="/assets/js/footer-monogram.js" defer></script>
+
+
+  
+  <script src="/assets/js/project-hud.js" defer></script>
+  <script src="/assets/js/walkthrough-shared.js" defer></script>
+  <script src="/assets/js/walkthrough-geometry.js" defer></script>
+  <script src="/assets/js/walkthrough-pinned.js" defer></script>
+  <script src="/assets/js/walkthrough-mobile.js" defer></script>
+  <script src="/assets/js/walkthrough-static.js" defer></script>
+  <script src="/assets/js/walkthrough-embers.js" defer></script>
+  <script src="/assets/js/document-reader.js" defer></script>
+  <script src="/assets/js/attribution-typewriter.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/storyboard.js" defer></script>
+  <script src="/assets/js/funnel-cohort.js" defer></script>
+  <script src="/assets/js/related-filter.js" defer></script>
+  <script src="/assets/js/focal-crop.js" defer></script>
+  <script src="/assets/js/strategy-section.js" defer></script>
+  <script src="/assets/js/adaptive-glass.js" defer></script>
+  <script src="/assets/js/hero-odometer.js" defer></script>
+  <script src="/assets/js/hero-chips.js" defer></script>
+  <script src="/assets/js/walkthrough-controls.js" defer></script>
+
+</body>
+</html>

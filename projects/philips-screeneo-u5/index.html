@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  /* Motion-safe boot flag on <html>, set during head parse (before the body
+     paints). CSS keys :root.js-motion to suppress lines that main.js reveals
+     after first paint — chiefly the metrics attribution, which is split into
+     per-glyph typewriter spans and would otherwise flash its plain text for a
+     frame on load. Set only when JS runs AND reduced motion is not requested,
+     so the no-JS and reduced-motion paths keep their static, visible fallback
+     (they have no scroll ramp to reveal a hidden line). */
+  if (!window.matchMedia || !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.documentElement.classList.add('js-motion');
+  }
+</script>
+<title>Philips Screeneo U5 | Jakob Picciotto</title>
+<meta name="description" content="Wrote the lead-generation landing page and the Indiegogo campaign for Philips’s 4K ultra-short-throw projector.">
+
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="canonical" href="https://work.jakobpicciotto.com/projects/philips-screeneo-u5/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jakob Picciotto">
+<meta property="og:title" content="Philips Screeneo U5 | Jakob Picciotto">
+<meta property="og:description" content="Wrote the lead-generation landing page and the Indiegogo campaign for Philips’s 4K ultra-short-throw projector.">
+<meta property="og:url" content="https://work.jakobpicciotto.com/projects/philips-screeneo-u5/">
+<meta property="og:image" content="https://work.jakobpicciotto.com/assets/images/projects/philips-screeneo-u5-hero.webp">
+
+<meta property="og:image:width" content="949">
+<meta property="og:image:height" content="628">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Philips Screeneo U5 | Jakob Picciotto">
+<meta name="twitter:description" content="Wrote the lead-generation landing page and the Indiegogo campaign for Philips’s 4K ultra-short-throw projector.">
+<meta name="twitter:image" content="https://work.jakobpicciotto.com/assets/images/projects/philips-screeneo-u5-hero.webp">
+
+<script src="/assets/debug/browser.js"></script>
+<link rel="preload" href="/assets/fonts/Raleway-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/SourceSans3-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="/assets/images/logos/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/css/fonts.css">
+<link rel="stylesheet" href="/assets/css/style.css">
+
+
+
+
+
+</head>
+<body class="project-page hero-metrics-3up">
+  
+  <script>
+    var _qs = new URLSearchParams(location.search);
+    var layout = _qs.get('layout');
+    if (/^(static|synced|interleaved)$/.test(layout || '')) document.body.classList.add('layout-' + layout);
+  </script>
+  <header class="site-header">
+  <div class="header-container">
+    <a href="/" class="site-logo" aria-label="Jakob Picciotto">
+      <svg class="site-logo-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1938.35 289.61" aria-hidden="true">
+        <defs>
+          <linearGradient id="logo-gradient-light" x1="0" y1="0" x2="304" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#4DB6AC"/>
+            <stop offset=".55" stop-color="#199488"/>
+            <stop offset="1" stop-color="#00796B"/>
+          </linearGradient>
+          <linearGradient id="logo-gradient-dark" x1="0" y1="0" x2="304" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#B2DFDB"/>
+            <stop offset=".55" stop-color="#5DBDB4"/>
+            <stop offset="1" stop-color="#26A69A"/>
+          </linearGradient>
+        </defs>
+        <g>
+          <path class="logo-monogram logo-monogram-light" fill="url(#logo-gradient-light)" fill-rule="evenodd" d="M88,0H128V224H88ZM198,0H238V288H198ZM128,112H198V152H128ZM238,0A66,66 0 0 1 238,132L238,92A26,26 0 0 0 238,40ZM128,224A64,64 0 0 1 0,224L40,224A24,24 0 0 0 88,224Z"/>
+          <path class="logo-monogram logo-monogram-dark" fill="url(#logo-gradient-dark)" fill-rule="evenodd" d="M88,0H128V224H88ZM198,0H238V288H198ZM128,112H198V152H128ZM238,0A66,66 0 0 1 238,132L238,92A26,26 0 0 0 238,40ZM128,224A64,64 0 0 1 0,224L40,224A24,24 0 0 0 88,224Z"/>
+          <g class="logo-text" fill="currentColor">
+            <path d="M482.89,211.42c-4.06,0-7.91-.62-11.54-1.84-3.63-1.23-6.89-3.13-9.78-5.69l9.3-14.59c1.18,1.17,2.62,2.06,4.33,2.64,1.71.59,3.42.88,5.13.88,2.78,0,5.18-.99,7.21-2.97,2.03-1.98,3.05-4.52,3.05-7.61v-86.24h21.48v84.64c0,4.49-.75,8.63-2.24,12.42-1.5,3.79-3.55,7.05-6.17,9.78-2.62,2.72-5.72,4.83-9.3,6.33-3.58,1.5-7.4,2.24-11.46,2.24ZM490.58,84.3v-21.32h21.48v21.32h-21.48Z"/>
+            <path d="M554.54,181.6c-4.06,0-7.85-.67-11.38-2-3.53-1.33-6.57-3.21-9.14-5.61-2.56-2.4-4.57-5.21-6.01-8.42-1.44-3.21-2.16-6.73-2.16-10.58s.88-7.61,2.65-10.98,4.22-6.22,7.37-8.58c3.15-2.35,6.92-4.19,11.3-5.53,4.38-1.33,9.19-2,14.43-2,3.74,0,7.4.32,10.98.96,3.58.64,6.76,1.55,9.54,2.73v-4.81c0-5.56-1.58-9.83-4.73-12.82-3.15-2.99-7.83-4.49-14.03-4.49-4.49,0-8.87.8-13.14,2.4-4.28,1.6-8.66,3.96-13.14,7.05l-6.57-13.63c10.79-7.16,22.44-10.74,34.95-10.74s21.45,2.96,28.13,8.9c6.68,5.93,10.02,14.51,10.02,25.73v26.13c0,2.24.4,3.85,1.2,4.81.8.96,2.11,1.5,3.93,1.6v18.27c-3.63.75-6.79,1.12-9.46,1.12-4.06,0-7.19-.91-9.38-2.72-2.19-1.82-3.55-4.22-4.09-7.21l-.48-4.65c-3.74,4.92-8.28,8.66-13.63,11.22-5.35,2.56-11.06,3.85-17.15,3.85ZM560.63,165.89c3.63,0,7.08-.64,10.34-1.92,3.26-1.28,5.8-2.99,7.61-5.13,2.35-1.82,3.53-3.85,3.53-6.09v-9.62c-2.56-.96-5.35-1.74-8.34-2.32-2.99-.59-5.88-.88-8.66-.88-5.56,0-10.1,1.26-13.63,3.77-3.53,2.51-5.29,5.69-5.29,9.54,0,3.63,1.39,6.65,4.17,9.06,2.78,2.4,6.2,3.61,10.26,3.61Z"/>
+            <path d="M681.01,180l-24.37-36.39-11.54,11.38v25.01h-21.48V62.98h21.48v71.01l33.66-37.83h22.92l-31.26,35.59,33.5,48.25h-22.92Z"/>
+            <path d="M747.53,181.6c-6.84,0-12.98-1.18-18.43-3.53s-10.07-5.53-13.87-9.54c-3.79-4.01-6.71-8.63-8.74-13.87-2.03-5.24-3.05-10.74-3.05-16.51s1.01-11.43,3.05-16.67c2.03-5.23,4.94-9.86,8.74-13.87,3.79-4.01,8.42-7.19,13.87-9.54,5.45-2.35,11.59-3.53,18.43-3.53s12.96,1.18,18.35,3.53c5.4,2.35,9.99,5.53,13.79,9.54,3.79,4.01,6.71,8.63,8.74,13.87,2.03,5.24,3.05,10.8,3.05,16.67s-1.02,11.28-3.05,16.51c-2.03,5.24-4.92,9.86-8.66,13.87-3.74,4.01-8.34,7.19-13.79,9.54s-11.6,3.53-18.43,3.53ZM725.57,138.16c0,3.74.56,7.13,1.68,10.18s2.67,5.69,4.65,7.93c1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.56,1.84,8.66,1.84s5.98-.61,8.66-1.84c2.67-1.23,4.99-2.97,6.97-5.21,1.98-2.24,3.53-4.91,4.65-8.01,1.12-3.1,1.68-6.52,1.68-10.26s-.56-7-1.68-10.1c-1.12-3.1-2.67-5.77-4.65-8.01-1.98-2.24-4.3-3.98-6.97-5.21-2.67-1.23-5.56-1.84-8.66-1.84s-5.99.64-8.66,1.92c-2.67,1.28-5,3.05-6.97,5.29-1.98,2.24-3.53,4.92-4.65,8.01-1.12,3.1-1.68,6.47-1.68,10.1Z"/>
+            <path d="M853.65,181.6c-6.41,0-12.13-1.44-17.15-4.33-5.02-2.88-8.98-6.84-11.86-11.86v14.59h-18.75V62.98h21.48v47.77c2.99-5.13,6.92-9.11,11.78-11.94,4.86-2.83,10.55-4.25,17.07-4.25,5.45,0,10.42,1.18,14.91,3.53,4.49,2.35,8.36,5.5,11.62,9.46,3.26,3.96,5.77,8.6,7.53,13.95,1.76,5.35,2.65,10.96,2.65,16.83s-.99,11.76-2.97,16.99c-1.98,5.24-4.73,9.81-8.26,13.71-3.53,3.9-7.69,6.97-12.5,9.22s-9.99,3.37-15.55,3.37ZM847.72,163.33c3.42,0,6.57-.67,9.46-2,2.89-1.33,5.34-3.13,7.37-5.37,2.03-2.24,3.61-4.86,4.73-7.85,1.12-2.99,1.68-6.2,1.68-9.62s-.54-6.68-1.6-9.78c-1.07-3.1-2.59-5.82-4.57-8.18-1.98-2.35-4.3-4.22-6.97-5.61-2.67-1.39-5.61-2.08-8.82-2.08-4.81,0-9.11,1.58-12.9,4.73-3.79,3.15-6.71,7.03-8.74,11.62v20.04c.75,2.14,1.84,4.06,3.29,5.77,1.44,1.71,3.07,3.18,4.89,4.41,1.82,1.23,3.79,2.19,5.93,2.89,2.14.7,4.22,1.04,6.25,1.04Z"/>
+            <path d="M957.84,181.6c-6.63,0-12.4-1.47-17.31-4.41-4.92-2.94-8.76-6.92-11.54-11.94v48.89h-21.48v-118.14h18.75v14.43c3.1-4.91,7.11-8.79,12.02-11.62,4.91-2.83,10.58-4.25,16.99-4.25,5.66,0,10.9,1.15,15.71,3.45,4.81,2.3,8.95,5.4,12.42,9.3,3.47,3.9,6.2,8.5,8.18,13.79,1.98,5.29,2.97,10.88,2.97,16.75s-.91,11.81-2.73,17.15c-1.82,5.34-4.36,9.99-7.61,13.95-3.26,3.96-7.13,7.05-11.62,9.3-4.49,2.24-9.4,3.37-14.75,3.37ZM950.63,163.33c3.21,0,6.17-.69,8.9-2.08,2.73-1.39,5.05-3.26,6.97-5.61,1.92-2.35,3.42-5.08,4.49-8.18,1.07-3.1,1.6-6.3,1.6-9.62,0-3.53-.59-6.81-1.76-9.86-1.18-3.05-2.81-5.69-4.89-7.93s-4.54-4.01-7.37-5.29c-2.83-1.28-5.91-1.92-9.22-1.92-2.03,0-4.12.35-6.25,1.04-2.14.7-4.12,1.68-5.93,2.97-1.82,1.28-3.45,2.78-4.89,4.49-1.44,1.71-2.54,3.58-3.29,5.61v19.72c1.92,4.81,4.86,8.79,8.82,11.94,3.95,3.15,8.23,4.73,12.82,4.73Z"/>
+            <path d="M1009.13,84.3v-21.32h21.48v21.32h-21.48ZM1009.13,180v-84h21.48v84h-21.48Z"/>
+            <path d="M1044.71,138c0-5.88,1.01-11.43,3.05-16.67,2.03-5.23,4.97-9.83,8.82-13.79,3.85-3.95,8.5-7.11,13.95-9.46,5.45-2.35,11.59-3.53,18.43-3.53,9.19,0,17.02,1.98,23.48,5.93,6.46,3.96,11.3,9.14,14.51,15.55l-21,6.41c-1.82-3.1-4.22-5.48-7.21-7.13-2.99-1.66-6.31-2.49-9.94-2.49-3.1,0-5.99.62-8.66,1.84-2.67,1.23-5,2.94-6.97,5.13-1.98,2.19-3.53,4.84-4.65,7.93-1.12,3.1-1.68,6.52-1.68,10.26s.59,7.16,1.76,10.26c1.17,3.1,2.75,5.77,4.73,8.01,1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.5,1.84,8.5,1.84,3.85,0,7.4-.96,10.66-2.89,3.26-1.92,5.53-4.27,6.81-7.05l21,6.41c-2.88,6.41-7.64,11.65-14.27,15.71-6.63,4.06-14.59,6.09-23.88,6.09-6.84,0-12.98-1.18-18.43-3.53s-10.1-5.53-13.95-9.54c-3.85-4.01-6.81-8.66-8.9-13.95s-3.13-10.82-3.13-16.59Z"/>
+            <path d="M1134.32,138c0-5.88,1.01-11.43,3.05-16.67,2.03-5.23,4.97-9.83,8.82-13.79,3.85-3.95,8.5-7.11,13.95-9.46,5.45-2.35,11.59-3.53,18.43-3.53,9.19,0,17.02,1.98,23.48,5.93,6.46,3.96,11.3,9.14,14.51,15.55l-21,6.41c-1.82-3.1-4.22-5.48-7.21-7.13-2.99-1.66-6.31-2.49-9.94-2.49-3.1,0-5.99.62-8.66,1.84-2.67,1.23-5,2.94-6.97,5.13-1.98,2.19-3.53,4.84-4.65,7.93-1.12,3.1-1.68,6.52-1.68,10.26s.59,7.16,1.76,10.26c1.17,3.1,2.75,5.77,4.73,8.01,1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.5,1.84,8.5,1.84,3.85,0,7.4-.96,10.66-2.89,3.26-1.92,5.53-4.27,6.81-7.05l21,6.41c-2.88,6.41-7.64,11.65-14.27,15.71-6.63,4.06-14.59,6.09-23.88,6.09-6.84,0-12.98-1.18-18.43-3.53s-10.1-5.53-13.95-9.54c-3.85-4.01-6.81-8.66-8.9-13.95s-3.13-10.82-3.13-16.59Z"/>
+            <path d="M1230.02,84.3v-21.32h21.48v21.32h-21.48ZM1230.02,180v-84h21.48v84h-21.48Z"/>
+            <path d="M1309.68,181.6c-6.84,0-12.98-1.18-18.43-3.53s-10.07-5.53-13.87-9.54c-3.79-4.01-6.71-8.63-8.74-13.87-2.03-5.24-3.05-10.74-3.05-16.51s1.01-11.43,3.05-16.67c2.03-5.23,4.94-9.86,8.74-13.87,3.79-4.01,8.42-7.19,13.87-9.54,5.45-2.35,11.59-3.53,18.43-3.53s12.96,1.18,18.35,3.53c5.4,2.35,9.99,5.53,13.79,9.54,3.79,4.01,6.71,8.63,8.74,13.87,2.03,5.24,3.05,10.8,3.05,16.67s-1.02,11.28-3.05,16.51c-2.03,5.24-4.92,9.86-8.66,13.87-3.74,4.01-8.34,7.19-13.79,9.54s-11.6,3.53-18.43,3.53ZM1287.72,138.16c0,3.74.56,7.13,1.68,10.18s2.67,5.69,4.65,7.93c1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.56,1.84,8.66,1.84s5.98-.61,8.66-1.84c2.67-1.23,5-2.97,6.97-5.21,1.98-2.24,3.53-4.91,4.65-8.01,1.12-3.1,1.68-6.52,1.68-10.26s-.56-7-1.68-10.1c-1.12-3.1-2.67-5.77-4.65-8.01-1.98-2.24-4.3-3.98-6.97-5.21-2.67-1.23-5.56-1.84-8.66-1.84s-5.99.64-8.66,1.92c-2.67,1.28-5,3.05-6.97,5.29-1.98,2.24-3.53,4.92-4.65,8.01-1.12,3.1-1.68,6.47-1.68,10.1Z"/>
+            <path d="M1417.23,175.67c-2.89,1.28-6.41,2.56-10.58,3.85-4.17,1.28-8.55,1.92-13.14,1.92-2.99,0-5.8-.38-8.42-1.12-2.62-.75-4.92-1.95-6.89-3.61-1.98-1.66-3.55-3.79-4.73-6.41-1.18-2.62-1.76-5.8-1.76-9.54v-48.25h-11.06v-16.51h11.06v-27.25h21.48v27.25h17.63v16.51h-17.63v41.04c0,2.99.77,5.1,2.32,6.33,1.55,1.23,3.45,1.84,5.69,1.84s4.43-.37,6.57-1.12c2.14-.75,3.85-1.39,5.13-1.92l4.33,16.99Z"/>
+            <path d="M1478.78,175.67c-2.89,1.28-6.41,2.56-10.58,3.85-4.17,1.28-8.55,1.92-13.14,1.92-2.99,0-5.8-.38-8.42-1.12-2.62-.75-4.92-1.95-6.89-3.61-1.98-1.66-3.55-3.79-4.73-6.41-1.18-2.62-1.76-5.8-1.76-9.54v-48.25h-11.06v-16.51h11.06v-27.25h21.48v27.25h17.63v16.51h-17.63v41.04c0,2.99.77,5.1,2.33,6.33,1.55,1.23,3.45,1.84,5.69,1.84s4.43-.37,6.57-1.12c2.14-.75,3.85-1.39,5.13-1.92l4.33,16.99Z"/>
+            <path d="M1526.71,181.6c-6.84,0-12.98-1.18-18.43-3.53s-10.07-5.53-13.87-9.54c-3.79-4.01-6.71-8.63-8.74-13.87-2.03-5.24-3.05-10.74-3.05-16.51s1.01-11.43,3.05-16.67c2.03-5.23,4.94-9.86,8.74-13.87,3.79-4.01,8.42-7.19,13.87-9.54,5.45-2.35,11.59-3.53,18.43-3.53s12.96,1.18,18.35,3.53c5.39,2.35,9.99,5.53,13.79,9.54,3.79,4.01,6.71,8.63,8.74,13.87,2.03,5.24,3.05,10.8,3.05,16.67s-1.02,11.28-3.05,16.51c-2.03,5.24-4.92,9.86-8.66,13.87-3.74,4.01-8.33,7.19-13.79,9.54s-11.6,3.53-18.43,3.53ZM1504.75,138.16c0,3.74.56,7.13,1.68,10.18s2.67,5.69,4.65,7.93c1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.56,1.84,8.66,1.84s5.98-.61,8.66-1.84c2.67-1.23,4.99-2.97,6.97-5.21,1.98-2.24,3.53-4.91,4.65-8.01,1.12-3.1,1.68-6.52,1.68-10.26s-.56-7-1.68-10.1c-1.12-3.1-2.67-5.77-4.65-8.01-1.98-2.24-4.3-3.98-6.97-5.21-2.67-1.23-5.56-1.84-8.66-1.84s-5.99.64-8.66,1.92c-2.67,1.28-5,3.05-6.97,5.29-1.98,2.24-3.53,4.92-4.65,8.01-1.12,3.1-1.68,6.47-1.68,10.1Z"/>
+            <path d="M1584.58,180v-23.08h17.63v23.08h-17.63Z"/>
+            <path d="M1615.83,138c0-5.88,1.01-11.43,3.05-16.67,2.03-5.23,4.97-9.83,8.82-13.79,3.85-3.95,8.5-7.11,13.95-9.46,5.45-2.35,11.59-3.53,18.43-3.53,9.19,0,17.02,1.98,23.48,5.93,6.46,3.96,11.3,9.14,14.51,15.55l-21,6.41c-1.82-3.1-4.22-5.48-7.21-7.13-2.99-1.66-6.31-2.49-9.94-2.49-3.1,0-5.99.62-8.66,1.84-2.67,1.23-5,2.94-6.97,5.13-1.98,2.19-3.53,4.84-4.65,7.93-1.12,3.1-1.68,6.52-1.68,10.26s.59,7.16,1.76,10.26c1.17,3.1,2.75,5.77,4.73,8.01,1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.5,1.84,8.5,1.84,3.85,0,7.4-.96,10.66-2.89,3.26-1.92,5.53-4.27,6.81-7.05l21,6.41c-2.88,6.41-7.64,11.65-14.27,15.71-6.63,4.06-14.59,6.09-23.88,6.09-6.84,0-12.98-1.18-18.43-3.53s-10.1-5.53-13.95-9.54c-3.85-4.01-6.81-8.66-8.9-13.95s-3.13-10.82-3.13-16.59Z"/>
+            <path d="M1749.52,181.6c-6.84,0-12.98-1.18-18.43-3.53s-10.07-5.53-13.87-9.54c-3.79-4.01-6.71-8.63-8.74-13.87-2.03-5.24-3.05-10.74-3.05-16.51s1.01-11.43,3.05-16.67c2.03-5.23,4.94-9.86,8.74-13.87,3.79-4.01,8.42-7.19,13.87-9.54,5.45-2.35,11.59-3.53,18.43-3.53s12.96,1.18,18.35,3.53c5.4,2.35,9.99,5.53,13.79,9.54,3.79,4.01,6.71,8.63,8.74,13.87,2.03,5.24,3.05,10.8,3.05,16.67s-1.02,11.28-3.05,16.51c-2.03,5.24-4.92,9.86-8.66,13.87-3.74,4.01-8.34,7.19-13.79,9.54s-11.6,3.53-18.43,3.53ZM1727.56,138.16c0,3.74.56,7.13,1.68,10.18s2.67,5.69,4.65,7.93c1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.56,1.84,8.66,1.84s5.98-.61,8.66-1.84c2.67-1.23,5-2.97,6.97-5.21,1.98-2.24,3.53-4.91,4.65-8.01,1.12-3.1,1.68-6.52,1.68-10.26s-.56-7-1.68-10.1c-1.12-3.1-2.67-5.77-4.65-8.01-1.98-2.24-4.3-3.98-6.97-5.21-2.67-1.23-5.56-1.84-8.66-1.84s-5.99.64-8.66,1.92c-2.67,1.28-5,3.05-6.97,5.29-1.98,2.24-3.53,4.92-4.65,8.01-1.12,3.1-1.68,6.47-1.68,10.1Z"/>
+            <path d="M1938.35,180h-21.48v-47.13c0-6.73-1.15-11.65-3.45-14.75-2.3-3.1-5.48-4.65-9.54-4.65-4.28,0-8.28,1.63-12.02,4.89-3.74,3.26-6.41,7.51-8.01,12.74v48.89h-21.48v-47.13c0-6.73-1.15-11.65-3.45-14.75-2.3-3.1-5.48-4.65-9.54-4.65s-8.15,1.6-11.94,4.81c-3.79,3.21-6.49,7.43-8.1,12.66v49.05h-21.48v-84h19.4v15.55c3.1-5.45,7.35-9.64,12.74-12.58,5.4-2.94,11.57-4.41,18.51-4.41s12.5,1.71,16.35,5.13c3.85,3.42,6.3,7.64,7.37,12.66,3.42-5.77,7.75-10.18,12.98-13.22,5.23-3.05,11.22-4.57,17.95-4.57,5.13,0,9.35.96,12.66,2.88,3.31,1.92,5.88,4.44,7.69,7.53,1.82,3.1,3.07,6.63,3.77,10.58.69,3.96,1.04,7.96,1.04,12.02v52.42Z"/>
+          </g>
+        </g>
+      </svg>
+    </a>
+    <svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+      <defs>
+        <filter id="glass-refract" x="0%" y="0%" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.015" numOctaves="3" seed="5" result="noise"/>
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+        </filter>
+      </defs>
+    </svg>
+    <nav class="site-nav">
+      <a href="/projects/" class="nav-link" data-nav="projects">Projects</a>
+      
+    </nav>
+    <a href="#contact" class="nav-contact" data-nav="contact" aria-label="Contact">
+      <svg class="nav-contact-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+        <rect x="2.25" y="4.25" width="15.5" height="11.5" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M3.5 6.5l6.5 4.6 6.5-4.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="nav-contact-label">Contact</span>
+    </a>
+    <script>
+      (function() {
+        var path = location.pathname;
+        var active = path.startsWith('/projects') ? 'projects'
+                   : path.startsWith('/about') ? 'about'
+                   : null;
+        if (active) document.querySelector('[data-nav="' + active + '"]').classList.add('active');
+      })();
+    </script>
+  </div>
+</header>
+<script src="/assets/js/header-glass.js" defer></script>
+<script src="/assets/js/nav-submenu.js" defer></script>
+
+
+    <nav class="project-hud" aria-label="Project navigation">
+      <div class="container project-hud-inner">
+        
+        <div class="hud-side">
+          
+          <a class="hud-prev" href="/projects/reform-rx/">
+            <span class="hud-prev-arrow" aria-hidden="true">&larr;</span>
+            <span class="hud-prev-label">Prev</span>
+            <span class="hud-prev-title">Reform RX</span>
+          </a>
+          
+        </div>
+        <div class="hud-center">
+          <div class="hud-identity">
+            <span class="hud-title">Philips Screeneo U5</span>
+            
+            
+          </div>
+          <span class="hud-section" aria-hidden="true"></span>
+        </div>
+        <div class="hud-actions">
+          
+          <a class="hud-next" href="/projects/airhood/">
+            <span class="hud-next-label">Next</span>
+            <span class="hud-next-title">AirHood</span>
+            <span class="hud-next-arrow" aria-hidden="true">&rarr;</span>
+          </a>
+          
+          <button class="hud-top" type="button" aria-label="Back to top">
+            <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M2 7.5 6 3.5 10 7.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+
+  <main class="main-content">
+    
+    <section class="project-hero-section hero-scrolly hero-scrolly--scrim-boost" style="--hero-scrim-boost: 1.5; --hero-scrim-bottom: 1.9;">
+      <div class="scrolly-scene" data-scene="1">
+        <div class="scrolly-bg">
+          <picture>
+            <source media="(max-width: 768px)" srcset="/assets/images/projects/philips-screeneo-u5-bg-mobile.webp">
+            <img id="glass-source-hero" src="/assets/images/projects/philips-screeneo-u5-bg-desktop.webp" alt="" fetchpriority="high" decoding="async" data-focal-y="0.5">
+          </picture>
+          
+          <div class="scrolly-overlay"></div>
+        </div>
+      </div>
+
+      <div class="scrolly-content">
+
+        <div class="scrolly-step" data-step="hero">
+          <div class="container">
+            <h1 class="project-title">Philips Screeneo U5</h1>
+
+            
+            <a href="#campaign-walkthrough" class="hero-campaign-link hero-campaign-link--centered hero-campaign-link--below-title hero-campaign-link--sample">
+              Skip to work sample ↓
+            </a>
+            
+
+            <div class="hero-above-fold">
+              <div class="project-info-card">
+                <div class="hero-card-top">
+                  
+                  <div class="hero-role">
+                    <span class="info-card-label">My Role</span>
+                    <span class="hero-role-value">Senior Copywriter</span>
+                    
+                    <span class="hero-role-agency-credit">at
+                      <img src="/assets/images/logos/Rainfactory_logo.webp"
+                           alt="Rainfactory"
+                           width="450" height="98"
+                           class="hero-role-agency-logo">
+                    </span>
+                    
+                  </div>
+                  
+
+                  
+                  <div class="hero-client">
+                    <span class="info-card-label">Client</span>
+                    <div class="client-logos">
+                      <img src="/assets/images/logos/Philips_logo_new.svg"
+                           alt="Philips"
+                           width="500" height="92"
+                           class="client-logo">
+                      
+                    </div>
+                  </div>
+                  
+                </div>
+
+                
+                <p class="impact-summary">Wrote the lead-generation landing page and the Indiegogo campaign for Philips’s 4K ultra-short-throw projector.</p>
+                
+
+                
+                <div class="hero-deliverables">
+                  <span class="info-card-label">Deliverables</span>
+                  <div class="info-card-deliverables">
+                    
+                    
+                    <a href="#pre-launch-board" class="deliverable-badge deliverable-badge--link">Landing Page</a>
+                    
+                    
+                    
+                    <a href="#campaign-walkthrough" class="deliverable-badge deliverable-badge--link">Crowdfunding Campaign</a>
+                    
+                    
+                    
+                    <a href="#social" class="deliverable-badge deliverable-badge--link">Social Media Content</a>
+                    
+                    
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="hero-metrics-floor">
+            <div class="container">
+              <div class="metrics-heading-group">
+                <h2 class="metrics-heading">Key Results</h2>
+                
+                
+              </div>
+              <div class="metrics-grid">
+                
+                <div class="metric">
+                  <span class="metric-value">$4,227,639</span>
+                  <span class="metric-label">In pre-orders</span>
+                </div>
+                
+                
+                <div class="metric">
+                  <span class="metric-value">1,981</span>
+                  <span class="metric-label">Backers</span>
+                </div>
+                
+                
+                <div class="metric">
+                  <span class="metric-value">17%</span>
+                  <span class="metric-label">Landing-page conversion</span>
+                </div>
+                
+                
+                
+              </div>
+              
+              <div class="scrolly-hero-image">
+                <img src="/assets/images/projects/Philips-16-9.webp" alt="Philips Screeneo U5" width="695" height="460">
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+
+        
+        <div class="scrolly-pin-spacer" aria-hidden="true"></div>
+        
+
+        
+
+        
+
+        <div class="scrolly-bottom-fade" aria-hidden="true"></div>
+      </div>
+
+    </section>
+
+    
+  <script>
+    // Metric labels, injected inline right after the hero markup so they exist
+    // at first paint and the columns distribute with no post-load reflow.
+    // Content is data-driven from the project's heroMetricLabels field
+    // (build.js emits it as a JS literal, "null" when absent) — layout comes
+    // from the hero-metrics body class, but the label copy lives with the
+    // project data so each hero (Gringotts 3-up, Screeneo 2-up) reads
+    // correctly. One line per tile: the muted `sub` line was cut 2026-09-13
+    // (Jakob, smts3gkco1pz2: "I don't think I'll ever use subs for key
+    // results metrics"). Per-item leadDesktop optionally swaps the lead for
+    // one self-sufficient line at >=769px ("Email sign-up rate").
+    (function () {
+      var LABELS = [{"lead":"In Pre-Orders"},{"lead":"Customers"},{"lead":"Sign-up rate","leadDesktop":"Email sign-up rate"}];
+      if (!LABELS || !LABELS.length) return;
+      var grid = document.querySelector('.hero-metrics-floor .metrics-grid');
+      if (!grid) return;
+      var metrics = grid.querySelectorAll('.metric');
+      for (var i = 0; i < metrics.length; i++) {
+        var label = metrics[i].querySelector('.metric-label');
+        var parts = LABELS[i];
+        if (!label || !parts) continue;
+        label.textContent = '';
+        var lead = document.createElement('span');
+        lead.className = 'metric-label-lead';
+        lead.textContent = parts.lead;
+        label.appendChild(lead);
+        if (parts.leadDesktop) {
+          lead.classList.add('metric-label-lead--mobile');
+          var leadDesktop = document.createElement('span');
+          leadDesktop.className = 'metric-label-lead metric-label-lead--desktop';
+          leadDesktop.textContent = parts.leadDesktop;
+          label.insertBefore(leadDesktop, lead);
+        }
+      }
+    })();
+  </script>
+
+    
+
+    
+
+    
+
+    
+    <section id="pre-launch" class="prelaunch-section" data-hud-label="Pre-Launch">
+      
+      
+      
+
+
+      
+      
+      
+      <div class="plsb-runway" id="pre-launch-board">
+      <div class="plsb-stage" role="region" aria-roledescription="carousel" aria-label="Pre-launch story highlights">
+      <div class="plsb plsb--xl" aria-label="Pre-launch story beats">
+        
+        <article class="plsb-panel plsb-panel--media" data-dwell="7500" aria-roledescription="slide" aria-label="Preparing for Indiegogo">
+
+          
+          <div class="plsb-canvas plsb-canvas--establish" style="">
+            
+            
+            <picture>
+              
+              <img class="plsb-canvas-media" src="/assets/images/projects/philips-screeneo-u5-evening.webp"
+                   alt="An evening living room lit only by the projected picture: two friends on a side sofa laughing over a game controller, the wall-filling game scene thrown from the projector on the cabinet beneath it." loading="lazy"
+                   width="2000" height="1359"
+                   style="--canvas-pos: 58% 45%;">
+            </picture>
+            
+            <div class="plsb-canvas-scrim plsb-canvas-scrim--establish" aria-hidden="true"></div>
+            
+            <div class="prelaunch-heading prelaunch-heading--canvas">
+              
+              <h2 class="prelaunch-title">Preparing for Indiegogo</h2>
+              
+              <p class="prelaunch-thesis"><b>screeneo.com recruited the launch list</b> for Philips’s first 4K ultra-short-throw projector.</p>
+              
+              
+              
+              
+              
+              <div class="plsb-delivered" style="--i: 1">
+                <b class="plsb-delivered-title">I delivered</b>
+                <ul aria-label="I delivered">
+                  
+                  <li><img src="/assets/images/projects/icon-page-leadgen.webp" alt="" loading="lazy" width="354" height="448"><span>Lead-generation homepage</span></li>
+                  
+                  <li style="--icon-scale: 0.88"><img src="/assets/images/projects/icon-campaign-indiegogo.webp" alt="" loading="lazy" width="617" height="448"><span>Campaign page</span></li>
+                  
+                  <li><img src="/assets/images/projects/icon-social-content.webp" alt="" loading="lazy" width="388" height="448"><span>Social content</span></li>
+                  
+                </ul>
+              </div>
+              
+            </div>
+          </div>
+          
+
+
+          
+        </article>
+        
+        <article class="plsb-panel plsb-panel--bg" style=" --bg-pos: 50% 40%;" data-dwell="10500" aria-roledescription="slide" aria-label="Three years writing Philips">
+
+          
+
+
+          
+          
+          <div class="plsb-bg" aria-hidden="true">
+            <img src="/assets/images/projects/philips-screeneo-u5-console-dark.webp" alt="" loading="lazy">
+            <div class="plsb-bg-scrim"></div>
+          </div>
+          
+          
+          
+          
+          
+          
+          
+          <div class="plsb-body">
+            <div class="plsb-copy">
+              <h3>Three years writing Philips</h3>
+              <p>Philips Projection was my first client at Rainfactory.</p>
+              
+              
+              
+              
+              
+            </div>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="plsb-vis plsb-vis--timeline">
+              <ol class="plsb-timeline" aria-label="Philips Projection launches I wrote for: PicoPix Max 2019, Screeneo U4 earlier in 2022, Screeneo U5 — this launch, Screeneo UL5 Smart 2024.">
+                
+                <li class="plsb-tl-item" style="--i: 0">
+                  <span class="plsb-tl-year">2019</span>
+                  <span class="plsb-tl-dot" aria-hidden="true"></span>
+                  <span class="plsb-tl-body"><b class="plsb-tl-name">PicoPix Max</b><span class="plsb-tl-note">social campaigns</span></span>
+                </li>
+                
+                <li class="plsb-tl-item" style="--i: 1">
+                  <span class="plsb-tl-year">2022</span>
+                  <span class="plsb-tl-dot" aria-hidden="true"></span>
+                  <span class="plsb-tl-body"><b class="plsb-tl-name">Screeneo U4</b><span class="plsb-tl-note">earlier the same year</span></span>
+                </li>
+                
+                <li class="plsb-tl-item plsb-tl-item--current" style="--i: 2">
+                  <span class="plsb-tl-year">2022</span>
+                  <span class="plsb-tl-dot" aria-hidden="true"></span>
+                  <span class="plsb-tl-body"><b class="plsb-tl-name">Screeneo U5</b><span class="plsb-tl-note">this launch</span></span>
+                </li>
+                
+                <li class="plsb-tl-item plsb-tl-item--future" style="--i: 3">
+                  <span class="plsb-tl-year">2024</span>
+                  <span class="plsb-tl-dot" aria-hidden="true"></span>
+                  <span class="plsb-tl-body"><b class="plsb-tl-name">Screeneo UL5 Smart</b><span class="plsb-tl-note">still to come</span></span>
+                </li>
+                
+              </ol>
+            </div>
+            
+            
+            
+          </div>
+          
+          
+          
+        </article>
+        
+      </div>
+      <button type="button" class="plsb-arrow plsb-arrow--prev" aria-label="Previous slide" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 5.5 L8 12 L14.5 18.5"/></svg>
+      </button>
+      <button type="button" class="plsb-arrow plsb-arrow--next" aria-label="Next slide" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 5.5 L16 12 L9.5 18.5"/></svg>
+      </button>
+      <div class="plsb-nav" role="group" aria-label="Pre-launch story beats" hidden>
+        <div class="plsb-nav-pill">
+          
+          <button type="button" class="plsb-dot" aria-label="Preparing for Indiegogo — Philips Screeneo U5"></button>
+          
+          <button type="button" class="plsb-dot" aria-label="Three years writing Philips"></button>
+          
+        </div>
+        <button type="button" class="plsb-ctl" data-state="paused" aria-label="Play highlights" hidden>
+          <svg class="plsb-ctl-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5 L18 12 L8 18.5 Z"/></svg>
+          <svg class="plsb-ctl-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 6 V18 M15.5 6 V18"/></svg>
+        </button>
+      </div>
+      </div>
+      </div>
+      
+      
+
+
+      
+
+      <div class="container">
+
+        
+        <div class="pl-handoff-strip pl-funnel-intro">
+          
+          <h3>The homepage I rewrote</h3>
+          <p>I refreshed screeneo.com's copy to center on the coming U5 launch, pointing every section at one goal: the email list.</p>
+          
+          
+          <figure class="pf-intro-frame">
+            <div class="pf-node-bar">
+              <span class="pf-bdots"><i></i><i></i><i></i></span>
+              <span class="pf-burl">screeneo.com</span>
+            </div>
+            <div class="pf-intro-view">
+              <img src="/assets/images/projects/screeneo-u5-walkthrough/landing-page.webp"
+                   alt="The screeneo.com homepage as it ran before launch: the U5 hero over a dark living-room scene, an email signup band for launch-day pricing, and the ultra-short-throw feature sections." loading="lazy"
+                   width="1200" height="2400">
+            </div>
+            
+            <figcaption class="plsb-shot-cap">screeneo.com in October 2022, days before the campaign opened.</figcaption>
+            
+          </figure>
+          
+        </div>
+        
+
+
+        
+        <div class="pf-stage">
+        <div class="pf-bar">
+          <div class="pf-heading">
+            
+            <span class="section-label">The result</span>
+            
+            
+            <h3>Watch where 100 visitors land</h3>
+            
+          </div>
+          <div class="pf-counters">
+            <span class="pf-count"><b data-pf-count="in">100</b> visitors in</span>
+            <span class="pf-count pf-count--gold"><b data-pf-count="out">17</b> signed up</span>
+          </div>
+        </div>
+        <div class="prelaunch-funnel">
+          <div class="pf-inflow anim-scope">
+            <div class="pf-lbl">
+              <span class="pf-lbl-h">Visitors</span>
+              
+            </div>
+
+            <svg class="pf-grid" viewBox="0 0 220 258" role="img"
+                 aria-label="100 visitor dots, 17 of them ringed gold, pouring into the screeneo.com landing page below.">
+              <circle cx="20" cy="10" r="5" class="pf-in pf-in--primed" style="--r: 0"/><circle cx="40" cy="10" r="5" class="pf-in" style="--r: 0"/><circle cx="60" cy="10" r="5" class="pf-in pf-in--primed" style="--r: 0"/><circle cx="80" cy="10" r="5" class="pf-in" style="--r: 0"/><circle cx="100" cy="10" r="5" class="pf-in" style="--r: 0"/><circle cx="120" cy="10" r="5" class="pf-in" style="--r: 0"/><circle cx="140" cy="10" r="5" class="pf-in" style="--r: 0"/><circle cx="160" cy="10" r="5" class="pf-in" style="--r: 0"/><circle cx="180" cy="10" r="5" class="pf-in" style="--r: 0"/><circle cx="200" cy="10" r="5" class="pf-in pf-in--primed" style="--r: 0"/><circle cx="20" cy="28" r="5" class="pf-in" style="--r: 1"/><circle cx="40" cy="28" r="5" class="pf-in" style="--r: 1"/><circle cx="60" cy="28" r="5" class="pf-in" style="--r: 1"/><circle cx="80" cy="28" r="5" class="pf-in" style="--r: 1"/><circle cx="100" cy="28" r="5" class="pf-in" style="--r: 1"/><circle cx="120" cy="28" r="5" class="pf-in" style="--r: 1"/><circle cx="140" cy="28" r="5" class="pf-in" style="--r: 1"/><circle cx="160" cy="28" r="5" class="pf-in" style="--r: 1"/><circle cx="180" cy="28" r="5" class="pf-in pf-in--primed" style="--r: 1"/><circle cx="200" cy="28" r="5" class="pf-in" style="--r: 1"/><circle cx="20" cy="46" r="5" class="pf-in" style="--r: 2"/><circle cx="40" cy="46" r="5" class="pf-in" style="--r: 2"/><circle cx="60" cy="46" r="5" class="pf-in" style="--r: 2"/><circle cx="80" cy="46" r="5" class="pf-in" style="--r: 2"/><circle cx="100" cy="46" r="5" class="pf-in" style="--r: 2"/><circle cx="120" cy="46" r="5" class="pf-in pf-in--primed" style="--r: 2"/><circle cx="140" cy="46" r="5" class="pf-in" style="--r: 2"/><circle cx="160" cy="46" r="5" class="pf-in pf-in--primed" style="--r: 2"/><circle cx="180" cy="46" r="5" class="pf-in" style="--r: 2"/><circle cx="200" cy="46" r="5" class="pf-in" style="--r: 2"/><circle cx="20" cy="64" r="5" class="pf-in" style="--r: 3"/><circle cx="40" cy="64" r="5" class="pf-in" style="--r: 3"/><circle cx="60" cy="64" r="5" class="pf-in" style="--r: 3"/><circle cx="80" cy="64" r="5" class="pf-in" style="--r: 3"/><circle cx="100" cy="64" r="5" class="pf-in pf-in--primed" style="--r: 3"/><circle cx="120" cy="64" r="5" class="pf-in" style="--r: 3"/><circle cx="140" cy="64" r="5" class="pf-in" style="--r: 3"/><circle cx="160" cy="64" r="5" class="pf-in" style="--r: 3"/><circle cx="180" cy="64" r="5" class="pf-in" style="--r: 3"/><circle cx="200" cy="64" r="5" class="pf-in" style="--r: 3"/><circle cx="20" cy="82" r="5" class="pf-in" style="--r: 4"/><circle cx="40" cy="82" r="5" class="pf-in pf-in--primed" style="--r: 4"/><circle cx="60" cy="82" r="5" class="pf-in" style="--r: 4"/><circle cx="80" cy="82" r="5" class="pf-in pf-in--primed" style="--r: 4"/><circle cx="100" cy="82" r="5" class="pf-in" style="--r: 4"/><circle cx="120" cy="82" r="5" class="pf-in" style="--r: 4"/><circle cx="140" cy="82" r="5" class="pf-in" style="--r: 4"/><circle cx="160" cy="82" r="5" class="pf-in" style="--r: 4"/><circle cx="180" cy="82" r="5" class="pf-in" style="--r: 4"/><circle cx="200" cy="82" r="5" class="pf-in" style="--r: 4"/><circle cx="20" cy="100" r="5" class="pf-in pf-in--primed" style="--r: 5"/><circle cx="40" cy="100" r="5" class="pf-in" style="--r: 5"/><circle cx="60" cy="100" r="5" class="pf-in" style="--r: 5"/><circle cx="80" cy="100" r="5" class="pf-in" style="--r: 5"/><circle cx="100" cy="100" r="5" class="pf-in" style="--r: 5"/><circle cx="120" cy="100" r="5" class="pf-in" style="--r: 5"/><circle cx="140" cy="100" r="5" class="pf-in" style="--r: 5"/><circle cx="160" cy="100" r="5" class="pf-in" style="--r: 5"/><circle cx="180" cy="100" r="5" class="pf-in" style="--r: 5"/><circle cx="200" cy="100" r="5" class="pf-in pf-in--primed" style="--r: 5"/><circle cx="20" cy="118" r="5" class="pf-in" style="--r: 6"/><circle cx="40" cy="118" r="5" class="pf-in" style="--r: 6"/><circle cx="60" cy="118" r="5" class="pf-in" style="--r: 6"/><circle cx="80" cy="118" r="5" class="pf-in" style="--r: 6"/><circle cx="100" cy="118" r="5" class="pf-in" style="--r: 6"/><circle cx="120" cy="118" r="5" class="pf-in" style="--r: 6"/><circle cx="140" cy="118" r="5" class="pf-in pf-in--primed" style="--r: 6"/><circle cx="160" cy="118" r="5" class="pf-in" style="--r: 6"/><circle cx="180" cy="118" r="5" class="pf-in" style="--r: 6"/><circle cx="200" cy="118" r="5" class="pf-in" style="--r: 6"/><circle cx="20" cy="136" r="5" class="pf-in" style="--r: 7"/><circle cx="40" cy="136" r="5" class="pf-in" style="--r: 7"/><circle cx="60" cy="136" r="5" class="pf-in" style="--r: 7"/><circle cx="80" cy="136" r="5" class="pf-in" style="--r: 7"/><circle cx="100" cy="136" r="5" class="pf-in" style="--r: 7"/><circle cx="120" cy="136" r="5" class="pf-in pf-in--primed" style="--r: 7"/><circle cx="140" cy="136" r="5" class="pf-in" style="--r: 7"/><circle cx="160" cy="136" r="5" class="pf-in" style="--r: 7"/><circle cx="180" cy="136" r="5" class="pf-in" style="--r: 7"/><circle cx="200" cy="136" r="5" class="pf-in" style="--r: 7"/><circle cx="20" cy="154" r="5" class="pf-in" style="--r: 8"/><circle cx="40" cy="154" r="5" class="pf-in" style="--r: 8"/><circle cx="60" cy="154" r="5" class="pf-in pf-in--primed" style="--r: 8"/><circle cx="80" cy="154" r="5" class="pf-in" style="--r: 8"/><circle cx="100" cy="154" r="5" class="pf-in pf-in--primed" style="--r: 8"/><circle cx="120" cy="154" r="5" class="pf-in" style="--r: 8"/><circle cx="140" cy="154" r="5" class="pf-in" style="--r: 8"/><circle cx="160" cy="154" r="5" class="pf-in" style="--r: 8"/><circle cx="180" cy="154" r="5" class="pf-in" style="--r: 8"/><circle cx="200" cy="154" r="5" class="pf-in" style="--r: 8"/><circle cx="20" cy="172" r="5" class="pf-in" style="--r: 9"/><circle cx="40" cy="172" r="5" class="pf-in pf-in--primed" style="--r: 9"/><circle cx="60" cy="172" r="5" class="pf-in" style="--r: 9"/><circle cx="80" cy="172" r="5" class="pf-in" style="--r: 9"/><circle cx="100" cy="172" r="5" class="pf-in" style="--r: 9"/><circle cx="120" cy="172" r="5" class="pf-in" style="--r: 9"/><circle cx="140" cy="172" r="5" class="pf-in" style="--r: 9"/><circle cx="160" cy="172" r="5" class="pf-in" style="--r: 9"/><circle cx="180" cy="172" r="5" class="pf-in pf-in--primed" style="--r: 9"/><circle cx="200" cy="172" r="5" class="pf-in" style="--r: 9"/>
+              <path class="pf-current" d="M 65 184 C 65 214 88 228 102 248"/>
+              <path class="pf-current" d="M 110 184 L 110 250"/>
+              <path class="pf-current" d="M 155 184 C 155 214 132 228 118 248"/>
+            </svg>
+          </div>
+
+          <figure class="pf-node anim-scope">
+            <div class="pf-node-bar">
+              <span class="pf-bdots"><i></i><i></i><i></i></span>
+              <span class="pf-burl">screeneo.com</span>
+            </div>
+            <svg class="pf-funnel" viewBox="0 0 340 430" role="img"
+                 aria-label="The screeneo.com homepage as it ran before launch: the U5 hero over a dark living-room scene, an email signup band for launch-day pricing, and the ultra-short-throw feature sections.">
+              <defs>
+                <clipPath id="pf-funnel-clip">
+                  <path d="M 0 0 H 340 V 180 C 340 255 208 265 208 330 V 430 H 132 V 330 C 132 265 0 255 0 180 Z"/>
+                </clipPath>
+                <linearGradient id="pf-stem-fade" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#10101e" stop-opacity="0"/>
+                  <stop offset="0.45" stop-color="#10101e" stop-opacity="0.72"/>
+                  <stop offset="1" stop-color="#10101e" stop-opacity="0.97"/>
+                </linearGradient>
+              </defs>
+              <g clip-path="url(#pf-funnel-clip)">
+                <image class="pf-page" href="/assets/images/projects/screeneo-u5-walkthrough/landing-page.webp"
+                       x="0" y="0" width="340" height="584" preserveAspectRatio="xMidYMin slice"/>
+                <rect x="0" y="170" width="340" height="260" fill="url(#pf-stem-fade)"/>
+              </g>
+              <path class="pf-funnel-outline" d="M 0 0 H 340 V 180 C 340 255 208 265 208 330 V 430 H 132 V 330 C 132 265 0 255 0 180 Z"/>
+            </svg>
+          </figure>
+
+          <div class="pf-landing anim-scope">
+            <span class="pf-drop"><i class="pf-travel"></i></span>
+            <div class="pf-out-grid" role="img"
+                 aria-label="17 gold dots — the launch list.">
+              <i class="pf-out" style="--i:0"></i><i class="pf-out" style="--i:1"></i><i class="pf-out" style="--i:2"></i><i class="pf-out" style="--i:3"></i><i class="pf-out" style="--i:4"></i><i class="pf-out" style="--i:5"></i><i class="pf-out" style="--i:6"></i><i class="pf-out" style="--i:7"></i><i class="pf-out" style="--i:8"></i><i class="pf-out" style="--i:9"></i><i class="pf-out" style="--i:10"></i><i class="pf-out" style="--i:11"></i><i class="pf-out" style="--i:12"></i><i class="pf-out" style="--i:13"></i><i class="pf-out" style="--i:14"></i><i class="pf-out" style="--i:15"></i><i class="pf-out" style="--i:16"></i>
+            </div>
+            <p class="pf-out-stat"><b data-pf-stat>17%</b><span>of visitors signed up for launch-day pricing</span></p>
+          </div>
+        </div>
+        </div>
+        
+
+
+        
+        <div class="pl-handoff-strip">
+          
+          
+          
+          
+          <p class="plsb-bridge">On Indiegogo, the list met the campaign page — <a class="pl-link" href="#campaign-walkthrough">the walkthrough below covers what I wrote&nbsp;↓</a></p>
+          
+          <a class="pl-handoff-arrow" href="#campaign-walkthrough" aria-label="Continue to the campaign walkthrough">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 9 L12 15.5 L18.5 9"/></svg>
+          </a>
+          
+        </div>
+        
+      </div>
+    </section>
+    
+
+
+
+
+    
+
+
+
+
+
+
+    
+    <section id="campaign-walkthrough" class="campaign-walkthrough-section" data-hud-label="Indiegogo Campaign Page">
+      <div class="campaign-walkthrough-runway">
+        <div class="campaign-walkthrough-sticky">
+          
+          <div class="container container--wide">
+            <div class="campaign-walkthrough-layout">
+
+              <div class="campaign-walkthrough-phone">
+                <div class="wt-phone">
+                  <div class="wt-phone-screen">
+                    <div class="wt-phone-scroll">
+                      <div class="igg-content">
+
+
+  <div class="igg-block igg-block--joined igg-block--flush" data-focus="hero">
+    <img width="928" height="595" src="/assets/images/projects/screeneo-u5-walkthrough/01-hero.webp" alt="A huge 4K screen, only during showtime. Enjoy ultra-vivid 150-inch visuals in 4K UHD with the new Philips Screeneo U5, a projector that features cutting-edge laser and ultra-short throw technology for an absolute cinema experience.">
+    <video width="696" height="392" muted loop playsinline preload="metadata" class="wt-lazy-video" poster="/assets/images/projects/screeneo-u5-walkthrough/hero-loop-poster.webp" aria-label="Looping hero video: the Screeneo U5 on a low console in a dim living room as a wall-filling picture fades up above it.">
+      <source src="/assets/images/projects/screeneo-u5-walkthrough/hero-loop.webm" type="video/webm">
+      <source src="/assets/images/projects/screeneo-u5-walkthrough/hero-loop.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="igg-block igg-block--joined" data-focus="icons">
+    <img width="928" height="1116" loading="lazy" src="/assets/images/projects/screeneo-u5-walkthrough/02-icons.webp" alt="A nine-icon feature grid: True 4K UHD (3840 x 2160 pixel, 0.21 throw ratio), 2,200 ANSI lumens (day or night use), REC709 and HDR10 with Dolby Vision (perfect colors), FlowMotion 4 (MEMC+ technology), Android TV operating system, Chromecast built-in (cast photos, music and videos), 8-point calibration (accurate screen placement), eye protection (automatic screen dimming), and DTS HD with Dolby Atmos (room-filling sound).">
+  </div>
+
+  <div class="igg-block igg-block--joined">
+    <img data-alt-source="html" width="928" height="1427" loading="lazy" src="/assets/images/projects/screeneo-u5-walkthrough/03-throw.webp" alt="Set up 11 inches away for a big 120-inch 4K screen. Optimize your space with the lowest throw ratio, 0.21, on the market. Set Screeneo U5 on a tabletop, TV shelf, or bedroom wardrobe to enjoy your favorite content like never before — a massive 120-inch screen from just 11 inches away, and even up to 150 inches. A diagram measures the wall gap at two distances: 16.5 inches (42 cm) for a 150-inch image and 11 inches (28.1 cm) for a 120-inch image.">
+  </div>
+
+  <div class="igg-block igg-block--joined" data-focus="throw">
+    <img data-alt-source="visual" width="928" height="1813" loading="lazy" src="/assets/images/projects/screeneo-u5-walkthrough/04-sizes.webp" alt="A technical drawing pairs screen size, image height and distance from the wall in a table running 80 inches up to 150 inches, followed by a photograph of two people in armchairs watching the projected picture in a sunlit living room, one holding a remote.">
+  </div>
+
+  <div class="igg-block igg-block--joined" data-focus="gamut">
+    <img width="928" height="1087" loading="lazy" src="/assets/images/projects/screeneo-u5-walkthrough/05-typical.webp" alt="Not your typical projector. Screeneo U5 is an Ultra-Short Throw laser projector that can be placed just inches/cm away from your wall or screen for crystal-clear True 4K UHD entertainment. A color wheel marks an ultra-wide color gamut at 130 percent REC.709, beside REC709, HDR10 and Dolby Vision Atmos badges over the projector photographed on a wooden sideboard.">
+  </div>
+
+  <div class="igg-block igg-block--joined" data-focus="press">
+    <img width="928" height="1556" loading="lazy" src="/assets/images/projects/screeneo-u5-walkthrough/06-press.webp" alt="As seen on — pull quotes from New Atlas on the 25,000-hour laser light source and 4K UHD at a game-friendly 60 Hz refresh rate, 9to5Toys on a 120-inch screen from a mere 11-inch wall offset, Werd on FlowMotion 4 MEMC+ and spot-on REC709, HDR10 and Dolby colors, and Mondo Projos on the sharpness of the image and the precision of its colors after calibration.">
+  </div>
+
+  <div class="igg-block igg-block--joined" data-focus="heritage">
+    <img width="928" height="670" loading="lazy" src="/assets/images/projects/screeneo-u5-walkthrough/07-heritage.webp" alt="10+ years of movie magic. Building off of more than a century of innovation and more than one decade in the home projector space, Screeneo U5 is the product of tireless technological advancement, representing the very best of Philips — a state-of-the-art all-in-one 4K laser projector at the most competitive price you'll find.">
+  </div>
+
+  <div class="igg-block igg-block--joined">
+    <img width="928" height="1357" loading="lazy" src="/assets/images/projects/screeneo-u5-walkthrough/08-lineup.webp" alt="A dated lineup runs 2013 Screeneo 1550, 2014 Screeneo 1590, 2015 Screeneo 1690, 2016 Screeneo 2.0, 2018 Screeneo U3 and 2022 Screeneo U4, closing on the highlighted 2022 Screeneo U5 — Android TV, laser, 4K, 2,200 lumens, the first 4K Ultra-Short Throw projector in the line.">
+  </div>
+
+  <div class="igg-block igg-block--joined" data-focus="sharp">
+    <img data-alt-source="html" width="928" height="1440" loading="lazy" src="/assets/images/projects/screeneo-u5-walkthrough/09-sharp.webp" data-callout-image="09-sharp.webp" alt="True 4K UHD sharpness. Watch movies and more in True 4K UHD sharpness, full of the fine detail that can be lost at lower resolutions — text stays crystal-clear from 80 up to 150 inches, with Texas Instruments DLP cinema technology. A 3840 x 2160 callout over a macro render of a water droplet, with 1080P and 4K comparison tabs.">
+  </div>
+
+  <div class="igg-block igg-block--joined igg-block--flush">
+    <img width="928" height="640" loading="lazy" src="/assets/images/projects/screeneo-u5-walkthrough/10-dolby.webp" data-callout-image="10-dolby.webp" alt="Stunning visuals with Dolby Vision. With ultra-vivid colors, sharper contrast, and richer details, Dolby Vision keeps you coming back for more; dynamic tone mapping handles any source without fiddling with settings.">
+    <video width="696" height="404" muted loop playsinline preload="metadata" class="wt-lazy-video" poster="/assets/images/projects/screeneo-u5-walkthrough/dolby-loop-poster.webp" aria-label="Looping Dolby Vision demo clip from an animated film: a child cradles a glowing crystal between rings of warm lamplight.">
+      <source src="/assets/images/projects/screeneo-u5-walkthrough/dolby-loop.webm" type="video/webm">
+      <source src="/assets/images/projects/screeneo-u5-walkthrough/dolby-loop.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="igg-block igg-block--joined" data-focus="daylight">
+    <img width="928" height="1060" loading="lazy" src="/assets/images/projects/screeneo-u5-walkthrough/12-daylight.webp" alt="Watch when you want. 2,200 ANSI lumens means a colorful and bright picture in any indoor environment, whether there's ambient lighting, total darkness, or even a flood of daylight — over a photo of the picture holding up in a bright room.">
+  </div>
+
+  <div class="igg-block igg-block--joined" data-focus="proof">
+    <img data-alt-source="html" width="928" height="1295" loading="lazy" src="/assets/images/projects/screeneo-u5-walkthrough/13-proof.webp" alt="Bring cinema home. Experience 4K UHD movies the way the cinematographers intended with a picture that's as sharp as it is massive — a scene from The Batman (2022), headed Shot in 4K, split between Shown in 1080p and See it in 4K, above a strip comparing other affordable home projectors with Screeneo U5.">
+  </div>
+
+  <div class="igg-block igg-block--joined igg-block--flush">
+    <img width="928" height="560" loading="lazy" src="/assets/images/projects/screeneo-u5-walkthrough/14-keystone.webp" alt="Fine tune the perfect picture. Unlike traditional manual correction methods, motorized 8-point keystone adjustment calibrates the image to your wall or screen in a snap.">
+    <video width="696" height="392" muted loop playsinline preload="metadata" class="wt-lazy-video" poster="/assets/images/projects/screeneo-u5-walkthrough/keystone-loop-poster.webp" aria-label="Looping demo: the projected calibration grid pulls its corners square on a living-room wall.">
+      <source src="/assets/images/projects/screeneo-u5-walkthrough/keystone-loop.webm" type="video/webm">
+      <source src="/assets/images/projects/screeneo-u5-walkthrough/keystone-loop.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="igg-block igg-block--joined">
+    <img width="928" height="1565" loading="lazy" src="/assets/images/projects/screeneo-u5-walkthrough/15-smart.webp" alt="Enjoy smarter entertainment. Android TV makes it easier to get more from your TV — 400,000+ movies and shows across streaming services, Google voice control, and Chromecast built-in for casting photos, videos and music — over a projected home screen of streaming apps and film artwork.">
+  </div>
+
+  <div class="igg-block igg-block--joined">
+    <img width="928" height="3045" loading="lazy" src="/assets/images/projects/screeneo-u5-walkthrough/16-sound3d.webp" alt="Dolby Atmos room-filling sound: 2.2 channels, 20 watts and a dedicated DSP bring state-of-the-art sound with Dolby Atmos and DTS HD. Below, See it in 3D: immersive 3D content from your Blu-ray player or USB drive turns virtually any wall into a theater, illustrated by a motocross rider leaping out of the screen toward theater seats.">
+  </div>
+
+  <div class="igg-block igg-block--joined" data-focus="design">
+    <img data-alt-source="visual" width="928" height="1275" loading="lazy" src="/assets/images/projects/screeneo-u5-walkthrough/17-design.webp" alt="Sensational visuals when on, invisible when off. Whether projecting onto a screen or directly onto the wall, you'll barely notice Screeneo U5 until it's powered on — seen from above, the projector lies on a wood plank against a teal ground, a remote beside it and a hand reaching in from the right.">
+  </div>
+
+  <div class="igg-block igg-block--joined" data-focus="uses">
+    <img width="928" height="2350" loading="lazy" src="/assets/images/projects/screeneo-u5-walkthrough/18-uses.webp" alt="Big time face time: get closer to that face-to-face in-person experience when you use Screeneo U5 to display your video conference meeting rooms, over a projected grid of call participants. Below, Level up to 4K: play like the pros and hook up your favorite consoles to play games in True 4K UHD at 60 Hz.">
+  </div>
+
+  <div class="igg-block" data-focus="family">
+    <img width="928" height="840" loading="lazy" src="/assets/images/projects/screeneo-u5-walkthrough/20-family.webp" alt="It runs in the Screeneo family — a two-column comparison setting the Screeneo U4, the home cinema experience at 1080p Full HD, up to a 120-inch picture and a 0.25:1 throw ratio, against the Screeneo U5, the full cinema experience with Android TV at 4K Ultra HD, up to 150 inches and a 0.21:1 throw ratio.">
+  </div>
+
+</div>
+
+                    </div>
+                    <svg class="walkthrough-spot-svg" viewBox="0 0 492 1016" preserveAspectRatio="none" width="100%" height="100%" aria-hidden="true">
+                      <defs>
+                        <filter id="wt-spot-goo-0" filterUnits="userSpaceOnUse" x="-50" y="-50" width="592" height="1116">
+                          <feGaussianBlur in="SourceGraphic" stdDeviation="0.1" result="blur"/>
+                          <feColorMatrix in="blur" mode="matrix"
+                            values="1 0 0 0 0
+                                    0 1 0 0 0
+                                    0 0 1 0 0
+                                    0 0 0 24 -10" result="goo"/>
+                        </filter>
+                        <mask id="wt-spot-mask-0" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse" x="-50" y="-50" width="592" height="1116">
+                          <rect x="-50" y="-50" width="592" height="1116" fill="white"/>
+                          <g filter="url(#wt-spot-goo-0)">
+                            <rect class="wt-spot-blob wt-spot-blob--trail" fill="black" rx="8" ry="8"/>
+                            <line class="wt-spot-blob wt-spot-blob--bridge" stroke="black" stroke-width="0" stroke-linecap="round" x1="0" y1="0" x2="0" y2="0"/>
+                            <rect class="wt-spot-blob wt-spot-blob--lead"  fill="black" rx="8" ry="8"/>
+                          </g>
+                        </mask>
+                      </defs>
+                      <rect class="wt-spot-overlay" x="0" y="0" width="492" height="1016"
+                            fill="rgba(26,26,46,0.55)" mask="url(#wt-spot-mask-0)"/>
+                    </svg>
+                  </div>
+                  
+                  <svg class="wt-phone-bezel" viewBox="0 0 520 1044" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <mask id="wt-screen-cutout-0">
+                        <rect x="0" y="0" width="520" height="1044" fill="white"/>
+                        <rect x="14" y="14" width="492" height="1016" rx="28" ry="28" fill="black"/>
+                      </mask>
+                    </defs>
+                    <rect x="2" y="2" width="516" height="1040" rx="52" ry="52" fill="#1a1a1a" mask="url(#wt-screen-cutout-0)"/>
+                    <rect x="217" y="24" width="86" height="28" rx="14" ry="14" fill="#000"/>
+                    <rect x="516" y="250" width="6" height="52" rx="2" fill="#1a1a1a"/>
+                    <rect x="-2" y="190" width="6" height="40" rx="2" fill="#1a1a1a"/>
+                    <rect x="-2" y="250" width="6" height="70" rx="2" fill="#1a1a1a"/>
+                  </svg>
+                  
+                </div>
+              </div>
+
+              <div class="campaign-walkthrough-annotations">
+                <div class="walkthrough-heading">
+                  <h2 class="walkthrough-heading-title">Indiegogo Campaign Page</h2>
+                  <p class="walkthrough-heading-subtitle">What I wrote and why.</p>
+                  
+                  <a href="https://www.indiegogo.com/projects/philips-screeneo-u5-ultra-short-throw-4k-projector#/" class="walkthrough-live-link" target="_blank" rel="noopener">View the live campaign on Indiegogo ↗</a>
+                  
+                </div>
+                <div class="walkthrough-annotation-slot">
+                  
+                  <div class="walkthrough-annotation" data-annotation="hero" data-hold-scale="1.2" data-region-y="0.02" data-region-h="0.98" data-region-x="0" data-region-w="1">
+                    <span class="walkthrough-annotation-label">Selling the Movie Night</span>
+                    
+                    <p class="walkthrough-annotation-text">The opening sells the off state as hard as the movie night: a huge screen only at showtime, a blank wall the rest of the week — where a TV leaves its black rectangle up all day.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="icons" data-hold-scale="1.2" data-region-y="0.06" data-region-h="0.9" data-region-x="0.05" data-region-w="0.9" data-region-m-y="0.05" data-region-m-h="0.9">
+                    <span class="walkthrough-annotation-label">Nine Answers Up Front</span>
+                    
+                    <p class="walkthrough-annotation-text">It front-loads every spec a buyer might otherwise google, before the page expands the biggest ones.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="throw" data-hold-scale="1.2" data-region-y="0.045" data-region-h="0.575" data-region-x="0.03" data-region-w="0.94">
+                    <span class="walkthrough-annotation-label">Throw Ratio, Given a Section</span>
+                    
+                    <p class="walkthrough-annotation-text">Throw ratio is the spec this category competes on, so it gets its own section, with a diagram and size table I conceptualized.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="gamut" data-hold-scale="1.15" data-region-y="0.5" data-region-h="0.44" data-region-x="0.05" data-region-w="0.72" data-region-m-y="0.5" data-region-m-h="0.44" data-region-m-x="0.05" data-region-m-w="0.93">
+                    <span class="walkthrough-annotation-label">A Visual I Sketched First</span>
+                    
+                    <p class="walkthrough-annotation-text">The 130% color-gamut lockup was my concept — a wheel that makes an abstract spec visible, with the standards badged beneath it.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="press" data-hold-scale="1.2" data-region-y="0.128" data-region-h="0.826" data-region-x="0.09" data-region-w="0.82" data-region-m-y="0.128" data-region-m-h="0.6" data-region-m-x="0.09" data-region-m-w="0.82">
+                    <span class="walkthrough-annotation-label">Reviews Before There Are Reviews</span>
+                    
+                    <p class="walkthrough-annotation-text">There are no customer reviews to show at launch, so I styled press quotes the way I’d style reviews — outside voices vouching for the specs buyers doubt.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="heritage" data-hold-scale="1.2" data-region-y="0.06" data-region-h="0.89" data-region-x="0.04" data-region-w="0.92">
+                    <span class="walkthrough-annotation-label">A Century of Philips</span>
+                    
+                    <p class="walkthrough-annotation-text">Crowdfunding’s real objection is whether the thing ever ships. The copy stakes a century of Philips and a decade of projectors against that doubt.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="sharp-compare" data-focus-ref="sharp" data-region-y="0.47" data-region-h="0.51" data-region-x="0.03" data-region-w="0.94">
+                    <span class="walkthrough-annotation-label">The 1080p-vs-4K Frame</span>
+                    
+                    <p class="walkthrough-annotation-text">One frame carries two claims. The 4K half is sharper and its color is richer, so the DLP color-accuracy line above it is proved by the same picture.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="daylight" data-hold-scale="1.25" data-region-y="0.035" data-region-h="0.95" data-region-x="0.04" data-region-w="0.92">
+                    <span class="walkthrough-annotation-label">Copy That Ran Twice</span>
+                    
+                    <p class="walkthrough-annotation-text">This section’s daylight argument also ran as an Instagram caption before launch, in the social posts further down this page.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="proof" data-hold-scale="1.2" data-region-y="0.36" data-region-h="0.61" data-region-x="0.03" data-region-w="0.94">
+                    <span class="walkthrough-annotation-label">Show the Difference</span>
+                    
+                    <p class="walkthrough-annotation-text">Most theaters weren’t even projecting 4K yet — ‘Shown in 1080p’ quietly says the movie looks better at home. The Batman was in cinemas at the time; that’s why it’s the stake.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="design" data-hold-scale="1.2" data-region-y="0.03" data-region-h="0.93" data-region-x="0.04" data-region-w="0.92" data-region-m-y="0.03" data-region-m-h="0.34" data-region-m-x="0.04" data-region-m-w="0.92">
+                    <span class="walkthrough-annotation-label">The Hours It’s Switched Off</span>
+                    
+                    <p class="walkthrough-annotation-text">The design section answers the objection no spec sheet can: the headline promises a projector you barely notice until it’s powered on.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="uses" data-hold-scale="1.2" data-region-y="0.013" data-region-h="0.455" data-region-x="0.03" data-region-w="0.94">
+                    <span class="walkthrough-annotation-label">A Second Job for the Wall</span>
+                    
+                    <p class="walkthrough-annotation-text">Video calls at wall scale give the projector a weekday.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="family" data-hold-scale="1.05" data-region-y="0.045" data-region-h="0.89" data-region-x="0.04" data-region-w="0.92">
+                    <span class="walkthrough-annotation-label">Placed Against Their Own Cheaper Model</span>
+                    
+                    <p class="walkthrough-annotation-text">The upsell has to clear the gap to Philips’ own U4, so the trade is shown side by side. Naming what the cheaper model gives up makes the premium read as measured.</p>
+                    
+                  </div>
+                  
+                </div>
+                
+                
+                <div class="walkthrough-progress" role="group" aria-label="Walkthrough controls">
+                  <div class="walkthrough-progress-rail">
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="0" type="button" aria-label="Go to Selling the Movie Night" title="Selling the Movie Night"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="1" type="button" aria-label="Go to Nine Answers Up Front" title="Nine Answers Up Front"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="2" type="button" aria-label="Go to Throw Ratio, Given a Section" title="Throw Ratio, Given a Section"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="3" type="button" aria-label="Go to A Visual I Sketched First" title="A Visual I Sketched First"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="4" type="button" aria-label="Go to Reviews Before There Are Reviews" title="Reviews Before There Are Reviews"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="5" type="button" aria-label="Go to A Century of Philips" title="A Century of Philips"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="6" type="button" aria-label="Go to The 1080p-vs-4K Frame" title="The 1080p-vs-4K Frame"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="7" type="button" aria-label="Go to Copy That Ran Twice" title="Copy That Ran Twice"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="8" type="button" aria-label="Go to Show the Difference" title="Show the Difference"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="9" type="button" aria-label="Go to The Hours It’s Switched Off" title="The Hours It’s Switched Off"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="10" type="button" aria-label="Go to A Second Job for the Wall" title="A Second Job for the Wall"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="11" type="button" aria-label="Go to Placed Against Their Own Cheaper Model" title="Placed Against Their Own Cheaper Model"></button>
+                    
+                  </div>
+                  <div class="wt-ctl-row">
+                    <button class="walkthrough-progress-nav" data-progress-nav="prev" type="button" aria-label="Previous stop" title="Previous stop">
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 4l-4 4 4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <button class="wt-ctl-count" type="button" aria-expanded="false" aria-haspopup="true" title="All stops">
+                      <span class="wt-ctl-count-text">12 stops</span>
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 10l4-4 4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <button class="walkthrough-progress-nav" data-progress-nav="next" type="button" aria-label="Next stop" title="Next stop">
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <span class="wt-ctl-gap"></span>
+                    <button class="wt-ctl-btn wt-ctl-restart" type="button" title="Restart the walkthrough">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1 4v6h6M3.51 15a9 9 0 1 0 2.13-9.36L1 10" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      <span class="wt-ctl-label">Restart</span>
+                    </button>
+                    <button class="wt-ctl-btn wt-ctl-skip" type="button" title="Skip the walkthrough">
+                      Skip
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v10M3.5 8.5L8 13l4.5-4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                  </div>
+                  <ol class="wt-chapters" hidden>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="0" type="button">Selling the Movie Night</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="1" type="button">Nine Answers Up Front</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="2" type="button">Throw Ratio, Given a Section</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="3" type="button">A Visual I Sketched First</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="4" type="button">Reviews Before There Are Reviews</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="5" type="button">A Century of Philips</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="6" type="button">The 1080p-vs-4K Frame</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="7" type="button">Copy That Ran Twice</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="8" type="button">Show the Difference</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="9" type="button">The Hours It’s Switched Off</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="10" type="button">A Second Job for the Wall</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="11" type="button">Placed Against Their Own Cheaper Model</button></li>
+                    
+                  </ol>
+                </div>
+                
+              </div>
+
+              <svg class="walkthrough-lines" aria-hidden="true"></svg>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+
+    
+    
+
+
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+    
+
+    
+    <section id="social" class="social-embeds-section" data-hud-label="Social Media Content">
+      <div class="container">
+        
+        <h2>Social Media Content</h2>
+        
+        
+        <div class="social-grid">
+          
+          <article class="social-embed social-embed--extracted social-embed--square">
+            
+            <div class="social-post-image">
+              <img src="/assets/images/projects/screeneo-u5-social/Cn_W1QUKw9G.webp" alt="Comparison graphic, “The Batman (2022) Shot in 4K”: a still of Catwoman and Batman split down the middle, the left half “Shown in 1080p” by other affordable home projectors, the right half “See it in 4K” on the Screeneo U5" data-alt-source="visual" loading="lazy">
+              
+            </div>
+            
+            <div class="social-post-body">
+              
+              <div class="social-post-header">
+                
+                <img src="/assets/images/projects/screeneo-u5-social/philips-projection-pfp.webp" alt="" class="social-post-pfp">
+                
+                <span class="social-post-handle">philipsprojection</span>
+                
+                <svg class="social-post-verified" width="12" height="12" viewBox="0 0 40 40" aria-label="Verified" role="img"><title>Verified</title><path d="M19.998 3.094L14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v6.354h6.234L14.638 40l5.36-3.094L25.358 40l2.97-5.15h6.234v-6.354L40 25.359 36.905 20 40 14.641l-5.438-3.137V5.15h-6.234L25.359 0l-5.36 3.094z" fill="#1DA1F2"/><path d="M17.204 27.822l-6.626-6.428 2.744-2.664 3.882 3.764 8.272-8.018 2.744 2.664-11.016 10.682z" fill="#fff"/></svg>
+                
+                
+                <time class="social-post-time" datetime="2023-01-29" data-date="2023-01-29">2023-01-29</time>
+                
+              </div>
+              
+              
+              <div class="social-post-caption">
+                <p>With picture-perfect clarity and stunning lifelike detail, movies and more come to life on screen with incredible sharpness and vibrant colors. It&#39;s time to level up to 4K. #Philips #PhilipsProjection #ScreeneoU5 #UltraShortThrow #Projector</p>
+              </div>
+              
+              
+              
+              
+              <a href="https://www.instagram.com/p/Cn_W1QUKw9G/" class="social-post-link" target="_blank" rel="noopener">
+                
+                
+                <svg class="social-post-link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                
+                View on Instagram
+              </a>
+              
+            </div>
+          </article>
+          
+          <article class="social-embed social-embed--extracted social-embed--square">
+            
+            <div class="social-post-image">
+              <img src="/assets/images/projects/screeneo-u5-social/Ci_9a8sqf_H.webp" alt="A Screeneo U5 on a low cabinet projects a wall-size film still of two goggled figures crouching in orange desert haze" data-alt-source="visual" loading="lazy">
+              
+            </div>
+            
+            <div class="social-post-body">
+              
+              <div class="social-post-header">
+                
+                <img src="/assets/images/projects/screeneo-u5-social/philips-projection-pfp.webp" alt="" class="social-post-pfp">
+                
+                <span class="social-post-handle">philipsprojection</span>
+                
+                <svg class="social-post-verified" width="12" height="12" viewBox="0 0 40 40" aria-label="Verified" role="img"><title>Verified</title><path d="M19.998 3.094L14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v6.354h6.234L14.638 40l5.36-3.094L25.358 40l2.97-5.15h6.234v-6.354L40 25.359 36.905 20 40 14.641l-5.438-3.137V5.15h-6.234L25.359 0l-5.36 3.094z" fill="#1DA1F2"/><path d="M17.204 27.822l-6.626-6.428 2.744-2.664 3.882 3.764 8.272-8.018 2.744 2.664-11.016 10.682z" fill="#fff"/></svg>
+                
+                
+                <time class="social-post-time" datetime="2022-09-27" data-date="2022-09-27">2022-09-27</time>
+                
+              </div>
+              
+              
+              <div class="social-post-caption">
+                <p>Watch whenever you want with the Screeneo U5. 2,200 ANSI lumens means a colorful and bright picture in any indoor environment, whether there’s ambient lighting, total darkness, or even a flood of daylight.</p>
+              </div>
+              
+              
+              
+              
+              <a href="https://www.instagram.com/p/Ci_9a8sqf_H/" class="social-post-link" target="_blank" rel="noopener">
+                
+                
+                <svg class="social-post-link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                
+                View on Instagram
+              </a>
+              
+            </div>
+          </article>
+          
+          <article class="social-embed social-embed--extracted social-embed--square">
+            
+            <div class="social-post-image">
+              <img src="/assets/images/projects/screeneo-u5-social/CjUjrxAqHT-.webp" alt="Diagram of the Screeneo U5 throwing a 120-inch picture from 11 inches (28.1 cm) away and a 150-inch picture from 16.5 inches (42 cm)" data-alt-source="visual" loading="lazy">
+              
+            </div>
+            
+            <div class="social-post-body">
+              
+              <div class="social-post-header">
+                
+                <img src="/assets/images/projects/screeneo-u5-social/philips-projection-pfp.webp" alt="" class="social-post-pfp">
+                
+                <span class="social-post-handle">philipsprojection</span>
+                
+                <svg class="social-post-verified" width="12" height="12" viewBox="0 0 40 40" aria-label="Verified" role="img"><title>Verified</title><path d="M19.998 3.094L14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v6.354h6.234L14.638 40l5.36-3.094L25.358 40l2.97-5.15h6.234v-6.354L40 25.359 36.905 20 40 14.641l-5.438-3.137V5.15h-6.234L25.359 0l-5.36 3.094z" fill="#1DA1F2"/><path d="M17.204 27.822l-6.626-6.428 2.744-2.664 3.882 3.764 8.272-8.018 2.744 2.664-11.016 10.682z" fill="#fff"/></svg>
+                
+                
+                <time class="social-post-time" datetime="2022-10-05" data-date="2022-10-05">2022-10-05</time>
+                
+              </div>
+              
+              
+              <div class="social-post-caption">
+                <p>Set up the Screeneo U5 only 11” away for an 120” big screen! Optimize your space with the lowest throw ratio, 0.21, on the market.</p>
+              </div>
+              
+              
+              
+              
+              <a href="https://www.instagram.com/p/CjUjrxAqHT-/" class="social-post-link" target="_blank" rel="noopener">
+                
+                
+                <svg class="social-post-link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                
+                View on Instagram
+              </a>
+              
+            </div>
+          </article>
+          
+          <article class="social-embed social-embed--extracted social-embed--square">
+            
+            <div class="social-post-image">
+              <img src="/assets/images/projects/screeneo-u5-social/CoEgWu0K3Iq.webp" alt="A Screeneo U5 on a shelf projects a streaming home screen with Prime Video, ExpressVPN and YouTube tiles, ExpressVPN highlighted" data-alt-source="visual" loading="lazy">
+              
+            </div>
+            
+            <div class="social-post-body">
+              
+              <div class="social-post-header">
+                
+                <img src="/assets/images/projects/screeneo-u5-social/philips-projection-pfp.webp" alt="" class="social-post-pfp">
+                
+                <span class="social-post-handle">philipsprojection</span>
+                
+                <svg class="social-post-verified" width="12" height="12" viewBox="0 0 40 40" aria-label="Verified" role="img"><title>Verified</title><path d="M19.998 3.094L14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v6.354h6.234L14.638 40l5.36-3.094L25.358 40l2.97-5.15h6.234v-6.354L40 25.359 36.905 20 40 14.641l-5.438-3.137V5.15h-6.234L25.359 0l-5.36 3.094z" fill="#1DA1F2"/><path d="M17.204 27.822l-6.626-6.428 2.744-2.664 3.882 3.764 8.272-8.018 2.744 2.664-11.016 10.682z" fill="#fff"/></svg>
+                
+                
+                <time class="social-post-time" datetime="2023-01-31" data-date="2023-01-31">2023-01-31</time>
+                
+              </div>
+              
+              
+              <div class="social-post-caption">
+                <p>With the ExpressVPN app already pre-installed on your Screeneo U5, you can access the best content from around the world with lightning-fast HD streaming quality. Get started now: just open up the ExpressVPN app and activate your 30-day free trial! #Philips #PhilipsProjection #ScreeneoU5 #UltraShortThrow #Projector</p>
+              </div>
+              
+              
+              
+              
+              <a href="https://www.instagram.com/p/CoEgWu0K3Iq/" class="social-post-link" target="_blank" rel="noopener">
+                
+                
+                <svg class="social-post-link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                
+                View on Instagram
+              </a>
+              
+            </div>
+          </article>
+          
+        </div>
+      </div>
+    </section>
+    <script src="/assets/js/social-modes.js" defer></script>
+    
+
+
+    
+
+
+    
+
+    
+    <section class="project-pagination" data-hud-label="Up Next" aria-label="Project pagination">
+      <div class="container">
+        <div class="pagination-grid">
+          <a class="pagination-card pagination-card--prev" href="/projects/reform-rx/" rel="prev">
+            <span class="pagination-direction" aria-hidden="true">&larr;</span>
+            <div class="pagination-meta">
+              <span class="pagination-label">Previous</span>
+              <span class="pagination-title">Reform RX</span>
+              <span class="pagination-client">Reform RX</span>
+            </div>
+            
+            <div class="pagination-thumb">
+              <img src="/assets/images/projects/reform-rx-hero.webp" alt="" loading="lazy">
+            </div>
+            
+          </a>
+          <a class="pagination-card pagination-card--next" href="/projects/airhood/" rel="next">
+            <span class="pagination-direction" aria-hidden="true">&rarr;</span>
+            <div class="pagination-meta">
+              <span class="pagination-label">Next</span>
+              <span class="pagination-title">AirHood</span>
+              <span class="pagination-client">Smart Product Concepts</span>
+            </div>
+            
+            <div class="pagination-thumb">
+              <img src="/assets/images/projects/airhood-hero.webp" alt="" loading="lazy">
+            </div>
+            
+          </a>
+        </div>
+      </div>
+    </section>
+    
+
+
+    
+
+  </main>
+
+<footer class="site-footer" id="contact">
+  <div class="footer-container">
+    <div class="footer-contact">
+      <p class="section-label footer-eyebrow">Contact</p>
+      <svg class="footer-mark" viewBox="0 0 304 288" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="footer-mark-gradient" x1="0" y1="0" x2="304" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#B2DFDB"/>
+            <stop offset=".55" stop-color="#5DBDB4"/>
+            <stop offset="1" stop-color="#26A69A"/>
+          </linearGradient>
+        </defs>
+        <g fill="none" stroke="url(#footer-mark-gradient)" stroke-width="40">
+          <path d="M108,0V224A44,44 0 0 1 20,224" pathLength="1"/>
+          <path d="M218,0V288" pathLength="1"/>
+          <path d="M128,132H198" pathLength="1"/>
+          <path d="M238,20A46,46 0 0 1 238,112" pathLength="1"/>
+        </g>
+      </svg>
+      <nav class="footer-links" aria-label="Contact">
+        <a href="mailto:hello@jakobpicciotto.com" class="footer-link footer-link--email">hello@jakobpicciotto.com</a>
+        <a href="https://www.linkedin.com/in/jakob-picciotto/" class="footer-link" target="_blank" rel="noopener">linkedin.com/in/jakob-picciotto</a>
+      </nav>
+      <p class="footer-location">Seattle, WA</p>
+    </div>
+    <p class="footer-text">&copy; 2026 Jakob Picciotto</p>
+  </div>
+</footer>
+<script src="/assets/js/footer-monogram.js" defer></script>
+
+
+  
+  <script src="/assets/js/project-hud.js" defer></script>
+  <script src="/assets/js/walkthrough-shared.js" defer></script>
+  <script src="/assets/js/walkthrough-geometry.js" defer></script>
+  <script src="/assets/js/walkthrough-pinned.js" defer></script>
+  <script src="/assets/js/walkthrough-mobile.js" defer></script>
+  <script src="/assets/js/walkthrough-static.js" defer></script>
+  <script src="/assets/js/walkthrough-embers.js" defer></script>
+  <script src="/assets/js/document-reader.js" defer></script>
+  <script src="/assets/js/attribution-typewriter.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/storyboard.js" defer></script>
+  <script src="/assets/js/funnel-cohort.js" defer></script>
+  <script src="/assets/js/related-filter.js" defer></script>
+  <script src="/assets/js/focal-crop.js" defer></script>
+  <script src="/assets/js/strategy-section.js" defer></script>
+  <script src="/assets/js/adaptive-glass.js" defer></script>
+  <script src="/assets/js/hero-odometer.js" defer></script>
+  <script src="/assets/js/hero-chips.js" defer></script>
+  <script src="/assets/js/walkthrough-controls.js" defer></script>
+
+</body>
+</html>

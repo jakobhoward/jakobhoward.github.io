@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  /* Motion-safe boot flag on <html>, set during head parse (before the body
+     paints). CSS keys :root.js-motion to suppress lines that main.js reveals
+     after first paint — chiefly the metrics attribution, which is split into
+     per-glyph typewriter spans and would otherwise flash its plain text for a
+     frame on load. Set only when JS runs AND reduced motion is not requested,
+     so the no-JS and reduced-motion paths keep their static, visible fallback
+     (they have no scroll ramp to reveal a hidden line). */
+  if (!window.matchMedia || !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.documentElement.classList.add('js-motion');
+  }
+</script>
+<title>Rainfactory.com | Jakob Picciotto</title>
+<meta name="description" content="Copy for the agency’s own site: the crowdfunding and ecommerce service pages, and posts for its blog — client news, funding case studies, and how-to…">
+
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="canonical" href="https://work.jakobpicciotto.com/projects/rainfactory-blog/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jakob Picciotto">
+<meta property="og:title" content="Rainfactory.com | Jakob Picciotto">
+<meta property="og:description" content="Copy for the agency’s own site: the crowdfunding and ecommerce service pages, and posts for its blog — client news, funding case studies, and how-to…">
+<meta property="og:url" content="https://work.jakobpicciotto.com/projects/rainfactory-blog/">
+<meta property="og:image" content="https://work.jakobpicciotto.com/assets/images/projects/rainfactory-blog-hero.webp">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="750">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rainfactory.com | Jakob Picciotto">
+<meta name="twitter:description" content="Copy for the agency’s own site: the crowdfunding and ecommerce service pages, and posts for its blog — client news, funding case studies, and how-to…">
+<meta name="twitter:image" content="https://work.jakobpicciotto.com/assets/images/projects/rainfactory-blog-hero.webp">
+
+<script src="/assets/debug/browser.js"></script>
+<link rel="preload" href="/assets/fonts/Raleway-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/SourceSans3-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="/assets/images/logos/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/css/fonts.css">
+<link rel="stylesheet" href="/assets/css/style.css">
+
+
+
+
+
+</head>
+<body class="project-page">
+  
+  <script>
+    var _qs = new URLSearchParams(location.search);
+    var layout = _qs.get('layout');
+    if (/^(static|synced|interleaved)$/.test(layout || '')) document.body.classList.add('layout-' + layout);
+  </script>
+  <header class="site-header">
+  <div class="header-container">
+    <a href="/" class="site-logo" aria-label="Jakob Picciotto">
+      <svg class="site-logo-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1938.35 289.61" aria-hidden="true">
+        <defs>
+          <linearGradient id="logo-gradient-light" x1="0" y1="0" x2="304" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#4DB6AC"/>
+            <stop offset=".55" stop-color="#199488"/>
+            <stop offset="1" stop-color="#00796B"/>
+          </linearGradient>
+          <linearGradient id="logo-gradient-dark" x1="0" y1="0" x2="304" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#B2DFDB"/>
+            <stop offset=".55" stop-color="#5DBDB4"/>
+            <stop offset="1" stop-color="#26A69A"/>
+          </linearGradient>
+        </defs>
+        <g>
+          <path class="logo-monogram logo-monogram-light" fill="url(#logo-gradient-light)" fill-rule="evenodd" d="M88,0H128V224H88ZM198,0H238V288H198ZM128,112H198V152H128ZM238,0A66,66 0 0 1 238,132L238,92A26,26 0 0 0 238,40ZM128,224A64,64 0 0 1 0,224L40,224A24,24 0 0 0 88,224Z"/>
+          <path class="logo-monogram logo-monogram-dark" fill="url(#logo-gradient-dark)" fill-rule="evenodd" d="M88,0H128V224H88ZM198,0H238V288H198ZM128,112H198V152H128ZM238,0A66,66 0 0 1 238,132L238,92A26,26 0 0 0 238,40ZM128,224A64,64 0 0 1 0,224L40,224A24,24 0 0 0 88,224Z"/>
+          <g class="logo-text" fill="currentColor">
+            <path d="M482.89,211.42c-4.06,0-7.91-.62-11.54-1.84-3.63-1.23-6.89-3.13-9.78-5.69l9.3-14.59c1.18,1.17,2.62,2.06,4.33,2.64,1.71.59,3.42.88,5.13.88,2.78,0,5.18-.99,7.21-2.97,2.03-1.98,3.05-4.52,3.05-7.61v-86.24h21.48v84.64c0,4.49-.75,8.63-2.24,12.42-1.5,3.79-3.55,7.05-6.17,9.78-2.62,2.72-5.72,4.83-9.3,6.33-3.58,1.5-7.4,2.24-11.46,2.24ZM490.58,84.3v-21.32h21.48v21.32h-21.48Z"/>
+            <path d="M554.54,181.6c-4.06,0-7.85-.67-11.38-2-3.53-1.33-6.57-3.21-9.14-5.61-2.56-2.4-4.57-5.21-6.01-8.42-1.44-3.21-2.16-6.73-2.16-10.58s.88-7.61,2.65-10.98,4.22-6.22,7.37-8.58c3.15-2.35,6.92-4.19,11.3-5.53,4.38-1.33,9.19-2,14.43-2,3.74,0,7.4.32,10.98.96,3.58.64,6.76,1.55,9.54,2.73v-4.81c0-5.56-1.58-9.83-4.73-12.82-3.15-2.99-7.83-4.49-14.03-4.49-4.49,0-8.87.8-13.14,2.4-4.28,1.6-8.66,3.96-13.14,7.05l-6.57-13.63c10.79-7.16,22.44-10.74,34.95-10.74s21.45,2.96,28.13,8.9c6.68,5.93,10.02,14.51,10.02,25.73v26.13c0,2.24.4,3.85,1.2,4.81.8.96,2.11,1.5,3.93,1.6v18.27c-3.63.75-6.79,1.12-9.46,1.12-4.06,0-7.19-.91-9.38-2.72-2.19-1.82-3.55-4.22-4.09-7.21l-.48-4.65c-3.74,4.92-8.28,8.66-13.63,11.22-5.35,2.56-11.06,3.85-17.15,3.85ZM560.63,165.89c3.63,0,7.08-.64,10.34-1.92,3.26-1.28,5.8-2.99,7.61-5.13,2.35-1.82,3.53-3.85,3.53-6.09v-9.62c-2.56-.96-5.35-1.74-8.34-2.32-2.99-.59-5.88-.88-8.66-.88-5.56,0-10.1,1.26-13.63,3.77-3.53,2.51-5.29,5.69-5.29,9.54,0,3.63,1.39,6.65,4.17,9.06,2.78,2.4,6.2,3.61,10.26,3.61Z"/>
+            <path d="M681.01,180l-24.37-36.39-11.54,11.38v25.01h-21.48V62.98h21.48v71.01l33.66-37.83h22.92l-31.26,35.59,33.5,48.25h-22.92Z"/>
+            <path d="M747.53,181.6c-6.84,0-12.98-1.18-18.43-3.53s-10.07-5.53-13.87-9.54c-3.79-4.01-6.71-8.63-8.74-13.87-2.03-5.24-3.05-10.74-3.05-16.51s1.01-11.43,3.05-16.67c2.03-5.23,4.94-9.86,8.74-13.87,3.79-4.01,8.42-7.19,13.87-9.54,5.45-2.35,11.59-3.53,18.43-3.53s12.96,1.18,18.35,3.53c5.4,2.35,9.99,5.53,13.79,9.54,3.79,4.01,6.71,8.63,8.74,13.87,2.03,5.24,3.05,10.8,3.05,16.67s-1.02,11.28-3.05,16.51c-2.03,5.24-4.92,9.86-8.66,13.87-3.74,4.01-8.34,7.19-13.79,9.54s-11.6,3.53-18.43,3.53ZM725.57,138.16c0,3.74.56,7.13,1.68,10.18s2.67,5.69,4.65,7.93c1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.56,1.84,8.66,1.84s5.98-.61,8.66-1.84c2.67-1.23,4.99-2.97,6.97-5.21,1.98-2.24,3.53-4.91,4.65-8.01,1.12-3.1,1.68-6.52,1.68-10.26s-.56-7-1.68-10.1c-1.12-3.1-2.67-5.77-4.65-8.01-1.98-2.24-4.3-3.98-6.97-5.21-2.67-1.23-5.56-1.84-8.66-1.84s-5.99.64-8.66,1.92c-2.67,1.28-5,3.05-6.97,5.29-1.98,2.24-3.53,4.92-4.65,8.01-1.12,3.1-1.68,6.47-1.68,10.1Z"/>
+            <path d="M853.65,181.6c-6.41,0-12.13-1.44-17.15-4.33-5.02-2.88-8.98-6.84-11.86-11.86v14.59h-18.75V62.98h21.48v47.77c2.99-5.13,6.92-9.11,11.78-11.94,4.86-2.83,10.55-4.25,17.07-4.25,5.45,0,10.42,1.18,14.91,3.53,4.49,2.35,8.36,5.5,11.62,9.46,3.26,3.96,5.77,8.6,7.53,13.95,1.76,5.35,2.65,10.96,2.65,16.83s-.99,11.76-2.97,16.99c-1.98,5.24-4.73,9.81-8.26,13.71-3.53,3.9-7.69,6.97-12.5,9.22s-9.99,3.37-15.55,3.37ZM847.72,163.33c3.42,0,6.57-.67,9.46-2,2.89-1.33,5.34-3.13,7.37-5.37,2.03-2.24,3.61-4.86,4.73-7.85,1.12-2.99,1.68-6.2,1.68-9.62s-.54-6.68-1.6-9.78c-1.07-3.1-2.59-5.82-4.57-8.18-1.98-2.35-4.3-4.22-6.97-5.61-2.67-1.39-5.61-2.08-8.82-2.08-4.81,0-9.11,1.58-12.9,4.73-3.79,3.15-6.71,7.03-8.74,11.62v20.04c.75,2.14,1.84,4.06,3.29,5.77,1.44,1.71,3.07,3.18,4.89,4.41,1.82,1.23,3.79,2.19,5.93,2.89,2.14.7,4.22,1.04,6.25,1.04Z"/>
+            <path d="M957.84,181.6c-6.63,0-12.4-1.47-17.31-4.41-4.92-2.94-8.76-6.92-11.54-11.94v48.89h-21.48v-118.14h18.75v14.43c3.1-4.91,7.11-8.79,12.02-11.62,4.91-2.83,10.58-4.25,16.99-4.25,5.66,0,10.9,1.15,15.71,3.45,4.81,2.3,8.95,5.4,12.42,9.3,3.47,3.9,6.2,8.5,8.18,13.79,1.98,5.29,2.97,10.88,2.97,16.75s-.91,11.81-2.73,17.15c-1.82,5.34-4.36,9.99-7.61,13.95-3.26,3.96-7.13,7.05-11.62,9.3-4.49,2.24-9.4,3.37-14.75,3.37ZM950.63,163.33c3.21,0,6.17-.69,8.9-2.08,2.73-1.39,5.05-3.26,6.97-5.61,1.92-2.35,3.42-5.08,4.49-8.18,1.07-3.1,1.6-6.3,1.6-9.62,0-3.53-.59-6.81-1.76-9.86-1.18-3.05-2.81-5.69-4.89-7.93s-4.54-4.01-7.37-5.29c-2.83-1.28-5.91-1.92-9.22-1.92-2.03,0-4.12.35-6.25,1.04-2.14.7-4.12,1.68-5.93,2.97-1.82,1.28-3.45,2.78-4.89,4.49-1.44,1.71-2.54,3.58-3.29,5.61v19.72c1.92,4.81,4.86,8.79,8.82,11.94,3.95,3.15,8.23,4.73,12.82,4.73Z"/>
+            <path d="M1009.13,84.3v-21.32h21.48v21.32h-21.48ZM1009.13,180v-84h21.48v84h-21.48Z"/>
+            <path d="M1044.71,138c0-5.88,1.01-11.43,3.05-16.67,2.03-5.23,4.97-9.83,8.82-13.79,3.85-3.95,8.5-7.11,13.95-9.46,5.45-2.35,11.59-3.53,18.43-3.53,9.19,0,17.02,1.98,23.48,5.93,6.46,3.96,11.3,9.14,14.51,15.55l-21,6.41c-1.82-3.1-4.22-5.48-7.21-7.13-2.99-1.66-6.31-2.49-9.94-2.49-3.1,0-5.99.62-8.66,1.84-2.67,1.23-5,2.94-6.97,5.13-1.98,2.19-3.53,4.84-4.65,7.93-1.12,3.1-1.68,6.52-1.68,10.26s.59,7.16,1.76,10.26c1.17,3.1,2.75,5.77,4.73,8.01,1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.5,1.84,8.5,1.84,3.85,0,7.4-.96,10.66-2.89,3.26-1.92,5.53-4.27,6.81-7.05l21,6.41c-2.88,6.41-7.64,11.65-14.27,15.71-6.63,4.06-14.59,6.09-23.88,6.09-6.84,0-12.98-1.18-18.43-3.53s-10.1-5.53-13.95-9.54c-3.85-4.01-6.81-8.66-8.9-13.95s-3.13-10.82-3.13-16.59Z"/>
+            <path d="M1134.32,138c0-5.88,1.01-11.43,3.05-16.67,2.03-5.23,4.97-9.83,8.82-13.79,3.85-3.95,8.5-7.11,13.95-9.46,5.45-2.35,11.59-3.53,18.43-3.53,9.19,0,17.02,1.98,23.48,5.93,6.46,3.96,11.3,9.14,14.51,15.55l-21,6.41c-1.82-3.1-4.22-5.48-7.21-7.13-2.99-1.66-6.31-2.49-9.94-2.49-3.1,0-5.99.62-8.66,1.84-2.67,1.23-5,2.94-6.97,5.13-1.98,2.19-3.53,4.84-4.65,7.93-1.12,3.1-1.68,6.52-1.68,10.26s.59,7.16,1.76,10.26c1.17,3.1,2.75,5.77,4.73,8.01,1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.5,1.84,8.5,1.84,3.85,0,7.4-.96,10.66-2.89,3.26-1.92,5.53-4.27,6.81-7.05l21,6.41c-2.88,6.41-7.64,11.65-14.27,15.71-6.63,4.06-14.59,6.09-23.88,6.09-6.84,0-12.98-1.18-18.43-3.53s-10.1-5.53-13.95-9.54c-3.85-4.01-6.81-8.66-8.9-13.95s-3.13-10.82-3.13-16.59Z"/>
+            <path d="M1230.02,84.3v-21.32h21.48v21.32h-21.48ZM1230.02,180v-84h21.48v84h-21.48Z"/>
+            <path d="M1309.68,181.6c-6.84,0-12.98-1.18-18.43-3.53s-10.07-5.53-13.87-9.54c-3.79-4.01-6.71-8.63-8.74-13.87-2.03-5.24-3.05-10.74-3.05-16.51s1.01-11.43,3.05-16.67c2.03-5.23,4.94-9.86,8.74-13.87,3.79-4.01,8.42-7.19,13.87-9.54,5.45-2.35,11.59-3.53,18.43-3.53s12.96,1.18,18.35,3.53c5.4,2.35,9.99,5.53,13.79,9.54,3.79,4.01,6.71,8.63,8.74,13.87,2.03,5.24,3.05,10.8,3.05,16.67s-1.02,11.28-3.05,16.51c-2.03,5.24-4.92,9.86-8.66,13.87-3.74,4.01-8.34,7.19-13.79,9.54s-11.6,3.53-18.43,3.53ZM1287.72,138.16c0,3.74.56,7.13,1.68,10.18s2.67,5.69,4.65,7.93c1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.56,1.84,8.66,1.84s5.98-.61,8.66-1.84c2.67-1.23,5-2.97,6.97-5.21,1.98-2.24,3.53-4.91,4.65-8.01,1.12-3.1,1.68-6.52,1.68-10.26s-.56-7-1.68-10.1c-1.12-3.1-2.67-5.77-4.65-8.01-1.98-2.24-4.3-3.98-6.97-5.21-2.67-1.23-5.56-1.84-8.66-1.84s-5.99.64-8.66,1.92c-2.67,1.28-5,3.05-6.97,5.29-1.98,2.24-3.53,4.92-4.65,8.01-1.12,3.1-1.68,6.47-1.68,10.1Z"/>
+            <path d="M1417.23,175.67c-2.89,1.28-6.41,2.56-10.58,3.85-4.17,1.28-8.55,1.92-13.14,1.92-2.99,0-5.8-.38-8.42-1.12-2.62-.75-4.92-1.95-6.89-3.61-1.98-1.66-3.55-3.79-4.73-6.41-1.18-2.62-1.76-5.8-1.76-9.54v-48.25h-11.06v-16.51h11.06v-27.25h21.48v27.25h17.63v16.51h-17.63v41.04c0,2.99.77,5.1,2.32,6.33,1.55,1.23,3.45,1.84,5.69,1.84s4.43-.37,6.57-1.12c2.14-.75,3.85-1.39,5.13-1.92l4.33,16.99Z"/>
+            <path d="M1478.78,175.67c-2.89,1.28-6.41,2.56-10.58,3.85-4.17,1.28-8.55,1.92-13.14,1.92-2.99,0-5.8-.38-8.42-1.12-2.62-.75-4.92-1.95-6.89-3.61-1.98-1.66-3.55-3.79-4.73-6.41-1.18-2.62-1.76-5.8-1.76-9.54v-48.25h-11.06v-16.51h11.06v-27.25h21.48v27.25h17.63v16.51h-17.63v41.04c0,2.99.77,5.1,2.33,6.33,1.55,1.23,3.45,1.84,5.69,1.84s4.43-.37,6.57-1.12c2.14-.75,3.85-1.39,5.13-1.92l4.33,16.99Z"/>
+            <path d="M1526.71,181.6c-6.84,0-12.98-1.18-18.43-3.53s-10.07-5.53-13.87-9.54c-3.79-4.01-6.71-8.63-8.74-13.87-2.03-5.24-3.05-10.74-3.05-16.51s1.01-11.43,3.05-16.67c2.03-5.23,4.94-9.86,8.74-13.87,3.79-4.01,8.42-7.19,13.87-9.54,5.45-2.35,11.59-3.53,18.43-3.53s12.96,1.18,18.35,3.53c5.39,2.35,9.99,5.53,13.79,9.54,3.79,4.01,6.71,8.63,8.74,13.87,2.03,5.24,3.05,10.8,3.05,16.67s-1.02,11.28-3.05,16.51c-2.03,5.24-4.92,9.86-8.66,13.87-3.74,4.01-8.33,7.19-13.79,9.54s-11.6,3.53-18.43,3.53ZM1504.75,138.16c0,3.74.56,7.13,1.68,10.18s2.67,5.69,4.65,7.93c1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.56,1.84,8.66,1.84s5.98-.61,8.66-1.84c2.67-1.23,4.99-2.97,6.97-5.21,1.98-2.24,3.53-4.91,4.65-8.01,1.12-3.1,1.68-6.52,1.68-10.26s-.56-7-1.68-10.1c-1.12-3.1-2.67-5.77-4.65-8.01-1.98-2.24-4.3-3.98-6.97-5.21-2.67-1.23-5.56-1.84-8.66-1.84s-5.99.64-8.66,1.92c-2.67,1.28-5,3.05-6.97,5.29-1.98,2.24-3.53,4.92-4.65,8.01-1.12,3.1-1.68,6.47-1.68,10.1Z"/>
+            <path d="M1584.58,180v-23.08h17.63v23.08h-17.63Z"/>
+            <path d="M1615.83,138c0-5.88,1.01-11.43,3.05-16.67,2.03-5.23,4.97-9.83,8.82-13.79,3.85-3.95,8.5-7.11,13.95-9.46,5.45-2.35,11.59-3.53,18.43-3.53,9.19,0,17.02,1.98,23.48,5.93,6.46,3.96,11.3,9.14,14.51,15.55l-21,6.41c-1.82-3.1-4.22-5.48-7.21-7.13-2.99-1.66-6.31-2.49-9.94-2.49-3.1,0-5.99.62-8.66,1.84-2.67,1.23-5,2.94-6.97,5.13-1.98,2.19-3.53,4.84-4.65,7.93-1.12,3.1-1.68,6.52-1.68,10.26s.59,7.16,1.76,10.26c1.17,3.1,2.75,5.77,4.73,8.01,1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.5,1.84,8.5,1.84,3.85,0,7.4-.96,10.66-2.89,3.26-1.92,5.53-4.27,6.81-7.05l21,6.41c-2.88,6.41-7.64,11.65-14.27,15.71-6.63,4.06-14.59,6.09-23.88,6.09-6.84,0-12.98-1.18-18.43-3.53s-10.1-5.53-13.95-9.54c-3.85-4.01-6.81-8.66-8.9-13.95s-3.13-10.82-3.13-16.59Z"/>
+            <path d="M1749.52,181.6c-6.84,0-12.98-1.18-18.43-3.53s-10.07-5.53-13.87-9.54c-3.79-4.01-6.71-8.63-8.74-13.87-2.03-5.24-3.05-10.74-3.05-16.51s1.01-11.43,3.05-16.67c2.03-5.23,4.94-9.86,8.74-13.87,3.79-4.01,8.42-7.19,13.87-9.54,5.45-2.35,11.59-3.53,18.43-3.53s12.96,1.18,18.35,3.53c5.4,2.35,9.99,5.53,13.79,9.54,3.79,4.01,6.71,8.63,8.74,13.87,2.03,5.24,3.05,10.8,3.05,16.67s-1.02,11.28-3.05,16.51c-2.03,5.24-4.92,9.86-8.66,13.87-3.74,4.01-8.34,7.19-13.79,9.54s-11.6,3.53-18.43,3.53ZM1727.56,138.16c0,3.74.56,7.13,1.68,10.18s2.67,5.69,4.65,7.93c1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.56,1.84,8.66,1.84s5.98-.61,8.66-1.84c2.67-1.23,5-2.97,6.97-5.21,1.98-2.24,3.53-4.91,4.65-8.01,1.12-3.1,1.68-6.52,1.68-10.26s-.56-7-1.68-10.1c-1.12-3.1-2.67-5.77-4.65-8.01-1.98-2.24-4.3-3.98-6.97-5.21-2.67-1.23-5.56-1.84-8.66-1.84s-5.99.64-8.66,1.92c-2.67,1.28-5,3.05-6.97,5.29-1.98,2.24-3.53,4.92-4.65,8.01-1.12,3.1-1.68,6.47-1.68,10.1Z"/>
+            <path d="M1938.35,180h-21.48v-47.13c0-6.73-1.15-11.65-3.45-14.75-2.3-3.1-5.48-4.65-9.54-4.65-4.28,0-8.28,1.63-12.02,4.89-3.74,3.26-6.41,7.51-8.01,12.74v48.89h-21.48v-47.13c0-6.73-1.15-11.65-3.45-14.75-2.3-3.1-5.48-4.65-9.54-4.65s-8.15,1.6-11.94,4.81c-3.79,3.21-6.49,7.43-8.1,12.66v49.05h-21.48v-84h19.4v15.55c3.1-5.45,7.35-9.64,12.74-12.58,5.4-2.94,11.57-4.41,18.51-4.41s12.5,1.71,16.35,5.13c3.85,3.42,6.3,7.64,7.37,12.66,3.42-5.77,7.75-10.18,12.98-13.22,5.23-3.05,11.22-4.57,17.95-4.57,5.13,0,9.35.96,12.66,2.88,3.31,1.92,5.88,4.44,7.69,7.53,1.82,3.1,3.07,6.63,3.77,10.58.69,3.96,1.04,7.96,1.04,12.02v52.42Z"/>
+          </g>
+        </g>
+      </svg>
+    </a>
+    <svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+      <defs>
+        <filter id="glass-refract" x="0%" y="0%" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.015" numOctaves="3" seed="5" result="noise"/>
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+        </filter>
+      </defs>
+    </svg>
+    <nav class="site-nav">
+      <a href="/projects/" class="nav-link" data-nav="projects">Projects</a>
+      
+    </nav>
+    <a href="#contact" class="nav-contact" data-nav="contact" aria-label="Contact">
+      <svg class="nav-contact-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+        <rect x="2.25" y="4.25" width="15.5" height="11.5" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M3.5 6.5l6.5 4.6 6.5-4.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="nav-contact-label">Contact</span>
+    </a>
+    <script>
+      (function() {
+        var path = location.pathname;
+        var active = path.startsWith('/projects') ? 'projects'
+                   : path.startsWith('/about') ? 'about'
+                   : null;
+        if (active) document.querySelector('[data-nav="' + active + '"]').classList.add('active');
+      })();
+    </script>
+  </div>
+</header>
+<script src="/assets/js/header-glass.js" defer></script>
+<script src="/assets/js/nav-submenu.js" defer></script>
+
+
+    <nav class="project-hud" aria-label="Project navigation">
+      <div class="container project-hud-inner">
+        
+        <div class="hud-side">
+          
+          <a class="hud-prev" href="/projects/carealert/">
+            <span class="hud-prev-arrow" aria-hidden="true">&larr;</span>
+            <span class="hud-prev-label">Prev</span>
+            <span class="hud-prev-title">CareAlert</span>
+          </a>
+          
+        </div>
+        <div class="hud-center">
+          <div class="hud-identity">
+            <span class="hud-title">Rainfactory.com</span>
+            
+            
+          </div>
+          <span class="hud-section" aria-hidden="true"></span>
+        </div>
+        <div class="hud-actions">
+          
+          <a class="hud-next" href="/projects/harry-potter-escape-from-gringotts-hallmark-keepsake-ornament/">
+            <span class="hud-next-label">Next</span>
+            <span class="hud-next-title">Harry Potter™ Keepsake Ornament Set</span>
+            <span class="hud-next-arrow" aria-hidden="true">&rarr;</span>
+          </a>
+          
+          <button class="hud-top" type="button" aria-label="Back to top">
+            <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M2 7.5 6 3.5 10 7.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+
+  <main class="main-content">
+    
+    <section class="project-hero-section hero-scrolly hero-scrolly--scrim-boost" style="--hero-scrim-boost: 1.2; --hero-scrim-bottom: 1.15;">
+      <div class="scrolly-scene" data-scene="1">
+        <div class="scrolly-bg">
+          <picture>
+            <source media="(max-width: 768px)" srcset="/assets/images/projects/rainfactory-blog-bg-mobile.webp">
+            <img id="glass-source-hero" src="/assets/images/projects/rainfactory-blog-bg-desktop.webp" alt="" fetchpriority="high" decoding="async" data-focal-y="0.6">
+          </picture>
+          
+          <div class="scrolly-overlay"></div>
+        </div>
+      </div>
+
+      <div class="scrolly-content">
+
+        <div class="scrolly-step" data-step="hero">
+          <div class="container">
+            <h1 class="project-title">Rainfactory.com</h1>
+
+            
+            <a href="#campaign-walkthrough" class="hero-campaign-link hero-campaign-link--centered hero-campaign-link--below-title hero-campaign-link--sample">
+              Skip to work sample ↓
+            </a>
+            
+
+            <div class="hero-above-fold">
+              <div class="project-info-card">
+                <div class="hero-card-top">
+                  
+                  <div class="hero-role">
+                    <span class="info-card-label">My Role</span>
+                    <span class="hero-role-value">Senior Copywriter</span>
+                    
+                    <span class="hero-role-agency-credit">at
+                      <img src="/assets/images/logos/Rainfactory_logo.webp"
+                           alt="Rainfactory"
+                           width="450" height="98"
+                           class="hero-role-agency-logo">
+                    </span>
+                    
+                  </div>
+                  
+
+                  
+                </div>
+
+                
+                <p class="impact-summary">Copy for the agency’s own site: the crowdfunding and ecommerce service pages, and posts for its blog — client news, funding case studies, and how-to guides.</p>
+                
+
+                
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+
+        
+
+        
+        
+        
+        
+        <div class="scrolly-step" data-step="hero-image">
+          <div class="container">
+            <div class="scrolly-hero-image">
+              <img src="/assets/images/projects/rainfactory-blog-hero.webp" alt="Rainfactory.com" width="1200" height="750">
+            </div>
+          </div>
+        </div>
+        
+        
+        
+        
+
+        
+        
+        
+
+        <div class="scrolly-bottom-fade" aria-hidden="true"></div>
+      </div>
+
+    </section>
+
+    
+  <script>
+    // Metric labels, injected inline right after the hero markup so they exist
+    // at first paint and the columns distribute with no post-load reflow.
+    // Content is data-driven from the project's heroMetricLabels field
+    // (build.js emits it as a JS literal, "null" when absent) — layout comes
+    // from the hero-metrics body class, but the label copy lives with the
+    // project data so each hero (Gringotts 3-up, Screeneo 2-up) reads
+    // correctly. One line per tile: the muted `sub` line was cut 2026-09-13
+    // (Jakob, smts3gkco1pz2: "I don't think I'll ever use subs for key
+    // results metrics"). Per-item leadDesktop optionally swaps the lead for
+    // one self-sufficient line at >=769px ("Email sign-up rate").
+    (function () {
+      var LABELS = null;
+      if (!LABELS || !LABELS.length) return;
+      var grid = document.querySelector('.hero-metrics-floor .metrics-grid');
+      if (!grid) return;
+      var metrics = grid.querySelectorAll('.metric');
+      for (var i = 0; i < metrics.length; i++) {
+        var label = metrics[i].querySelector('.metric-label');
+        var parts = LABELS[i];
+        if (!label || !parts) continue;
+        label.textContent = '';
+        var lead = document.createElement('span');
+        lead.className = 'metric-label-lead';
+        lead.textContent = parts.lead;
+        label.appendChild(lead);
+        if (parts.leadDesktop) {
+          lead.classList.add('metric-label-lead--mobile');
+          var leadDesktop = document.createElement('span');
+          leadDesktop.className = 'metric-label-lead metric-label-lead--desktop';
+          leadDesktop.textContent = parts.leadDesktop;
+          label.insertBefore(leadDesktop, lead);
+        }
+      }
+    })();
+  </script>
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+    
+
+
+
+
+
+    <section id="published-articles" class="article-shelf" data-hud-label="The posts" aria-label="Published articles">
+      <div class="container">
+        <div class="ashelf-head">
+          
+          <p class="ashelf-eyebrow section-label">Read them</p>
+          
+          <h2 class="ashelf-title">From the Rainfactory blog</h2>
+          
+          <p class="ashelf-note">These posts are no longer on rainfactory.com. Each page here reproduces its post as it ran — original text, images, and animation.</p>
+          
+        </div>
+        <div class="ashelf-list ashelf-list--grid">
+          
+          <a class="ashelf-card" href="/projects/rainfactory-blog/articles/toybox-shark-tank/">
+            <span class="ashelf-thumb">
+              <img src="/assets/images/projects/rainfactory-blog/thumb-toybox-shark-tank.webp" alt=""
+                   width="880" height="520"
+                   loading="lazy" decoding="async">
+            </span>
+            <span class="ashelf-body">
+              <span class="ashelf-card-title">Shark Tank: Kevin O’Leary Invests $150K in ToyBox 3D Printer</span>
+              <span class="ashelf-card-meta">May 10, 2019 · Client News · 1 min read</span>
+              <span class="ashelf-cta">Read &rarr;</span>
+            </span>
+          </a>
+          
+          <a class="ashelf-card" href="/projects/rainfactory-blog/articles/eight-sleep-time/">
+            <span class="ashelf-thumb">
+              <img src="/assets/images/projects/rainfactory-blog/thumb-eight-sleep-time.webp" alt=""
+                   width="880" height="520"
+                   loading="lazy" decoding="async">
+            </span>
+            <span class="ashelf-body">
+              <span class="ashelf-card-title">Time Magazine Honors Eight Sleep Pod for Best Inventions in 2019</span>
+              <span class="ashelf-card-meta">Nov 21, 2019 · Client News · 1 min read</span>
+              <span class="ashelf-cta">Read &rarr;</span>
+            </span>
+          </a>
+          
+          <a class="ashelf-card" href="/projects/rainfactory-blog/articles/onewheel-scaled-to-success/">
+            <span class="ashelf-thumb">
+              <img src="/assets/images/projects/rainfactory-blog/thumb-onewheel-scaled-to-success.webp" alt=""
+                   width="880" height="520"
+                   loading="lazy" decoding="async">
+            </span>
+            <span class="ashelf-body">
+              <span class="ashelf-card-title">How Santa Barbara Startup OneWheel Scaled to Success</span>
+              <span class="ashelf-card-meta">Jan 15, 2020 · Client News · 2 min read</span>
+              <span class="ashelf-cta">Read &rarr;</span>
+            </span>
+          </a>
+          
+          <a class="ashelf-card" href="/projects/rainfactory-blog/articles/cliq-kickfurther/">
+            <span class="ashelf-thumb">
+              <img src="/assets/images/projects/rainfactory-blog/thumb-cliq-kickfurther.webp" alt=""
+                   width="880" height="520"
+                   loading="lazy" decoding="async">
+            </span>
+            <span class="ashelf-body">
+              <span class="ashelf-card-title">CLIQ Gets $57,000 Inventory Financing from Kickfurther to Launch on Amazon</span>
+              <span class="ashelf-card-meta">Jun 10, 2020 · Funding · 3 min read</span>
+              <span class="ashelf-cta">Read &rarr;</span>
+            </span>
+          </a>
+          
+          <a class="ashelf-card" href="/projects/rainfactory-blog/articles/kicktraq-guide/">
+            <span class="ashelf-thumb">
+              <img src="/assets/images/projects/rainfactory-blog/thumb-kicktraq.webp" alt=""
+                   width="880" height="520"
+                   loading="lazy" decoding="async">
+            </span>
+            <span class="ashelf-body">
+              <span class="ashelf-card-title">How To Use Kicktraq For Your Kickstarter Campaign</span>
+              <span class="ashelf-card-meta">Jul 2, 2020 · Crowdfunding · 2 min read</span>
+              <span class="ashelf-cta">Read &rarr;</span>
+            </span>
+          </a>
+          
+        </div>
+      </div>
+    </section>
+
+
+
+    
+    <section id="campaign-walkthrough" class="campaign-walkthrough-section campaign-walkthrough-section--browser" data-wt-desktop-capture data-wt-address="rainfactory.com/services/grow-ecommerce" style="--wt-wide-act: 2.2;" data-entry-pan="true" data-hud-label="Ecommerce Growth Page">
+      <div class="campaign-walkthrough-runway">
+        <div class="campaign-walkthrough-sticky">
+          
+          <div class="container container--wide">
+            <div class="campaign-walkthrough-layout">
+
+              <div class="campaign-walkthrough-phone">
+                <div class="wt-phone wt-phone--browser">
+                  <div class="wt-phone-screen">
+                    <div class="wt-phone-scroll">
+                      <div class="igg-content">
+
+
+  <div class="igg-block igg-block--joined" data-focus="hero">
+    <img width="2000" height="973" src="/assets/images/projects/rainfactory-ecommerce-walkthrough/01-hero.webp" data-alt-source="visual" alt="Gray top bar reading Download the Crowdfunding Handbook &amp; Ultimate Prelaunch Checklist, GET FREE GUIDE. Teal navigation bar with the Rainfactory logo, the menu START HERE, CASE STUDIES, SERVICES, PARTNERS, ABOUT, and an orange CONTACT US button. Below, a teal hero over a pale city-skyline silhouette: the headline The Ecommerce Agency for Scalable Growth, the line A full service digital agency that operates as a marketing department for growing brands, an orange Let’s Make it Rain button and a small scroll-mouse icon.">
+  </div>
+
+  <div class="igg-block igg-block--joined" data-focus="stats">
+    <img width="2000" height="1127" src="/assets/images/projects/rainfactory-ecommerce-walkthrough/02-data-stats.webp" data-alt-source="visual" alt="Light gray panel headed Decisions Are Better With Data. Two lines follow: We make our most important decisions based on quantified data points. When it comes to choosing an ecommerce growth agency for scaling your business, all the numbers point to Rainfactory. Three cards with round teal icons: 3X-22X, captioned 3X-22X ROAS on Ad Campaigns; 40-100%, captioned Year Over Year Gross Revenue Growth; $500+ Million, captioned In Sales Within First Quarter Of Working With Us." loading="lazy">
+  </div>
+
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="1472" src="/assets/images/projects/rainfactory-ecommerce-walkthrough/03-enterprise-logos.webp" data-alt-source="visual" alt="Heading Enterprise Strategy For Everyone over the line We believe in growth. We work with products we believe in, adding talent, experience, and proven process to deliver successful campaigns and ongoing partnerships. Beneath it, a wall of about seventy client logos in eight rows, mostly gray: Philips, Atari, Segway, Target, GE, Hydrow, Onewheel, Biktrix, XGIMI, Eight, Balsam Brands, Omnilux, CLMBR, Juiced Bikes, EcoFlow, Olive Union, Lumen, Makeblock, WowWee, Save the Children, Reform RX, Zendure, Jibo, Toybox, Bartesian, Kube Sound and others." loading="lazy">
+  </div>
+
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="1463" src="/assets/images/projects/rainfactory-ecommerce-walkthrough/04-happy-onewheel.webp" data-alt-source="visual" alt="Heading They’re happy. And so are we. with the line We listen, we create plans that work, and we deliver undeniable results. With 8 years of trusted partnerships, Rainfactory is the agency that can take your business to new heights. Below, an inset dark photo panel of a rider’s sneakers on a Onewheel board on asphalt, with white text: Ecommerce: Year Over Year Growth, the quote Rainfactory consistently crushes it, and fights for growth, and the credit Kyle Dorkeson CEO, Onewheel.com." loading="lazy">
+  </div>
+
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="938" src="/assets/images/projects/rainfactory-ecommerce-walkthrough/05-onewheel-slider.webp" data-alt-source="visual" alt="Light gray carousel slide with the Onewheel wordmark, a photo of a Pint X board, and the line Simply put, the most beautiful ride on the planet running off the right edge. Three bullets: Facebook Online Advertising; YouTube Top 10 Ad Optimization Award; Google Ads +10% increase in conversions YoY. Pale arrows on either side and four dots below, the first filled." loading="lazy">
+  </div>
+
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="372" src="/assets/images/projects/rainfactory-ecommerce-walkthrough/06-process-intro.webp" data-alt-source="visual" alt="Heading Our Battle-Tested Process over the line We believe in agile marketing. We build high-converting landing pages and ads, and continuously adapt as trends and behaviors evolve, with agile marketing in bold." loading="lazy">
+  </div>
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="1200" src="/assets/images/projects/rainfactory-ecommerce-walkthrough/07-process-cycle.webp" data-alt-source="visual" alt="A ring of five curved arrows in shades of teal, labeled clockwise from the top: Data Analysis &amp; Strategy, Robust Creative Development, Targeting Testing, Conversion Rate Optimization, Scale." loading="lazy">
+  </div>
+
+  <div class="igg-block igg-block--joined" data-focus="iterative">
+    <img width="2000" height="1355" src="/assets/images/projects/rainfactory-ecommerce-walkthrough/08-iterative-design.webp" data-alt-source="visual" alt="Heading Iterative Website Design over the lines We’ll make your website look like a million bucks, for a fraction of the price. After that, we’ll continue to test and update key pages, optimizing your entire funnel for top performance. Below, a carousel slide showing a screenshot of the Omnilux Contour website: its own header, the headline Say Hello To The New You beside a woman wearing the LED face mask with an FDA Cleared badge, an As Featured In row of magazine logos, a bar of four claims, and three customer testimonials. Pale arrows on either side." loading="lazy">
+  </div>
+
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="1436" src="/assets/images/projects/rainfactory-ecommerce-walkthrough/09-ad-channels.webp" data-alt-source="visual" alt="Heading A Growing Number of Diversified Advertising Channels, with the teal line RAINGACTORY IS IN THE TOP 3% OF GOOGLE PARTNERS as printed on the page. Ten color icons with labels in three rows: Google Partner, Meta Business Partners, Tik Tok; Pinterest, Linkedin, Microsoft Ads, Reddit; Twitter, Snapchat, Outbrain." loading="lazy">
+  </div>
+
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="380" src="/assets/images/projects/rainfactory-ecommerce-walkthrough/10-difference-intro.webp" data-alt-source="visual" alt="Dark teal band headed The Rainfactory Difference, with the line We listen, we create plans that work, and we deliver undeniable results. We fight for growth, no matter what your scale is." loading="lazy">
+  </div>
+  <div class="igg-block igg-block--joined" data-focus="table">
+    <img width="2000" height="1334" src="/assets/images/projects/rainfactory-ecommerce-walkthrough/11-difference-table.webp" data-alt-source="visual" alt="On the same teal band, a two-column comparison table. The left column is headed by the Rainfactory logo, the right by Other Agencies. Six rows: Battle-tested, data-supported strategy for growth, against “Growth Hacking” with a thinking-face emoji; You own your accounts &amp; data, against Black box data; Evolving strategies made for scale, against One size fits all; Live customized dashboards &amp; tracking, against Monthly PowerPoint reporting with screenshots; Data-driven website redesigns, against Website redesign &amp; abandon you; Balanced approach, in the Top 3% of Google Partners, against Facebook heavy strategies." loading="lazy">
+  </div>
+
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="389" src="/assets/images/projects/rainfactory-ecommerce-walkthrough/12-suite-heading.webp" data-alt-source="visual" alt="Heading A Full Suite of Services that Scales with Your Business. over the line We approach partnerships as if your company was our own. Everything we do is built for scale." loading="lazy">
+  </div>
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="984" src="/assets/images/projects/rainfactory-ecommerce-walkthrough/13-suite-services.webp" data-alt-source="visual" alt="Six icon-led service blurbs in two columns. SHOPIFY &amp; WORDPRESS DEVELOPMENT: We design websites that are customizable, fast, and easy to manage. CONVERSION FUNNEL ANALYSIS: We look at all steps along the way to a conversion. Each step is an area for improvement. We find out where customers are getting stuck and falling off. TRACKING SOLUTIONS: We set up the right tools to measure and analyze all activity around your product so you can deduce insightful information to improve your efforts. LANDING PAGE TESTING: We carefully test placement of elements, dimensions of creative, and diction of copy to find the best converting combination. Fonts, colors, and messaging are some of many dimensions that impact conversion rates. We test all of them in multiple combinations to find the best mix. MARKETING &amp; MEDIA STRATEGY: We find the best places to advertise your product. Search engines, social networks, display networks; we do what’s best for your product. RETARGETING STRATEGIES: Some customers get distracted while in your conversion funnel. We bring them back to convert." loading="lazy">
+  </div>
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="747" src="/assets/images/projects/rainfactory-ecommerce-walkthrough/14-service-icons.webp" data-alt-source="visual" alt="Below a thin rule, ten round teal line icons with labels in two rows: Market Research &amp; Testing, New Product Launch &amp; Crowdfunding, eCommerce Growth, Ad Creative &amp; Web Design, Amazon Management; Facebook &amp; Instagram Advertising, Google &amp; YouTube Advertising, Social Community Management, Influencer Outreach &amp; Public Relations, Email Marketing." loading="lazy">
+  </div>
+
+  <div class="igg-block">
+    <img width="2000" height="1056" src="/assets/images/projects/rainfactory-ecommerce-walkthrough/15-cta-footer.webp" data-alt-source="visual" alt="Teal band with pale looping ring shapes, an orange Contact Us button and the line LET’S MAKE IT RAIN. Beneath it the dark footer: the Rainfactory logo, four columns of small links (START HERE, CONTACT, CASE STUDIES, SERVICES, CROWDFUNDING; AMAZON, ECOMMERCE, CAPITAL, AWARDS, REVIEWS; TIPS &amp; ADVICE, TEAM, PARTNERS, JOBS, BRAND ASSETS; SHOPIFY GUIDE, PRIVACY), the line ©2021 RAINFACTORY, INC., 414 STEWART ST. SUITE 215 SEATTLE, WA 98101 (510) 956-3645 INFO@RAINFACTORY.COM, and five social icons." loading="lazy">
+  </div>
+
+</div>
+
+                    </div>
+                    <svg class="walkthrough-spot-svg" viewBox="0 0 896 672" preserveAspectRatio="none" width="100%" height="100%" aria-hidden="true">
+                      <defs>
+                        <filter id="wt-spot-goo-0" filterUnits="userSpaceOnUse" x="-50" y="-50" width="996" height="772">
+                          <feGaussianBlur in="SourceGraphic" stdDeviation="0.1" result="blur"/>
+                          <feColorMatrix in="blur" mode="matrix"
+                            values="1 0 0 0 0
+                                    0 1 0 0 0
+                                    0 0 1 0 0
+                                    0 0 0 24 -10" result="goo"/>
+                        </filter>
+                        <mask id="wt-spot-mask-0" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse" x="-50" y="-50" width="996" height="772">
+                          <rect x="-50" y="-50" width="996" height="772" fill="white"/>
+                          <g filter="url(#wt-spot-goo-0)">
+                            <rect class="wt-spot-blob wt-spot-blob--trail" fill="black" rx="8" ry="8"/>
+                            <line class="wt-spot-blob wt-spot-blob--bridge" stroke="black" stroke-width="0" stroke-linecap="round" x1="0" y1="0" x2="0" y2="0"/>
+                            <rect class="wt-spot-blob wt-spot-blob--lead"  fill="black" rx="8" ry="8"/>
+                          </g>
+                        </mask>
+                      </defs>
+                      <rect class="wt-spot-overlay" x="0" y="0" width="896" height="672"
+                            fill="rgba(26,26,46,0.55)" mask="url(#wt-spot-mask-0)"/>
+                    </svg>
+                  </div>
+                  
+                  <div class="wt-browser-chrome" aria-hidden="true">
+                    <span class="wt-browser-dot wt-browser-dot--close"></span>
+                    <span class="wt-browser-dot wt-browser-dot--min"></span>
+                    <span class="wt-browser-dot wt-browser-dot--max"></span>
+                    <span class="wt-browser-url">rainfactory.com/services/grow-ecommerce</span>
+                  </div>
+                  
+                </div>
+              </div>
+
+              <div class="campaign-walkthrough-annotations">
+                <div class="walkthrough-heading">
+                  <h2 class="walkthrough-heading-title">Ecommerce Growth Page</h2>
+                  <p class="walkthrough-heading-subtitle">What I wrote and why.</p>
+                  
+                </div>
+                <div class="walkthrough-annotation-slot">
+                  
+                  <div class="walkthrough-annotation" data-annotation="hero" data-region-y="0.2311" data-region-h="0.375" data-region-x="0.2262" data-region-w="0.5477" data-region-m-y="0.519" data-region-m-h="0.0514" data-region-m-x="0.23" data-region-m-w="0.4" data-region-m-x2="0.345">
+                    <span class="walkthrough-annotation-label">A department for hire</span>
+                    
+                    <p class="walkthrough-annotation-text">Many of the agency's clients had a founder doing the marketing between everything else. I pitched the agency as the department they hadn't hired yet.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="stats-claim" data-focus-ref="stats" data-hold-scale="1.1" data-region-y="0.1331" data-region-h="0.2218" data-region-x="0.15" data-region-w="0.7" data-region-m-y="0.1331" data-region-m-h="0.2218" data-region-m-x="0.15" data-region-m-w="0.4" data-region-m-x2="0.45">
+                    <span class="walkthrough-annotation-label">The Differentiator, First</span>
+                    
+                    <p class="walkthrough-annotation-text">Data was Rainfactory's real edge over other agencies, so it gets the first section after the hero: the claim in one line, then the numbers as its proof.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="stats" data-hold-scale="1.1" data-region-y="0.4259" data-region-h="0.5146" data-region-x="0.0775" data-region-w="0.845" data-region-m-y="0.6122" data-region-m-h="0.33" data-region-m-x="0.075" data-region-m-w="0.4" data-region-m-x2="0.495">
+                    <span class="walkthrough-annotation-label">Numbers first</span>
+                    
+                    <p class="walkthrough-annotation-text">The ROAS figure is a spread across clients rather than one best case.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="iterative" data-hold-scale="1.25" data-region-y="0.0724" data-region-h="0.1776" data-region-x="0.1835" data-region-w="0.6331" data-region-m-y="0.1587" data-region-m-h="0.0849" data-region-m-x="0.18" data-region-m-w="0.4" data-region-m-x2="0.415">
+                    <span class="walkthrough-annotation-label">The website line</span>
+                    
+                    <p class="walkthrough-annotation-text">I let the only mention of price on the page be a joke about it. The sentence after it is the retainer: pages keep getting tested and updated after the redesign ships.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="table" data-hold-scale="1.25" data-region-y="0.0068" data-region-h="0.8971" data-region-x="0.0891" data-region-w="0.8219" data-region-m-y="0.0068" data-region-m-h="0.8971" data-region-m-x="0.14" data-region-m-w="0.4" data-region-m-x2="0.415">
+                    <span class="walkthrough-annotation-label">The comparison</span>
+                    
+                    <p class="walkthrough-annotation-text">I wrote the right column as the habits a founder has already paid for once: opaque data, reporting by slide deck, a redesign followed by silence. Each cell on the left answers one.</p>
+                    
+                  </div>
+                  
+                </div>
+                
+                
+                <div class="walkthrough-progress" role="group" aria-label="Walkthrough controls">
+                  <div class="walkthrough-progress-rail">
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="0" type="button" aria-label="Go to A department for hire" title="A department for hire"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="1" type="button" aria-label="Go to The Differentiator, First" title="The Differentiator, First"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="2" type="button" aria-label="Go to Numbers first" title="Numbers first"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="3" type="button" aria-label="Go to The website line" title="The website line"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="4" type="button" aria-label="Go to The comparison" title="The comparison"></button>
+                    
+                  </div>
+                  <div class="wt-ctl-row">
+                    <button class="walkthrough-progress-nav" data-progress-nav="prev" type="button" aria-label="Previous stop" title="Previous stop">
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 4l-4 4 4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <button class="wt-ctl-count" type="button" aria-expanded="false" aria-haspopup="true" title="All stops">
+                      <span class="wt-ctl-count-text">5 stops</span>
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 10l4-4 4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <button class="walkthrough-progress-nav" data-progress-nav="next" type="button" aria-label="Next stop" title="Next stop">
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <span class="wt-ctl-gap"></span>
+                    <button class="wt-ctl-btn wt-ctl-restart" type="button" title="Restart the walkthrough">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1 4v6h6M3.51 15a9 9 0 1 0 2.13-9.36L1 10" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      <span class="wt-ctl-label">Restart</span>
+                    </button>
+                    <button class="wt-ctl-btn wt-ctl-skip" type="button" title="Skip the walkthrough">
+                      Skip
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v10M3.5 8.5L8 13l4.5-4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                  </div>
+                  <ol class="wt-chapters" hidden>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="0" type="button">A department for hire</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="1" type="button">The Differentiator, First</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="2" type="button">Numbers first</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="3" type="button">The website line</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="4" type="button">The comparison</button></li>
+                    
+                  </ol>
+                </div>
+                
+              </div>
+
+              <svg class="walkthrough-lines" aria-hidden="true"></svg>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="campaign-walkthrough-section campaign-walkthrough-section--browser" data-wt-desktop-capture data-wt-address="rainfactory.com/services/launch-crowdfunding" style="--wt-wide-act: 2.2;" data-entry-pan="true" data-hud-label="Crowdfunding Services Page">
+      <div class="campaign-walkthrough-runway">
+        <div class="campaign-walkthrough-sticky">
+          
+          <div class="container container--wide">
+            <div class="campaign-walkthrough-layout">
+
+              <div class="campaign-walkthrough-phone">
+                <div class="wt-phone wt-phone--browser">
+                  <div class="wt-phone-screen">
+                    <div class="wt-phone-scroll">
+                      <div class="igg-content">
+
+
+  <div class="igg-block igg-block--joined" data-focus="hero">
+    <img width="2000" height="973" src="/assets/images/projects/rainfactory-crowdfunding-walkthrough/01-hero.webp" data-alt-source="visual" alt="Gray top bar reading Download the Crowdfunding Handbook &amp; Ultimate Prelaunch Checklist, GET FREE GUIDE. Teal navigation bar with the Rainfactory logo, the menu START HERE, CASE STUDIES, SERVICES, PARTNERS, ABOUT, and an orange CONTACT US button. Below, a teal hero over a pale city-skyline silhouette: the headline The Go-To Launch &amp; Crowdfunding Experts, the line 50 campaigns over $1,000,000+ — more than any other agency, an orange Let’s Make it Rain button and a small scroll-mouse icon.">
+  </div>
+
+  <div class="igg-block igg-block--joined" data-focus="platforms">
+    <img width="2000" height="375" src="/assets/images/projects/rainfactory-crowdfunding-walkthrough/02-platforms.webp" data-alt-source="visual" alt="Near-black band with three white platform logos and a small caption under each: INDIEGOGO, EXPERT SINCE 2014; KICKSTARTER, EXPERT SINCE 2015; shopify, SELF-HOSTED PRE-ORDER CAMPAIGNS SINCE 2016." loading="lazy">
+  </div>
+
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="1500" src="/assets/images/projects/rainfactory-crowdfunding-walkthrough/03-enterprise-logos.webp" data-alt-source="visual" alt="Pale gray band headed Enterprise Strategy For Everyone over the line We believe in growth. We work with products we believe in, adding talent, experience, and proven process to deliver successful campaigns and ongoing partnerships. Beneath it, a wall of about seventy client logos in eight rows, mostly gray: Philips, Atari, Segway, Target, GE, Hydrow, Onewheel, Biktrix, XGIMI, Eight, Balsam Brands, Omnilux, CLMBR, Juiced Bikes, EcoFlow, Olive Union, Lumen, Makeblock, WowWee, Save the Children, Reform RX, Zendure, Jibo, Toybox, Bartesian, Kube Sound and others." loading="lazy">
+  </div>
+
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="934" src="/assets/images/projects/rainfactory-crowdfunding-walkthrough/04-press-cards.webp" data-alt-source="visual" alt="Three photo cards on white. Left: a small white 3D printer with printed figurines, captioned Toy Box Printer, under it AS SEEN ON SHARK TANK with the show’s logo. Middle: a TIME cover headed The 25 Best Inventions of 2017 showing the Jibo robot, captioned Jibo, under it AS SEEN ON THE COVER OF TIME. Right: a hand holding a white LED face mask over a pink backdrop, captioned Omnilux LED Contour, under it the TODAY logo and As seen on NBC’s Today Show." loading="lazy">
+  </div>
+
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="1531" src="/assets/images/projects/rainfactory-crowdfunding-walkthrough/05-testimonials.webp" data-alt-source="visual" alt="Deep teal band with a faint photographic texture. Heading They’re happy. And so are we. with the line We listen, we create plans that work, and we deliver undeniable results. With 8 years of trusted partnerships, Rainfactory is the agency that can take your business to new heights. Three testimonials follow, each under an orange pull-quote heading: Maintained a great ROAS throughout the campaign, from Connor Nemetz, CEO, Breakaway Industries, whose full quote credits the pre-campaign marketing for hitting the goal in the first hour; Painfully Dedicated, from Mike Zapata, CEO, CLIQ; Great to Work With, from Roshan Thomas, CEO, Biktrix Electric Bikes, who retained the agency after the campaign." loading="lazy">
+  </div>
+
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="392" src="/assets/images/projects/rainfactory-crowdfunding-walkthrough/06-first-to-market.webp" data-alt-source="visual" alt="Near-black band with the heading Be First to Market and a small orange Lets Make it Rain button." loading="lazy">
+  </div>
+
+  <div class="igg-block igg-block--joined" data-focus="process">
+    <img width="2000" height="1011" src="/assets/images/projects/rainfactory-crowdfunding-walkthrough/07-process-steps.webp" data-alt-source="visual" alt="Heading Our Battle-Tested Process over the line We take a crawl, walk, run approach to scaling your campaign while optimizing the entire funnel. Below, three chevron arrows numbered 01, 02 and 03 in yellow, orange and red, captioned TEST PRODUCT-MARKET FIT, BUILD DEMAND and MAKE IT RAIN." loading="lazy">
+  </div>
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="1466" src="/assets/images/projects/rainfactory-crowdfunding-walkthrough/08-process-cycle.webp" data-alt-source="visual" alt="On pale gray, a ring of five curved arrows in shades of teal, labeled clockwise from the top: Data Analysis &amp; Strategy, Robust Creative Development, Targeting Testing, Conversion Rate Optimization, Scale." loading="lazy">
+  </div>
+
+  <div class="igg-block igg-block--joined" data-focus="data-stats">
+    <img width="2000" height="1255" src="/assets/images/projects/rainfactory-crowdfunding-walkthrough/09-data-stats.webp" data-alt-source="visual" alt="Dark teal band headed Decisions Are Better With Data. Two lines follow: We make our most important decisions based on quantified data points. When it comes to choosing a crowdfunding agency for your product launch, all the numbers point to Rainfactory. Three teal cards, each with an orange figure, a white line icon and a caption: 50+ with a rocket, PRODUCT LAUNCHES OVER $1 MILLION; 40-100% with stacked coins, YEAR OVER YEAR GROSS REVENUE GROWTH; 500+ MILLION with a dollar sign, IN SALES WITHIN FIRST QUARTER OF WORKING WITH US." loading="lazy">
+  </div>
+
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="1033" src="/assets/images/projects/rainfactory-crowdfunding-walkthrough/10-suite.webp" data-alt-source="visual" alt="Pale gray band headed A Full Suite of Services that Scales with Your Business. over the line We approach partnerships as if your company was our own. Everything we do is built for scale. Below it a dark teal band with ten round white line icons in two rows, labeled Market Research &amp; Positioning, New Product Launch &amp; Crowdfunding, eCommerce Growth, Ad Creative &amp; Web Design, TikTok Advertising; Facebook &amp; Instagram Advertising, Google &amp; YouTube Advertising, Social Community Management, Influencer Outreach &amp; Public Relations, Email Marketing." loading="lazy">
+  </div>
+
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="397" src="/assets/images/projects/rainfactory-crowdfunding-walkthrough/11-scale-heading.webp" data-alt-source="visual" alt="Pale gray band with the heading Everything We Do is Built For Scale over the line We work with every launch as if your product was our own." loading="lazy">
+  </div>
+  <div class="igg-block igg-block--joined" data-focus="scale">
+    <img width="2000" height="1752" src="/assets/images/projects/rainfactory-crowdfunding-walkthrough/12-scale-timeline.webp" data-alt-source="visual" alt="A vertical timeline of four interlocking rings numbered 01 to 04, colored teal, dark teal, orange and red, each linked by a thin curved line to a stage on the right. 01, Hit the Ground Running: LEAD GENERATION SITE, An expertly crafted landing page that lives on your domain. 02, Validation With Data: PRODUCT POSITIONING, We use paid media to generate leads, test and refine positioning, price point testing, and prepare to nail the launch. 03, Pre-Order Campaign: LAUNCH ON KICKSTARTER, INDIEGOGO, OR DIY PRE-SALES ON SHOPIFY, As official experts in Kickstarter, Indiegogo, and Shopify we’ll use our connections and expertise to deliver a pre-order campaign on any platform. Regardless of platform, we drive results day one. 04, Month to Month, No Long-Term Commitments: ONGOING SALES ON YOUR WEBSITE, We know what to do after crowdfunding; before you’re shipping from stock; after shipping from stock; selling direct-to-consumer; seasonal promotions; and platform expansion. We know because we’ve been there for 5+ years of our clients’ growth journey." loading="lazy">
+  </div>
+
+  <div class="igg-block igg-block--joined" data-focus="onewheel-band">
+    <img width="2000" height="770" src="/assets/images/projects/rainfactory-crowdfunding-walkthrough/13-onewheel-band.webp" data-alt-source="visual" alt="Full-width dark photo of a rider’s sneakers on a Onewheel board on asphalt, with white text at the left: Ecommerce: Year Over Year Growth, the quote Rainfactory consistently crushes it, and fights for growth, and the credit Kyle Doerkson CEO, Future Motion Inc." loading="lazy">
+  </div>
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="772" src="/assets/images/projects/rainfactory-crowdfunding-walkthrough/14-cliq-band.webp" data-alt-source="visual" alt="Full-width photo split in two: a CLIQ camp chair set up on sand at the left, and at the right a hand carrying the chair folded to the size of a bottle. White text over the right half: Product Launch: Crowdfunding To E-commerce, the quote Painfully dedicated to success for products they believe in, and the credit Mike Zapata, CEO CliqProducts.com." loading="lazy">
+  </div>
+
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="991" src="/assets/images/projects/rainfactory-crowdfunding-walkthrough/15-evolve.webp" data-alt-source="visual" alt="Pale gray band. Left, a teal tile with a white line icon of a gear and a clock inside a circling arrow. Right, the heading We Evolve With You and the paragraph Our relationship doesn’t end with a successful crowdfunding campaign. In fact, it’s often just the beginning! After your crowdfunding campaign, we’ll be ready to guide you to continued prosperity through ecommerce as your full-service marketing agency." loading="lazy">
+  </div>
+  <div class="igg-block igg-block--joined" data-focus="agile">
+    <img width="2000" height="991" src="/assets/images/projects/rainfactory-crowdfunding-walkthrough/16-agile.webp" data-alt-source="visual" alt="Same pale gray band, mirrored. Left, the heading We Believe in Agile Marketing and the paragraph Beat the competition. Outperform the market. Prove to investors that the world is HUNGRY for your product. A crowdfunding campaign is a great way to both get your product off the ground, and to attract additional funding for growth. Right, a teal tile with a white line icon of a dotted path bending into an arrow beside a straight arrow." loading="lazy">
+  </div>
+
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="1613" src="/assets/images/projects/rainfactory-crowdfunding-walkthrough/17-ad-channels.webp" data-alt-source="visual" alt="Black band headed A Growing Number of Supported Advertising Channels, with the light blue line Rainfactory is in the top 3% of Google Partners. Ten color icons with white labels in three rows: GOOGLE PARTNER, META BUSINESS PARTNERS, TIK TOK, REDDIT; MICROSOFT ADS, LINKEDIN, PINTEREST; TWITTER, SNAPCHAT, OUTBRAIN." loading="lazy">
+  </div>
+
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="842" src="/assets/images/projects/rainfactory-crowdfunding-walkthrough/18-difference.webp" data-alt-source="visual" alt="Pale gray band with the Rainfactory monogram beside the heading The Rainfactory Difference, then a paragraph: Rainfactory prides itself in creating its own unique process that is tailor fitted for each partner. We use numbers and data to pave the way for success, and our team is behind you every step of the journey. The world of marketing is ever changing and we rely on our expertise to make pivots and stay ahead of the loop. With our diverse team of specialists, we aim to inspire your customers and turn your product into a household name." loading="lazy">
+  </div>
+
+  <div class="igg-block">
+    <img width="2000" height="1178" src="/assets/images/projects/rainfactory-crowdfunding-walkthrough/19-hurry-footer.webp" data-alt-source="visual" alt="Dark teal band with the heading Hurry, Our Experts are in High Demand, Hurry in light blue, the line Tell us your needs and allow us to help you grow your business! and an orange Make it Rain button. Beneath it the dark footer: the Rainfactory logo, four columns of small links (START HERE, CONTACT, CASE STUDIES, SERVICES, CROWDFUNDING; AMAZON, ECOMMERCE, CAPITAL, AWARDS, REVIEWS; TIPS &amp; ADVICE, TEAM, PARTNERS, JOBS, BRAND ASSETS; SHOPIFY GUIDE, PRIVACY), the line ©2021 RAINFACTORY, INC., 414 STEWART ST. SUITE 215 SEATTLE, WA 98101 (510) 956-3645 INFO@RAINFACTORY.COM, and five social icons." loading="lazy">
+  </div>
+
+</div>
+
+                    </div>
+                    <svg class="walkthrough-spot-svg" viewBox="0 0 896 672" preserveAspectRatio="none" width="100%" height="100%" aria-hidden="true">
+                      <defs>
+                        <filter id="wt-spot-goo-1" filterUnits="userSpaceOnUse" x="-50" y="-50" width="996" height="772">
+                          <feGaussianBlur in="SourceGraphic" stdDeviation="0.1" result="blur"/>
+                          <feColorMatrix in="blur" mode="matrix"
+                            values="1 0 0 0 0
+                                    0 1 0 0 0
+                                    0 0 1 0 0
+                                    0 0 0 24 -10" result="goo"/>
+                        </filter>
+                        <mask id="wt-spot-mask-1" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse" x="-50" y="-50" width="996" height="772">
+                          <rect x="-50" y="-50" width="996" height="772" fill="white"/>
+                          <g filter="url(#wt-spot-goo-1)">
+                            <rect class="wt-spot-blob wt-spot-blob--trail" fill="black" rx="8" ry="8"/>
+                            <line class="wt-spot-blob wt-spot-blob--bridge" stroke="black" stroke-width="0" stroke-linecap="round" x1="0" y1="0" x2="0" y2="0"/>
+                            <rect class="wt-spot-blob wt-spot-blob--lead"  fill="black" rx="8" ry="8"/>
+                          </g>
+                        </mask>
+                      </defs>
+                      <rect class="wt-spot-overlay" x="0" y="0" width="896" height="672"
+                            fill="rgba(26,26,46,0.55)" mask="url(#wt-spot-mask-1)"/>
+                    </svg>
+                  </div>
+                  
+                  <div class="wt-browser-chrome" aria-hidden="true">
+                    <span class="wt-browser-dot wt-browser-dot--close"></span>
+                    <span class="wt-browser-dot wt-browser-dot--min"></span>
+                    <span class="wt-browser-dot wt-browser-dot--max"></span>
+                    <span class="wt-browser-url">rainfactory.com/services/launch-crowdfunding</span>
+                  </div>
+                  
+                </div>
+              </div>
+
+              <div class="campaign-walkthrough-annotations">
+                <div class="walkthrough-heading">
+                  <h2 class="walkthrough-heading-title">Crowdfunding Services Page</h2>
+                  <p class="walkthrough-heading-subtitle">What I wrote and why.</p>
+                  
+                </div>
+                <div class="walkthrough-annotation-slot">
+                  
+                  <div class="walkthrough-annotation" data-annotation="hero" data-region-y="0.2311" data-region-h="0.375" data-region-x="0.2729" data-region-w="0.4542">
+                    <span class="walkthrough-annotation-label">Proof in the subhead</span>
+                    
+                    <p class="walkthrough-annotation-text">How many launches the agency had already carried past $1M, and that no other agency matched it. The headline only has to name the job.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="platforms" data-region-y="0.1" data-region-h="0.68" data-region-x="0.0516" data-region-w="0.8969" data-region-m-y="0.1083" data-region-m-h="0.793" data-region-m-x="0.0516" data-region-m-w="0.45" data-region-m-x2="0.4985">
+                    <span class="walkthrough-annotation-label">Tenure per platform</span>
+                    
+                    <p class="walkthrough-annotation-text">Three logos, three start years. Each date is a claim about tenure on that platform, and the third widens the offer past crowdfunding sites to a store the client owns.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="process" data-hold-scale="1.25" data-region-y="0.081" data-region-h="0.8084" data-region-x="0.0891" data-region-w="0.8219" data-region-m-y="0.081" data-region-m-h="0.8084" data-region-m-x="0.0891" data-region-m-w="0.45" data-region-m-x2="0.461">
+                    <span class="walkthrough-annotation-label">Three steps</span>
+                    
+                    <p class="walkthrough-annotation-text">The intro leans on a phrase founders already use for pacing; the three chevrons then rename the stages in the agency’s words, and the last one is the tagline.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="data-stats" data-hold-scale="1.1" data-region-y="0.09" data-region-h="0.77" data-region-x="0.05" data-region-w="0.9" data-region-m-y="0.39" data-region-m-h="0.46" data-region-m-x="0.05" data-region-m-w="0.42" data-region-m-x2="0.518">
+                    <span class="walkthrough-annotation-label">One Tile Swapped Per Audience</span>
+                    
+                    <p class="walkthrough-annotation-text">The same data module as the ecommerce page, with one tile changed: the ROAS spread becomes 50+ launches over $1 million.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="scale" data-hold-scale="1.25" data-region-y="0" data-region-h="0.402" data-region-x="0.1238" data-region-w="0.7523" data-region-m-y="0" data-region-m-h="0.402" data-region-m-x="0.1238" data-region-m-w="0.42" data-region-m-x2="0.4561">
+                    <span class="walkthrough-annotation-label">Before the launch</span>
+                    
+                    <p class="walkthrough-annotation-text">The two steps before any campaign exists: a landing page on the client’s own domain, then paid traffic to it as the test bed for positioning and price. This was the work I did most often.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="scale-after" data-focus-ref="scale" data-hold-scale="1.25" data-region-y="0.662" data-region-h="0.265" data-region-x="0.1238" data-region-w="0.7523" data-region-m-y="0.662" data-region-m-h="0.265" data-region-m-x="0.1238" data-region-m-w="0.42" data-region-m-x2="0.4561">
+                    <span class="walkthrough-annotation-label">After the campaign</span>
+                    
+                    <p class="walkthrough-annotation-text">Step four is the retainer pitch, placed while the founder is still thinking about launch day. Its heading is the contract term itself, which answers the retainer objection up front.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="onewheel-band" data-hold-scale="1.25" data-region-y="0.28" data-region-h="0.42" data-region-x="0.06" data-region-w="0.44">
+                    <span class="walkthrough-annotation-label">A Client Who Is Also a Case Study</span>
+                    
+                    <p class="walkthrough-annotation-text">The testimonial is Onewheel's CEO, the account whose growth case study I wrote.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="agile" data-hold-scale="1.25" data-region-y="0.2601" data-region-h="0.3975" data-region-x="0.0516" data-region-w="0.3254" data-region-m-y="0.26" data-region-m-h="0.4" data-region-m-x="0.0516" data-region-m-w="0.3254">
+                    <span class="walkthrough-annotation-label">Why crowdfund at all</span>
+                    
+                    <p class="walkthrough-annotation-text">The only paragraph on the page that sells crowdfunding itself. The pitch is to a founder who needs investors: a campaign as public proof of demand.</p>
+                    
+                  </div>
+                  
+                </div>
+                
+                
+                <div class="walkthrough-progress" role="group" aria-label="Walkthrough controls">
+                  <div class="walkthrough-progress-rail">
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="0" type="button" aria-label="Go to Proof in the subhead" title="Proof in the subhead"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="1" type="button" aria-label="Go to Tenure per platform" title="Tenure per platform"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="2" type="button" aria-label="Go to Three steps" title="Three steps"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="3" type="button" aria-label="Go to One Tile Swapped Per Audience" title="One Tile Swapped Per Audience"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="4" type="button" aria-label="Go to Before the launch" title="Before the launch"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="5" type="button" aria-label="Go to After the campaign" title="After the campaign"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="6" type="button" aria-label="Go to A Client Who Is Also a Case Study" title="A Client Who Is Also a Case Study"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="7" type="button" aria-label="Go to Why crowdfund at all" title="Why crowdfund at all"></button>
+                    
+                  </div>
+                  <div class="wt-ctl-row">
+                    <button class="walkthrough-progress-nav" data-progress-nav="prev" type="button" aria-label="Previous stop" title="Previous stop">
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 4l-4 4 4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <button class="wt-ctl-count" type="button" aria-expanded="false" aria-haspopup="true" title="All stops">
+                      <span class="wt-ctl-count-text">8 stops</span>
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 10l4-4 4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <button class="walkthrough-progress-nav" data-progress-nav="next" type="button" aria-label="Next stop" title="Next stop">
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <span class="wt-ctl-gap"></span>
+                    <button class="wt-ctl-btn wt-ctl-restart" type="button" title="Restart the walkthrough">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1 4v6h6M3.51 15a9 9 0 1 0 2.13-9.36L1 10" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      <span class="wt-ctl-label">Restart</span>
+                    </button>
+                    <button class="wt-ctl-btn wt-ctl-skip" type="button" title="Skip the walkthrough">
+                      Skip
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v10M3.5 8.5L8 13l4.5-4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                  </div>
+                  <ol class="wt-chapters" hidden>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="0" type="button">Proof in the subhead</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="1" type="button">Tenure per platform</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="2" type="button">Three steps</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="3" type="button">One Tile Swapped Per Audience</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="4" type="button">Before the launch</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="5" type="button">After the campaign</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="6" type="button">A Client Who Is Also a Case Study</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="7" type="button">Why crowdfund at all</button></li>
+                    
+                  </ol>
+                </div>
+                
+              </div>
+
+              <svg class="walkthrough-lines" aria-hidden="true"></svg>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+
+    
+    
+
+
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+    
+
+    
+
+
+    
+
+
+    
+
+    
+    <section class="project-pagination" data-hud-label="Up Next" aria-label="Project pagination">
+      <div class="container">
+        <div class="pagination-grid">
+          <a class="pagination-card pagination-card--prev" href="/projects/carealert/" rel="prev">
+            <span class="pagination-direction" aria-hidden="true">&larr;</span>
+            <div class="pagination-meta">
+              <span class="pagination-label">Previous</span>
+              <span class="pagination-title">CareAlert</span>
+              <span class="pagination-client">Sensorscall</span>
+            </div>
+            
+            <div class="pagination-thumb">
+              <img src="/assets/images/projects/carealert-hero.webp" alt="" loading="lazy">
+            </div>
+            
+          </a>
+          <a class="pagination-card pagination-card--next" href="/projects/harry-potter-escape-from-gringotts-hallmark-keepsake-ornament/" rel="next">
+            <span class="pagination-direction" aria-hidden="true">&rarr;</span>
+            <div class="pagination-meta">
+              <span class="pagination-label">Next</span>
+              <span class="pagination-title">Harry Potter™ Keepsake Ornament Set</span>
+              <span class="pagination-client">Hallmark</span>
+            </div>
+            
+            <div class="pagination-thumb">
+              <img src="/assets/images/projects/harry-potter-tree-hero.webp" alt="" loading="lazy">
+            </div>
+            
+          </a>
+        </div>
+      </div>
+    </section>
+    
+
+
+    
+
+  </main>
+
+<footer class="site-footer" id="contact">
+  <div class="footer-container">
+    <div class="footer-contact">
+      <p class="section-label footer-eyebrow">Contact</p>
+      <svg class="footer-mark" viewBox="0 0 304 288" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="footer-mark-gradient" x1="0" y1="0" x2="304" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#B2DFDB"/>
+            <stop offset=".55" stop-color="#5DBDB4"/>
+            <stop offset="1" stop-color="#26A69A"/>
+          </linearGradient>
+        </defs>
+        <g fill="none" stroke="url(#footer-mark-gradient)" stroke-width="40">
+          <path d="M108,0V224A44,44 0 0 1 20,224" pathLength="1"/>
+          <path d="M218,0V288" pathLength="1"/>
+          <path d="M128,132H198" pathLength="1"/>
+          <path d="M238,20A46,46 0 0 1 238,112" pathLength="1"/>
+        </g>
+      </svg>
+      <nav class="footer-links" aria-label="Contact">
+        <a href="mailto:hello@jakobpicciotto.com" class="footer-link footer-link--email">hello@jakobpicciotto.com</a>
+        <a href="https://www.linkedin.com/in/jakob-picciotto/" class="footer-link" target="_blank" rel="noopener">linkedin.com/in/jakob-picciotto</a>
+      </nav>
+      <p class="footer-location">Seattle, WA</p>
+    </div>
+    <p class="footer-text">&copy; 2026 Jakob Picciotto</p>
+  </div>
+</footer>
+<script src="/assets/js/footer-monogram.js" defer></script>
+
+
+  
+  <script src="/assets/js/project-hud.js" defer></script>
+  <script src="/assets/js/walkthrough-shared.js" defer></script>
+  <script src="/assets/js/walkthrough-geometry.js" defer></script>
+  <script src="/assets/js/walkthrough-pinned.js" defer></script>
+  <script src="/assets/js/walkthrough-mobile.js" defer></script>
+  <script src="/assets/js/walkthrough-static.js" defer></script>
+  <script src="/assets/js/walkthrough-embers.js" defer></script>
+  <script src="/assets/js/document-reader.js" defer></script>
+  <script src="/assets/js/attribution-typewriter.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/storyboard.js" defer></script>
+  <script src="/assets/js/funnel-cohort.js" defer></script>
+  <script src="/assets/js/related-filter.js" defer></script>
+  <script src="/assets/js/focal-crop.js" defer></script>
+  <script src="/assets/js/strategy-section.js" defer></script>
+  <script src="/assets/js/adaptive-glass.js" defer></script>
+  <script src="/assets/js/hero-odometer.js" defer></script>
+  <script src="/assets/js/hero-chips.js" defer></script>
+  <script src="/assets/js/walkthrough-controls.js" defer></script>
+
+</body>
+</html>

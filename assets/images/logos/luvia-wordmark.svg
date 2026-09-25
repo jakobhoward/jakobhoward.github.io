@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="388" height="100" viewBox="0 0 388 100" role="img" aria-label="Luvia">
+  <!-- Luvia wordmark, redrawn from the campaign's own landing-page comp
+       (source-assets/Luvia/documents/Luvia Desktop V1.pdf): light geometric
+       sans, generous tracking, uppercase. Measured off that comp at
+       cap height 221px with a ~13px stroke (stroke/cap 0.059) and an overall
+       width/cap ratio of 3.88 — reproduced here at cap height 100.
+       Drawn as strokes so the weight stays exact at any size, and in
+       currentColor so the card chin, the dark hero, and the silhouette
+       treatment can each tint it without a second asset. -->
+  <g fill="none" stroke="currentColor" stroke-width="5.9" stroke-linecap="butt" stroke-linejoin="miter" vector-effect="non-scaling-stroke">
+    <!-- L -->
+    <path d="M3 0 V100 H57"/>
+    <!-- U -->
+    <path d="M88 0 V70 A28 28 0 0 0 144 70 V0"/>
+    <!-- V -->
+    <path d="M175 0 L206 100 L237 0"/>
+    <!-- I -->
+    <path d="M268 0 V100"/>
+    <!-- A -->
+    <path d="M299 100 L330 0 L361 100 M310 66 H350"/>
+  </g>
+</svg>

@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  /* Motion-safe boot flag on <html>, set during head parse (before the body
+     paints). CSS keys :root.js-motion to suppress lines that main.js reveals
+     after first paint — chiefly the metrics attribution, which is split into
+     per-glyph typewriter spans and would otherwise flash its plain text for a
+     frame on load. Set only when JS runs AND reduced motion is not requested,
+     so the no-JS and reduced-motion paths keep their static, visible fallback
+     (they have no scroll ramp to reveal a hidden line). */
+  if (!window.matchMedia || !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.documentElement.classList.add('js-motion');
+  }
+</script>
+<title>LUA | Jakob Picciotto</title>
+<meta name="description" content="Wrote the pre-launch landing page and the campaign copy that followed for earphones whose charging case doubles as a Hi-Fi speaker.">
+
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="canonical" href="https://work.jakobpicciotto.com/projects/lua/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jakob Picciotto">
+<meta property="og:title" content="LUA | Jakob Picciotto">
+<meta property="og:description" content="Wrote the pre-launch landing page and the campaign copy that followed for earphones whose charging case doubles as a Hi-Fi speaker.">
+<meta property="og:url" content="https://work.jakobpicciotto.com/projects/lua/">
+<meta property="og:image" content="https://work.jakobpicciotto.com/assets/images/projects/lua-hero.webp">
+
+<meta property="og:image:width" content="1390">
+<meta property="og:image:height" content="920">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LUA | Jakob Picciotto">
+<meta name="twitter:description" content="Wrote the pre-launch landing page and the campaign copy that followed for earphones whose charging case doubles as a Hi-Fi speaker.">
+<meta name="twitter:image" content="https://work.jakobpicciotto.com/assets/images/projects/lua-hero.webp">
+
+<script src="/assets/debug/browser.js"></script>
+<link rel="preload" href="/assets/fonts/Raleway-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/SourceSans3-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="/assets/images/logos/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/css/fonts.css">
+<link rel="stylesheet" href="/assets/css/style.css">
+
+
+
+
+
+</head>
+<body class="project-page">
+  
+  <script>
+    var _qs = new URLSearchParams(location.search);
+    var layout = _qs.get('layout');
+    if (/^(static|synced|interleaved)$/.test(layout || '')) document.body.classList.add('layout-' + layout);
+  </script>
+  <header class="site-header">
+  <div class="header-container">
+    <a href="/" class="site-logo" aria-label="Jakob Picciotto">
+      <svg class="site-logo-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1938.35 289.61" aria-hidden="true">
+        <defs>
+          <linearGradient id="logo-gradient-light" x1="0" y1="0" x2="304" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#4DB6AC"/>
+            <stop offset=".55" stop-color="#199488"/>
+            <stop offset="1" stop-color="#00796B"/>
+          </linearGradient>
+          <linearGradient id="logo-gradient-dark" x1="0" y1="0" x2="304" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#B2DFDB"/>
+            <stop offset=".55" stop-color="#5DBDB4"/>
+            <stop offset="1" stop-color="#26A69A"/>
+          </linearGradient>
+        </defs>
+        <g>
+          <path class="logo-monogram logo-monogram-light" fill="url(#logo-gradient-light)" fill-rule="evenodd" d="M88,0H128V224H88ZM198,0H238V288H198ZM128,112H198V152H128ZM238,0A66,66 0 0 1 238,132L238,92A26,26 0 0 0 238,40ZM128,224A64,64 0 0 1 0,224L40,224A24,24 0 0 0 88,224Z"/>
+          <path class="logo-monogram logo-monogram-dark" fill="url(#logo-gradient-dark)" fill-rule="evenodd" d="M88,0H128V224H88ZM198,0H238V288H198ZM128,112H198V152H128ZM238,0A66,66 0 0 1 238,132L238,92A26,26 0 0 0 238,40ZM128,224A64,64 0 0 1 0,224L40,224A24,24 0 0 0 88,224Z"/>
+          <g class="logo-text" fill="currentColor">
+            <path d="M482.89,211.42c-4.06,0-7.91-.62-11.54-1.84-3.63-1.23-6.89-3.13-9.78-5.69l9.3-14.59c1.18,1.17,2.62,2.06,4.33,2.64,1.71.59,3.42.88,5.13.88,2.78,0,5.18-.99,7.21-2.97,2.03-1.98,3.05-4.52,3.05-7.61v-86.24h21.48v84.64c0,4.49-.75,8.63-2.24,12.42-1.5,3.79-3.55,7.05-6.17,9.78-2.62,2.72-5.72,4.83-9.3,6.33-3.58,1.5-7.4,2.24-11.46,2.24ZM490.58,84.3v-21.32h21.48v21.32h-21.48Z"/>
+            <path d="M554.54,181.6c-4.06,0-7.85-.67-11.38-2-3.53-1.33-6.57-3.21-9.14-5.61-2.56-2.4-4.57-5.21-6.01-8.42-1.44-3.21-2.16-6.73-2.16-10.58s.88-7.61,2.65-10.98,4.22-6.22,7.37-8.58c3.15-2.35,6.92-4.19,11.3-5.53,4.38-1.33,9.19-2,14.43-2,3.74,0,7.4.32,10.98.96,3.58.64,6.76,1.55,9.54,2.73v-4.81c0-5.56-1.58-9.83-4.73-12.82-3.15-2.99-7.83-4.49-14.03-4.49-4.49,0-8.87.8-13.14,2.4-4.28,1.6-8.66,3.96-13.14,7.05l-6.57-13.63c10.79-7.16,22.44-10.74,34.95-10.74s21.45,2.96,28.13,8.9c6.68,5.93,10.02,14.51,10.02,25.73v26.13c0,2.24.4,3.85,1.2,4.81.8.96,2.11,1.5,3.93,1.6v18.27c-3.63.75-6.79,1.12-9.46,1.12-4.06,0-7.19-.91-9.38-2.72-2.19-1.82-3.55-4.22-4.09-7.21l-.48-4.65c-3.74,4.92-8.28,8.66-13.63,11.22-5.35,2.56-11.06,3.85-17.15,3.85ZM560.63,165.89c3.63,0,7.08-.64,10.34-1.92,3.26-1.28,5.8-2.99,7.61-5.13,2.35-1.82,3.53-3.85,3.53-6.09v-9.62c-2.56-.96-5.35-1.74-8.34-2.32-2.99-.59-5.88-.88-8.66-.88-5.56,0-10.1,1.26-13.63,3.77-3.53,2.51-5.29,5.69-5.29,9.54,0,3.63,1.39,6.65,4.17,9.06,2.78,2.4,6.2,3.61,10.26,3.61Z"/>
+            <path d="M681.01,180l-24.37-36.39-11.54,11.38v25.01h-21.48V62.98h21.48v71.01l33.66-37.83h22.92l-31.26,35.59,33.5,48.25h-22.92Z"/>
+            <path d="M747.53,181.6c-6.84,0-12.98-1.18-18.43-3.53s-10.07-5.53-13.87-9.54c-3.79-4.01-6.71-8.63-8.74-13.87-2.03-5.24-3.05-10.74-3.05-16.51s1.01-11.43,3.05-16.67c2.03-5.23,4.94-9.86,8.74-13.87,3.79-4.01,8.42-7.19,13.87-9.54,5.45-2.35,11.59-3.53,18.43-3.53s12.96,1.18,18.35,3.53c5.4,2.35,9.99,5.53,13.79,9.54,3.79,4.01,6.71,8.63,8.74,13.87,2.03,5.24,3.05,10.8,3.05,16.67s-1.02,11.28-3.05,16.51c-2.03,5.24-4.92,9.86-8.66,13.87-3.74,4.01-8.34,7.19-13.79,9.54s-11.6,3.53-18.43,3.53ZM725.57,138.16c0,3.74.56,7.13,1.68,10.18s2.67,5.69,4.65,7.93c1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.56,1.84,8.66,1.84s5.98-.61,8.66-1.84c2.67-1.23,4.99-2.97,6.97-5.21,1.98-2.24,3.53-4.91,4.65-8.01,1.12-3.1,1.68-6.52,1.68-10.26s-.56-7-1.68-10.1c-1.12-3.1-2.67-5.77-4.65-8.01-1.98-2.24-4.3-3.98-6.97-5.21-2.67-1.23-5.56-1.84-8.66-1.84s-5.99.64-8.66,1.92c-2.67,1.28-5,3.05-6.97,5.29-1.98,2.24-3.53,4.92-4.65,8.01-1.12,3.1-1.68,6.47-1.68,10.1Z"/>
+            <path d="M853.65,181.6c-6.41,0-12.13-1.44-17.15-4.33-5.02-2.88-8.98-6.84-11.86-11.86v14.59h-18.75V62.98h21.48v47.77c2.99-5.13,6.92-9.11,11.78-11.94,4.86-2.83,10.55-4.25,17.07-4.25,5.45,0,10.42,1.18,14.91,3.53,4.49,2.35,8.36,5.5,11.62,9.46,3.26,3.96,5.77,8.6,7.53,13.95,1.76,5.35,2.65,10.96,2.65,16.83s-.99,11.76-2.97,16.99c-1.98,5.24-4.73,9.81-8.26,13.71-3.53,3.9-7.69,6.97-12.5,9.22s-9.99,3.37-15.55,3.37ZM847.72,163.33c3.42,0,6.57-.67,9.46-2,2.89-1.33,5.34-3.13,7.37-5.37,2.03-2.24,3.61-4.86,4.73-7.85,1.12-2.99,1.68-6.2,1.68-9.62s-.54-6.68-1.6-9.78c-1.07-3.1-2.59-5.82-4.57-8.18-1.98-2.35-4.3-4.22-6.97-5.61-2.67-1.39-5.61-2.08-8.82-2.08-4.81,0-9.11,1.58-12.9,4.73-3.79,3.15-6.71,7.03-8.74,11.62v20.04c.75,2.14,1.84,4.06,3.29,5.77,1.44,1.71,3.07,3.18,4.89,4.41,1.82,1.23,3.79,2.19,5.93,2.89,2.14.7,4.22,1.04,6.25,1.04Z"/>
+            <path d="M957.84,181.6c-6.63,0-12.4-1.47-17.31-4.41-4.92-2.94-8.76-6.92-11.54-11.94v48.89h-21.48v-118.14h18.75v14.43c3.1-4.91,7.11-8.79,12.02-11.62,4.91-2.83,10.58-4.25,16.99-4.25,5.66,0,10.9,1.15,15.71,3.45,4.81,2.3,8.95,5.4,12.42,9.3,3.47,3.9,6.2,8.5,8.18,13.79,1.98,5.29,2.97,10.88,2.97,16.75s-.91,11.81-2.73,17.15c-1.82,5.34-4.36,9.99-7.61,13.95-3.26,3.96-7.13,7.05-11.62,9.3-4.49,2.24-9.4,3.37-14.75,3.37ZM950.63,163.33c3.21,0,6.17-.69,8.9-2.08,2.73-1.39,5.05-3.26,6.97-5.61,1.92-2.35,3.42-5.08,4.49-8.18,1.07-3.1,1.6-6.3,1.6-9.62,0-3.53-.59-6.81-1.76-9.86-1.18-3.05-2.81-5.69-4.89-7.93s-4.54-4.01-7.37-5.29c-2.83-1.28-5.91-1.92-9.22-1.92-2.03,0-4.12.35-6.25,1.04-2.14.7-4.12,1.68-5.93,2.97-1.82,1.28-3.45,2.78-4.89,4.49-1.44,1.71-2.54,3.58-3.29,5.61v19.72c1.92,4.81,4.86,8.79,8.82,11.94,3.95,3.15,8.23,4.73,12.82,4.73Z"/>
+            <path d="M1009.13,84.3v-21.32h21.48v21.32h-21.48ZM1009.13,180v-84h21.48v84h-21.48Z"/>
+            <path d="M1044.71,138c0-5.88,1.01-11.43,3.05-16.67,2.03-5.23,4.97-9.83,8.82-13.79,3.85-3.95,8.5-7.11,13.95-9.46,5.45-2.35,11.59-3.53,18.43-3.53,9.19,0,17.02,1.98,23.48,5.93,6.46,3.96,11.3,9.14,14.51,15.55l-21,6.41c-1.82-3.1-4.22-5.48-7.21-7.13-2.99-1.66-6.31-2.49-9.94-2.49-3.1,0-5.99.62-8.66,1.84-2.67,1.23-5,2.94-6.97,5.13-1.98,2.19-3.53,4.84-4.65,7.93-1.12,3.1-1.68,6.52-1.68,10.26s.59,7.16,1.76,10.26c1.17,3.1,2.75,5.77,4.73,8.01,1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.5,1.84,8.5,1.84,3.85,0,7.4-.96,10.66-2.89,3.26-1.92,5.53-4.27,6.81-7.05l21,6.41c-2.88,6.41-7.64,11.65-14.27,15.71-6.63,4.06-14.59,6.09-23.88,6.09-6.84,0-12.98-1.18-18.43-3.53s-10.1-5.53-13.95-9.54c-3.85-4.01-6.81-8.66-8.9-13.95s-3.13-10.82-3.13-16.59Z"/>
+            <path d="M1134.32,138c0-5.88,1.01-11.43,3.05-16.67,2.03-5.23,4.97-9.83,8.82-13.79,3.85-3.95,8.5-7.11,13.95-9.46,5.45-2.35,11.59-3.53,18.43-3.53,9.19,0,17.02,1.98,23.48,5.93,6.46,3.96,11.3,9.14,14.51,15.55l-21,6.41c-1.82-3.1-4.22-5.48-7.21-7.13-2.99-1.66-6.31-2.49-9.94-2.49-3.1,0-5.99.62-8.66,1.84-2.67,1.23-5,2.94-6.97,5.13-1.98,2.19-3.53,4.84-4.65,7.93-1.12,3.1-1.68,6.52-1.68,10.26s.59,7.16,1.76,10.26c1.17,3.1,2.75,5.77,4.73,8.01,1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.5,1.84,8.5,1.84,3.85,0,7.4-.96,10.66-2.89,3.26-1.92,5.53-4.27,6.81-7.05l21,6.41c-2.88,6.41-7.64,11.65-14.27,15.71-6.63,4.06-14.59,6.09-23.88,6.09-6.84,0-12.98-1.18-18.43-3.53s-10.1-5.53-13.95-9.54c-3.85-4.01-6.81-8.66-8.9-13.95s-3.13-10.82-3.13-16.59Z"/>
+            <path d="M1230.02,84.3v-21.32h21.48v21.32h-21.48ZM1230.02,180v-84h21.48v84h-21.48Z"/>
+            <path d="M1309.68,181.6c-6.84,0-12.98-1.18-18.43-3.53s-10.07-5.53-13.87-9.54c-3.79-4.01-6.71-8.63-8.74-13.87-2.03-5.24-3.05-10.74-3.05-16.51s1.01-11.43,3.05-16.67c2.03-5.23,4.94-9.86,8.74-13.87,3.79-4.01,8.42-7.19,13.87-9.54,5.45-2.35,11.59-3.53,18.43-3.53s12.96,1.18,18.35,3.53c5.4,2.35,9.99,5.53,13.79,9.54,3.79,4.01,6.71,8.63,8.74,13.87,2.03,5.24,3.05,10.8,3.05,16.67s-1.02,11.28-3.05,16.51c-2.03,5.24-4.92,9.86-8.66,13.87-3.74,4.01-8.34,7.19-13.79,9.54s-11.6,3.53-18.43,3.53ZM1287.72,138.16c0,3.74.56,7.13,1.68,10.18s2.67,5.69,4.65,7.93c1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.56,1.84,8.66,1.84s5.98-.61,8.66-1.84c2.67-1.23,5-2.97,6.97-5.21,1.98-2.24,3.53-4.91,4.65-8.01,1.12-3.1,1.68-6.52,1.68-10.26s-.56-7-1.68-10.1c-1.12-3.1-2.67-5.77-4.65-8.01-1.98-2.24-4.3-3.98-6.97-5.21-2.67-1.23-5.56-1.84-8.66-1.84s-5.99.64-8.66,1.92c-2.67,1.28-5,3.05-6.97,5.29-1.98,2.24-3.53,4.92-4.65,8.01-1.12,3.1-1.68,6.47-1.68,10.1Z"/>
+            <path d="M1417.23,175.67c-2.89,1.28-6.41,2.56-10.58,3.85-4.17,1.28-8.55,1.92-13.14,1.92-2.99,0-5.8-.38-8.42-1.12-2.62-.75-4.92-1.95-6.89-3.61-1.98-1.66-3.55-3.79-4.73-6.41-1.18-2.62-1.76-5.8-1.76-9.54v-48.25h-11.06v-16.51h11.06v-27.25h21.48v27.25h17.63v16.51h-17.63v41.04c0,2.99.77,5.1,2.32,6.33,1.55,1.23,3.45,1.84,5.69,1.84s4.43-.37,6.57-1.12c2.14-.75,3.85-1.39,5.13-1.92l4.33,16.99Z"/>
+            <path d="M1478.78,175.67c-2.89,1.28-6.41,2.56-10.58,3.85-4.17,1.28-8.55,1.92-13.14,1.92-2.99,0-5.8-.38-8.42-1.12-2.62-.75-4.92-1.95-6.89-3.61-1.98-1.66-3.55-3.79-4.73-6.41-1.18-2.62-1.76-5.8-1.76-9.54v-48.25h-11.06v-16.51h11.06v-27.25h21.48v27.25h17.63v16.51h-17.63v41.04c0,2.99.77,5.1,2.33,6.33,1.55,1.23,3.45,1.84,5.69,1.84s4.43-.37,6.57-1.12c2.14-.75,3.85-1.39,5.13-1.92l4.33,16.99Z"/>
+            <path d="M1526.71,181.6c-6.84,0-12.98-1.18-18.43-3.53s-10.07-5.53-13.87-9.54c-3.79-4.01-6.71-8.63-8.74-13.87-2.03-5.24-3.05-10.74-3.05-16.51s1.01-11.43,3.05-16.67c2.03-5.23,4.94-9.86,8.74-13.87,3.79-4.01,8.42-7.19,13.87-9.54,5.45-2.35,11.59-3.53,18.43-3.53s12.96,1.18,18.35,3.53c5.39,2.35,9.99,5.53,13.79,9.54,3.79,4.01,6.71,8.63,8.74,13.87,2.03,5.24,3.05,10.8,3.05,16.67s-1.02,11.28-3.05,16.51c-2.03,5.24-4.92,9.86-8.66,13.87-3.74,4.01-8.33,7.19-13.79,9.54s-11.6,3.53-18.43,3.53ZM1504.75,138.16c0,3.74.56,7.13,1.68,10.18s2.67,5.69,4.65,7.93c1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.56,1.84,8.66,1.84s5.98-.61,8.66-1.84c2.67-1.23,4.99-2.97,6.97-5.21,1.98-2.24,3.53-4.91,4.65-8.01,1.12-3.1,1.68-6.52,1.68-10.26s-.56-7-1.68-10.1c-1.12-3.1-2.67-5.77-4.65-8.01-1.98-2.24-4.3-3.98-6.97-5.21-2.67-1.23-5.56-1.84-8.66-1.84s-5.99.64-8.66,1.92c-2.67,1.28-5,3.05-6.97,5.29-1.98,2.24-3.53,4.92-4.65,8.01-1.12,3.1-1.68,6.47-1.68,10.1Z"/>
+            <path d="M1584.58,180v-23.08h17.63v23.08h-17.63Z"/>
+            <path d="M1615.83,138c0-5.88,1.01-11.43,3.05-16.67,2.03-5.23,4.97-9.83,8.82-13.79,3.85-3.95,8.5-7.11,13.95-9.46,5.45-2.35,11.59-3.53,18.43-3.53,9.19,0,17.02,1.98,23.48,5.93,6.46,3.96,11.3,9.14,14.51,15.55l-21,6.41c-1.82-3.1-4.22-5.48-7.21-7.13-2.99-1.66-6.31-2.49-9.94-2.49-3.1,0-5.99.62-8.66,1.84-2.67,1.23-5,2.94-6.97,5.13-1.98,2.19-3.53,4.84-4.65,7.93-1.12,3.1-1.68,6.52-1.68,10.26s.59,7.16,1.76,10.26c1.17,3.1,2.75,5.77,4.73,8.01,1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.5,1.84,8.5,1.84,3.85,0,7.4-.96,10.66-2.89,3.26-1.92,5.53-4.27,6.81-7.05l21,6.41c-2.88,6.41-7.64,11.65-14.27,15.71-6.63,4.06-14.59,6.09-23.88,6.09-6.84,0-12.98-1.18-18.43-3.53s-10.1-5.53-13.95-9.54c-3.85-4.01-6.81-8.66-8.9-13.95s-3.13-10.82-3.13-16.59Z"/>
+            <path d="M1749.52,181.6c-6.84,0-12.98-1.18-18.43-3.53s-10.07-5.53-13.87-9.54c-3.79-4.01-6.71-8.63-8.74-13.87-2.03-5.24-3.05-10.74-3.05-16.51s1.01-11.43,3.05-16.67c2.03-5.23,4.94-9.86,8.74-13.87,3.79-4.01,8.42-7.19,13.87-9.54,5.45-2.35,11.59-3.53,18.43-3.53s12.96,1.18,18.35,3.53c5.4,2.35,9.99,5.53,13.79,9.54,3.79,4.01,6.71,8.63,8.74,13.87,2.03,5.24,3.05,10.8,3.05,16.67s-1.02,11.28-3.05,16.51c-2.03,5.24-4.92,9.86-8.66,13.87-3.74,4.01-8.34,7.19-13.79,9.54s-11.6,3.53-18.43,3.53ZM1727.56,138.16c0,3.74.56,7.13,1.68,10.18s2.67,5.69,4.65,7.93c1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.56,1.84,8.66,1.84s5.98-.61,8.66-1.84c2.67-1.23,5-2.97,6.97-5.21,1.98-2.24,3.53-4.91,4.65-8.01,1.12-3.1,1.68-6.52,1.68-10.26s-.56-7-1.68-10.1c-1.12-3.1-2.67-5.77-4.65-8.01-1.98-2.24-4.3-3.98-6.97-5.21-2.67-1.23-5.56-1.84-8.66-1.84s-5.99.64-8.66,1.92c-2.67,1.28-5,3.05-6.97,5.29-1.98,2.24-3.53,4.92-4.65,8.01-1.12,3.1-1.68,6.47-1.68,10.1Z"/>
+            <path d="M1938.35,180h-21.48v-47.13c0-6.73-1.15-11.65-3.45-14.75-2.3-3.1-5.48-4.65-9.54-4.65-4.28,0-8.28,1.63-12.02,4.89-3.74,3.26-6.41,7.51-8.01,12.74v48.89h-21.48v-47.13c0-6.73-1.15-11.65-3.45-14.75-2.3-3.1-5.48-4.65-9.54-4.65s-8.15,1.6-11.94,4.81c-3.79,3.21-6.49,7.43-8.1,12.66v49.05h-21.48v-84h19.4v15.55c3.1-5.45,7.35-9.64,12.74-12.58,5.4-2.94,11.57-4.41,18.51-4.41s12.5,1.71,16.35,5.13c3.85,3.42,6.3,7.64,7.37,12.66,3.42-5.77,7.75-10.18,12.98-13.22,5.23-3.05,11.22-4.57,17.95-4.57,5.13,0,9.35.96,12.66,2.88,3.31,1.92,5.88,4.44,7.69,7.53,1.82,3.1,3.07,6.63,3.77,10.58.69,3.96,1.04,7.96,1.04,12.02v52.42Z"/>
+          </g>
+        </g>
+      </svg>
+    </a>
+    <svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+      <defs>
+        <filter id="glass-refract" x="0%" y="0%" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.015" numOctaves="3" seed="5" result="noise"/>
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+        </filter>
+      </defs>
+    </svg>
+    <nav class="site-nav">
+      <a href="/projects/" class="nav-link" data-nav="projects">Projects</a>
+      
+    </nav>
+    <a href="#contact" class="nav-contact" data-nav="contact" aria-label="Contact">
+      <svg class="nav-contact-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+        <rect x="2.25" y="4.25" width="15.5" height="11.5" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M3.5 6.5l6.5 4.6 6.5-4.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="nav-contact-label">Contact</span>
+    </a>
+    <script>
+      (function() {
+        var path = location.pathname;
+        var active = path.startsWith('/projects') ? 'projects'
+                   : path.startsWith('/about') ? 'about'
+                   : null;
+        if (active) document.querySelector('[data-nav="' + active + '"]').classList.add('active');
+      })();
+    </script>
+  </div>
+</header>
+<script src="/assets/js/header-glass.js" defer></script>
+<script src="/assets/js/nav-submenu.js" defer></script>
+
+
+    <nav class="project-hud" aria-label="Project navigation">
+      <div class="container project-hud-inner">
+        
+        <div class="hud-side">
+          
+          <a class="hud-prev" href="/projects/onewheel/">
+            <span class="hud-prev-arrow" aria-hidden="true">&larr;</span>
+            <span class="hud-prev-label">Prev</span>
+            <span class="hud-prev-title">Onewheel</span>
+          </a>
+          
+        </div>
+        <div class="hud-center">
+          <div class="hud-identity">
+            <span class="hud-title">LUA</span>
+            
+            
+          </div>
+          <span class="hud-section" aria-hidden="true"></span>
+        </div>
+        <div class="hud-actions">
+          
+          <a class="hud-next" href="/projects/philips-picopix-max/">
+            <span class="hud-next-label">Next</span>
+            <span class="hud-next-title">Philips PicoPix Max</span>
+            <span class="hud-next-arrow" aria-hidden="true">&rarr;</span>
+          </a>
+          
+          <button class="hud-top" type="button" aria-label="Back to top">
+            <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M2 7.5 6 3.5 10 7.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+
+  <main class="main-content">
+    
+    <section class="project-hero-section hero-scrolly hero-scrolly--scrim-boost" style="--hero-scrim-boost: 1.3; --hero-scrim-bottom: 1.35;">
+      <div class="scrolly-scene" data-scene="1">
+        <div class="scrolly-bg">
+          <picture>
+            <source media="(max-width: 768px)" srcset="/assets/images/projects/lua-bg-mobile.webp">
+            <img id="glass-source-hero" src="/assets/images/projects/lua-bg-desktop.webp" alt="" fetchpriority="high" decoding="async" data-focal-y="0.5">
+          </picture>
+          
+          <video class="scrolly-bg-video scrolly-bg-video--static-mobile" muted playsinline preload="auto" data-hero-scrub="0.6"
+                 poster="/assets/images/projects/lua-hero-loop-poster.webp"
+                 aria-hidden="true" style="--hero-video-pos-mobile: 50% 50%;">
+            <source src="/assets/images/projects/lua-hero-loop.webm" type="video/webm">
+            <source src="/assets/images/projects/lua-hero-loop.mp4" type="video/mp4">
+          </video>
+          
+          <div class="scrolly-overlay"></div>
+        </div>
+      </div>
+
+      <div class="scrolly-content">
+
+        <div class="scrolly-step" data-step="hero">
+          <div class="container">
+            <h1 class="project-title">LUA</h1>
+
+            
+            <a href="#campaign-walkthrough" class="hero-campaign-link hero-campaign-link--centered hero-campaign-link--below-title hero-campaign-link--sample">
+              Skip to work sample ↓
+            </a>
+            
+
+            <div class="hero-above-fold">
+              <div class="project-info-card">
+                <div class="hero-card-top">
+                  
+                  <div class="hero-role">
+                    <span class="info-card-label">My Role</span>
+                    <span class="hero-role-value">Senior Copywriter</span>
+                    
+                    <span class="hero-role-agency-credit">at
+                      <img src="/assets/images/logos/Rainfactory_logo.webp"
+                           alt="Rainfactory"
+                           width="450" height="98"
+                           class="hero-role-agency-logo">
+                    </span>
+                    
+                  </div>
+                  
+
+                  
+                  <div class="hero-client">
+                    <span class="info-card-label">Client</span>
+                    <div class="client-logos">
+                      <img src="/assets/images/logos/LUA_logo.png"
+                           alt="LUA"
+                           width="388" height="156"
+                           class="client-logo">
+                      
+                    </div>
+                  </div>
+                  
+                </div>
+
+                
+                <p class="impact-summary">Wrote the pre-launch landing page and the campaign copy that followed for earphones whose charging case doubles as a Hi-Fi speaker.</p>
+                
+
+                
+                <div class="hero-deliverables">
+                  <span class="info-card-label">Deliverables</span>
+                  <div class="info-card-deliverables">
+                    
+                    
+                    <a href="#pre-launch-board" class="deliverable-badge deliverable-badge--link">Landing Page</a>
+                    
+                    
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="hero-metrics-floor">
+            <div class="container">
+              <div class="metrics-heading-group">
+                <h2 class="metrics-heading">Key Results</h2>
+                
+                
+              </div>
+              <div class="metrics-grid">
+                
+                
+                
+                <div class="metric">
+                  <span class="metric-value">33%</span>
+                  <span class="metric-label">Landing-page conversion</span>
+                </div>
+                
+                
+                
+              </div>
+              
+              <div class="scrolly-hero-image">
+                <img src="/assets/images/projects/lua-hero.webp" alt="LUA" width="1390" height="920">
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+
+        
+        <div class="scrolly-pin-spacer" aria-hidden="true"></div>
+        
+
+        
+
+        
+
+        <div class="scrolly-bottom-fade" aria-hidden="true"></div>
+      </div>
+
+    </section>
+
+    
+  <script>
+    // Metric labels, injected inline right after the hero markup so they exist
+    // at first paint and the columns distribute with no post-load reflow.
+    // Content is data-driven from the project's heroMetricLabels field
+    // (build.js emits it as a JS literal, "null" when absent) — layout comes
+    // from the hero-metrics body class, but the label copy lives with the
+    // project data so each hero (Gringotts 3-up, Screeneo 2-up) reads
+    // correctly. One line per tile: the muted `sub` line was cut 2026-09-13
+    // (Jakob, smts3gkco1pz2: "I don't think I'll ever use subs for key
+    // results metrics"). Per-item leadDesktop optionally swaps the lead for
+    // one self-sufficient line at >=769px ("Email sign-up rate").
+    (function () {
+      var LABELS = null;
+      if (!LABELS || !LABELS.length) return;
+      var grid = document.querySelector('.hero-metrics-floor .metrics-grid');
+      if (!grid) return;
+      var metrics = grid.querySelectorAll('.metric');
+      for (var i = 0; i < metrics.length; i++) {
+        var label = metrics[i].querySelector('.metric-label');
+        var parts = LABELS[i];
+        if (!label || !parts) continue;
+        label.textContent = '';
+        var lead = document.createElement('span');
+        lead.className = 'metric-label-lead';
+        lead.textContent = parts.lead;
+        label.appendChild(lead);
+        if (parts.leadDesktop) {
+          lead.classList.add('metric-label-lead--mobile');
+          var leadDesktop = document.createElement('span');
+          leadDesktop.className = 'metric-label-lead metric-label-lead--desktop';
+          leadDesktop.textContent = parts.leadDesktop;
+          label.insertBefore(leadDesktop, lead);
+        }
+      }
+    })();
+  </script>
+
+    
+
+    
+
+    
+
+    
+    <section id="pre-launch" class="prelaunch-section" data-hud-label="Pre-Launch">
+      
+      
+      
+
+
+      
+      
+      
+      
+
+
+      
+      <div class="plsb plsb--xl pl-light" id="pre-launch-board" role="region" aria-label="My Best-Converting Page">
+        
+        <article class="plsb-panel plsb-panel--media pl-light-panel" aria-label="Before the launch">
+
+          
+          <div class="plsb-canvas plsb-canvas--establish" style="">
+            
+            
+            <picture>
+              
+              <source media="(max-width: 760px)" srcset="/assets/images/projects/lua-establish-mobile.webp">
+              
+              <img class="plsb-canvas-media" src="/assets/images/projects/lua-establish.webp"
+                   alt="A man with a LUA earphone in his ear holds the speaker charging case up to his chin, listening with his eyes closed." loading="lazy"
+                   width="2000" height="1335"
+                   style="--canvas-pos: 68% 35%;">
+            </picture>
+            
+            <div class="plsb-canvas-scrim plsb-canvas-scrim--establish" aria-hidden="true"></div>
+            
+            <div class="prelaunch-heading prelaunch-heading--canvas">
+              
+              <h2 class="prelaunch-title">My Best-Converting Page</h2>
+              
+              <p class="prelaunch-thesis">LUA had already funded at home in Korea. The Western launch started from <b>an empty email list</b>.</p>
+              
+              
+              
+              
+              
+              <div class="plsb-delivered" style="--i: 1">
+                <b class="plsb-delivered-title">What I delivered</b>
+                <ul aria-label="What I delivered">
+                  
+                  <li><img src="/assets/images/projects/icon-page-leadgen.webp" alt="" loading="lazy" width="354" height="448"><span>Landing page for lead generation</span></li>
+                  
+                  <li><img src="/assets/images/projects/icon-page-storefront.webp" alt="" loading="lazy" width="440" height="319"><span>Pre-order storefront</span></li>
+                  
+                </ul>
+              </div>
+              
+            </div>
+          </div>
+          
+
+          
+        </article>
+        
+      </div>
+      
+
+      <div class="container">
+
+        
+        <div class="pl-handoff-strip pl-funnel-intro">
+          
+          <h3>The page I wrote</h3>
+          <p>The waitlist build of luabeats.com pointed every section at a single ask: an email before launch.</p>
+          
+          
+          <figure class="pf-intro-frame">
+            <div class="pf-node-bar">
+              <span class="pf-bdots"><i></i><i></i><i></i></span>
+              <span class="pf-burl">luabeats.com</span>
+            </div>
+            <div class="pf-intro-view">
+              <img src="/assets/images/projects/lua-walkthrough/landing-page.webp"
+                   alt="The top of luabeats.com: the dark LUA 2-in-1 hero, a $109 pre-order offer beside the box contents, and feature cards for sound quality and water resistance." loading="lazy"
+                   width="1200" height="2400">
+            </div>
+            
+            <figcaption class="plsb-shot-cap">luabeats.com as it survives in my capture — the waitlist build already rewritten into the pre-order storefront, with the original JOIN WAITLIST button still in the nav.</figcaption>
+            
+          </figure>
+          
+        </div>
+        
+
+
+        
+        <div class="pf-stage">
+        <div class="pf-bar">
+          <div class="pf-heading">
+            
+            <span class="section-label">The result</span>
+            
+            
+            <h3>Watch where 100 visitors land</h3>
+            
+          </div>
+          <div class="pf-counters">
+            <span class="pf-count"><b data-pf-count="in">100</b> visitors in</span>
+            <span class="pf-count pf-count--gold"><b data-pf-count="out">33</b> signed up</span>
+          </div>
+        </div>
+        <div class="prelaunch-funnel">
+          <div class="pf-inflow anim-scope">
+            <div class="pf-lbl">
+              <span class="pf-lbl-h">Visitors</span>
+              
+            </div>
+
+            <svg class="pf-grid" viewBox="0 0 220 258" role="img"
+                 aria-label="100 visitor dots, 33 of them ringed gold, pouring into the luabeats.com landing page below.">
+              <circle cx="20" cy="10" r="5" class="pf-in pf-in--primed" style="--r: 0"/><circle cx="40" cy="10" r="5" class="pf-in" style="--r: 0"/><circle cx="60" cy="10" r="5" class="pf-in pf-in--primed" style="--r: 0"/><circle cx="80" cy="10" r="5" class="pf-in" style="--r: 0"/><circle cx="100" cy="10" r="5" class="pf-in pf-in--primed" style="--r: 0"/><circle cx="120" cy="10" r="5" class="pf-in" style="--r: 0"/><circle cx="140" cy="10" r="5" class="pf-in" style="--r: 0"/><circle cx="160" cy="10" r="5" class="pf-in" style="--r: 0"/><circle cx="180" cy="10" r="5" class="pf-in" style="--r: 0"/><circle cx="200" cy="10" r="5" class="pf-in pf-in--primed" style="--r: 0"/><circle cx="20" cy="28" r="5" class="pf-in" style="--r: 1"/><circle cx="40" cy="28" r="5" class="pf-in pf-in--primed" style="--r: 1"/><circle cx="60" cy="28" r="5" class="pf-in" style="--r: 1"/><circle cx="80" cy="28" r="5" class="pf-in pf-in--primed" style="--r: 1"/><circle cx="100" cy="28" r="5" class="pf-in" style="--r: 1"/><circle cx="120" cy="28" r="5" class="pf-in" style="--r: 1"/><circle cx="140" cy="28" r="5" class="pf-in" style="--r: 1"/><circle cx="160" cy="28" r="5" class="pf-in" style="--r: 1"/><circle cx="180" cy="28" r="5" class="pf-in pf-in--primed" style="--r: 1"/><circle cx="200" cy="28" r="5" class="pf-in" style="--r: 1"/><circle cx="20" cy="46" r="5" class="pf-in pf-in--primed" style="--r: 2"/><circle cx="40" cy="46" r="5" class="pf-in" style="--r: 2"/><circle cx="60" cy="46" r="5" class="pf-in" style="--r: 2"/><circle cx="80" cy="46" r="5" class="pf-in" style="--r: 2"/><circle cx="100" cy="46" r="5" class="pf-in" style="--r: 2"/><circle cx="120" cy="46" r="5" class="pf-in pf-in--primed" style="--r: 2"/><circle cx="140" cy="46" r="5" class="pf-in" style="--r: 2"/><circle cx="160" cy="46" r="5" class="pf-in pf-in--primed" style="--r: 2"/><circle cx="180" cy="46" r="5" class="pf-in" style="--r: 2"/><circle cx="200" cy="46" r="5" class="pf-in pf-in--primed" style="--r: 2"/><circle cx="20" cy="64" r="5" class="pf-in" style="--r: 3"/><circle cx="40" cy="64" r="5" class="pf-in" style="--r: 3"/><circle cx="60" cy="64" r="5" class="pf-in" style="--r: 3"/><circle cx="80" cy="64" r="5" class="pf-in" style="--r: 3"/><circle cx="100" cy="64" r="5" class="pf-in pf-in--primed" style="--r: 3"/><circle cx="120" cy="64" r="5" class="pf-in" style="--r: 3"/><circle cx="140" cy="64" r="5" class="pf-in pf-in--primed" style="--r: 3"/><circle cx="160" cy="64" r="5" class="pf-in" style="--r: 3"/><circle cx="180" cy="64" r="5" class="pf-in" style="--r: 3"/><circle cx="200" cy="64" r="5" class="pf-in" style="--r: 3"/><circle cx="20" cy="82" r="5" class="pf-in" style="--r: 4"/><circle cx="40" cy="82" r="5" class="pf-in pf-in--primed" style="--r: 4"/><circle cx="60" cy="82" r="5" class="pf-in" style="--r: 4"/><circle cx="80" cy="82" r="5" class="pf-in pf-in--primed" style="--r: 4"/><circle cx="100" cy="82" r="5" class="pf-in" style="--r: 4"/><circle cx="120" cy="82" r="5" class="pf-in pf-in--primed" style="--r: 4"/><circle cx="140" cy="82" r="5" class="pf-in" style="--r: 4"/><circle cx="160" cy="82" r="5" class="pf-in" style="--r: 4"/><circle cx="180" cy="82" r="5" class="pf-in" style="--r: 4"/><circle cx="200" cy="82" r="5" class="pf-in" style="--r: 4"/><circle cx="20" cy="100" r="5" class="pf-in pf-in--primed" style="--r: 5"/><circle cx="40" cy="100" r="5" class="pf-in" style="--r: 5"/><circle cx="60" cy="100" r="5" class="pf-in pf-in--primed" style="--r: 5"/><circle cx="80" cy="100" r="5" class="pf-in" style="--r: 5"/><circle cx="100" cy="100" r="5" class="pf-in pf-in--primed" style="--r: 5"/><circle cx="120" cy="100" r="5" class="pf-in" style="--r: 5"/><circle cx="140" cy="100" r="5" class="pf-in" style="--r: 5"/><circle cx="160" cy="100" r="5" class="pf-in" style="--r: 5"/><circle cx="180" cy="100" r="5" class="pf-in" style="--r: 5"/><circle cx="200" cy="100" r="5" class="pf-in pf-in--primed" style="--r: 5"/><circle cx="20" cy="118" r="5" class="pf-in" style="--r: 6"/><circle cx="40" cy="118" r="5" class="pf-in pf-in--primed" style="--r: 6"/><circle cx="60" cy="118" r="5" class="pf-in" style="--r: 6"/><circle cx="80" cy="118" r="5" class="pf-in" style="--r: 6"/><circle cx="100" cy="118" r="5" class="pf-in" style="--r: 6"/><circle cx="120" cy="118" r="5" class="pf-in" style="--r: 6"/><circle cx="140" cy="118" r="5" class="pf-in pf-in--primed" style="--r: 6"/><circle cx="160" cy="118" r="5" class="pf-in" style="--r: 6"/><circle cx="180" cy="118" r="5" class="pf-in pf-in--primed" style="--r: 6"/><circle cx="200" cy="118" r="5" class="pf-in" style="--r: 6"/><circle cx="20" cy="136" r="5" class="pf-in pf-in--primed" style="--r: 7"/><circle cx="40" cy="136" r="5" class="pf-in" style="--r: 7"/><circle cx="60" cy="136" r="5" class="pf-in" style="--r: 7"/><circle cx="80" cy="136" r="5" class="pf-in" style="--r: 7"/><circle cx="100" cy="136" r="5" class="pf-in" style="--r: 7"/><circle cx="120" cy="136" r="5" class="pf-in pf-in--primed" style="--r: 7"/><circle cx="140" cy="136" r="5" class="pf-in" style="--r: 7"/><circle cx="160" cy="136" r="5" class="pf-in pf-in--primed" style="--r: 7"/><circle cx="180" cy="136" r="5" class="pf-in" style="--r: 7"/><circle cx="200" cy="136" r="5" class="pf-in" style="--r: 7"/><circle cx="20" cy="154" r="5" class="pf-in" style="--r: 8"/><circle cx="40" cy="154" r="5" class="pf-in" style="--r: 8"/><circle cx="60" cy="154" r="5" class="pf-in pf-in--primed" style="--r: 8"/><circle cx="80" cy="154" r="5" class="pf-in" style="--r: 8"/><circle cx="100" cy="154" r="5" class="pf-in pf-in--primed" style="--r: 8"/><circle cx="120" cy="154" r="5" class="pf-in" style="--r: 8"/><circle cx="140" cy="154" r="5" class="pf-in pf-in--primed" style="--r: 8"/><circle cx="160" cy="154" r="5" class="pf-in" style="--r: 8"/><circle cx="180" cy="154" r="5" class="pf-in" style="--r: 8"/><circle cx="200" cy="154" r="5" class="pf-in" style="--r: 8"/><circle cx="20" cy="172" r="5" class="pf-in" style="--r: 9"/><circle cx="40" cy="172" r="5" class="pf-in pf-in--primed" style="--r: 9"/><circle cx="60" cy="172" r="5" class="pf-in" style="--r: 9"/><circle cx="80" cy="172" r="5" class="pf-in pf-in--primed" style="--r: 9"/><circle cx="100" cy="172" r="5" class="pf-in" style="--r: 9"/><circle cx="120" cy="172" r="5" class="pf-in pf-in--primed" style="--r: 9"/><circle cx="140" cy="172" r="5" class="pf-in" style="--r: 9"/><circle cx="160" cy="172" r="5" class="pf-in" style="--r: 9"/><circle cx="180" cy="172" r="5" class="pf-in pf-in--primed" style="--r: 9"/><circle cx="200" cy="172" r="5" class="pf-in" style="--r: 9"/>
+              <path class="pf-current" d="M 65 184 C 65 214 88 228 102 248"/>
+              <path class="pf-current" d="M 110 184 L 110 250"/>
+              <path class="pf-current" d="M 155 184 C 155 214 132 228 118 248"/>
+            </svg>
+          </div>
+
+          <figure class="pf-node anim-scope">
+            <div class="pf-node-bar">
+              <span class="pf-bdots"><i></i><i></i><i></i></span>
+              <span class="pf-burl">luabeats.com</span>
+            </div>
+            <svg class="pf-funnel" viewBox="0 0 340 430" role="img"
+                 aria-label="The top of luabeats.com: the dark LUA 2-in-1 hero, a $109 pre-order offer beside the box contents, and feature cards for sound quality and water resistance.">
+              <defs>
+                <clipPath id="pf-funnel-clip">
+                  <path d="M 0 0 H 340 V 180 C 340 255 208 265 208 330 V 430 H 132 V 330 C 132 265 0 255 0 180 Z"/>
+                </clipPath>
+                <linearGradient id="pf-stem-fade" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#10101e" stop-opacity="0"/>
+                  <stop offset="0.45" stop-color="#10101e" stop-opacity="0.72"/>
+                  <stop offset="1" stop-color="#10101e" stop-opacity="0.97"/>
+                </linearGradient>
+              </defs>
+              <g clip-path="url(#pf-funnel-clip)">
+                <image class="pf-page" href="/assets/images/projects/lua-walkthrough/landing-page.webp"
+                       x="0" y="0" width="340" height="584" preserveAspectRatio="xMidYMin slice"/>
+                <rect x="0" y="170" width="340" height="260" fill="url(#pf-stem-fade)"/>
+              </g>
+              <path class="pf-funnel-outline" d="M 0 0 H 340 V 180 C 340 255 208 265 208 330 V 430 H 132 V 330 C 132 265 0 255 0 180 Z"/>
+            </svg>
+          </figure>
+
+          <div class="pf-landing anim-scope">
+            <span class="pf-drop"><i class="pf-travel"></i></span>
+            <div class="pf-out-grid" role="img"
+                 aria-label="33 gold dots — the launch list.">
+              <i class="pf-out" style="--i:0"></i><i class="pf-out" style="--i:1"></i><i class="pf-out" style="--i:2"></i><i class="pf-out" style="--i:3"></i><i class="pf-out" style="--i:4"></i><i class="pf-out" style="--i:5"></i><i class="pf-out" style="--i:6"></i><i class="pf-out" style="--i:7"></i><i class="pf-out" style="--i:8"></i><i class="pf-out" style="--i:9"></i><i class="pf-out" style="--i:10"></i><i class="pf-out" style="--i:11"></i><i class="pf-out" style="--i:12"></i><i class="pf-out" style="--i:13"></i><i class="pf-out" style="--i:14"></i><i class="pf-out" style="--i:15"></i><i class="pf-out" style="--i:16"></i><i class="pf-out" style="--i:17"></i><i class="pf-out" style="--i:18"></i><i class="pf-out" style="--i:19"></i><i class="pf-out" style="--i:20"></i><i class="pf-out" style="--i:21"></i><i class="pf-out" style="--i:22"></i><i class="pf-out" style="--i:23"></i><i class="pf-out" style="--i:24"></i><i class="pf-out" style="--i:25"></i><i class="pf-out" style="--i:26"></i><i class="pf-out" style="--i:27"></i><i class="pf-out" style="--i:28"></i><i class="pf-out" style="--i:29"></i><i class="pf-out" style="--i:30"></i><i class="pf-out" style="--i:31"></i><i class="pf-out" style="--i:32"></i>
+            </div>
+            <p class="pf-out-stat"><b data-pf-stat>33%</b><span>of visitors signed up before launch</span></p>
+          </div>
+        </div>
+        </div>
+        
+
+
+        
+        <div class="pl-handoff-strip">
+          
+          
+          
+          
+          <p class="plsb-bridge">The storefront those signups met is preserved below. <a class="pl-link" href="#campaign-walkthrough">The walkthrough covers what I wrote&nbsp;↓</a></p>
+          
+          <a class="pl-handoff-arrow" href="#campaign-walkthrough" aria-label="Continue to the campaign walkthrough">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 9 L12 15.5 L18.5 9"/></svg>
+          </a>
+          
+        </div>
+        
+      </div>
+    </section>
+    
+
+
+
+
+    
+
+
+
+
+
+
+    
+    <section id="campaign-walkthrough" class="campaign-walkthrough-section campaign-walkthrough-section--browser" data-wt-desktop-capture data-wt-address="luabeats.com" style="--wt-wide-act: 2;" data-hud-label="Pre-Order Page">
+      <div class="campaign-walkthrough-runway">
+        <div class="campaign-walkthrough-sticky">
+          
+          <div class="container container--wide">
+            <div class="campaign-walkthrough-layout">
+
+              <div class="campaign-walkthrough-phone">
+                <div class="wt-phone wt-phone--browser">
+                  <div class="wt-phone-screen">
+                    <div class="wt-phone-scroll">
+                      <div class="igg-content">
+
+
+  <div class="igg-block igg-block--flush igg-block--joined" data-focus="hero">
+    <img width="2000" height="129" src="/assets/images/projects/lua-walkthrough/00-nav.webp" alt="LUA site nav with a JOIN WAITLIST button.">
+    <div class="wt-lua-hero">
+      <video width="1490" height="1080" muted loop playsinline preload="metadata" class="wt-lazy-video" data-callout="lua-hero-video" poster="/assets/images/projects/lua-walkthrough/lua-hero-3d-poster.webp" aria-label="LUA hero — looping 3D render in which the earphones and their speaker charging case assemble into one object" src="/assets/images/projects/lua-walkthrough/lua-hero-3d.mp4"></video>
+      <div class="wt-lua-hero-scrim" aria-hidden="true"></div>
+      <div class="wt-lua-hero-copy">
+        <div class="wt-lua-hero-lockup" data-callout="lua-hero-lockup">
+          <span class="wt-lua-hero-wordmark">LUA</span>
+          <span class="wt-lua-hero-divider" aria-hidden="true"></span>
+          <span class="wt-lua-hero-2in1">
+            <span class="wt-lua-hero-2in1-num">2-in-1</span>
+            <span class="wt-lua-hero-2in1-icons" aria-hidden="true">
+              <svg viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 3.2a2.6 2.6 0 0 1 5.2 0v2.2a2.6 2.6 0 0 1-5.2 0z"/><path d="M8.6 8v5"/><path d="M13 3.2a2.6 2.6 0 0 1 5.2 0v2.2a2.6 2.6 0 0 1-5.2 0z"/><path d="M15.6 8v5"/></svg>
+              <span class="wt-lua-hero-plus">+</span>
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="10" cy="10" r="8.2"/><circle cx="10" cy="10" r="4" stroke-dasharray="1.6 1.8"/></svg>
+            </span>
+          </span>
+        </div>
+        <p class="wt-lua-hero-sub" data-callout="lua-hero-sub"><strong>Powerful Hi-Fi Speaker</strong><br><span>is the charging case for</span><br><strong>Truly Wireless Earphones</strong></p>
+        <span class="wt-lua-hero-cta" aria-hidden="true">PRE-ORDER NOW</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="igg-block igg-block--joined igg-block--live" style="--lc-size:30;--lc-lh:1.367;--lc-color:#000">
+    <p class="igg-live-copy" style="--lc-x:309;--lc-y:1270;--lc-w:600">With aptX CD-quality Bluetooth 5.0, your music is never hampered down by the compression or distortion that can plague wireless audio.</p>
+    <img width="2000" height="2294" src="/assets/images/projects/lua-walkthrough/02-offer-and-lifestyle.webp" data-alt-source="visual" alt="$109 — 2-In-1 Earphones + Speaker. Includes 3 kernel tips, USB-C charging cable and User Manual. PRE-ORDER NOW. Ships December 2020. Lifestyle photo of the case and earphones with two callouts: the High Fidelity Sound card, with its paragraph set beneath the heading; and Rain Or Shine Jams — With IPX6-rated water resistance, LUA can resist heavy, high-pressure sprays of water. What's a little sweat or rain?" loading="lazy">
+  </div>
+
+  <div class="igg-block igg-block--joined" data-focus="sound">
+    <img width="2000" height="2692" src="/assets/images/projects/lua-walkthrough/03-sound-battery-calls.webp" alt="Feel the Bass — Get ready for the kick drum. With no compromise to the middle or high frequencies, quality 6mm drivers power serious bass that you can only expect from ultra-premium earbuds. Photo of a man wearing a LUA earbud. 40 Hours of Playtime — A 90 minute fast charge with the type C connector gets you 40 hours of earphone playback time. Photo of a man and woman wearing LUA earbuds. Crisp &amp; Clear Calls — With noise cancelling technology, Lua isolates your voice from the noises around you. With Lua, you're always heard loud &amp; clear. Photo of a woman wearing a LUA earbud." loading="lazy">
+  </div>
+
+  <div class="igg-block igg-block--joined" data-focus="dual-use">
+    <img width="2000" height="2278" src="/assets/images/projects/lua-walkthrough/04-fit-controls-speaker.webp" data-alt-source="visual" alt="Won't Fall Out — Lua's next generation in-ear design features a kernel type fit, tested relentlessly to ensure they stay put. Photo of a man's face wearing a LUA earbud. Three icons: Devices Pair Independently, Instant Auto Pairing, Convenient Touch Controls. Share Your Music / Not Your Earbuds — Your charging case is a high-power, 90 ± 3dB bluetooth speaker." loading="lazy">
+  </div>
+
+  <div class="igg-block igg-block--joined igg-block--live" style="--lc-size:30;--lc-lh:1.367;--lc-color:#000">
+    <div class="igg-inline-video-host">
+      <p class="igg-live-copy" style="--lc-x:1076;--lc-y:560;--lc-w:740">The best speaker is the one that&rsquo;s with you. Anywhere you take your earphones, you&rsquo;ll have a portable speaker ready to go.</p>
+      <video class="wt-lazy-video igg-inline-video" style="--iv-x: 3.075%; --iv-y: 62.449%; --iv-w: 45.7%; --iv-h: 16.158%" muted loop playsinline preload="metadata" poster="/assets/images/projects/lua-walkthrough/loud-loop-poster.webp" aria-label="The page's It's Loud clip, playing: the earbuds turn on a dark ground, then the speaker case rises face-on from a field of rippling lines.">
+        <source src="/assets/images/projects/lua-walkthrough/loud-loop.webm" type="video/webm">
+        <source src="/assets/images/projects/lua-walkthrough/loud-loop.mp4" type="video/mp4">
+      </video>
+      <img width="2000" height="3181" src="/assets/images/projects/lua-walkthrough/05-speaker-portability.webp" data-alt-source="visual" alt="Photo of the unzipped LUA case among lifestyle items — sunglasses, cologne, a lighter, a book, a water bottle. Bass On the Go (Or in Your Ear), with its paragraph set beneath. 5 Hours of Speaker Playtime — No matter how you listen, the party's never over with LUA. Two pictures: the speaker case on a field of rippling lines, and the case and earbuds on a white table beside a kitchen scale, a plant, and a candle. It's Loud — Rated at 90 ± 3dB, what you hear is hardly what you would typically expect from a speaker so compact. It's Light — At just 80g—or 72g without the earbuds—Lua gives you a truly portable speaker you can take everywhere." loading="lazy">
+    </div>
+  </div>
+
+  <div class="igg-block igg-block--joined">
+    <div class="igg-inline-video-host">
+      <video class="wt-lazy-video igg-inline-video" style="--iv-x: 53.77%; --iv-y: 28.805%; --iv-w: 40.65%; --iv-h: 49.33%" muted loop playsinline preload="metadata" poster="/assets/images/projects/lua-walkthrough/battery-loop-poster.webp" aria-label="The page's battery clip, playing: a basketball dribbled on a court, a listener wearing the earbuds over 5 HOURS OF LISTENING TIME and IPX6 WATERPROOF captions, then hands holding the speaker case.">
+        <source src="/assets/images/projects/lua-walkthrough/battery-loop.webm" type="video/webm">
+        <source src="/assets/images/projects/lua-walkthrough/battery-loop.mp4" type="video/mp4">
+      </video>
+      <img width="2000" height="703" src="/assets/images/projects/lua-walkthrough/06-battery-and-pledge.webp" data-alt-source="visual" alt="All Day, All Night Battery — Lua packs enough juice to charge your earphones up to 8 times before refueling via USB-C. 40 Hours Earphone Playback. 5 Hours Speaker Playback. Beside it, a video frame of hands holding the speaker case." loading="lazy">
+    </div>
+  </div>
+
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="2281" src="/assets/images/projects/lua-walkthrough/07-reviews-and-setup.webp" alt="Reviews From Real Testers. 'The speaker sound was quite strong. It will be great to take along with me for my upcoming summer vacation. I liked it even more after seeing LUA in person and I really want to get my hands on it as quickly as possible.' – Eugene Kim. 'Went to the exhibition and got the chance to actually test out LUA. While listening with the earphones on, I felt like the fit in my ears was solid and quality of the sound was smooth. No doubt this is a best deal!' – Mark Noh. What's in the Box — Each LUA order comes with a pair of TWS earphones, the hi-fi speaker that is also a charging case, a charging cable, three kernel tips and an instructional manual, with a flat-lay photo of the box contents. YouTube video 'Set up : LUA' captioned Go to the settings for Bluetooth and make sure that Bluetooth is on. Simple Set Up — Install: Plug in the Pieces. Setup: Pair with the App. Use: Configure and Control." loading="lazy">
+  </div>
+
+  <div class="igg-block" data-focus="story">
+    <img width="2000" height="1630" src="/assets/images/projects/lua-walkthrough/08-team-story-shipping.webp" data-callout-image="08-team-story-shipping.webp" data-alt-source="visual" alt="The LUA Team — Learn More. Three team photos: Hae Min Yaang, CMO/Design Marketing Officer; Yeong Jin Jeon, CEO/Technology &amp; Manufacturing; David Kim, Head of Overseas Business. Renowned Recording Artist, Skull — SKULL: Having pushed the boundaries of conventional music, Skull pioneered the introduction of Reggae within South Korea to great success with transcendent hits that have cemented his authority within the genre. Now he's pushing the boundaries of audio, bringing an experienced ear and industry insights to the LUA team to develop another winning hit. Photo of the artist." loading="lazy">
+  </div>
+
+</div>
+
+                    </div>
+                    <svg class="walkthrough-spot-svg" viewBox="0 0 896 672" preserveAspectRatio="none" width="100%" height="100%" aria-hidden="true">
+                      <defs>
+                        <filter id="wt-spot-goo-0" filterUnits="userSpaceOnUse" x="-50" y="-50" width="996" height="772">
+                          <feGaussianBlur in="SourceGraphic" stdDeviation="0.1" result="blur"/>
+                          <feColorMatrix in="blur" mode="matrix"
+                            values="1 0 0 0 0
+                                    0 1 0 0 0
+                                    0 0 1 0 0
+                                    0 0 0 24 -10" result="goo"/>
+                        </filter>
+                        <mask id="wt-spot-mask-0" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse" x="-50" y="-50" width="996" height="772">
+                          <rect x="-50" y="-50" width="996" height="772" fill="white"/>
+                          <g filter="url(#wt-spot-goo-0)">
+                            <rect class="wt-spot-blob wt-spot-blob--trail" fill="black" rx="8" ry="8"/>
+                            <line class="wt-spot-blob wt-spot-blob--bridge" stroke="black" stroke-width="0" stroke-linecap="round" x1="0" y1="0" x2="0" y2="0"/>
+                            <rect class="wt-spot-blob wt-spot-blob--lead"  fill="black" rx="8" ry="8"/>
+                          </g>
+                        </mask>
+                      </defs>
+                      <rect class="wt-spot-overlay" x="0" y="0" width="896" height="672"
+                            fill="rgba(26,26,46,0.55)" mask="url(#wt-spot-mask-0)"/>
+                    </svg>
+                  </div>
+                  
+                  <div class="wt-browser-chrome" aria-hidden="true">
+                    <span class="wt-browser-dot wt-browser-dot--close"></span>
+                    <span class="wt-browser-dot wt-browser-dot--min"></span>
+                    <span class="wt-browser-dot wt-browser-dot--max"></span>
+                    <span class="wt-browser-url">luabeats.com</span>
+                  </div>
+                  
+                </div>
+              </div>
+
+              <div class="campaign-walkthrough-annotations">
+                <div class="walkthrough-heading">
+                  <h2 class="walkthrough-heading-title">Pre-Order Page</h2>
+                  <p class="walkthrough-heading-subtitle">What I wrote and why.</p>
+                  
+                </div>
+                <div class="walkthrough-annotation-slot">
+                  
+                  <div class="walkthrough-annotation" data-annotation="hero" data-callout-zoom="true">
+                    <span class="walkthrough-annotation-label">The 2-in-1</span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="lua-hero-lockup">The 2-in-1 lockup was my concept: an earphone and a speaker glyph sit under the number, the premise landing as a little equation (well, technically an expression).</p>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="lua-hero-sub">Two products land in one sentence: categories bold, grammar light — the nouns read first.</p>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="lua-hero-video">The moving render was my call. LUA was hard to describe in a line but clicks the moment you watch the buds and case become one object.</p>
+                    
+                    
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="sound" data-hold-scale="1.25" data-region-y="0" data-region-h="0.298" data-region-x="0" data-region-w="0.7" data-region-m-y="0" data-region-m-h="0.26" data-region-m-x="0" data-region-m-w="0.5">
+                    <span class="walkthrough-annotation-label">Specs Written as Sensation</span>
+                    
+                    <p class="walkthrough-annotation-text">The spec is translated into something an ear can picture — a drum hit. The driver size sits underneath.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="sound-battery" data-focus-ref="sound" data-hold-scale="1.15" data-region-y="0.3" data-region-h="0.3" data-region-x="0.3" data-region-w="0.7" data-region-m-y="0.3" data-region-m-h="0.3" data-region-m-x="0.5" data-region-m-w="0.5">
+                    <span class="walkthrough-annotation-label">The Survey&#39;s Loudest Worry</span>
+                    
+                    <p class="walkthrough-annotation-text">Battery was the pre-launch survey's loudest worry — a speaker and earphones in one compact case invited doubt — so 40 hours is on the page twice.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="dual-use" data-hold-scale="1.25" data-region-y="0.695" data-region-h="0.28" data-region-x="0.05" data-region-w="0.7" data-region-m-y="0.695" data-region-m-h="0.28" data-region-m-x="0.02" data-region-m-w="0.5" data-region-m-x2="0.45">
+                    <span class="walkthrough-annotation-label">The Social Argument</span>
+                    
+                    <p class="walkthrough-annotation-text">The 2-in-1 gets its emotional case: the point of a speaker in your pocket is other people.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="story" data-hold-scale="1.25" data-callout-zoom="true" data-region-y="0.0359" data-region-h="0.9396">
+                    <span class="walkthrough-annotation-label">Credibility Before Checkout</span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="lua-story-team">Three named faces with titles show there are real people behind the product.</p>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="lua-story-team" data-anchor-image="08-team-story-shipping.webp" data-anchor-x="0.034" data-anchor-y="0.0526" data-anchor-w="0.46" data-anchor-h="0.3347" hidden></span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="lua-story-artist">A recording artist's ear on the tuning is a claim no spec sheet can make.</p>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="lua-story-artist" data-anchor-image="08-team-story-shipping.webp" data-anchor-x="0.026" data-anchor-y="0.459" data-anchor-w="0.466" data-anchor-h="0.3945" hidden></span>
+                    
+                    
+                    
+                  </div>
+                  
+                </div>
+                
+                
+                <div class="walkthrough-progress" role="group" aria-label="Walkthrough controls">
+                  <div class="walkthrough-progress-rail">
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="0" type="button" aria-label="Go to The 2-in-1" title="The 2-in-1"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="1" type="button" aria-label="Go to Specs Written as Sensation" title="Specs Written as Sensation"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="2" type="button" aria-label="Go to The Survey&#39;s Loudest Worry" title="The Survey&#39;s Loudest Worry"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="3" type="button" aria-label="Go to The Social Argument" title="The Social Argument"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="4" type="button" aria-label="Go to Credibility Before Checkout" title="Credibility Before Checkout"></button>
+                    
+                  </div>
+                  <div class="wt-ctl-row">
+                    <button class="walkthrough-progress-nav" data-progress-nav="prev" type="button" aria-label="Previous stop" title="Previous stop">
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 4l-4 4 4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <button class="wt-ctl-count" type="button" aria-expanded="false" aria-haspopup="true" title="All stops">
+                      <span class="wt-ctl-count-text">5 stops</span>
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 10l4-4 4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <button class="walkthrough-progress-nav" data-progress-nav="next" type="button" aria-label="Next stop" title="Next stop">
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <span class="wt-ctl-gap"></span>
+                    <button class="wt-ctl-btn wt-ctl-restart" type="button" title="Restart the walkthrough">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1 4v6h6M3.51 15a9 9 0 1 0 2.13-9.36L1 10" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      <span class="wt-ctl-label">Restart</span>
+                    </button>
+                    <button class="wt-ctl-btn wt-ctl-skip" type="button" title="Skip the walkthrough">
+                      Skip
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v10M3.5 8.5L8 13l4.5-4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                  </div>
+                  <ol class="wt-chapters" hidden>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="0" type="button">The 2-in-1</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="1" type="button">Specs Written as Sensation</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="2" type="button">The Survey&#39;s Loudest Worry</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="3" type="button">The Social Argument</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="4" type="button">Credibility Before Checkout</button></li>
+                    
+                  </ol>
+                </div>
+                
+              </div>
+
+              <svg class="walkthrough-lines" aria-hidden="true"></svg>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+
+    
+    
+
+
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+    
+
+    
+
+
+    
+
+
+    
+
+    
+    <section class="project-pagination" data-hud-label="Up Next" aria-label="Project pagination">
+      <div class="container">
+        <div class="pagination-grid">
+          <a class="pagination-card pagination-card--prev" href="/projects/onewheel/" rel="prev">
+            <span class="pagination-direction" aria-hidden="true">&larr;</span>
+            <div class="pagination-meta">
+              <span class="pagination-label">Previous</span>
+              <span class="pagination-title">Onewheel</span>
+              <span class="pagination-client">Onewheel</span>
+            </div>
+            
+            <div class="pagination-thumb">
+              <img src="/assets/images/projects/onewheel-hero.webp" alt="" loading="lazy">
+            </div>
+            
+          </a>
+          <a class="pagination-card pagination-card--next" href="/projects/philips-picopix-max/" rel="next">
+            <span class="pagination-direction" aria-hidden="true">&rarr;</span>
+            <div class="pagination-meta">
+              <span class="pagination-label">Next</span>
+              <span class="pagination-title">Philips PicoPix Max</span>
+              <span class="pagination-client">Philips</span>
+            </div>
+            
+            <div class="pagination-thumb">
+              <img src="/assets/images/projects/picopix-max-hero.webp" alt="" loading="lazy">
+            </div>
+            
+          </a>
+        </div>
+      </div>
+    </section>
+    
+
+
+    
+
+  </main>
+
+<footer class="site-footer" id="contact">
+  <div class="footer-container">
+    <div class="footer-contact">
+      <p class="section-label footer-eyebrow">Contact</p>
+      <svg class="footer-mark" viewBox="0 0 304 288" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="footer-mark-gradient" x1="0" y1="0" x2="304" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#B2DFDB"/>
+            <stop offset=".55" stop-color="#5DBDB4"/>
+            <stop offset="1" stop-color="#26A69A"/>
+          </linearGradient>
+        </defs>
+        <g fill="none" stroke="url(#footer-mark-gradient)" stroke-width="40">
+          <path d="M108,0V224A44,44 0 0 1 20,224" pathLength="1"/>
+          <path d="M218,0V288" pathLength="1"/>
+          <path d="M128,132H198" pathLength="1"/>
+          <path d="M238,20A46,46 0 0 1 238,112" pathLength="1"/>
+        </g>
+      </svg>
+      <nav class="footer-links" aria-label="Contact">
+        <a href="mailto:hello@jakobpicciotto.com" class="footer-link footer-link--email">hello@jakobpicciotto.com</a>
+        <a href="https://www.linkedin.com/in/jakob-picciotto/" class="footer-link" target="_blank" rel="noopener">linkedin.com/in/jakob-picciotto</a>
+      </nav>
+      <p class="footer-location">Seattle, WA</p>
+    </div>
+    <p class="footer-text">&copy; 2026 Jakob Picciotto</p>
+  </div>
+</footer>
+<script src="/assets/js/footer-monogram.js" defer></script>
+
+
+  
+  <script src="/assets/js/project-hud.js" defer></script>
+  <script src="/assets/js/walkthrough-shared.js" defer></script>
+  <script src="/assets/js/walkthrough-geometry.js" defer></script>
+  <script src="/assets/js/walkthrough-pinned.js" defer></script>
+  <script src="/assets/js/walkthrough-mobile.js" defer></script>
+  <script src="/assets/js/walkthrough-static.js" defer></script>
+  <script src="/assets/js/walkthrough-embers.js" defer></script>
+  <script src="/assets/js/document-reader.js" defer></script>
+  <script src="/assets/js/attribution-typewriter.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/storyboard.js" defer></script>
+  <script src="/assets/js/funnel-cohort.js" defer></script>
+  <script src="/assets/js/related-filter.js" defer></script>
+  <script src="/assets/js/focal-crop.js" defer></script>
+  <script src="/assets/js/strategy-section.js" defer></script>
+  <script src="/assets/js/adaptive-glass.js" defer></script>
+  <script src="/assets/js/hero-odometer.js" defer></script>
+  <script src="/assets/js/hero-chips.js" defer></script>
+  <script src="/assets/js/walkthrough-controls.js" defer></script>
+
+</body>
+</html>

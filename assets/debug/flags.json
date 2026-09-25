@@ -1,0 +1,83 @@
+{
+  "flags": {
+    "walkthrough-spot": {
+      "description": "Log spotlight bounds, sub-step keys, and morph events",
+      "cleanup": "Remove after verifying liquid spotlight refactor",
+      "created": "2026-04-08"
+    },
+    "walkthrough-mode": {
+      "description": "Log walkthrough mode selection (pinned/static/synced/interleaved) and re-evaluation on resize or reduced-motion changes",
+      "cleanup": "Remove after verifying the mode seam across breakpoints",
+      "created": "2026-07-03"
+    },
+    "walkthrough-mobile": {
+      "description": "Log mobile walkthrough (synced/interleaved) setup, teardown, and slice construction",
+      "cleanup": "Remove after the synced-vs-interleaved on-device comparison is decided",
+      "created": "2026-07-03"
+    },
+    "storyboard-nav": {
+      "description": "Log slide-nav pill wiring and which storyboard beat is focused",
+      "cleanup": "Remove after the pill ships and dot sync is verified on device",
+      "created": "2026-07-15"
+    },
+    "plsb-carousel": {
+      "description": "Log highlights-carousel autoplay state, slide focus, and canvas-slide arming",
+      "cleanup": "Remove after the carousel choreography is verified on device",
+      "created": "2026-07-15"
+    },
+    "funnel-cohort": {
+      "description": "Log funnel cohort runs (dot counts, completion, resize snaps)",
+      "cleanup": "Remove after the cohort animation is verified on device",
+      "created": "2026-07-15"
+    },
+    "hero-odometer": {
+      "description": "Log hero Key Results count-up settling values",
+      "cleanup": "Remove after the on-load odometer is verified on device",
+      "created": "2026-07-16"
+    },
+    "project-hud": {
+      "description": "Log project HUD measurements, visibility, and section-label changes",
+      "cleanup": "Remove after the HUD is verified across project pages",
+      "created": "2026-07-23"
+    },
+    "header-glass": {
+      "description": "Log adaptive header tint: sampled backdrop luminance, resolved sample count, and the fill alpha applied",
+      "cleanup": "Remove once the adaptive fill is verified across archive/home/project at both breakpoints",
+      "created": "2026-07-25"
+    },
+    "social-snap": {
+      "description": "Log social sift carousel snap decisions (flick commit, ballistic-transit ignore, debounced settle)",
+      "cleanup": "Remove after the ballistic-transit pass-through is verified across project pages",
+      "created": "2026-07-23"
+    },
+    "walkthrough-zoom": {
+      "description": "On-screen HUD for the mobile park-local zoom: rolling/worst frame time, update() self time, long-frame count, and the scroll distance + frame count each zoom ramp actually occupied",
+      "cleanup": "Remove once mobile ramp smoothness is signed off on real hardware (GATE-HW)",
+      "created": "2026-07-29"
+    },
+    "walkthrough-flick": {
+      "description": "Log pinned-walkthrough flick-to-step: commits, end-of-tour passthrough, momentum swallow end, and bailout",
+      "cleanup": "Remove after flick-to-step is verified on trackpad, mouse wheel, and Firefox",
+      "created": "2026-07-26"
+    },
+    "visit-track": {
+      "description": "Log every Tier-2 visit event before it is sent (pageview, heartbeat, section, project_open, print, exit) with its payload",
+      "cleanup": "Remove once the tracking self-application dry run passes and the ledger is trusted",
+      "created": "2026-08-05"
+    },
+    "filter-roll": {
+      "description": "Replay the archive's intro industry roll on every load, bypassing the once-per-session sessionStorage gate (a hard refresh does NOT clear it)",
+      "cleanup": "Remove once the roll's length and chip swell are signed off on device",
+      "created": "2026-08-11"
+    },
+    "chl-zoom": {
+      "description": "Log campaign-highlights tap-to-read: touch/fine-pointer switch, dialog open (image src) and close",
+      "cleanup": "Remove once the enlarge dialog is verified on Jakob's phone",
+      "created": "2026-09-24"
+    },
+    "template-warnings": {
+      "description": "Warn when a bare {{path}} or {{{path}}} fails to resolve during a build render (path missing from data — explicit nulls and block-helper existence checks stay silent)",
+      "cleanup": "Permanent build tripwire — keep unless the template engine is replaced"
+    }
+  }
+}

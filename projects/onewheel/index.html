@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  /* Motion-safe boot flag on <html>, set during head parse (before the body
+     paints). CSS keys :root.js-motion to suppress lines that main.js reveals
+     after first paint — chiefly the metrics attribution, which is split into
+     per-glyph typewriter spans and would otherwise flash its plain text for a
+     frame on load. Set only when JS runs AND reduced motion is not requested,
+     so the no-JS and reduced-motion paths keep their static, visible fallback
+     (they have no scroll ramp to reveal a hidden line). */
+  if (!window.matchMedia || !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.documentElement.classList.add('js-motion');
+  }
+</script>
+<title>Onewheel | Jakob Picciotto</title>
+<meta name="description" content="Wrote the agency&#39;s 2020 Onewheel growth case study, then the Pint X and GT product pages for Onewheel&#39;s October 2021 launch.">
+
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="canonical" href="https://work.jakobpicciotto.com/projects/onewheel/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jakob Picciotto">
+<meta property="og:title" content="Onewheel | Jakob Picciotto">
+<meta property="og:description" content="Wrote the agency&#39;s 2020 Onewheel growth case study, then the Pint X and GT product pages for Onewheel&#39;s October 2021 launch.">
+<meta property="og:url" content="https://work.jakobpicciotto.com/projects/onewheel/">
+<meta property="og:image" content="https://work.jakobpicciotto.com/assets/images/projects/onewheel-hero.webp">
+
+<meta property="og:image:width" content="695">
+<meta property="og:image:height" content="460">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Onewheel | Jakob Picciotto">
+<meta name="twitter:description" content="Wrote the agency&#39;s 2020 Onewheel growth case study, then the Pint X and GT product pages for Onewheel&#39;s October 2021 launch.">
+<meta name="twitter:image" content="https://work.jakobpicciotto.com/assets/images/projects/onewheel-hero.webp">
+
+<script src="/assets/debug/browser.js"></script>
+<link rel="preload" href="/assets/fonts/Raleway-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/SourceSans3-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="/assets/images/logos/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/css/fonts.css">
+<link rel="stylesheet" href="/assets/css/style.css">
+
+
+
+
+
+</head>
+<body class="project-page">
+  
+  <script>
+    var _qs = new URLSearchParams(location.search);
+    var layout = _qs.get('layout');
+    if (/^(static|synced|interleaved)$/.test(layout || '')) document.body.classList.add('layout-' + layout);
+  </script>
+  <header class="site-header">
+  <div class="header-container">
+    <a href="/" class="site-logo" aria-label="Jakob Picciotto">
+      <svg class="site-logo-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1938.35 289.61" aria-hidden="true">
+        <defs>
+          <linearGradient id="logo-gradient-light" x1="0" y1="0" x2="304" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#4DB6AC"/>
+            <stop offset=".55" stop-color="#199488"/>
+            <stop offset="1" stop-color="#00796B"/>
+          </linearGradient>
+          <linearGradient id="logo-gradient-dark" x1="0" y1="0" x2="304" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#B2DFDB"/>
+            <stop offset=".55" stop-color="#5DBDB4"/>
+            <stop offset="1" stop-color="#26A69A"/>
+          </linearGradient>
+        </defs>
+        <g>
+          <path class="logo-monogram logo-monogram-light" fill="url(#logo-gradient-light)" fill-rule="evenodd" d="M88,0H128V224H88ZM198,0H238V288H198ZM128,112H198V152H128ZM238,0A66,66 0 0 1 238,132L238,92A26,26 0 0 0 238,40ZM128,224A64,64 0 0 1 0,224L40,224A24,24 0 0 0 88,224Z"/>
+          <path class="logo-monogram logo-monogram-dark" fill="url(#logo-gradient-dark)" fill-rule="evenodd" d="M88,0H128V224H88ZM198,0H238V288H198ZM128,112H198V152H128ZM238,0A66,66 0 0 1 238,132L238,92A26,26 0 0 0 238,40ZM128,224A64,64 0 0 1 0,224L40,224A24,24 0 0 0 88,224Z"/>
+          <g class="logo-text" fill="currentColor">
+            <path d="M482.89,211.42c-4.06,0-7.91-.62-11.54-1.84-3.63-1.23-6.89-3.13-9.78-5.69l9.3-14.59c1.18,1.17,2.62,2.06,4.33,2.64,1.71.59,3.42.88,5.13.88,2.78,0,5.18-.99,7.21-2.97,2.03-1.98,3.05-4.52,3.05-7.61v-86.24h21.48v84.64c0,4.49-.75,8.63-2.24,12.42-1.5,3.79-3.55,7.05-6.17,9.78-2.62,2.72-5.72,4.83-9.3,6.33-3.58,1.5-7.4,2.24-11.46,2.24ZM490.58,84.3v-21.32h21.48v21.32h-21.48Z"/>
+            <path d="M554.54,181.6c-4.06,0-7.85-.67-11.38-2-3.53-1.33-6.57-3.21-9.14-5.61-2.56-2.4-4.57-5.21-6.01-8.42-1.44-3.21-2.16-6.73-2.16-10.58s.88-7.61,2.65-10.98,4.22-6.22,7.37-8.58c3.15-2.35,6.92-4.19,11.3-5.53,4.38-1.33,9.19-2,14.43-2,3.74,0,7.4.32,10.98.96,3.58.64,6.76,1.55,9.54,2.73v-4.81c0-5.56-1.58-9.83-4.73-12.82-3.15-2.99-7.83-4.49-14.03-4.49-4.49,0-8.87.8-13.14,2.4-4.28,1.6-8.66,3.96-13.14,7.05l-6.57-13.63c10.79-7.16,22.44-10.74,34.95-10.74s21.45,2.96,28.13,8.9c6.68,5.93,10.02,14.51,10.02,25.73v26.13c0,2.24.4,3.85,1.2,4.81.8.96,2.11,1.5,3.93,1.6v18.27c-3.63.75-6.79,1.12-9.46,1.12-4.06,0-7.19-.91-9.38-2.72-2.19-1.82-3.55-4.22-4.09-7.21l-.48-4.65c-3.74,4.92-8.28,8.66-13.63,11.22-5.35,2.56-11.06,3.85-17.15,3.85ZM560.63,165.89c3.63,0,7.08-.64,10.34-1.92,3.26-1.28,5.8-2.99,7.61-5.13,2.35-1.82,3.53-3.85,3.53-6.09v-9.62c-2.56-.96-5.35-1.74-8.34-2.32-2.99-.59-5.88-.88-8.66-.88-5.56,0-10.1,1.26-13.63,3.77-3.53,2.51-5.29,5.69-5.29,9.54,0,3.63,1.39,6.65,4.17,9.06,2.78,2.4,6.2,3.61,10.26,3.61Z"/>
+            <path d="M681.01,180l-24.37-36.39-11.54,11.38v25.01h-21.48V62.98h21.48v71.01l33.66-37.83h22.92l-31.26,35.59,33.5,48.25h-22.92Z"/>
+            <path d="M747.53,181.6c-6.84,0-12.98-1.18-18.43-3.53s-10.07-5.53-13.87-9.54c-3.79-4.01-6.71-8.63-8.74-13.87-2.03-5.24-3.05-10.74-3.05-16.51s1.01-11.43,3.05-16.67c2.03-5.23,4.94-9.86,8.74-13.87,3.79-4.01,8.42-7.19,13.87-9.54,5.45-2.35,11.59-3.53,18.43-3.53s12.96,1.18,18.35,3.53c5.4,2.35,9.99,5.53,13.79,9.54,3.79,4.01,6.71,8.63,8.74,13.87,2.03,5.24,3.05,10.8,3.05,16.67s-1.02,11.28-3.05,16.51c-2.03,5.24-4.92,9.86-8.66,13.87-3.74,4.01-8.34,7.19-13.79,9.54s-11.6,3.53-18.43,3.53ZM725.57,138.16c0,3.74.56,7.13,1.68,10.18s2.67,5.69,4.65,7.93c1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.56,1.84,8.66,1.84s5.98-.61,8.66-1.84c2.67-1.23,4.99-2.97,6.97-5.21,1.98-2.24,3.53-4.91,4.65-8.01,1.12-3.1,1.68-6.52,1.68-10.26s-.56-7-1.68-10.1c-1.12-3.1-2.67-5.77-4.65-8.01-1.98-2.24-4.3-3.98-6.97-5.21-2.67-1.23-5.56-1.84-8.66-1.84s-5.99.64-8.66,1.92c-2.67,1.28-5,3.05-6.97,5.29-1.98,2.24-3.53,4.92-4.65,8.01-1.12,3.1-1.68,6.47-1.68,10.1Z"/>
+            <path d="M853.65,181.6c-6.41,0-12.13-1.44-17.15-4.33-5.02-2.88-8.98-6.84-11.86-11.86v14.59h-18.75V62.98h21.48v47.77c2.99-5.13,6.92-9.11,11.78-11.94,4.86-2.83,10.55-4.25,17.07-4.25,5.45,0,10.42,1.18,14.91,3.53,4.49,2.35,8.36,5.5,11.62,9.46,3.26,3.96,5.77,8.6,7.53,13.95,1.76,5.35,2.65,10.96,2.65,16.83s-.99,11.76-2.97,16.99c-1.98,5.24-4.73,9.81-8.26,13.71-3.53,3.9-7.69,6.97-12.5,9.22s-9.99,3.37-15.55,3.37ZM847.72,163.33c3.42,0,6.57-.67,9.46-2,2.89-1.33,5.34-3.13,7.37-5.37,2.03-2.24,3.61-4.86,4.73-7.85,1.12-2.99,1.68-6.2,1.68-9.62s-.54-6.68-1.6-9.78c-1.07-3.1-2.59-5.82-4.57-8.18-1.98-2.35-4.3-4.22-6.97-5.61-2.67-1.39-5.61-2.08-8.82-2.08-4.81,0-9.11,1.58-12.9,4.73-3.79,3.15-6.71,7.03-8.74,11.62v20.04c.75,2.14,1.84,4.06,3.29,5.77,1.44,1.71,3.07,3.18,4.89,4.41,1.82,1.23,3.79,2.19,5.93,2.89,2.14.7,4.22,1.04,6.25,1.04Z"/>
+            <path d="M957.84,181.6c-6.63,0-12.4-1.47-17.31-4.41-4.92-2.94-8.76-6.92-11.54-11.94v48.89h-21.48v-118.14h18.75v14.43c3.1-4.91,7.11-8.79,12.02-11.62,4.91-2.83,10.58-4.25,16.99-4.25,5.66,0,10.9,1.15,15.71,3.45,4.81,2.3,8.95,5.4,12.42,9.3,3.47,3.9,6.2,8.5,8.18,13.79,1.98,5.29,2.97,10.88,2.97,16.75s-.91,11.81-2.73,17.15c-1.82,5.34-4.36,9.99-7.61,13.95-3.26,3.96-7.13,7.05-11.62,9.3-4.49,2.24-9.4,3.37-14.75,3.37ZM950.63,163.33c3.21,0,6.17-.69,8.9-2.08,2.73-1.39,5.05-3.26,6.97-5.61,1.92-2.35,3.42-5.08,4.49-8.18,1.07-3.1,1.6-6.3,1.6-9.62,0-3.53-.59-6.81-1.76-9.86-1.18-3.05-2.81-5.69-4.89-7.93s-4.54-4.01-7.37-5.29c-2.83-1.28-5.91-1.92-9.22-1.92-2.03,0-4.12.35-6.25,1.04-2.14.7-4.12,1.68-5.93,2.97-1.82,1.28-3.45,2.78-4.89,4.49-1.44,1.71-2.54,3.58-3.29,5.61v19.72c1.92,4.81,4.86,8.79,8.82,11.94,3.95,3.15,8.23,4.73,12.82,4.73Z"/>
+            <path d="M1009.13,84.3v-21.32h21.48v21.32h-21.48ZM1009.13,180v-84h21.48v84h-21.48Z"/>
+            <path d="M1044.71,138c0-5.88,1.01-11.43,3.05-16.67,2.03-5.23,4.97-9.83,8.82-13.79,3.85-3.95,8.5-7.11,13.95-9.46,5.45-2.35,11.59-3.53,18.43-3.53,9.19,0,17.02,1.98,23.48,5.93,6.46,3.96,11.3,9.14,14.51,15.55l-21,6.41c-1.82-3.1-4.22-5.48-7.21-7.13-2.99-1.66-6.31-2.49-9.94-2.49-3.1,0-5.99.62-8.66,1.84-2.67,1.23-5,2.94-6.97,5.13-1.98,2.19-3.53,4.84-4.65,7.93-1.12,3.1-1.68,6.52-1.68,10.26s.59,7.16,1.76,10.26c1.17,3.1,2.75,5.77,4.73,8.01,1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.5,1.84,8.5,1.84,3.85,0,7.4-.96,10.66-2.89,3.26-1.92,5.53-4.27,6.81-7.05l21,6.41c-2.88,6.41-7.64,11.65-14.27,15.71-6.63,4.06-14.59,6.09-23.88,6.09-6.84,0-12.98-1.18-18.43-3.53s-10.1-5.53-13.95-9.54c-3.85-4.01-6.81-8.66-8.9-13.95s-3.13-10.82-3.13-16.59Z"/>
+            <path d="M1134.32,138c0-5.88,1.01-11.43,3.05-16.67,2.03-5.23,4.97-9.83,8.82-13.79,3.85-3.95,8.5-7.11,13.95-9.46,5.45-2.35,11.59-3.53,18.43-3.53,9.19,0,17.02,1.98,23.48,5.93,6.46,3.96,11.3,9.14,14.51,15.55l-21,6.41c-1.82-3.1-4.22-5.48-7.21-7.13-2.99-1.66-6.31-2.49-9.94-2.49-3.1,0-5.99.62-8.66,1.84-2.67,1.23-5,2.94-6.97,5.13-1.98,2.19-3.53,4.84-4.65,7.93-1.12,3.1-1.68,6.52-1.68,10.26s.59,7.16,1.76,10.26c1.17,3.1,2.75,5.77,4.73,8.01,1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.5,1.84,8.5,1.84,3.85,0,7.4-.96,10.66-2.89,3.26-1.92,5.53-4.27,6.81-7.05l21,6.41c-2.88,6.41-7.64,11.65-14.27,15.71-6.63,4.06-14.59,6.09-23.88,6.09-6.84,0-12.98-1.18-18.43-3.53s-10.1-5.53-13.95-9.54c-3.85-4.01-6.81-8.66-8.9-13.95s-3.13-10.82-3.13-16.59Z"/>
+            <path d="M1230.02,84.3v-21.32h21.48v21.32h-21.48ZM1230.02,180v-84h21.48v84h-21.48Z"/>
+            <path d="M1309.68,181.6c-6.84,0-12.98-1.18-18.43-3.53s-10.07-5.53-13.87-9.54c-3.79-4.01-6.71-8.63-8.74-13.87-2.03-5.24-3.05-10.74-3.05-16.51s1.01-11.43,3.05-16.67c2.03-5.23,4.94-9.86,8.74-13.87,3.79-4.01,8.42-7.19,13.87-9.54,5.45-2.35,11.59-3.53,18.43-3.53s12.96,1.18,18.35,3.53c5.4,2.35,9.99,5.53,13.79,9.54,3.79,4.01,6.71,8.63,8.74,13.87,2.03,5.24,3.05,10.8,3.05,16.67s-1.02,11.28-3.05,16.51c-2.03,5.24-4.92,9.86-8.66,13.87-3.74,4.01-8.34,7.19-13.79,9.54s-11.6,3.53-18.43,3.53ZM1287.72,138.16c0,3.74.56,7.13,1.68,10.18s2.67,5.69,4.65,7.93c1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.56,1.84,8.66,1.84s5.98-.61,8.66-1.84c2.67-1.23,5-2.97,6.97-5.21,1.98-2.24,3.53-4.91,4.65-8.01,1.12-3.1,1.68-6.52,1.68-10.26s-.56-7-1.68-10.1c-1.12-3.1-2.67-5.77-4.65-8.01-1.98-2.24-4.3-3.98-6.97-5.21-2.67-1.23-5.56-1.84-8.66-1.84s-5.99.64-8.66,1.92c-2.67,1.28-5,3.05-6.97,5.29-1.98,2.24-3.53,4.92-4.65,8.01-1.12,3.1-1.68,6.47-1.68,10.1Z"/>
+            <path d="M1417.23,175.67c-2.89,1.28-6.41,2.56-10.58,3.85-4.17,1.28-8.55,1.92-13.14,1.92-2.99,0-5.8-.38-8.42-1.12-2.62-.75-4.92-1.95-6.89-3.61-1.98-1.66-3.55-3.79-4.73-6.41-1.18-2.62-1.76-5.8-1.76-9.54v-48.25h-11.06v-16.51h11.06v-27.25h21.48v27.25h17.63v16.51h-17.63v41.04c0,2.99.77,5.1,2.32,6.33,1.55,1.23,3.45,1.84,5.69,1.84s4.43-.37,6.57-1.12c2.14-.75,3.85-1.39,5.13-1.92l4.33,16.99Z"/>
+            <path d="M1478.78,175.67c-2.89,1.28-6.41,2.56-10.58,3.85-4.17,1.28-8.55,1.92-13.14,1.92-2.99,0-5.8-.38-8.42-1.12-2.62-.75-4.92-1.95-6.89-3.61-1.98-1.66-3.55-3.79-4.73-6.41-1.18-2.62-1.76-5.8-1.76-9.54v-48.25h-11.06v-16.51h11.06v-27.25h21.48v27.25h17.63v16.51h-17.63v41.04c0,2.99.77,5.1,2.33,6.33,1.55,1.23,3.45,1.84,5.69,1.84s4.43-.37,6.57-1.12c2.14-.75,3.85-1.39,5.13-1.92l4.33,16.99Z"/>
+            <path d="M1526.71,181.6c-6.84,0-12.98-1.18-18.43-3.53s-10.07-5.53-13.87-9.54c-3.79-4.01-6.71-8.63-8.74-13.87-2.03-5.24-3.05-10.74-3.05-16.51s1.01-11.43,3.05-16.67c2.03-5.23,4.94-9.86,8.74-13.87,3.79-4.01,8.42-7.19,13.87-9.54,5.45-2.35,11.59-3.53,18.43-3.53s12.96,1.18,18.35,3.53c5.39,2.35,9.99,5.53,13.79,9.54,3.79,4.01,6.71,8.63,8.74,13.87,2.03,5.24,3.05,10.8,3.05,16.67s-1.02,11.28-3.05,16.51c-2.03,5.24-4.92,9.86-8.66,13.87-3.74,4.01-8.33,7.19-13.79,9.54s-11.6,3.53-18.43,3.53ZM1504.75,138.16c0,3.74.56,7.13,1.68,10.18s2.67,5.69,4.65,7.93c1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.56,1.84,8.66,1.84s5.98-.61,8.66-1.84c2.67-1.23,4.99-2.97,6.97-5.21,1.98-2.24,3.53-4.91,4.65-8.01,1.12-3.1,1.68-6.52,1.68-10.26s-.56-7-1.68-10.1c-1.12-3.1-2.67-5.77-4.65-8.01-1.98-2.24-4.3-3.98-6.97-5.21-2.67-1.23-5.56-1.84-8.66-1.84s-5.99.64-8.66,1.92c-2.67,1.28-5,3.05-6.97,5.29-1.98,2.24-3.53,4.92-4.65,8.01-1.12,3.1-1.68,6.47-1.68,10.1Z"/>
+            <path d="M1584.58,180v-23.08h17.63v23.08h-17.63Z"/>
+            <path d="M1615.83,138c0-5.88,1.01-11.43,3.05-16.67,2.03-5.23,4.97-9.83,8.82-13.79,3.85-3.95,8.5-7.11,13.95-9.46,5.45-2.35,11.59-3.53,18.43-3.53,9.19,0,17.02,1.98,23.48,5.93,6.46,3.96,11.3,9.14,14.51,15.55l-21,6.41c-1.82-3.1-4.22-5.48-7.21-7.13-2.99-1.66-6.31-2.49-9.94-2.49-3.1,0-5.99.62-8.66,1.84-2.67,1.23-5,2.94-6.97,5.13-1.98,2.19-3.53,4.84-4.65,7.93-1.12,3.1-1.68,6.52-1.68,10.26s.59,7.16,1.76,10.26c1.17,3.1,2.75,5.77,4.73,8.01,1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.5,1.84,8.5,1.84,3.85,0,7.4-.96,10.66-2.89,3.26-1.92,5.53-4.27,6.81-7.05l21,6.41c-2.88,6.41-7.64,11.65-14.27,15.71-6.63,4.06-14.59,6.09-23.88,6.09-6.84,0-12.98-1.18-18.43-3.53s-10.1-5.53-13.95-9.54c-3.85-4.01-6.81-8.66-8.9-13.95s-3.13-10.82-3.13-16.59Z"/>
+            <path d="M1749.52,181.6c-6.84,0-12.98-1.18-18.43-3.53s-10.07-5.53-13.87-9.54c-3.79-4.01-6.71-8.63-8.74-13.87-2.03-5.24-3.05-10.74-3.05-16.51s1.01-11.43,3.05-16.67c2.03-5.23,4.94-9.86,8.74-13.87,3.79-4.01,8.42-7.19,13.87-9.54,5.45-2.35,11.59-3.53,18.43-3.53s12.96,1.18,18.35,3.53c5.4,2.35,9.99,5.53,13.79,9.54,3.79,4.01,6.71,8.63,8.74,13.87,2.03,5.24,3.05,10.8,3.05,16.67s-1.02,11.28-3.05,16.51c-2.03,5.24-4.92,9.86-8.66,13.87-3.74,4.01-8.34,7.19-13.79,9.54s-11.6,3.53-18.43,3.53ZM1727.56,138.16c0,3.74.56,7.13,1.68,10.18s2.67,5.69,4.65,7.93c1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.56,1.84,8.66,1.84s5.98-.61,8.66-1.84c2.67-1.23,5-2.97,6.97-5.21,1.98-2.24,3.53-4.91,4.65-8.01,1.12-3.1,1.68-6.52,1.68-10.26s-.56-7-1.68-10.1c-1.12-3.1-2.67-5.77-4.65-8.01-1.98-2.24-4.3-3.98-6.97-5.21-2.67-1.23-5.56-1.84-8.66-1.84s-5.99.64-8.66,1.92c-2.67,1.28-5,3.05-6.97,5.29-1.98,2.24-3.53,4.92-4.65,8.01-1.12,3.1-1.68,6.47-1.68,10.1Z"/>
+            <path d="M1938.35,180h-21.48v-47.13c0-6.73-1.15-11.65-3.45-14.75-2.3-3.1-5.48-4.65-9.54-4.65-4.28,0-8.28,1.63-12.02,4.89-3.74,3.26-6.41,7.51-8.01,12.74v48.89h-21.48v-47.13c0-6.73-1.15-11.65-3.45-14.75-2.3-3.1-5.48-4.65-9.54-4.65s-8.15,1.6-11.94,4.81c-3.79,3.21-6.49,7.43-8.1,12.66v49.05h-21.48v-84h19.4v15.55c3.1-5.45,7.35-9.64,12.74-12.58,5.4-2.94,11.57-4.41,18.51-4.41s12.5,1.71,16.35,5.13c3.85,3.42,6.3,7.64,7.37,12.66,3.42-5.77,7.75-10.18,12.98-13.22,5.23-3.05,11.22-4.57,17.95-4.57,5.13,0,9.35.96,12.66,2.88,3.31,1.92,5.88,4.44,7.69,7.53,1.82,3.1,3.07,6.63,3.77,10.58.69,3.96,1.04,7.96,1.04,12.02v52.42Z"/>
+          </g>
+        </g>
+      </svg>
+    </a>
+    <svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+      <defs>
+        <filter id="glass-refract" x="0%" y="0%" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.015" numOctaves="3" seed="5" result="noise"/>
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+        </filter>
+      </defs>
+    </svg>
+    <nav class="site-nav">
+      <a href="/projects/" class="nav-link" data-nav="projects">Projects</a>
+      
+    </nav>
+    <a href="#contact" class="nav-contact" data-nav="contact" aria-label="Contact">
+      <svg class="nav-contact-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+        <rect x="2.25" y="4.25" width="15.5" height="11.5" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M3.5 6.5l6.5 4.6 6.5-4.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="nav-contact-label">Contact</span>
+    </a>
+    <script>
+      (function() {
+        var path = location.pathname;
+        var active = path.startsWith('/projects') ? 'projects'
+                   : path.startsWith('/about') ? 'about'
+                   : null;
+        if (active) document.querySelector('[data-nav="' + active + '"]').classList.add('active');
+      })();
+    </script>
+  </div>
+</header>
+<script src="/assets/js/header-glass.js" defer></script>
+<script src="/assets/js/nav-submenu.js" defer></script>
+
+
+    <nav class="project-hud" aria-label="Project navigation">
+      <div class="container project-hud-inner">
+        
+        <div class="hud-side">
+          
+          <a class="hud-prev" href="/projects/trekchair/">
+            <span class="hud-prev-arrow" aria-hidden="true">&larr;</span>
+            <span class="hud-prev-label">Prev</span>
+            <span class="hud-prev-title">TrekChair</span>
+          </a>
+          
+        </div>
+        <div class="hud-center">
+          <div class="hud-identity">
+            <span class="hud-title">Onewheel</span>
+            
+            
+          </div>
+          <span class="hud-section" aria-hidden="true"></span>
+        </div>
+        <div class="hud-actions">
+          
+          <a class="hud-next" href="/projects/lua/">
+            <span class="hud-next-label">Next</span>
+            <span class="hud-next-title">LUA</span>
+            <span class="hud-next-arrow" aria-hidden="true">&rarr;</span>
+          </a>
+          
+          <button class="hud-top" type="button" aria-label="Back to top">
+            <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M2 7.5 6 3.5 10 7.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+
+  <main class="main-content">
+    
+    <section class="project-hero-section hero-scrolly hero-scrolly--scrim-boost" style="--hero-scrim-boost: 1.3; --hero-scrim-bottom: 1.25;">
+      <div class="scrolly-scene" data-scene="1">
+        <div class="scrolly-bg">
+          <picture>
+            <source media="(max-width: 768px)" srcset="/assets/images/projects/onewheel-bg-mobile.webp">
+            <img id="glass-source-hero" src="/assets/images/projects/onewheel-bg-desktop.webp" alt="" fetchpriority="high" decoding="async" data-focal-y="0.55">
+          </picture>
+          
+          <div class="scrolly-overlay"></div>
+        </div>
+      </div>
+
+      <div class="scrolly-content">
+
+        <div class="scrolly-step" data-step="hero">
+          <div class="container">
+            <h1 class="project-title">Onewheel</h1>
+
+            
+            <a href="#campaign-walkthrough" class="hero-campaign-link hero-campaign-link--centered hero-campaign-link--below-title hero-campaign-link--sample">
+              Skip to work sample ↓
+            </a>
+            
+
+            <div class="hero-above-fold">
+              <div class="project-info-card">
+                <div class="hero-card-top">
+                  
+                  <div class="hero-role">
+                    <span class="info-card-label">My Role</span>
+                    <span class="hero-role-value">Senior Copywriter</span>
+                    
+                    <span class="hero-role-agency-credit">at
+                      <img src="/assets/images/logos/Rainfactory_logo.webp"
+                           alt="Rainfactory"
+                           width="450" height="98"
+                           class="hero-role-agency-logo">
+                    </span>
+                    
+                  </div>
+                  
+
+                  
+                  <div class="hero-client hero-client--wide" style="--client-logo-h: 26px; --client-logo-w-m: 239px;">
+                    <span class="info-card-label">Client</span>
+                    <div class="client-logos">
+                      <img src="/assets/images/logos/Onewheel_logo.svg"
+                           alt="Onewheel"
+                           width="562" height="47"
+                           class="client-logo">
+                      
+                    </div>
+                  </div>
+                  
+                </div>
+
+                
+                <p class="impact-summary">Wrote the agency&#39;s 2020 Onewheel growth case study, then the Pint X and GT product pages for Onewheel&#39;s October 2021 launch.</p>
+                
+
+                
+                <div class="hero-deliverables">
+                  <span class="info-card-label">Deliverables</span>
+                  <div class="info-card-deliverables">
+                    
+                    
+                    <a href="#published-articles" class="deliverable-badge deliverable-badge--link">Content Marketing</a>
+                    
+                    
+                    
+                    <span class="deliverable-badge">DTC Launch</span>
+                    
+                    
+                    
+                    <a href="#campaign-walkthrough" class="deliverable-badge deliverable-badge--link">Landing Page</a>
+                    
+                    
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+
+        
+
+        
+        
+        
+
+        
+
+        <div class="scrolly-bottom-fade" aria-hidden="true"></div>
+      </div>
+
+    </section>
+
+    
+  <script>
+    // Metric labels, injected inline right after the hero markup so they exist
+    // at first paint and the columns distribute with no post-load reflow.
+    // Content is data-driven from the project's heroMetricLabels field
+    // (build.js emits it as a JS literal, "null" when absent) — layout comes
+    // from the hero-metrics body class, but the label copy lives with the
+    // project data so each hero (Gringotts 3-up, Screeneo 2-up) reads
+    // correctly. One line per tile: the muted `sub` line was cut 2026-09-13
+    // (Jakob, smts3gkco1pz2: "I don't think I'll ever use subs for key
+    // results metrics"). Per-item leadDesktop optionally swaps the lead for
+    // one self-sufficient line at >=769px ("Email sign-up rate").
+    (function () {
+      var LABELS = null;
+      if (!LABELS || !LABELS.length) return;
+      var grid = document.querySelector('.hero-metrics-floor .metrics-grid');
+      if (!grid) return;
+      var metrics = grid.querySelectorAll('.metric');
+      for (var i = 0; i < metrics.length; i++) {
+        var label = metrics[i].querySelector('.metric-label');
+        var parts = LABELS[i];
+        if (!label || !parts) continue;
+        label.textContent = '';
+        var lead = document.createElement('span');
+        lead.className = 'metric-label-lead';
+        lead.textContent = parts.lead;
+        label.appendChild(lead);
+        if (parts.leadDesktop) {
+          lead.classList.add('metric-label-lead--mobile');
+          var leadDesktop = document.createElement('span');
+          leadDesktop.className = 'metric-label-lead metric-label-lead--desktop';
+          leadDesktop.textContent = parts.leadDesktop;
+          label.insertBefore(leadDesktop, lead);
+        }
+      }
+    })();
+  </script>
+
+    
+
+    
+
+    
+
+    
+    <section id="pre-launch" class="prelaunch-section" data-hud-label="Approach">
+      
+      
+      
+
+
+      
+      
+      
+      <div class="plsb-runway" id="pre-launch-board">
+      <div class="plsb-stage" role="region" aria-roledescription="carousel" aria-label="Pre-launch story highlights">
+      <div class="plsb plsb--xl" aria-label="Pre-launch story beats">
+        
+        <article class="plsb-panel plsb-panel--media" data-dwell="8000" aria-roledescription="slide" aria-label="The product">
+
+          
+          <div class="plsb-canvas plsb-canvas--establish plsb-canvas--stack-m plsb-canvas--scrim-strong" style="--scrim-ink: 60, 47, 36; --plsb-scrim-boost-m: 1.3;">
+            
+            
+            <picture>
+              
+              <img class="plsb-canvas-media" src="/assets/images/projects/onewheel-establish.webp"
+                   alt="A helmeted rider carves a Pint X along the concrete floor of the Los Angeles river channel at sunset, one arm raised, the board&#39;s blue rail reading “pint X” and the sun flaring low behind a transmission tower." loading="lazy"
+                   width="2000" height="1132"
+                   style="--canvas-pos: 62% 50%;">
+            </picture>
+            
+            <div class="plsb-canvas-scrim plsb-canvas-scrim--establish" aria-hidden="true"></div>
+            
+            <div class="prelaunch-heading prelaunch-heading--canvas">
+              
+              <h2 class="prelaunch-title">The story, then the launch</h2>
+              
+              <p class="prelaunch-thesis">Two jobs: the agency's case study on how Onewheel grew, then the product pages that sold its next two boards.</p>
+              
+              
+              
+              
+              
+            </div>
+          </div>
+          
+
+
+          
+        </article>
+        
+        <article class="plsb-panel plsb-panel--bg" style="" data-dwell="9000" aria-roledescription="slide" aria-label="Jan 2020 · The story">
+
+          
+
+
+          
+          
+          <div class="plsb-bg" aria-hidden="true">
+            <img src="/assets/images/projects/onewheel-riders.webp" alt="" loading="lazy">
+            <div class="plsb-bg-scrim"></div>
+          </div>
+          
+          
+          
+          
+          
+          
+          <span class="plsb-phase">Jan 2020 · The story</span>
+          <div class="plsb-body">
+            <div class="plsb-copy">
+              <h3>First, the case study</h3>
+              <p>I wrote Rainfactory's case study on the account.</p>
+              
+              
+              
+              
+              
+            </div>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <figure class="plsb-vis plsb-vis--shot plsb-vis--shot-narrow">
+              
+              
+              
+              
+              
+              <div class="plsb-browser plsb-browser--closed">
+                <div class="plsb-browser-bar" aria-hidden="true"><span class="plsb-browser-dot"></span><span class="plsb-browser-dot"></span><span class="plsb-browser-dot"></span></div>
+                <img class="plsb-shot plsb-shot--full plsb-shot--framed" src="/assets/images/projects/onewheel-story-case-study.webp"
+                     alt="The top of the post as it ran on Rainfactory&#39;s blog: the agency&#39;s logo on a teal bar, the headline “How Santa Barbara Startup OneWheel Scaled to Success”, a dateline filed under Client News, and the lead photo of a blue Onewheel+ XR tipped against a rider&#39;s leg." loading="lazy"
+                     width="1820" height="1070">
+              </div>
+              
+              
+              
+              
+            </figure>
+            
+            
+          </div>
+          
+          
+          
+        </article>
+        
+        <article class="plsb-panel plsb-panel--bg" style="" data-dwell="12000" aria-roledescription="slide" aria-label="Oct 2021 · The launch">
+
+          
+
+
+          
+          
+          <div class="plsb-bg plsb-bg--strong" aria-hidden="true">
+            <img src="/assets/images/projects/onewheel-launch-pair-bg.webp" alt="" loading="lazy">
+            <div class="plsb-bg-scrim"></div>
+          </div>
+          
+          
+          
+          
+          
+          
+          <span class="plsb-phase">Oct 2021 · The launch</span>
+          <div class="plsb-body">
+            <div class="plsb-copy">
+              <h3>One launch, two audiences</h3>
+              <p>Onewheel's homepage flipped to <b>'Introducing Pint X & GT'</b> — and I wrote the two pages it sent riders to.</p>
+              
+              
+              
+              
+              
+            </div>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <figure class="plsb-vis plsb-vis--shot">
+              
+              <div class="plsb-shot-pair">
+                
+                <div class="plsb-browser plsb-browser--closed">
+                  <div class="plsb-browser-bar" aria-hidden="true"><span class="plsb-browser-dot"></span><span class="plsb-browser-dot"></span><span class="plsb-browser-dot"></span></div>
+                  <img class="plsb-shot plsb-shot--full plsb-shot--framed" src="/assets/images/projects/onewheel-walkthrough/pintx-01-hero.webp"
+                       alt="The Pint X product page at launch — ‘Mighty, mini, ready to take on any adventure’: 18 mph, 12–18 mi range, $1,400." loading="lazy"
+                       width="2000" height="1257">
+                </div>
+                
+                <div class="plsb-browser plsb-browser--closed">
+                  <div class="plsb-browser-bar" aria-hidden="true"><span class="plsb-browser-dot"></span><span class="plsb-browser-dot"></span><span class="plsb-browser-dot"></span></div>
+                  <img class="plsb-shot plsb-shot--full plsb-shot--framed" src="/assets/images/projects/onewheel-walkthrough/gt-01-hero.webp"
+                       alt="The GT product page at launch — ‘A quantum leap in Onewheel performance’: 20 mph, 20–32 mi range, $2,200." loading="lazy"
+                       width="2000" height="1250">
+                </div>
+                
+              </div>
+              
+              
+              
+              
+              
+              
+              <figcaption class="plsb-shot-cap">Each had to be unmistakably Onewheel but written for its own buyer: Pint X argued on size at $1,400, GT on power at $2,200. A client approver made the final pass.</figcaption>
+              
+            </figure>
+            
+            
+          </div>
+          
+          
+          
+        </article>
+        
+      </div>
+      <button type="button" class="plsb-arrow plsb-arrow--prev" aria-label="Previous slide" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 5.5 L8 12 L14.5 18.5"/></svg>
+      </button>
+      <button type="button" class="plsb-arrow plsb-arrow--next" aria-label="Next slide" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 5.5 L16 12 L9.5 18.5"/></svg>
+      </button>
+      <div class="plsb-nav" role="group" aria-label="Pre-launch story beats" hidden>
+        <div class="plsb-nav-pill">
+          
+          <button type="button" class="plsb-dot" aria-label="The product — Onewheel"></button>
+          
+          <button type="button" class="plsb-dot" aria-label="Jan 2020 · The story — First, the case study"></button>
+          
+          <button type="button" class="plsb-dot" aria-label="Oct 2021 · The launch — One launch, two audiences"></button>
+          
+        </div>
+        <button type="button" class="plsb-ctl" data-state="paused" aria-label="Play highlights" hidden>
+          <svg class="plsb-ctl-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5 L18 12 L8 18.5 Z"/></svg>
+          <svg class="plsb-ctl-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 6 V18 M15.5 6 V18"/></svg>
+        </button>
+      </div>
+      </div>
+      </div>
+      
+      
+
+
+      
+
+      <div class="container">
+
+        
+
+
+        
+
+
+        
+      </div>
+    </section>
+    
+
+
+
+
+    
+
+
+
+
+
+    <section id="published-articles" class="article-shelf" data-hud-label="The post" aria-label="Published articles">
+      <div class="container">
+        <div class="ashelf-head">
+          
+          <p class="ashelf-eyebrow section-label">Read it</p>
+          
+          <h2 class="ashelf-title">The 2020 case study</h2>
+          
+          <p class="ashelf-note">How the entry-level Pint, monthly payment plans, and a Hulu campaign put the board within reach of the young riders who adored it — the Pint being the predecessor to the Pint X I&#39;d go on to write the product page for.</p>
+          
+        </div>
+        <div class="ashelf-list">
+          
+          <a class="ashelf-card" href="/projects/onewheel/articles/scaled-to-success/">
+            <span class="ashelf-thumb">
+              <img src="/assets/images/projects/onewheel-blog/thumb-scaled-to-success.webp" alt=""
+                   width="880" height="460"
+                   loading="lazy" decoding="async">
+            </span>
+            <span class="ashelf-body">
+              <span class="ashelf-card-title">How Santa Barbara Startup OneWheel Scaled to Success</span>
+              <span class="ashelf-card-meta">Jan 15, 2020 · Client News · 2 min read</span>
+              <span class="ashelf-cta">Read &rarr;</span>
+            </span>
+          </a>
+          
+        </div>
+      </div>
+    </section>
+
+
+
+    
+    <section id="campaign-walkthrough" class="campaign-walkthrough-section campaign-walkthrough-section--browser" data-wt-desktop-capture data-wt-address="onewheel.com/products/onewheel-pint-x" style="--wt-wide-act: 3.4;" data-entry-pan="true" data-hud-label="Pint X Product Page">
+      <div class="campaign-walkthrough-runway">
+        <div class="campaign-walkthrough-sticky">
+          
+          <div class="container container--wide">
+            <div class="campaign-walkthrough-layout">
+
+              <div class="campaign-walkthrough-phone">
+                <div class="wt-phone wt-phone--browser">
+                  <div class="wt-phone-screen">
+                    <div class="wt-phone-scroll">
+                      <div class="igg-content">
+
+  <div class="igg-block igg-block--joined" data-focus="hero-stat-bar">
+    <img width="2880" height="1810" src="/assets/images/projects/onewheel-walkthrough/pintx-01-hero.webp" data-callout-image="pintx-01-hero.webp" alt="Full-bleed hero of the Onewheel Pint X product page: two riders carve down a sunlit road on Pint X boards, shot low from road level. A neon-yellow badge reads 'LAUNCH DEAL — LIMITED TIME ONLY — SAVE UP TO $200 — 48 HOURS ONLY.' A bottom stat bar pairs the pint x wordmark with 'Mighty, mini, ready to take on any adventure,' then Top Speed 18 mph, Range 12-18 mi, From $1,400, and a Buy Now button.">
+  </div>
+  <div class="igg-block igg-block--joined" data-focus="benefit-trio">
+    <img width="2880" height="955" src="/assets/images/projects/onewheel-walkthrough/pintx-02a-benefits.webp" data-callout-image="pintx-02a-benefits.webp" alt="Three icon-led benefit blocks — 'EXTENDED RANGE: Get up to 18 miles on a single charge. Freedom feels good.', 'SPEED BOOST: Pound for pound the people's champ. At 18 mph Pint X packs a punch.', 'TAKE IT TO GO: Small enough to fit anywhere. Built in maghandle to grip and rip.'" loading="lazy">
+  </div>
+  <div class="igg-block igg-block--joined">
+    <video width="1000" height="562" muted loop playsinline preload="metadata" class="wt-lazy-video" poster="/assets/images/projects/onewheel-walkthrough/pintx-allnew-poster.webp" aria-label="All-new Pint X — looping product film of the board by a cafe table" src="/assets/images/projects/onewheel-walkthrough/pintx-allnew-video.mp4"></video>
+  </div>
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="733" src="/assets/images/projects/onewheel-walkthrough/pintx-02c-press.webp" alt="Press quote — 'This little ripper hits the sweet spot between price, performance, and practicality' — over The Verge, digitaltrends, and MKBHD logos." loading="lazy">
+  </div>
+  <div class="igg-block igg-block--joined" data-focus="go-farther">
+    <img width="2000" height="1207" src="/assets/images/projects/onewheel-walkthrough/pintx-03a-farther.webp" data-callout-image="pintx-03a-farther.webp" alt="Under 'GO FARTHER' — 'Double the range, double the fun. Get up to 18mi/29km per charge, twice the range of Pint, so you go where you want.' — two riders cruise a sunset backroad." loading="lazy">
+  </div>
+  <div class="igg-block igg-block--joined" data-focus="grab-and-go">
+    <img data-alt-source="html" width="2000" height="2415" src="/assets/images/projects/onewheel-walkthrough/pintx-03b-rocket-grab.webp" data-callout-image="pintx-03b-rocket-grab.webp" alt="Under 'POCKET ROCKET' — 'With a top speed of 18 mph, Pint X has extra juice to get where you're going fast. Pint X goes 2mph faster than Pint, which makes a massive difference on longer trips.' — a rider in a red dress glides past a yellow warehouse. Under 'GRAB AND GO' — 'At 27 inches tip to tip, Pint X goes with you—coffee shop, train, under your desk, wherever. Stash it, sesh it, love it.' — a close-up of a hand carrying the blue Pint X by its handle." loading="lazy">
+  </div>
+  <div class="igg-block igg-block--joined" data-focus="learn-something-new">
+    <img width="2000" height="2540" src="/assets/images/projects/onewheel-walkthrough/pintx-04-learn.webp" data-callout-image="pintx-04-learn.webp" alt="Two sections from the Pint X page. A smiling new rider sits cross-legged on the floor fastening a white helmet beside her Pint X, above the heading 'LEARN SOMETHING NEW' and the line 'You can do it, we promise. Pint X features Simplestop dismount technology, making it easy to ride quickly and feel confident.' Below, a helmeted rider carves across tire-marked pavement on a blue Pint X." loading="lazy">
+  </div>
+  <div class="igg-block igg-block--joined" data-focus="lit-lifestyle">
+    <img data-alt-source="visual" width="2000" height="2417" src="/assets/images/projects/onewheel-walkthrough/pintx-05-lit-lifestyle.webp" data-callout-image="pintx-05-lit-lifestyle.webp" alt="Product page section headed 'IT'S LIT' with the line 'Pint X features Lightbar integrated into the front footpad for sense pad indication, battery monitoring and in-ride alerts.' Below, a close-up of the blue Pint X rail, then two lifestyle photos: a smiling rider in a black helmet, and a woman sitting on brick steps beside her blue Pint X." loading="lazy">
+  </div>
+  <div class="igg-block igg-block--joined" data-focus="carlo-quote">
+    <img width="2000" height="2517" src="/assets/images/projects/onewheel-walkthrough/pintx-06-quote-wallride.webp" data-callout-image="pintx-06-quote-wallride.webp" alt="Full-bleed black quote panel reading '&quot;I can't stop riding it!&quot; - Carlo B.' above a golden-hour photo of two riders resting against a stone wall, their lime and blue Pint X boards parked on the pavement below." loading="lazy">
+  </div>
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="2343" src="/assets/images/projects/onewheel-walkthrough/pintx-07-colorway-app.webp" data-callout-image="pintx-07-colorway-app.webp" alt="Two stacked page sections. First, on a pale studio backdrop: a Pint X with neon-yellow rails lies among scattered tennis balls under the kicker 'Snag one before they are gone.' and the headline 'LIMITED EDITION COLORWAY', with a black 'Buy Now' button. Below, a dark section shows a rider's hands on a phone running the Onewheel App beside the board, headed 'CONNECT &amp; CONTROL' with body copy 'Sync to your board from the Onewheel App. Customize the way your board rides, check your battery status, connect with friends and more.'" loading="lazy">
+  </div>
+  <div class="igg-block" data-focus="customize-financing">
+    <img width="2000" height="2582" src="/assets/images/projects/onewheel-walkthrough/pintx-08-customize-financing.webp" data-callout-image="pintx-08-customize-financing.webp" alt="Two stacked sections. First: a helmeted rider crouches holding a yellow-railed Pint X upright, next to the kicker 'Customize your board', the headline 'MAKE IT YOURS', and a black 'Customize' button. Below, a rider carves down a sunlit road past the headline 'AS LOW AS $78 A MONTH', body copy 'Get the board you want. Easy financing and low payments available with Klarna.', a price pair 'Starting at $1400 / Monthly $78/MO', and a neon 'Buy Now' button." loading="lazy">
+  </div>
+</div>
+
+                    </div>
+                    <svg class="walkthrough-spot-svg" viewBox="0 0 896 672" preserveAspectRatio="none" width="100%" height="100%" aria-hidden="true">
+                      <defs>
+                        <filter id="wt-spot-goo-0" filterUnits="userSpaceOnUse" x="-50" y="-50" width="996" height="772">
+                          <feGaussianBlur in="SourceGraphic" stdDeviation="0.1" result="blur"/>
+                          <feColorMatrix in="blur" mode="matrix"
+                            values="1 0 0 0 0
+                                    0 1 0 0 0
+                                    0 0 1 0 0
+                                    0 0 0 24 -10" result="goo"/>
+                        </filter>
+                        <mask id="wt-spot-mask-0" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse" x="-50" y="-50" width="996" height="772">
+                          <rect x="-50" y="-50" width="996" height="772" fill="white"/>
+                          <g filter="url(#wt-spot-goo-0)">
+                            <rect class="wt-spot-blob wt-spot-blob--trail" fill="black" rx="8" ry="8"/>
+                            <line class="wt-spot-blob wt-spot-blob--bridge" stroke="black" stroke-width="0" stroke-linecap="round" x1="0" y1="0" x2="0" y2="0"/>
+                            <rect class="wt-spot-blob wt-spot-blob--lead"  fill="black" rx="8" ry="8"/>
+                          </g>
+                        </mask>
+                      </defs>
+                      <rect class="wt-spot-overlay" x="0" y="0" width="896" height="672"
+                            fill="rgba(26,26,46,0.55)" mask="url(#wt-spot-mask-0)"/>
+                    </svg>
+                  </div>
+                  
+                  <div class="wt-browser-chrome" aria-hidden="true">
+                    <span class="wt-browser-dot wt-browser-dot--close"></span>
+                    <span class="wt-browser-dot wt-browser-dot--min"></span>
+                    <span class="wt-browser-dot wt-browser-dot--max"></span>
+                    <span class="wt-browser-url">onewheel.com/products/onewheel-pint-x</span>
+                  </div>
+                  
+                </div>
+              </div>
+
+              <div class="campaign-walkthrough-annotations">
+                <div class="walkthrough-heading">
+                  <h2 class="walkthrough-heading-title">Pint X Product Page</h2>
+                  <p class="walkthrough-heading-subtitle">What I wrote and why.</p>
+                  
+                </div>
+                <div class="walkthrough-annotation-slot">
+                  
+                  <div class="walkthrough-annotation" data-annotation="hero-stat-bar" data-hold-scale="1.25" data-region-y="0.845" data-region-h="0.155" data-region-x="0.14" data-region-w="0.6" data-region-m-y="0.845" data-region-m-h="0.155" data-region-m-x="0.14" data-region-m-w="0.38" data-region-m-x2="0.36">
+                    <span class="walkthrough-annotation-label">Small, Framed as an Asset</span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="mighty-mini-tagline">The size objection gets answered in the tagline, before it can form. Sandwiching the small-sounding word — 'mini' — between two power words makes compactness read as a feature.</p>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="mighty-mini-tagline" data-anchor-image="pintx-01-hero.webp" data-anchor-x="0.203" data-anchor-y="0.869" data-anchor-w="0.196" data-anchor-h="0.052" hidden></span>
+                    
+                    
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="benefit-range" data-focus-ref="benefit-trio" data-region-y="0.184" data-region-h="0.481" data-region-x="0.075" data-region-w="0.3" data-region-m-y="0.184" data-region-m-h="0.481" data-region-m-x="0.105" data-region-m-w="0.24">
+                    <span class="walkthrough-annotation-label">Range Takes the Lead Slot</span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="range-copy">Range is the Pint X’s biggest upgrade over the Pint. The number makes the case; the short second sentence gives it soul.</p>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="range-copy" data-anchor-image="pintx-02a-benefits.webp" data-anchor-x="0.105" data-anchor-y="0.234" data-anchor-w="0.24" data-anchor-h="0.365" hidden></span>
+                    
+                    
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="benefit-speed" data-focus-ref="benefit-trio" data-zoom-chain="true" data-region-y="0.184" data-region-h="0.481" data-region-x="0.352" data-region-w="0.3" data-region-m-y="0.184" data-region-m-h="0.481" data-region-m-x="0.38" data-region-m-w="0.24">
+                    <span class="walkthrough-annotation-label">Speed, Reframed</span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="speed-boost-copy">Boxing's weight-class logic turns 18 mph into a win for the board's size.</p>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="speed-boost-copy" data-anchor-image="pintx-02a-benefits.webp" data-anchor-x="0.3925" data-anchor-y="0.234" data-anchor-w="0.215" data-anchor-h="0.365" hidden></span>
+                    
+                    
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="go-farther" data-hold-scale="1.25" data-region-y="0.02" data-region-h="0.22" data-region-x="0.2" data-region-w="0.6" data-region-m-y="0.05" data-region-m-h="0.19" data-region-m-x="0.23" data-region-m-w="0.34" data-region-m-x2="0.43">
+                    <span class="walkthrough-annotation-label">Spec → Feeling</span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="double-the-range">The promise comes first, so the mileage that follows reads as proof of something already sold.</p>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="double-the-range" data-anchor-image="pintx-03a-farther.webp" data-anchor-x="0.22" data-anchor-y="0.068" data-anchor-w="0.56" data-anchor-h="0.15" hidden></span>
+                    
+                    
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="grab-and-go" data-hold-scale="1.25" data-region-y="0.9" data-region-h="0.1" data-region-x="0.13" data-region-w="0.72" data-region-m-y="0.9" data-region-m-h="0.1" data-region-m-x="0.16" data-region-m-w="0.4" data-region-m-x2="0.44">
+                    <span class="walkthrough-annotation-label">Measured, Then Sold</span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="stash-it-sesh-it">The tip-to-tip number proves it fits into a commute; the slang that follows sells how it feels to own.</p>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="stash-it-sesh-it" data-anchor-image="pintx-03b-rocket-grab.webp" data-anchor-x="0.211" data-anchor-y="0.918" data-anchor-w="0.579" data-anchor-h="0.079" hidden></span>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="stash-it-sesh-it" data-anchor-image="pintx-03b-rocket-grab.webp" data-anchor-x="0.2445" data-anchor-y="0.9627" data-anchor-w="0.127" data-anchor-h="0.0158" data-anchor-underline="true" hidden></span>
+                    
+                    
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="learn-something-new" data-hold-scale="1.25" data-region-y="0.371" data-region-h="0.2" data-region-x="0.17" data-region-w="0.67" data-region-m-y="0.38" data-region-m-h="0.12" data-region-m-x="0.22" data-region-m-w="0.3" data-region-m-x2="0.48">
+                    <span class="walkthrough-annotation-label">Reassurance First</span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="we-promise">Every first-timer is silently asking the same thing: what if I can’t stop? The plain-words promise answers first; the named tech backs it up.</p>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="we-promise" data-anchor-image="pintx-04-learn.webp" data-anchor-x="0.23" data-anchor-y="0.4008" data-anchor-w="0.55" data-anchor-h="0.0772" hidden></span>
+                    
+                    
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="lit-lifestyle" data-hold-scale="1.25" data-region-y="0" data-region-h="0.2" data-region-x="0.25" data-region-w="0.5">
+                    <span class="walkthrough-annotation-label">Feature Named in Slang</span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="its-lit-heading">Peak 2021, I know. The wink fit the moment and the audience.</p>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="its-lit-heading" data-anchor-image="pintx-05-lit-lifestyle.webp" data-anchor-x="0.429" data-anchor-y="0.064" data-anchor-w="0.142" data-anchor-h="0.029" hidden></span>
+                    
+                    
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="carlo-quote" data-hold-scale="1.25" data-region-y="0.125" data-region-h="0.255" data-region-x="0.16" data-region-w="0.68">
+                    <span class="walkthrough-annotation-label">Testimonial as Punctuation</span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="carlo-quote-line">The strongest thing the page can promise is habit — and that claim only lands in a customer’s voice.</p>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="carlo-quote-line" data-anchor-image="pintx-06-quote-wallride.webp" data-anchor-x="0.22" data-anchor-y="0.205" data-anchor-w="0.56" data-anchor-h="0.095" hidden></span>
+                    
+                    
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="customize-financing" data-hold-scale="1.25" data-region-y="0.5771" data-region-h="0.3106" data-region-x="0" data-region-w="0.5" data-region-m-y="0.577" data-region-m-h="0.32" data-region-m-x="0" data-region-m-w="0.32">
+                    <span class="walkthrough-annotation-label">Price Reframed as Monthly</span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="price-pair">The headline gives the monthly figure the display type, then the pair underneath sets full price and monthly at the same size. An open comparison, nothing to feel tricked by later.</p>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="price-pair" data-anchor-image="pintx-08-customize-financing.webp" data-anchor-x="0.05" data-anchor-y="0.5902" data-anchor-w="0.2075" data-anchor-h="0.2843" hidden></span>
+                    
+                    
+                    
+                  </div>
+                  
+                </div>
+                
+                
+                <div class="walkthrough-progress" role="group" aria-label="Walkthrough controls">
+                  <div class="walkthrough-progress-rail">
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="0" type="button" aria-label="Go to Small, Framed as an Asset" title="Small, Framed as an Asset"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="1" type="button" aria-label="Go to Range Takes the Lead Slot" title="Range Takes the Lead Slot"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="2" type="button" aria-label="Go to Speed, Reframed" title="Speed, Reframed"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="3" type="button" aria-label="Go to Spec → Feeling" title="Spec → Feeling"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="4" type="button" aria-label="Go to Measured, Then Sold" title="Measured, Then Sold"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="5" type="button" aria-label="Go to Reassurance First" title="Reassurance First"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="6" type="button" aria-label="Go to Feature Named in Slang" title="Feature Named in Slang"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="7" type="button" aria-label="Go to Testimonial as Punctuation" title="Testimonial as Punctuation"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="8" type="button" aria-label="Go to Price Reframed as Monthly" title="Price Reframed as Monthly"></button>
+                    
+                  </div>
+                  <div class="wt-ctl-row">
+                    <button class="walkthrough-progress-nav" data-progress-nav="prev" type="button" aria-label="Previous stop" title="Previous stop">
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 4l-4 4 4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <button class="wt-ctl-count" type="button" aria-expanded="false" aria-haspopup="true" title="All stops">
+                      <span class="wt-ctl-count-text">9 stops</span>
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 10l4-4 4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <button class="walkthrough-progress-nav" data-progress-nav="next" type="button" aria-label="Next stop" title="Next stop">
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <span class="wt-ctl-gap"></span>
+                    <button class="wt-ctl-btn wt-ctl-restart" type="button" title="Restart the walkthrough">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1 4v6h6M3.51 15a9 9 0 1 0 2.13-9.36L1 10" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      <span class="wt-ctl-label">Restart</span>
+                    </button>
+                    <button class="wt-ctl-btn wt-ctl-skip" type="button" title="Skip the walkthrough">
+                      Skip
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v10M3.5 8.5L8 13l4.5-4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                  </div>
+                  <ol class="wt-chapters" hidden>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="0" type="button">Small, Framed as an Asset</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="1" type="button">Range Takes the Lead Slot</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="2" type="button">Speed, Reframed</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="3" type="button">Spec → Feeling</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="4" type="button">Measured, Then Sold</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="5" type="button">Reassurance First</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="6" type="button">Feature Named in Slang</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="7" type="button">Testimonial as Punctuation</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="8" type="button">Price Reframed as Monthly</button></li>
+                    
+                  </ol>
+                </div>
+                
+              </div>
+
+              <svg class="walkthrough-lines" aria-hidden="true"></svg>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="campaign-walkthrough-section campaign-walkthrough-section--browser" data-wt-desktop-capture data-wt-address="onewheel.com/products/onewheel-gt" style="--wt-wide-act: 2.8;" data-entry-pan="true" data-transit-taper="off" data-hud-label="GT Product Page">
+      <div class="campaign-walkthrough-runway">
+        <div class="campaign-walkthrough-sticky">
+          
+          <div class="container container--wide">
+            <div class="campaign-walkthrough-layout">
+
+              <div class="campaign-walkthrough-phone">
+                <div class="wt-phone wt-phone--browser">
+                  <div class="wt-phone-screen">
+                    <div class="wt-phone-scroll">
+                      <div class="igg-content">
+
+  <div class="igg-block igg-block--joined" data-focus="gt-hero">
+    <img width="2000" height="1250" src="/assets/images/projects/onewheel-walkthrough/gt-01-hero.webp" data-callout-image="gt-01-hero.webp" alt="Onewheel GT product page hero: a rider's feet on a GT board kicking up dust in a desert landscape. A yellow badge reads 'LAUNCH DEAL — LIMITED TIME ONLY — SAVE UP TO $275 — 48 HOURS ONLY.' The stat bar below reads 'GT — A quantum leap in Onewheel performance. Top Speed 20 mph, Range 20-32 mi, From $2,200' with a Buy Now button.">
+  </div>
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="709" src="/assets/images/projects/onewheel-walkthrough/gt-02a-benefits.webp" data-callout-image="gt-02a-benefits.webp" alt="GT page benefits section on black: three yellow icons head columns titled 'MORE POWER' ('Higher voltage for more power, torque and dynamic performance at all speeds. Welcome to that 3 horsepower life.'), 'MORE RANGE' ('With up to 32mi/52km on a single charge, riding a full day without a recharge is now a thing.'), and 'MORE CONTROL' ('Concave footpads, grippier grip tape, and a custom tire profile combine for even deeper carving and more boardfeel. Let 'er rip!')." loading="lazy">
+  </div>
+  <div class="igg-block igg-block--joined">
+    <video width="1920" height="1080" muted loop playsinline preload="metadata" class="wt-lazy-video" poster="/assets/images/projects/onewheel-walkthrough/gt-benefits-poster.webp" aria-label="Onewheel GT product film — a helmeted rider carves through desert terrain, kicking up dust" src="/assets/images/projects/onewheel-walkthrough/gt-benefits-video.mp4"></video>
+  </div>
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="2406" src="/assets/images/projects/onewheel-walkthrough/gt-03-more-powerband.webp" data-callout-image="gt-03-more-powerband.webp" alt="A helmeted rider carves a Onewheel GT through a cloud of dust on a barren hill, backlit by hazy sun, under the giant stacked headline 'MORE POWER'. Below, on black: 'ENHANCED POWERBAND' beside a power-vs-RPM curve chart comparing 'ONEWHEEL GT' (solid yellow, higher) to 'PREVIOUS MODELS' (dashed gray), with body copy ending 'And who doesn't like more voltage?'" loading="lazy">
+  </div>
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="2157" src="/assets/images/projects/onewheel-walkthrough/gt-04-go-range.webp" data-callout-image="gt-04-go-range.webp" alt="An aerial shot of a rider descending a rocky canyon trail past a huge standing boulder, under the giant stacked headline 'GO FARTHER'. Below, on black: '32 MILE RANGE' beside a macro render of blue 21700 battery cells packed inside the GT's footpad, with copy ending 'Go farther.'" loading="lazy">
+  </div>
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="2232" src="/assets/images/projects/onewheel-walkthrough/gt-05-tunnel-rubber.webp" data-callout-image="gt-05-tunnel-rubber.webp" alt="Two stacked frames from the Onewheel GT page: a rider glides through a light-streaked tunnel in long-exposure blur, then a low night shot tracks a rider's feet on a GT with red taillight glowing. Overlaid copy reads 'CUSTOM RUBBER — Carve-ability taken to the next level, this new Onewheel-specific tire with rounder profile gets you from rail to rail for that powder day feel.'" loading="lazy">
+  </div>
+  <div class="igg-block igg-block--joined" data-focus="tread-shred">
+    <img width="2000" height="2378" src="/assets/images/projects/onewheel-walkthrough/gt-06-built-tread.webp" data-callout-image="gt-06-built-tread.webp" alt="Two stacked frames: under a storm-dark sky a helmeted rider carves a GT across gravel behind the giant word 'BUILT', then a macro shot of the knobby Trail Slayer tire on a leaf-covered forest floor carries 'FOR ADVENTURE' and the block 'TREAD &amp; SHRED — Ready to go full send? For the first time, the Onewheel-specific Trail Slayer GT treaded tire is available from the factory. Carvy? Grippy? Choose two.'" loading="lazy">
+  </div>
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="2210" src="/assets/images/projects/onewheel-walkthrough/gt-07-footpads-tire.webp" data-callout-image="gt-07-footpads-tire.webp" alt="Two stacked sections from the Onewheel GT page. First, a macro shot of black grip tape overlaid with a blue wireframe grid showing the footpad's concave curve, headlined 'CONCAVE FOOTPADS' with body copy: 'GT features concave front and rear footpads for maximum comfort and control and aggressive grip tape for maximum traction.' Below, a ground-level photo of a GT leaning against the knobby tire of an off-road truck on a dirt road." loading="lazy">
+  </div>
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="885" src="/assets/images/projects/onewheel-walkthrough/gt-07b-light-it-up.webp" data-callout-image="gt-07b-light-it-up.webp" alt="LIGHT IT UP — Brighter LED lights with 300% more lumens than XR and featuring new Highbeams for maximum visibility. See and be seen! A GT's headlight bar glows against a darkened studio." loading="lazy">
+  </div>
+  <div class="igg-block igg-block--joined" data-focus="gt-details-maghandle">
+    <img width="2000" height="2129" src="/assets/images/projects/onewheel-walkthrough/gt-08-details-maghandle.webp" data-callout-image="gt-08-details-maghandle.webp" alt="Two stacked sections from the Onewheel GT page. First, 'DETAILS MATTER' beside a close-up of the GT's grip-tape footpad and ONEWHEEL-branded rail, with copy: 'Every component of GT has been completely redesigned to make the world's most refined shredding machine. Built like a tank, assembled with care and precision in the USA.' Below, 'RIP IT &amp; GRIP IT' over a rider in a blue-lit parking garage carrying a GT by its handle and a helmet in the other hand, with copy: 'The GT comes standard with Onewheel's aluminum, rubber gripped, premium Maghandle Pro handle that snaps in place when not in use.'" loading="lazy">
+  </div>
+  <div class="igg-block" data-focus="app-financing">
+    <img width="2000" height="2350" src="/assets/images/projects/onewheel-walkthrough/gt-09-app-financing.webp" data-callout-image="gt-09-app-financing.webp" alt="Two stacked sections from the Onewheel GT product page. Top: a rider holds a phone running the Onewheel App beside a parked GT, under the heading 'CONNECT &amp; CONTROL' and the copy 'Sync to your board from the Onewheel App. Customize the way your board rides, check your battery status, connect with friends and more.' Bottom: a GT leans against a sunlit adobe wall beside the oversized headline 'AS LOW AS $92 A MONTH', the copy 'Get the board you want. Easy financing and low payments available with Klarna.', a price pair 'Starting at $2,200 / Monthly $92/MO', and a Shop Now button." loading="lazy">
+  </div>
+</div>
+
+                    </div>
+                    <svg class="walkthrough-spot-svg" viewBox="0 0 896 672" preserveAspectRatio="none" width="100%" height="100%" aria-hidden="true">
+                      <defs>
+                        <filter id="wt-spot-goo-1" filterUnits="userSpaceOnUse" x="-50" y="-50" width="996" height="772">
+                          <feGaussianBlur in="SourceGraphic" stdDeviation="0.1" result="blur"/>
+                          <feColorMatrix in="blur" mode="matrix"
+                            values="1 0 0 0 0
+                                    0 1 0 0 0
+                                    0 0 1 0 0
+                                    0 0 0 24 -10" result="goo"/>
+                        </filter>
+                        <mask id="wt-spot-mask-1" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse" x="-50" y="-50" width="996" height="772">
+                          <rect x="-50" y="-50" width="996" height="772" fill="white"/>
+                          <g filter="url(#wt-spot-goo-1)">
+                            <rect class="wt-spot-blob wt-spot-blob--trail" fill="black" rx="8" ry="8"/>
+                            <line class="wt-spot-blob wt-spot-blob--bridge" stroke="black" stroke-width="0" stroke-linecap="round" x1="0" y1="0" x2="0" y2="0"/>
+                            <rect class="wt-spot-blob wt-spot-blob--lead"  fill="black" rx="8" ry="8"/>
+                          </g>
+                        </mask>
+                      </defs>
+                      <rect class="wt-spot-overlay" x="0" y="0" width="896" height="672"
+                            fill="rgba(26,26,46,0.55)" mask="url(#wt-spot-mask-1)"/>
+                    </svg>
+                  </div>
+                  
+                  <div class="wt-browser-chrome" aria-hidden="true">
+                    <span class="wt-browser-dot wt-browser-dot--close"></span>
+                    <span class="wt-browser-dot wt-browser-dot--min"></span>
+                    <span class="wt-browser-dot wt-browser-dot--max"></span>
+                    <span class="wt-browser-url">onewheel.com/products/onewheel-gt</span>
+                  </div>
+                  
+                </div>
+              </div>
+
+              <div class="campaign-walkthrough-annotations">
+                <div class="walkthrough-heading">
+                  <h2 class="walkthrough-heading-title">GT Product Page</h2>
+                  <p class="walkthrough-heading-subtitle">What I wrote and why.</p>
+                  
+                </div>
+                <div class="walkthrough-annotation-slot">
+                  
+                  <div class="walkthrough-annotation" data-annotation="gt-hero" data-hold-scale="1.25" data-region-y="0.84" data-region-h="0.16" data-region-x="0.14" data-region-w="0.81" data-region-m-y="0.84" data-region-m-h="0.16" data-region-m-x="0.155" data-region-m-w="0.357" data-region-m-x2="0.6">
+                    <span class="walkthrough-annotation-label">GT Hero and Stat Bar</span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="gt-tagline-statbar">'Quantum leap' is a claim, so it needs backup: top speed, range, and price. Three objective numbers instill confidence before the Buy Now button.</p>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="gt-tagline-statbar" data-anchor-image="gt-01-hero.webp" data-anchor-x="0.18" data-anchor-y="0.868" data-anchor-w="0.585" data-anchor-h="0.071" hidden></span>
+                    
+                    
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="tread-shred" data-hold-scale="1.25" data-region-y="0.604" data-region-h="0.2" data-region-x="0" data-region-w="0.5" data-region-m-y="0.6" data-region-m-h="0.17" data-region-m-x="0" data-region-m-w="0.36">
+                    <span class="walkthrough-annotation-label">Written in Rider Slang</span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="choose-two">'Ready to go full send?' opens in rider slang, then 'Carvy? Grippy? Choose two.' only lands if you know the cliche it breaks.</p>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="choose-two" data-anchor-image="gt-06-built-tread.webp" data-anchor-x="0.044" data-anchor-y="0.693" data-anchor-w="0.236" data-anchor-h="0.058" hidden></span>
+                    
+                    
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="gt-details-maghandle" data-hold-scale="1.25" data-region-y="0.49" data-region-h="0.25" data-region-x="0.02" data-region-w="0.3">
+                    <span class="walkthrough-annotation-label">A Rhyme for the Handle</span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="rip-it-grip-it">A carry handle is the least glamorous feature on the page, so the header rhymes: it promises the ride first, then lets the body copy do the snaps-in-place housekeeping.</p>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="rip-it-grip-it" data-anchor-image="gt-08-details-maghandle.webp" data-anchor-x="0.04" data-anchor-y="0.518" data-anchor-w="0.235" data-anchor-h="0.21" hidden></span>
+                    
+                    
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="app-financing" data-hold-scale="1.25" data-region-y="0.55" data-region-h="0.38" data-region-x="0" data-region-w="0.5" data-region-m-y="0.555" data-region-m-h="0.37" data-region-m-x="0" data-region-m-w="0.36">
+                    <span class="walkthrough-annotation-label">Financing Does the Math</span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="monthly-reframe">The priciest board in the line closes on the payment-sized number: $92 a month sits beside the $2,200 it divides, at the same size.</p>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="monthly-reframe" data-anchor-image="gt-09-app-financing.webp" data-anchor-x="0.037" data-anchor-y="0.576" data-anchor-w="0.256" data-anchor-h="0.326" hidden></span>
+                    
+                    
+                    
+                  </div>
+                  
+                </div>
+                
+                
+                <div class="walkthrough-progress" role="group" aria-label="Walkthrough controls">
+                  <div class="walkthrough-progress-rail">
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="0" type="button" aria-label="Go to GT Hero and Stat Bar" title="GT Hero and Stat Bar"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="1" type="button" aria-label="Go to Written in Rider Slang" title="Written in Rider Slang"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="2" type="button" aria-label="Go to A Rhyme for the Handle" title="A Rhyme for the Handle"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="3" type="button" aria-label="Go to Financing Does the Math" title="Financing Does the Math"></button>
+                    
+                  </div>
+                  <div class="wt-ctl-row">
+                    <button class="walkthrough-progress-nav" data-progress-nav="prev" type="button" aria-label="Previous stop" title="Previous stop">
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 4l-4 4 4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <button class="wt-ctl-count" type="button" aria-expanded="false" aria-haspopup="true" title="All stops">
+                      <span class="wt-ctl-count-text">4 stops</span>
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 10l4-4 4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <button class="walkthrough-progress-nav" data-progress-nav="next" type="button" aria-label="Next stop" title="Next stop">
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <span class="wt-ctl-gap"></span>
+                    <button class="wt-ctl-btn wt-ctl-restart" type="button" title="Restart the walkthrough">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1 4v6h6M3.51 15a9 9 0 1 0 2.13-9.36L1 10" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      <span class="wt-ctl-label">Restart</span>
+                    </button>
+                    <button class="wt-ctl-btn wt-ctl-skip" type="button" title="Skip the walkthrough">
+                      Skip
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v10M3.5 8.5L8 13l4.5-4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                  </div>
+                  <ol class="wt-chapters" hidden>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="0" type="button">GT Hero and Stat Bar</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="1" type="button">Written in Rider Slang</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="2" type="button">A Rhyme for the Handle</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="3" type="button">Financing Does the Math</button></li>
+                    
+                  </ol>
+                </div>
+                
+              </div>
+
+              <svg class="walkthrough-lines" aria-hidden="true"></svg>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+
+    
+    
+
+
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+    
+
+    
+
+
+    
+
+
+    
+
+    
+    <section class="project-pagination" data-hud-label="Up Next" aria-label="Project pagination">
+      <div class="container">
+        <div class="pagination-grid">
+          <a class="pagination-card pagination-card--prev" href="/projects/trekchair/" rel="prev">
+            <span class="pagination-direction" aria-hidden="true">&larr;</span>
+            <div class="pagination-meta">
+              <span class="pagination-label">Previous</span>
+              <span class="pagination-title">TrekChair</span>
+              <span class="pagination-client">Get Out Gear</span>
+            </div>
+            
+            <div class="pagination-thumb">
+              <img src="/assets/images/projects/trekchair-hero.webp" alt="" loading="lazy">
+            </div>
+            
+          </a>
+          <a class="pagination-card pagination-card--next" href="/projects/lua/" rel="next">
+            <span class="pagination-direction" aria-hidden="true">&rarr;</span>
+            <div class="pagination-meta">
+              <span class="pagination-label">Next</span>
+              <span class="pagination-title">LUA</span>
+              <span class="pagination-client">LUA</span>
+            </div>
+            
+            <div class="pagination-thumb">
+              <img src="/assets/images/projects/lua-hero.webp" alt="" loading="lazy">
+            </div>
+            
+          </a>
+        </div>
+      </div>
+    </section>
+    
+
+
+    
+
+  </main>
+
+<footer class="site-footer" id="contact">
+  <div class="footer-container">
+    <div class="footer-contact">
+      <p class="section-label footer-eyebrow">Contact</p>
+      <svg class="footer-mark" viewBox="0 0 304 288" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="footer-mark-gradient" x1="0" y1="0" x2="304" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#B2DFDB"/>
+            <stop offset=".55" stop-color="#5DBDB4"/>
+            <stop offset="1" stop-color="#26A69A"/>
+          </linearGradient>
+        </defs>
+        <g fill="none" stroke="url(#footer-mark-gradient)" stroke-width="40">
+          <path d="M108,0V224A44,44 0 0 1 20,224" pathLength="1"/>
+          <path d="M218,0V288" pathLength="1"/>
+          <path d="M128,132H198" pathLength="1"/>
+          <path d="M238,20A46,46 0 0 1 238,112" pathLength="1"/>
+        </g>
+      </svg>
+      <nav class="footer-links" aria-label="Contact">
+        <a href="mailto:hello@jakobpicciotto.com" class="footer-link footer-link--email">hello@jakobpicciotto.com</a>
+        <a href="https://www.linkedin.com/in/jakob-picciotto/" class="footer-link" target="_blank" rel="noopener">linkedin.com/in/jakob-picciotto</a>
+      </nav>
+      <p class="footer-location">Seattle, WA</p>
+    </div>
+    <p class="footer-text">&copy; 2026 Jakob Picciotto</p>
+  </div>
+</footer>
+<script src="/assets/js/footer-monogram.js" defer></script>
+
+
+  
+  <script src="/assets/js/project-hud.js" defer></script>
+  <script src="/assets/js/walkthrough-shared.js" defer></script>
+  <script src="/assets/js/walkthrough-geometry.js" defer></script>
+  <script src="/assets/js/walkthrough-pinned.js" defer></script>
+  <script src="/assets/js/walkthrough-mobile.js" defer></script>
+  <script src="/assets/js/walkthrough-static.js" defer></script>
+  <script src="/assets/js/walkthrough-embers.js" defer></script>
+  <script src="/assets/js/document-reader.js" defer></script>
+  <script src="/assets/js/attribution-typewriter.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/storyboard.js" defer></script>
+  <script src="/assets/js/funnel-cohort.js" defer></script>
+  <script src="/assets/js/related-filter.js" defer></script>
+  <script src="/assets/js/focal-crop.js" defer></script>
+  <script src="/assets/js/strategy-section.js" defer></script>
+  <script src="/assets/js/adaptive-glass.js" defer></script>
+  <script src="/assets/js/hero-odometer.js" defer></script>
+  <script src="/assets/js/hero-chips.js" defer></script>
+  <script src="/assets/js/walkthrough-controls.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  /* Motion-safe boot flag on <html>, set during head parse (before the body
+     paints). CSS keys :root.js-motion to suppress lines that main.js reveals
+     after first paint — chiefly the metrics attribution, which is split into
+     per-glyph typewriter spans and would otherwise flash its plain text for a
+     frame on load. Set only when JS runs AND reduced motion is not requested,
+     so the no-JS and reduced-motion paths keep their static, visible fallback
+     (they have no scroll ramp to reveal a hidden line). */
+  if (!window.matchMedia || !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.documentElement.classList.add('js-motion');
+  }
+</script>
+<title>Reform RX | Jakob Picciotto</title>
+<meta name="description" content="Wrote the home page, product page, and deposit-reservation funnel for a $5,000 connected Pilates reformer.">
+
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="canonical" href="https://work.jakobpicciotto.com/projects/reform-rx/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jakob Picciotto">
+<meta property="og:title" content="Reform RX | Jakob Picciotto">
+<meta property="og:description" content="Wrote the home page, product page, and deposit-reservation funnel for a $5,000 connected Pilates reformer.">
+<meta property="og:url" content="https://work.jakobpicciotto.com/projects/reform-rx/">
+<meta property="og:image" content="https://work.jakobpicciotto.com/assets/images/projects/reform-rx-hero.webp">
+
+<meta property="og:image:width" content="695">
+<meta property="og:image:height" content="460">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Reform RX | Jakob Picciotto">
+<meta name="twitter:description" content="Wrote the home page, product page, and deposit-reservation funnel for a $5,000 connected Pilates reformer.">
+<meta name="twitter:image" content="https://work.jakobpicciotto.com/assets/images/projects/reform-rx-hero.webp">
+
+<script src="/assets/debug/browser.js"></script>
+<link rel="preload" href="/assets/fonts/Raleway-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/SourceSans3-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="/assets/images/logos/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/css/fonts.css">
+<link rel="stylesheet" href="/assets/css/style.css">
+
+
+
+
+
+</head>
+<body class="project-page">
+  
+  <script>
+    var _qs = new URLSearchParams(location.search);
+    var layout = _qs.get('layout');
+    if (/^(static|synced|interleaved)$/.test(layout || '')) document.body.classList.add('layout-' + layout);
+  </script>
+  <header class="site-header">
+  <div class="header-container">
+    <a href="/" class="site-logo" aria-label="Jakob Picciotto">
+      <svg class="site-logo-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1938.35 289.61" aria-hidden="true">
+        <defs>
+          <linearGradient id="logo-gradient-light" x1="0" y1="0" x2="304" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#4DB6AC"/>
+            <stop offset=".55" stop-color="#199488"/>
+            <stop offset="1" stop-color="#00796B"/>
+          </linearGradient>
+          <linearGradient id="logo-gradient-dark" x1="0" y1="0" x2="304" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#B2DFDB"/>
+            <stop offset=".55" stop-color="#5DBDB4"/>
+            <stop offset="1" stop-color="#26A69A"/>
+          </linearGradient>
+        </defs>
+        <g>
+          <path class="logo-monogram logo-monogram-light" fill="url(#logo-gradient-light)" fill-rule="evenodd" d="M88,0H128V224H88ZM198,0H238V288H198ZM128,112H198V152H128ZM238,0A66,66 0 0 1 238,132L238,92A26,26 0 0 0 238,40ZM128,224A64,64 0 0 1 0,224L40,224A24,24 0 0 0 88,224Z"/>
+          <path class="logo-monogram logo-monogram-dark" fill="url(#logo-gradient-dark)" fill-rule="evenodd" d="M88,0H128V224H88ZM198,0H238V288H198ZM128,112H198V152H128ZM238,0A66,66 0 0 1 238,132L238,92A26,26 0 0 0 238,40ZM128,224A64,64 0 0 1 0,224L40,224A24,24 0 0 0 88,224Z"/>
+          <g class="logo-text" fill="currentColor">
+            <path d="M482.89,211.42c-4.06,0-7.91-.62-11.54-1.84-3.63-1.23-6.89-3.13-9.78-5.69l9.3-14.59c1.18,1.17,2.62,2.06,4.33,2.64,1.71.59,3.42.88,5.13.88,2.78,0,5.18-.99,7.21-2.97,2.03-1.98,3.05-4.52,3.05-7.61v-86.24h21.48v84.64c0,4.49-.75,8.63-2.24,12.42-1.5,3.79-3.55,7.05-6.17,9.78-2.62,2.72-5.72,4.83-9.3,6.33-3.58,1.5-7.4,2.24-11.46,2.24ZM490.58,84.3v-21.32h21.48v21.32h-21.48Z"/>
+            <path d="M554.54,181.6c-4.06,0-7.85-.67-11.38-2-3.53-1.33-6.57-3.21-9.14-5.61-2.56-2.4-4.57-5.21-6.01-8.42-1.44-3.21-2.16-6.73-2.16-10.58s.88-7.61,2.65-10.98,4.22-6.22,7.37-8.58c3.15-2.35,6.92-4.19,11.3-5.53,4.38-1.33,9.19-2,14.43-2,3.74,0,7.4.32,10.98.96,3.58.64,6.76,1.55,9.54,2.73v-4.81c0-5.56-1.58-9.83-4.73-12.82-3.15-2.99-7.83-4.49-14.03-4.49-4.49,0-8.87.8-13.14,2.4-4.28,1.6-8.66,3.96-13.14,7.05l-6.57-13.63c10.79-7.16,22.44-10.74,34.95-10.74s21.45,2.96,28.13,8.9c6.68,5.93,10.02,14.51,10.02,25.73v26.13c0,2.24.4,3.85,1.2,4.81.8.96,2.11,1.5,3.93,1.6v18.27c-3.63.75-6.79,1.12-9.46,1.12-4.06,0-7.19-.91-9.38-2.72-2.19-1.82-3.55-4.22-4.09-7.21l-.48-4.65c-3.74,4.92-8.28,8.66-13.63,11.22-5.35,2.56-11.06,3.85-17.15,3.85ZM560.63,165.89c3.63,0,7.08-.64,10.34-1.92,3.26-1.28,5.8-2.99,7.61-5.13,2.35-1.82,3.53-3.85,3.53-6.09v-9.62c-2.56-.96-5.35-1.74-8.34-2.32-2.99-.59-5.88-.88-8.66-.88-5.56,0-10.1,1.26-13.63,3.77-3.53,2.51-5.29,5.69-5.29,9.54,0,3.63,1.39,6.65,4.17,9.06,2.78,2.4,6.2,3.61,10.26,3.61Z"/>
+            <path d="M681.01,180l-24.37-36.39-11.54,11.38v25.01h-21.48V62.98h21.48v71.01l33.66-37.83h22.92l-31.26,35.59,33.5,48.25h-22.92Z"/>
+            <path d="M747.53,181.6c-6.84,0-12.98-1.18-18.43-3.53s-10.07-5.53-13.87-9.54c-3.79-4.01-6.71-8.63-8.74-13.87-2.03-5.24-3.05-10.74-3.05-16.51s1.01-11.43,3.05-16.67c2.03-5.23,4.94-9.86,8.74-13.87,3.79-4.01,8.42-7.19,13.87-9.54,5.45-2.35,11.59-3.53,18.43-3.53s12.96,1.18,18.35,3.53c5.4,2.35,9.99,5.53,13.79,9.54,3.79,4.01,6.71,8.63,8.74,13.87,2.03,5.24,3.05,10.8,3.05,16.67s-1.02,11.28-3.05,16.51c-2.03,5.24-4.92,9.86-8.66,13.87-3.74,4.01-8.34,7.19-13.79,9.54s-11.6,3.53-18.43,3.53ZM725.57,138.16c0,3.74.56,7.13,1.68,10.18s2.67,5.69,4.65,7.93c1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.56,1.84,8.66,1.84s5.98-.61,8.66-1.84c2.67-1.23,4.99-2.97,6.97-5.21,1.98-2.24,3.53-4.91,4.65-8.01,1.12-3.1,1.68-6.52,1.68-10.26s-.56-7-1.68-10.1c-1.12-3.1-2.67-5.77-4.65-8.01-1.98-2.24-4.3-3.98-6.97-5.21-2.67-1.23-5.56-1.84-8.66-1.84s-5.99.64-8.66,1.92c-2.67,1.28-5,3.05-6.97,5.29-1.98,2.24-3.53,4.92-4.65,8.01-1.12,3.1-1.68,6.47-1.68,10.1Z"/>
+            <path d="M853.65,181.6c-6.41,0-12.13-1.44-17.15-4.33-5.02-2.88-8.98-6.84-11.86-11.86v14.59h-18.75V62.98h21.48v47.77c2.99-5.13,6.92-9.11,11.78-11.94,4.86-2.83,10.55-4.25,17.07-4.25,5.45,0,10.42,1.18,14.91,3.53,4.49,2.35,8.36,5.5,11.62,9.46,3.26,3.96,5.77,8.6,7.53,13.95,1.76,5.35,2.65,10.96,2.65,16.83s-.99,11.76-2.97,16.99c-1.98,5.24-4.73,9.81-8.26,13.71-3.53,3.9-7.69,6.97-12.5,9.22s-9.99,3.37-15.55,3.37ZM847.72,163.33c3.42,0,6.57-.67,9.46-2,2.89-1.33,5.34-3.13,7.37-5.37,2.03-2.24,3.61-4.86,4.73-7.85,1.12-2.99,1.68-6.2,1.68-9.62s-.54-6.68-1.6-9.78c-1.07-3.1-2.59-5.82-4.57-8.18-1.98-2.35-4.3-4.22-6.97-5.61-2.67-1.39-5.61-2.08-8.82-2.08-4.81,0-9.11,1.58-12.9,4.73-3.79,3.15-6.71,7.03-8.74,11.62v20.04c.75,2.14,1.84,4.06,3.29,5.77,1.44,1.71,3.07,3.18,4.89,4.41,1.82,1.23,3.79,2.19,5.93,2.89,2.14.7,4.22,1.04,6.25,1.04Z"/>
+            <path d="M957.84,181.6c-6.63,0-12.4-1.47-17.31-4.41-4.92-2.94-8.76-6.92-11.54-11.94v48.89h-21.48v-118.14h18.75v14.43c3.1-4.91,7.11-8.79,12.02-11.62,4.91-2.83,10.58-4.25,16.99-4.25,5.66,0,10.9,1.15,15.71,3.45,4.81,2.3,8.95,5.4,12.42,9.3,3.47,3.9,6.2,8.5,8.18,13.79,1.98,5.29,2.97,10.88,2.97,16.75s-.91,11.81-2.73,17.15c-1.82,5.34-4.36,9.99-7.61,13.95-3.26,3.96-7.13,7.05-11.62,9.3-4.49,2.24-9.4,3.37-14.75,3.37ZM950.63,163.33c3.21,0,6.17-.69,8.9-2.08,2.73-1.39,5.05-3.26,6.97-5.61,1.92-2.35,3.42-5.08,4.49-8.18,1.07-3.1,1.6-6.3,1.6-9.62,0-3.53-.59-6.81-1.76-9.86-1.18-3.05-2.81-5.69-4.89-7.93s-4.54-4.01-7.37-5.29c-2.83-1.28-5.91-1.92-9.22-1.92-2.03,0-4.12.35-6.25,1.04-2.14.7-4.12,1.68-5.93,2.97-1.82,1.28-3.45,2.78-4.89,4.49-1.44,1.71-2.54,3.58-3.29,5.61v19.72c1.92,4.81,4.86,8.79,8.82,11.94,3.95,3.15,8.23,4.73,12.82,4.73Z"/>
+            <path d="M1009.13,84.3v-21.32h21.48v21.32h-21.48ZM1009.13,180v-84h21.48v84h-21.48Z"/>
+            <path d="M1044.71,138c0-5.88,1.01-11.43,3.05-16.67,2.03-5.23,4.97-9.83,8.82-13.79,3.85-3.95,8.5-7.11,13.95-9.46,5.45-2.35,11.59-3.53,18.43-3.53,9.19,0,17.02,1.98,23.48,5.93,6.46,3.96,11.3,9.14,14.51,15.55l-21,6.41c-1.82-3.1-4.22-5.48-7.21-7.13-2.99-1.66-6.31-2.49-9.94-2.49-3.1,0-5.99.62-8.66,1.84-2.67,1.23-5,2.94-6.97,5.13-1.98,2.19-3.53,4.84-4.65,7.93-1.12,3.1-1.68,6.52-1.68,10.26s.59,7.16,1.76,10.26c1.17,3.1,2.75,5.77,4.73,8.01,1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.5,1.84,8.5,1.84,3.85,0,7.4-.96,10.66-2.89,3.26-1.92,5.53-4.27,6.81-7.05l21,6.41c-2.88,6.41-7.64,11.65-14.27,15.71-6.63,4.06-14.59,6.09-23.88,6.09-6.84,0-12.98-1.18-18.43-3.53s-10.1-5.53-13.95-9.54c-3.85-4.01-6.81-8.66-8.9-13.95s-3.13-10.82-3.13-16.59Z"/>
+            <path d="M1134.32,138c0-5.88,1.01-11.43,3.05-16.67,2.03-5.23,4.97-9.83,8.82-13.79,3.85-3.95,8.5-7.11,13.95-9.46,5.45-2.35,11.59-3.53,18.43-3.53,9.19,0,17.02,1.98,23.48,5.93,6.46,3.96,11.3,9.14,14.51,15.55l-21,6.41c-1.82-3.1-4.22-5.48-7.21-7.13-2.99-1.66-6.31-2.49-9.94-2.49-3.1,0-5.99.62-8.66,1.84-2.67,1.23-5,2.94-6.97,5.13-1.98,2.19-3.53,4.84-4.65,7.93-1.12,3.1-1.68,6.52-1.68,10.26s.59,7.16,1.76,10.26c1.17,3.1,2.75,5.77,4.73,8.01,1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.5,1.84,8.5,1.84,3.85,0,7.4-.96,10.66-2.89,3.26-1.92,5.53-4.27,6.81-7.05l21,6.41c-2.88,6.41-7.64,11.65-14.27,15.71-6.63,4.06-14.59,6.09-23.88,6.09-6.84,0-12.98-1.18-18.43-3.53s-10.1-5.53-13.95-9.54c-3.85-4.01-6.81-8.66-8.9-13.95s-3.13-10.82-3.13-16.59Z"/>
+            <path d="M1230.02,84.3v-21.32h21.48v21.32h-21.48ZM1230.02,180v-84h21.48v84h-21.48Z"/>
+            <path d="M1309.68,181.6c-6.84,0-12.98-1.18-18.43-3.53s-10.07-5.53-13.87-9.54c-3.79-4.01-6.71-8.63-8.74-13.87-2.03-5.24-3.05-10.74-3.05-16.51s1.01-11.43,3.05-16.67c2.03-5.23,4.94-9.86,8.74-13.87,3.79-4.01,8.42-7.19,13.87-9.54,5.45-2.35,11.59-3.53,18.43-3.53s12.96,1.18,18.35,3.53c5.4,2.35,9.99,5.53,13.79,9.54,3.79,4.01,6.71,8.63,8.74,13.87,2.03,5.24,3.05,10.8,3.05,16.67s-1.02,11.28-3.05,16.51c-2.03,5.24-4.92,9.86-8.66,13.87-3.74,4.01-8.34,7.19-13.79,9.54s-11.6,3.53-18.43,3.53ZM1287.72,138.16c0,3.74.56,7.13,1.68,10.18s2.67,5.69,4.65,7.93c1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.56,1.84,8.66,1.84s5.98-.61,8.66-1.84c2.67-1.23,5-2.97,6.97-5.21,1.98-2.24,3.53-4.91,4.65-8.01,1.12-3.1,1.68-6.52,1.68-10.26s-.56-7-1.68-10.1c-1.12-3.1-2.67-5.77-4.65-8.01-1.98-2.24-4.3-3.98-6.97-5.21-2.67-1.23-5.56-1.84-8.66-1.84s-5.99.64-8.66,1.92c-2.67,1.28-5,3.05-6.97,5.29-1.98,2.24-3.53,4.92-4.65,8.01-1.12,3.1-1.68,6.47-1.68,10.1Z"/>
+            <path d="M1417.23,175.67c-2.89,1.28-6.41,2.56-10.58,3.85-4.17,1.28-8.55,1.92-13.14,1.92-2.99,0-5.8-.38-8.42-1.12-2.62-.75-4.92-1.95-6.89-3.61-1.98-1.66-3.55-3.79-4.73-6.41-1.18-2.62-1.76-5.8-1.76-9.54v-48.25h-11.06v-16.51h11.06v-27.25h21.48v27.25h17.63v16.51h-17.63v41.04c0,2.99.77,5.1,2.32,6.33,1.55,1.23,3.45,1.84,5.69,1.84s4.43-.37,6.57-1.12c2.14-.75,3.85-1.39,5.13-1.92l4.33,16.99Z"/>
+            <path d="M1478.78,175.67c-2.89,1.28-6.41,2.56-10.58,3.85-4.17,1.28-8.55,1.92-13.14,1.92-2.99,0-5.8-.38-8.42-1.12-2.62-.75-4.92-1.95-6.89-3.61-1.98-1.66-3.55-3.79-4.73-6.41-1.18-2.62-1.76-5.8-1.76-9.54v-48.25h-11.06v-16.51h11.06v-27.25h21.48v27.25h17.63v16.51h-17.63v41.04c0,2.99.77,5.1,2.33,6.33,1.55,1.23,3.45,1.84,5.69,1.84s4.43-.37,6.57-1.12c2.14-.75,3.85-1.39,5.13-1.92l4.33,16.99Z"/>
+            <path d="M1526.71,181.6c-6.84,0-12.98-1.18-18.43-3.53s-10.07-5.53-13.87-9.54c-3.79-4.01-6.71-8.63-8.74-13.87-2.03-5.24-3.05-10.74-3.05-16.51s1.01-11.43,3.05-16.67c2.03-5.23,4.94-9.86,8.74-13.87,3.79-4.01,8.42-7.19,13.87-9.54,5.45-2.35,11.59-3.53,18.43-3.53s12.96,1.18,18.35,3.53c5.39,2.35,9.99,5.53,13.79,9.54,3.79,4.01,6.71,8.63,8.74,13.87,2.03,5.24,3.05,10.8,3.05,16.67s-1.02,11.28-3.05,16.51c-2.03,5.24-4.92,9.86-8.66,13.87-3.74,4.01-8.33,7.19-13.79,9.54s-11.6,3.53-18.43,3.53ZM1504.75,138.16c0,3.74.56,7.13,1.68,10.18s2.67,5.69,4.65,7.93c1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.56,1.84,8.66,1.84s5.98-.61,8.66-1.84c2.67-1.23,4.99-2.97,6.97-5.21,1.98-2.24,3.53-4.91,4.65-8.01,1.12-3.1,1.68-6.52,1.68-10.26s-.56-7-1.68-10.1c-1.12-3.1-2.67-5.77-4.65-8.01-1.98-2.24-4.3-3.98-6.97-5.21-2.67-1.23-5.56-1.84-8.66-1.84s-5.99.64-8.66,1.92c-2.67,1.28-5,3.05-6.97,5.29-1.98,2.24-3.53,4.92-4.65,8.01-1.12,3.1-1.68,6.47-1.68,10.1Z"/>
+            <path d="M1584.58,180v-23.08h17.63v23.08h-17.63Z"/>
+            <path d="M1615.83,138c0-5.88,1.01-11.43,3.05-16.67,2.03-5.23,4.97-9.83,8.82-13.79,3.85-3.95,8.5-7.11,13.95-9.46,5.45-2.35,11.59-3.53,18.43-3.53,9.19,0,17.02,1.98,23.48,5.93,6.46,3.96,11.3,9.14,14.51,15.55l-21,6.41c-1.82-3.1-4.22-5.48-7.21-7.13-2.99-1.66-6.31-2.49-9.94-2.49-3.1,0-5.99.62-8.66,1.84-2.67,1.23-5,2.94-6.97,5.13-1.98,2.19-3.53,4.84-4.65,7.93-1.12,3.1-1.68,6.52-1.68,10.26s.59,7.16,1.76,10.26c1.17,3.1,2.75,5.77,4.73,8.01,1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.5,1.84,8.5,1.84,3.85,0,7.4-.96,10.66-2.89,3.26-1.92,5.53-4.27,6.81-7.05l21,6.41c-2.88,6.41-7.64,11.65-14.27,15.71-6.63,4.06-14.59,6.09-23.88,6.09-6.84,0-12.98-1.18-18.43-3.53s-10.1-5.53-13.95-9.54c-3.85-4.01-6.81-8.66-8.9-13.95s-3.13-10.82-3.13-16.59Z"/>
+            <path d="M1749.52,181.6c-6.84,0-12.98-1.18-18.43-3.53s-10.07-5.53-13.87-9.54c-3.79-4.01-6.71-8.63-8.74-13.87-2.03-5.24-3.05-10.74-3.05-16.51s1.01-11.43,3.05-16.67c2.03-5.23,4.94-9.86,8.74-13.87,3.79-4.01,8.42-7.19,13.87-9.54,5.45-2.35,11.59-3.53,18.43-3.53s12.96,1.18,18.35,3.53c5.4,2.35,9.99,5.53,13.79,9.54,3.79,4.01,6.71,8.63,8.74,13.87,2.03,5.24,3.05,10.8,3.05,16.67s-1.02,11.28-3.05,16.51c-2.03,5.24-4.92,9.86-8.66,13.87-3.74,4.01-8.34,7.19-13.79,9.54s-11.6,3.53-18.43,3.53ZM1727.56,138.16c0,3.74.56,7.13,1.68,10.18s2.67,5.69,4.65,7.93c1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.56,1.84,8.66,1.84s5.98-.61,8.66-1.84c2.67-1.23,5-2.97,6.97-5.21,1.98-2.24,3.53-4.91,4.65-8.01,1.12-3.1,1.68-6.52,1.68-10.26s-.56-7-1.68-10.1c-1.12-3.1-2.67-5.77-4.65-8.01-1.98-2.24-4.3-3.98-6.97-5.21-2.67-1.23-5.56-1.84-8.66-1.84s-5.99.64-8.66,1.92c-2.67,1.28-5,3.05-6.97,5.29-1.98,2.24-3.53,4.92-4.65,8.01-1.12,3.1-1.68,6.47-1.68,10.1Z"/>
+            <path d="M1938.35,180h-21.48v-47.13c0-6.73-1.15-11.65-3.45-14.75-2.3-3.1-5.48-4.65-9.54-4.65-4.28,0-8.28,1.63-12.02,4.89-3.74,3.26-6.41,7.51-8.01,12.74v48.89h-21.48v-47.13c0-6.73-1.15-11.65-3.45-14.75-2.3-3.1-5.48-4.65-9.54-4.65s-8.15,1.6-11.94,4.81c-3.79,3.21-6.49,7.43-8.1,12.66v49.05h-21.48v-84h19.4v15.55c3.1-5.45,7.35-9.64,12.74-12.58,5.4-2.94,11.57-4.41,18.51-4.41s12.5,1.71,16.35,5.13c3.85,3.42,6.3,7.64,7.37,12.66,3.42-5.77,7.75-10.18,12.98-13.22,5.23-3.05,11.22-4.57,17.95-4.57,5.13,0,9.35.96,12.66,2.88,3.31,1.92,5.88,4.44,7.69,7.53,1.82,3.1,3.07,6.63,3.77,10.58.69,3.96,1.04,7.96,1.04,12.02v52.42Z"/>
+          </g>
+        </g>
+      </svg>
+    </a>
+    <svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+      <defs>
+        <filter id="glass-refract" x="0%" y="0%" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.015" numOctaves="3" seed="5" result="noise"/>
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+        </filter>
+      </defs>
+    </svg>
+    <nav class="site-nav">
+      <a href="/projects/" class="nav-link" data-nav="projects">Projects</a>
+      
+    </nav>
+    <a href="#contact" class="nav-contact" data-nav="contact" aria-label="Contact">
+      <svg class="nav-contact-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+        <rect x="2.25" y="4.25" width="15.5" height="11.5" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M3.5 6.5l6.5 4.6 6.5-4.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="nav-contact-label">Contact</span>
+    </a>
+    <script>
+      (function() {
+        var path = location.pathname;
+        var active = path.startsWith('/projects') ? 'projects'
+                   : path.startsWith('/about') ? 'about'
+                   : null;
+        if (active) document.querySelector('[data-nav="' + active + '"]').classList.add('active');
+      })();
+    </script>
+  </div>
+</header>
+<script src="/assets/js/header-glass.js" defer></script>
+<script src="/assets/js/nav-submenu.js" defer></script>
+
+
+    <nav class="project-hud" aria-label="Project navigation">
+      <div class="container project-hud-inner">
+        
+        <div class="hud-side">
+          
+          <a class="hud-prev" href="/projects/lytte-harmoniq/">
+            <span class="hud-prev-arrow" aria-hidden="true">&larr;</span>
+            <span class="hud-prev-label">Prev</span>
+            <span class="hud-prev-title">Lytte HarmoniQ</span>
+          </a>
+          
+        </div>
+        <div class="hud-center">
+          <div class="hud-identity">
+            <span class="hud-title">Reform RX</span>
+            
+            
+          </div>
+          <span class="hud-section" aria-hidden="true"></span>
+        </div>
+        <div class="hud-actions">
+          
+          <a class="hud-next" href="/projects/philips-screeneo-u5/">
+            <span class="hud-next-label">Next</span>
+            <span class="hud-next-title">Philips Screeneo U5</span>
+            <span class="hud-next-arrow" aria-hidden="true">&rarr;</span>
+          </a>
+          
+          <button class="hud-top" type="button" aria-label="Back to top">
+            <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M2 7.5 6 3.5 10 7.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+
+  <main class="main-content">
+    
+    <section class="project-hero-section hero-scrolly hero-scrolly--scrim-boost" style="--hero-scrim-boost: 1.4;">
+      <div class="scrolly-scene" data-scene="1">
+        <div class="scrolly-bg">
+          <picture>
+            <source media="(max-width: 768px)" srcset="/assets/images/projects/reform-rx-bg-mobile.webp">
+            <img id="glass-source-hero" src="/assets/images/projects/reform-rx-bg-desktop.webp" alt="" fetchpriority="high" decoding="async" data-focal-y="0.38">
+          </picture>
+          
+          <div class="scrolly-overlay"></div>
+        </div>
+      </div>
+
+      <div class="scrolly-content">
+
+        <div class="scrolly-step" data-step="hero">
+          <div class="container">
+            <h1 class="project-title">Reform RX</h1>
+
+            
+            <a href="#campaign-walkthrough" class="hero-campaign-link hero-campaign-link--centered hero-campaign-link--below-title hero-campaign-link--sample">
+              Skip to work sample ↓
+            </a>
+            
+
+            <div class="hero-above-fold">
+              <div class="project-info-card">
+                <div class="hero-card-top">
+                  
+                  <div class="hero-role">
+                    <span class="info-card-label">My Role</span>
+                    <span class="hero-role-value">Senior Copywriter</span>
+                    
+                    <span class="hero-role-agency-credit">at
+                      <img src="/assets/images/logos/Rainfactory_logo.webp"
+                           alt="Rainfactory"
+                           width="450" height="98"
+                           class="hero-role-agency-logo">
+                    </span>
+                    
+                  </div>
+                  
+
+                  
+                  <div class="hero-client">
+                    <span class="info-card-label">Client</span>
+                    <div class="client-logos">
+                      <img src="/assets/images/logos/reform-rx-logo.png"
+                           alt="Reform RX"
+                           width="500" height="75"
+                           class="client-logo">
+                      
+                    </div>
+                  </div>
+                  
+                </div>
+
+                
+                <p class="impact-summary">Wrote the home page, product page, and deposit-reservation funnel for a $5,000 connected Pilates reformer.</p>
+                
+
+                
+                <div class="hero-deliverables">
+                  <span class="info-card-label">Deliverables</span>
+                  <div class="info-card-deliverables">
+                    
+                    
+                    <span class="deliverable-badge">DTC Launch</span>
+                    
+                    
+                    
+                    <a href="#campaign-walkthrough" class="deliverable-badge deliverable-badge--link">Landing Page</a>
+                    
+                    
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="hero-metrics-floor">
+            <div class="container">
+              <div class="metrics-heading-group">
+                <h2 class="metrics-heading">Key Results</h2>
+                
+                
+              </div>
+              <div class="metrics-grid">
+                
+                
+                
+                
+                <div class="metric">
+                  <span class="metric-value">$2,000,000+</span>
+                  <span class="metric-label">In 3 weeks of pre-orders</span>
+                </div>
+                
+                
+              </div>
+              
+              <div class="scrolly-hero-image">
+                <img src="/assets/images/projects/ReformRX_DTC_LAUNCH.webp" alt="Reform RX" width="695" height="460">
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+
+        
+        <div class="scrolly-pin-spacer" aria-hidden="true"></div>
+        
+
+        
+
+        
+
+        <div class="scrolly-bottom-fade" aria-hidden="true"></div>
+      </div>
+
+    </section>
+
+    
+  <script>
+    // Metric labels, injected inline right after the hero markup so they exist
+    // at first paint and the columns distribute with no post-load reflow.
+    // Content is data-driven from the project's heroMetricLabels field
+    // (build.js emits it as a JS literal, "null" when absent) — layout comes
+    // from the hero-metrics body class, but the label copy lives with the
+    // project data so each hero (Gringotts 3-up, Screeneo 2-up) reads
+    // correctly. One line per tile: the muted `sub` line was cut 2026-09-13
+    // (Jakob, smts3gkco1pz2: "I don't think I'll ever use subs for key
+    // results metrics"). Per-item leadDesktop optionally swaps the lead for
+    // one self-sufficient line at >=769px ("Email sign-up rate").
+    (function () {
+      var LABELS = null;
+      if (!LABELS || !LABELS.length) return;
+      var grid = document.querySelector('.hero-metrics-floor .metrics-grid');
+      if (!grid) return;
+      var metrics = grid.querySelectorAll('.metric');
+      for (var i = 0; i < metrics.length; i++) {
+        var label = metrics[i].querySelector('.metric-label');
+        var parts = LABELS[i];
+        if (!label || !parts) continue;
+        label.textContent = '';
+        var lead = document.createElement('span');
+        lead.className = 'metric-label-lead';
+        lead.textContent = parts.lead;
+        label.appendChild(lead);
+        if (parts.leadDesktop) {
+          lead.classList.add('metric-label-lead--mobile');
+          var leadDesktop = document.createElement('span');
+          leadDesktop.className = 'metric-label-lead metric-label-lead--desktop';
+          leadDesktop.textContent = parts.leadDesktop;
+          label.insertBefore(leadDesktop, lead);
+        }
+      }
+    })();
+  </script>
+
+    
+
+    
+
+    
+
+    
+    <section id="pre-launch" class="prelaunch-section" data-hud-label="Approach">
+      
+      
+      
+
+
+      
+      
+      
+      <div class="plsb-runway" id="pre-launch-board">
+      <div class="plsb-stage" role="region" aria-roledescription="carousel" aria-label="Pre-launch story highlights">
+      <div class="plsb plsb--xl" aria-label="Pre-launch story beats">
+        
+        <article class="plsb-panel plsb-panel--media" data-dwell="8000" aria-roledescription="slide" aria-label="The product">
+
+          
+          <div class="plsb-canvas plsb-canvas--establish plsb-canvas--scrim-strong" style="">
+            
+            
+            <picture>
+              
+              <img class="plsb-canvas-media" src="/assets/images/projects/reform-rx-establish.webp"
+                   alt="A woman works out on the Reform RX reformer — silver rail, black carriage and a mounted screen at each end — in a raw brick loft studio, hard daylight coming through a factory window behind her." loading="lazy"
+                   width="1920" height="1080"
+                   style="--canvas-pos: 64% 55%;">
+            </picture>
+            
+            <div class="plsb-canvas-scrim plsb-canvas-scrim--establish" aria-hidden="true"></div>
+            
+            <div class="prelaunch-heading prelaunch-heading--canvas">
+              
+              <h2 class="prelaunch-title">Every page carried a $5,000 decision</h2>
+              
+              <p class="prelaunch-thesis">No launch-day scarcity, no past campaign to borrow from. The content alone had to justify a <b>premium price</b>.</p>
+              
+              
+              
+              
+              
+              <div class="plsb-delivered" style="--i: 1">
+                <b class="plsb-delivered-title">What I delivered</b>
+                <ul aria-label="What I delivered">
+                  
+                  <li><img src="/assets/images/projects/icon-page-store.webp" alt="" loading="lazy" width="465" height="448"><span>Home &amp; product pages</span></li>
+                  
+                  <li><img src="/assets/images/projects/icon-page-deposit.webp" alt="" loading="lazy" width="448" height="448"><span>Deposit-reservation funnel</span></li>
+                  
+                </ul>
+              </div>
+              
+            </div>
+          </div>
+          
+
+
+          
+        </article>
+        
+        <article class="plsb-panel plsb-panel--bg" style=" --bg-pos: 78% 40%;" data-dwell="11000" aria-roledescription="slide" aria-label="‘Subscription’ was the wrong word">
+
+          
+
+
+          
+          
+          <div class="plsb-bg" aria-hidden="true">
+            <img src="/assets/images/projects/reform-rx-membership-bg.webp" alt="" loading="lazy">
+            <div class="plsb-bg-scrim"></div>
+          </div>
+          
+          
+          
+          
+          
+          
+          
+          <div class="plsb-body plsb-body--below">
+            <div class="plsb-copy">
+              <h3>‘Subscription’ was the wrong word</h3>
+              <p>At this price ‘subscription’ carried every wrong association. Instead:</p>
+              
+              
+              
+              
+              
+            </div>
+
+            
+            
+            
+            
+            
+            
+            <div class="plsb-vis plsb-vis--swap">
+              <div class="plsb-swap" role="img" aria-label="The naming decision: the word &#39;subscription&#39; rejected, &#39;All-Access Household Membership&#39; shipped on the page.">
+                
+                
+                <blockquote class="plsb-swap-panel plsb-swap-panel--iconed" style="--i: 0">
+                  <span class="plsb-swap-panel-label">The default word</span>
+                  <img class="plsb-swap-panel-icon" src="/assets/images/projects/reform-rx-icon-subscription.webp" alt="" loading="lazy">
+                  <div class="plsb-swap-panel-copy">
+                  
+                  <p>“Subscription”</p>
+                  <cite>One more recurring charge on a card</cite>
+                  
+                  </div>
+                </blockquote>
+                
+                <blockquote class="plsb-swap-panel plsb-swap-panel--gold plsb-swap-panel--iconed" style="--i: 1">
+                  <span class="plsb-swap-panel-label">What shipped</span>
+                  <img class="plsb-swap-panel-icon" src="/assets/images/projects/reform-rx-icon-pass.webp" alt="" loading="lazy">
+                  <div class="plsb-swap-panel-copy">
+                  
+                  <p>“All-Access Household Membership”</p>
+                  <cite>One household, everything included, nothing metered</cite>
+                  
+                  </div>
+                </blockquote>
+                
+              </div>
+            </div>
+            
+            
+            
+            
+            
+          </div>
+          
+          
+          
+        </article>
+        
+        <article class="plsb-panel plsb-panel--bg" style=" --bg-pos: 60% 45%;" data-dwell="12000" aria-roledescription="slide" aria-label="Let them put it in the room first">
+
+          
+
+
+          
+          
+          <div class="plsb-bg plsb-bg--strong" aria-hidden="true">
+            <img src="/assets/images/projects/reform-rx-livingroom.webp" alt="" loading="lazy">
+            <div class="plsb-bg-scrim"></div>
+          </div>
+          
+          
+          
+          
+          
+          
+          
+          <div class="plsb-body">
+            <div class="plsb-copy">
+              <h3>Let them put it in the room first</h3>
+              <p>A 244-pound machine is a spatial decision as much as a financial one, so I pushed for a ‘see it in your space’ preview — and it shipped.</p>
+              
+              
+              
+              
+              
+            </div>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <figure class="plsb-vis plsb-vis--shot">
+              
+              
+              
+              
+              
+              <img class="plsb-shot plsb-shot--full" src="/assets/images/projects/reform-rx-walkthrough/pdp-03-ar.webp"
+                   alt="The product page&#39;s SEE IT IN YOUR SPACE module: a hand holds a phone showing the reformer placed on a wood floor in augmented reality, with a TRY ON YOUR MOBILE DEVICE button." loading="lazy"
+                   width="2000" height="1084">
+              
+              
+              
+              
+            </figure>
+            
+            
+          </div>
+          
+          
+          
+        </article>
+        
+      </div>
+      <button type="button" class="plsb-arrow plsb-arrow--prev" aria-label="Previous slide" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 5.5 L8 12 L14.5 18.5"/></svg>
+      </button>
+      <button type="button" class="plsb-arrow plsb-arrow--next" aria-label="Next slide" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 5.5 L16 12 L9.5 18.5"/></svg>
+      </button>
+      <div class="plsb-nav" role="group" aria-label="Pre-launch story beats" hidden>
+        <div class="plsb-nav-pill">
+          
+          <button type="button" class="plsb-dot" aria-label="The product — Reform RX"></button>
+          
+          <button type="button" class="plsb-dot" aria-label="‘Subscription’ was the wrong word"></button>
+          
+          <button type="button" class="plsb-dot" aria-label="Let them put it in the room first"></button>
+          
+        </div>
+        <button type="button" class="plsb-ctl" data-state="paused" aria-label="Play highlights" hidden>
+          <svg class="plsb-ctl-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5 L18 12 L8 18.5 Z"/></svg>
+          <svg class="plsb-ctl-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 6 V18 M15.5 6 V18"/></svg>
+        </button>
+      </div>
+      </div>
+      </div>
+      
+      
+
+
+      
+
+      <div class="container">
+
+        
+
+
+        
+
+
+        
+      </div>
+    </section>
+    
+
+
+
+
+    
+
+
+
+
+
+
+    
+    <section id="campaign-walkthrough" class="campaign-walkthrough-section campaign-walkthrough-section--browser" data-wt-desktop-capture data-wt-address="reformrx.com" style="--wt-wide-act: 2;" data-hud-label="DTC Home Page">
+      <div class="campaign-walkthrough-runway">
+        <div class="campaign-walkthrough-sticky">
+          
+          <div class="container container--wide">
+            <div class="campaign-walkthrough-layout">
+
+              <div class="campaign-walkthrough-phone">
+                <div class="wt-phone wt-phone--browser">
+                  <div class="wt-phone-screen">
+                    <div class="wt-phone-scroll">
+                      <div class="igg-content">
+
+  <div class="igg-block igg-block--joined" data-focus="hero">
+    <img width="2000" height="938" src="/assets/images/projects/reform-rx-walkthrough/01-hero.webp" data-callout-image="01-hero.webp" alt="Reform RX home hero: NEXT GENERATION PILATES REFORMER — train with top instructors for the best workout in your own home — with a PRE ORDER NOW button, beside a man planking on the reformer in a bright living room.">
+  </div>
+  <div class="igg-block igg-block--joined" data-focus="key-features">
+    <img width="2000" height="946" src="/assets/images/projects/reform-rx-walkthrough/02-key-features.webp" data-callout-image="02-key-features.webp" alt="GET STRONGER FROM EVERY WORKOUT FOR AS LOW AS $140 A MONTH — financing available from 0-24.99% APR (subject to soft credit check and historical Klarna usage) — LEARN MORE, beside a product render of the reformer with its touchscreen." loading="lazy">
+  </div>
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="1120" src="/assets/images/projects/reform-rx-walkthrough/03-quote.webp" data-callout-image="03-quote.webp" alt="Full-bleed photo of a woman training, overlaid: AN EXHILARATING AND EFFICIENT CARDIO AND STRENGTH WORKOUT THAT WILL TRANSFORM YOUR FITNESS ROUTINE." loading="lazy">
+  </div>
+  <div class="igg-block igg-block--joined" data-focus="diagram">
+    <img width="2000" height="1878" src="/assets/images/projects/reform-rx-walkthrough/04-diagram.webp" data-callout-image="04-diagram.webp" data-alt-source="visual" alt="Annotated reformer diagram: RX footbar, smart spine, step platform, bespoke grip mats, button-controlled resistance, leg exerciser, foot pedal, shoulder pads, touch screen, platform, custom speakers, RX legs and feet." loading="lazy">
+  </div>
+  <div class="igg-block igg-block--joined" data-focus="home-training">
+    <img width="2000" height="1454" src="/assets/images/projects/reform-rx-walkthrough/05-training.webp" data-callout-image="05-training.webp" alt="UNLIMITED AT-HOME TRAINING — whether it's to improve endurance, target muscle tone, or weight loss, one of our 20+ programs can help you meet your goals: strength, cardio, and flexibility, each with a photo." loading="lazy">
+  </div>
+  <div class="igg-block igg-block--joined" data-focus="community-classes">
+    <img width="2000" height="884" src="/assets/images/projects/reform-rx-walkthrough/06-classes.webp" data-callout-image="06-classes.webp" alt="CLASSES ON DEMAND &amp; RENOWNED TRAINERS AT YOUR FINGERTIPS — an ever-growing library filterable by class type, length, intensity level, instructor, and more, beside the touchscreen class browser." loading="lazy">
+  </div>
+  <div class="igg-block igg-block--joined" data-focus="ondemand-power">
+    <img width="2000" height="1422" src="/assets/images/projects/reform-rx-walkthrough/07-power.webp" data-callout-image="07-power.webp" alt="REAL TIME POWER FEEDBACK — heart rate monitoring with Apple Watch or Polar pairing, calorie tracking, and live under-tension readouts on the reformer's screen." loading="lazy">
+  </div>
+  <div class="igg-block igg-block--joined" data-focus="workouts">
+    <img width="2000" height="1346" src="/assets/images/projects/reform-rx-walkthrough/09-workouts.webp" data-callout-image="09-workouts.webp" alt="THE BEST WORKOUTS YOU'LL EVER HAVE — live streaming and on-demand classes, programs designed to meet your personal goals, My Score real-time coaching." loading="lazy">
+  </div>
+  <div class="igg-block" data-focus="product-cta">
+    <img width="2000" height="846" src="/assets/images/projects/reform-rx-walkthrough/10-closing.webp" data-callout-image="10-closing.webp" alt="Closing section: the REFORM RX wordmark over YOU'RE ONE WORKOUT AWAY FROM STRONGER, beside a woman adjusting the touchscreen." loading="lazy">
+  </div>
+</div>
+
+                    </div>
+                    <svg class="walkthrough-spot-svg" viewBox="0 0 896 672" preserveAspectRatio="none" width="100%" height="100%" aria-hidden="true">
+                      <defs>
+                        <filter id="wt-spot-goo-0" filterUnits="userSpaceOnUse" x="-50" y="-50" width="996" height="772">
+                          <feGaussianBlur in="SourceGraphic" stdDeviation="0.1" result="blur"/>
+                          <feColorMatrix in="blur" mode="matrix"
+                            values="1 0 0 0 0
+                                    0 1 0 0 0
+                                    0 0 1 0 0
+                                    0 0 0 24 -10" result="goo"/>
+                        </filter>
+                        <mask id="wt-spot-mask-0" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse" x="-50" y="-50" width="996" height="772">
+                          <rect x="-50" y="-50" width="996" height="772" fill="white"/>
+                          <g filter="url(#wt-spot-goo-0)">
+                            <rect class="wt-spot-blob wt-spot-blob--trail" fill="black" rx="8" ry="8"/>
+                            <line class="wt-spot-blob wt-spot-blob--bridge" stroke="black" stroke-width="0" stroke-linecap="round" x1="0" y1="0" x2="0" y2="0"/>
+                            <rect class="wt-spot-blob wt-spot-blob--lead"  fill="black" rx="8" ry="8"/>
+                          </g>
+                        </mask>
+                      </defs>
+                      <rect class="wt-spot-overlay" x="0" y="0" width="896" height="672"
+                            fill="rgba(26,26,46,0.55)" mask="url(#wt-spot-mask-0)"/>
+                    </svg>
+                  </div>
+                  
+                  <div class="wt-browser-chrome" aria-hidden="true">
+                    <span class="wt-browser-dot wt-browser-dot--close"></span>
+                    <span class="wt-browser-dot wt-browser-dot--min"></span>
+                    <span class="wt-browser-dot wt-browser-dot--max"></span>
+                    <span class="wt-browser-url">reformrx.com</span>
+                  </div>
+                  
+                </div>
+              </div>
+
+              <div class="campaign-walkthrough-annotations">
+                <div class="walkthrough-heading">
+                  <h2 class="walkthrough-heading-title">DTC Home Page</h2>
+                  <p class="walkthrough-heading-subtitle">What I wrote and why.</p>
+                  
+                </div>
+                <div class="walkthrough-annotation-slot">
+                  
+                  <div class="walkthrough-annotation" data-annotation="hero" data-region-m-y="0.2665" data-region-m-h="0.65" data-region-m-x="0.02" data-region-m-w="0.46">
+                    <span class="walkthrough-annotation-label">Category Definer</span>
+                    
+                    <p class="walkthrough-annotation-text">How to introduce the first product in its category? When I described it to friends as “Peloton for Pilates,” it clicked instantly. The hero had to land the same way, but without borrowed names.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="key-features" data-hold-scale="1.25" data-region-y="0.221" data-region-h="0.606" data-region-x="0.505" data-region-w="0.432">
+                    <span class="walkthrough-annotation-label">Answering Price First</span>
+                    
+                    <p class="walkthrough-annotation-text">Financing does the heavy lifting for a $5,000 machine. The monthly figure sits in gym-membership territory, so price is settled before the specs arrive.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="diagram" data-hold-scale="1.25" data-region-y="0.0405" data-region-h="0.8025" data-region-m-y="0.0405" data-region-m-h="0.8025" data-region-m-x="0" data-region-m-w="0.6" data-region-m-x2="0.4">
+                    <span class="walkthrough-annotation-label">Twelve Parts, Named</span>
+                    
+                    <p class="walkthrough-annotation-text">Grip mats, touch screen, resistance labeled on the machine. At this price, the parts list is the proof of build.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="home-training" data-hold-scale="1.25" data-region-y="0.254" data-region-h="0.523" data-region-x="0.02" data-region-w="0.42">
+                    <span class="walkthrough-annotation-label">Three Ways In</span>
+                    
+                    <p class="walkthrough-annotation-text">Naming three distinct fitness component goals lets every reader find their own reason to buy.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="community-classes" data-hold-scale="1.25" data-region-y="0.03" data-region-h="0.62" data-region-x="0.52" data-region-w="0.42">
+                    <span class="walkthrough-annotation-label">The Other Half of the Price</span>
+                    
+                    <p class="walkthrough-annotation-text">Named trainers and a filterable class library prove the other half of the price — the coaching — actually exists.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="ondemand-power" data-hold-scale="1.25" data-region-y="0.12" data-region-h="0.75" data-region-x="0.02" data-region-w="0.49">
+                    <span class="walkthrough-annotation-label">Spec → Outcome</span>
+                    
+                    <p class="walkthrough-annotation-text">I turned sensor hardware into something a buyer can feel: live feedback mid-workout, on devices they already own.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="workouts" data-hold-scale="1.25" data-region-y="0.013" data-region-h="0.892" data-region-x="0.03" data-region-w="0.94" data-region-m-y="0.11" data-region-m-h="0.8" data-region-m-x="0.02" data-region-m-w="0.6" data-region-m-x2="0.38">
+                    <span class="walkthrough-annotation-label">What the Membership Buys</span>
+                    
+                    <p class="walkthrough-annotation-text">Listing live classes, programs, and real-time My Score coaching ties actual value to the monthly fee to keep it from feeling like rent.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="product-cta" data-hold-scale="1.25" data-region-y="0.333" data-region-h="0.495" data-region-x="0.482" data-region-w="0.456">
+                    <span class="walkthrough-annotation-label">Ending on Stronger</span>
+                    
+                    <p class="walkthrough-annotation-text">The close returns to emotion: “You’re one workout away from Stronger.”</p>
+                    
+                  </div>
+                  
+                </div>
+                
+                
+                <div class="walkthrough-progress" role="group" aria-label="Walkthrough controls">
+                  <div class="walkthrough-progress-rail">
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="0" type="button" aria-label="Go to Category Definer" title="Category Definer"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="1" type="button" aria-label="Go to Answering Price First" title="Answering Price First"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="2" type="button" aria-label="Go to Twelve Parts, Named" title="Twelve Parts, Named"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="3" type="button" aria-label="Go to Three Ways In" title="Three Ways In"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="4" type="button" aria-label="Go to The Other Half of the Price" title="The Other Half of the Price"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="5" type="button" aria-label="Go to Spec → Outcome" title="Spec → Outcome"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="6" type="button" aria-label="Go to What the Membership Buys" title="What the Membership Buys"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="7" type="button" aria-label="Go to Ending on Stronger" title="Ending on Stronger"></button>
+                    
+                  </div>
+                  <div class="wt-ctl-row">
+                    <button class="walkthrough-progress-nav" data-progress-nav="prev" type="button" aria-label="Previous stop" title="Previous stop">
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 4l-4 4 4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <button class="wt-ctl-count" type="button" aria-expanded="false" aria-haspopup="true" title="All stops">
+                      <span class="wt-ctl-count-text">8 stops</span>
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 10l4-4 4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <button class="walkthrough-progress-nav" data-progress-nav="next" type="button" aria-label="Next stop" title="Next stop">
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <span class="wt-ctl-gap"></span>
+                    <button class="wt-ctl-btn wt-ctl-restart" type="button" title="Restart the walkthrough">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1 4v6h6M3.51 15a9 9 0 1 0 2.13-9.36L1 10" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      <span class="wt-ctl-label">Restart</span>
+                    </button>
+                    <button class="wt-ctl-btn wt-ctl-skip" type="button" title="Skip the walkthrough">
+                      Skip
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v10M3.5 8.5L8 13l4.5-4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                  </div>
+                  <ol class="wt-chapters" hidden>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="0" type="button">Category Definer</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="1" type="button">Answering Price First</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="2" type="button">Twelve Parts, Named</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="3" type="button">Three Ways In</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="4" type="button">The Other Half of the Price</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="5" type="button">Spec → Outcome</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="6" type="button">What the Membership Buys</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="7" type="button">Ending on Stronger</button></li>
+                    
+                  </ol>
+                </div>
+                
+              </div>
+
+              <svg class="walkthrough-lines" aria-hidden="true"></svg>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="campaign-walkthrough-section campaign-walkthrough-section--browser" data-wt-desktop-capture data-wt-address="reformrx.com/products/reformrx-reformer" style="--wt-wide-act: 2.2;" data-transit-taper="off" data-hud-label="DTC Product Page">
+      <div class="campaign-walkthrough-runway">
+        <div class="campaign-walkthrough-sticky">
+          
+          <div class="container container--wide">
+            <div class="campaign-walkthrough-layout">
+
+              <div class="campaign-walkthrough-phone">
+                <div class="wt-phone wt-phone--browser">
+                  <div class="wt-phone-screen">
+                    <div class="wt-phone-scroll">
+                      <div class="igg-content">
+
+  <div class="igg-block igg-block--joined" data-focus="pdp-buybox">
+    <img width="2000" height="2750" src="/assets/images/projects/reform-rx-walkthrough/pdp-01-buybox.webp" data-callout-image="pdp-01-buybox.webp" alt="Product detail buy box: REFORM RX Next Gen Pilates Reformer, five stars, Your Price $4,495 against $4,995 retail, Klarna installments, Your Savings: $500, package selector, ADD TO CART, 'Be the first to experience RX. Expected to ship May 2022,' a price-lock note for ordering before February 28, 2022, what's included, the All-Access membership terms, and White Glove delivery.">
+  </div>
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="1416" src="/assets/images/projects/reform-rx-walkthrough/pdp-02-reviews.webp" data-callout-image="pdp-02-reviews.webp" alt="Customer reviews — five-star ratings from verified Reform RX owners, October–November 2021." loading="lazy">
+  </div>
+  <div class="igg-block igg-block--joined" data-focus="pdp-ar">
+    <img width="2000" height="1084" src="/assets/images/projects/reform-rx-walkthrough/pdp-03-ar.webp" data-callout-image="pdp-03-ar.webp" data-alt-source="visual" alt="SEE IT IN YOUR SPACE — envision your new workout studio in beautifully photorealistic augmented reality; a hand holds a phone showing the reformer placed on a wood floor, with a TRY ON YOUR MOBILE DEVICE button." loading="lazy">
+  </div>
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="1170" src="/assets/images/projects/reform-rx-walkthrough/pdp-04-specs.webp" data-callout-image="pdp-04-specs.webp" alt="SPECIFICATIONS — footprint, weight, screen and sound, connectivity — beside a technical illustration of the machine." loading="lazy">
+  </div>
+  <div class="igg-block igg-block--joined" data-focus="pdp-ladder">
+    <img width="2000" height="650" src="/assets/images/projects/reform-rx-walkthrough/pdp-05-fraction.webp" data-callout-image="pdp-05-fraction.webp" alt="CUTTING EDGE PILATES AT A FRACTION OF THE COST — Pilates studio classes at $420 per month and private reformer sessions at $6,000, beside photos of women training on the reformer." loading="lazy">
+  
+  
+    <img width="2000" height="530" src="/assets/images/projects/reform-rx-walkthrough/pdp-05b-ladder.webp" data-callout-image="pdp-05b-ladder.webp" alt="The cost ladder's last rung: a traditional reformer with annual coaching at $20,000, then a bannered row for Reform RX — retail $4,995 struck through, your price $4,495, one time cost — marked with the ladder's only checkmark." loading="lazy">
+  </div>
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="1034" src="/assets/images/projects/reform-rx-walkthrough/pdp-07-faq.webp" data-callout-image="pdp-07-faq.webp" alt="FREQUENTLY ASKED QUESTIONS — membership contents, shipping and delivery options, multiple profiles, using RX without a membership — with SEE ALL FAQS, SEE WORKOUTS, MEET INSTRUCTORS, and READ REVIEWS buttons." loading="lazy">
+  </div>
+  <div class="igg-block">
+    <img width="2000" height="1084" src="/assets/images/projects/reform-rx-walkthrough/pdp-08-preorder.webp" data-callout-image="pdp-08-preorder.webp" alt="PRE-ORDER REFORM RX NOW — closing call to action over a photo of a woman training on the reformer at home." loading="lazy">
+  </div>
+</div>
+
+                    </div>
+                    <svg class="walkthrough-spot-svg" viewBox="0 0 896 672" preserveAspectRatio="none" width="100%" height="100%" aria-hidden="true">
+                      <defs>
+                        <filter id="wt-spot-goo-1" filterUnits="userSpaceOnUse" x="-50" y="-50" width="996" height="772">
+                          <feGaussianBlur in="SourceGraphic" stdDeviation="0.1" result="blur"/>
+                          <feColorMatrix in="blur" mode="matrix"
+                            values="1 0 0 0 0
+                                    0 1 0 0 0
+                                    0 0 1 0 0
+                                    0 0 0 24 -10" result="goo"/>
+                        </filter>
+                        <mask id="wt-spot-mask-1" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse" x="-50" y="-50" width="996" height="772">
+                          <rect x="-50" y="-50" width="996" height="772" fill="white"/>
+                          <g filter="url(#wt-spot-goo-1)">
+                            <rect class="wt-spot-blob wt-spot-blob--trail" fill="black" rx="8" ry="8"/>
+                            <line class="wt-spot-blob wt-spot-blob--bridge" stroke="black" stroke-width="0" stroke-linecap="round" x1="0" y1="0" x2="0" y2="0"/>
+                            <rect class="wt-spot-blob wt-spot-blob--lead"  fill="black" rx="8" ry="8"/>
+                          </g>
+                        </mask>
+                      </defs>
+                      <rect class="wt-spot-overlay" x="0" y="0" width="896" height="672"
+                            fill="rgba(26,26,46,0.55)" mask="url(#wt-spot-mask-1)"/>
+                    </svg>
+                  </div>
+                  
+                  <div class="wt-browser-chrome" aria-hidden="true">
+                    <span class="wt-browser-dot wt-browser-dot--close"></span>
+                    <span class="wt-browser-dot wt-browser-dot--min"></span>
+                    <span class="wt-browser-dot wt-browser-dot--max"></span>
+                    <span class="wt-browser-url">reformrx.com/products/reformrx-reformer</span>
+                  </div>
+                  
+                </div>
+              </div>
+
+              <div class="campaign-walkthrough-annotations">
+                <div class="walkthrough-heading">
+                  <h2 class="walkthrough-heading-title">DTC Product Page</h2>
+                  <p class="walkthrough-heading-subtitle">What I wrote and why.</p>
+                  
+                </div>
+                <div class="walkthrough-annotation-slot">
+                  
+                  <div class="walkthrough-annotation" data-annotation="pdp-buybox" data-hold-scale="1.25" data-callout-zoom="true" data-region-y="0.03" data-region-h="0.95">
+                    <span class="walkthrough-annotation-label">Answer Price From Every Angle</span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="pdp-price-stack">A struck-through retail price, $500 savings, and a Klarna monthly together make ordering now the prudent move.</p>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="pdp-price-stack" data-anchor-image="pdp-01-buybox.webp" data-anchor-x="0.502" data-anchor-y="0.12" data-anchor-w="0.462" data-anchor-h="0.145" hidden></span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="pdp-membership">The renamed term earns its spot here: a buyer reads who’s covered before they read what it costs.</p>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="pdp-membership" data-anchor-image="pdp-01-buybox.webp" data-anchor-x="0.502" data-anchor-y="0.672" data-anchor-w="0.468" data-anchor-h="0.149" hidden></span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="pdp-white-glove">Boxing white-glove delivery under its own icon was my call: installation reads as part of the offer.</p>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="pdp-white-glove" data-anchor-image="pdp-01-buybox.webp" data-anchor-x="0.502" data-anchor-y="0.822" data-anchor-w="0.462" data-anchor-h="0.164" hidden></span>
+                    
+                    
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="pdp-ar" data-hold-scale="1.25" data-callout-zoom="true" data-region-y="0.05" data-region-h="0.9">
+                    <span class="walkthrough-annotation-label">The Living-Room Question</span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="pdp-ar-module">The AR module answers the size question in the buyer’s own space.</p>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="pdp-ar-module" data-anchor-image="pdp-03-ar.webp" data-anchor-x="0.03" data-anchor-y="0.08" data-anchor-w="0.48" data-anchor-h="0.64" hidden></span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="pdp-ar-capture">The capture itself is mine, shot on my iPhone in our Seattle office.</p>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="pdp-ar-capture" data-anchor-image="pdp-03-ar.webp" data-anchor-x="0.6" data-anchor-y="0.03" data-anchor-w="0.18" data-anchor-h="0.65" hidden></span>
+                    
+                    
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="pdp-ladder" data-callout-zoom="true">
+                    <span class="walkthrough-annotation-label">Name the Real Competitor</span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="ladder-xs" data-zoom-y="0" data-zoom-h="0.76" data-zoom-x="0.03" data-zoom-w="0.4">The ladder prices the studio habit — classes, private sessions, coaching — and the do-it-yourself reformer, so the buyer’s own routine becomes the competitor.</p>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="ladder-xs" data-anchor-image="pdp-05-fraction.webp" data-anchor-x="0.038" data-anchor-y="0.35" data-anchor-w="0.355" data-anchor-h="0.615" hidden></span>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="ladder-xs" data-anchor-image="pdp-05b-ladder.webp" data-anchor-x="0.038" data-anchor-y="0.06" data-anchor-w="0.375" data-anchor-h="0.38" hidden></span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="ladder-check">After three X’d rows, the machine gets the ladder’s only checkmark: one figure, paid once.</p>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="ladder-check" data-anchor-image="pdp-05b-ladder.webp" data-anchor-x="0.028" data-anchor-y="0.53" data-anchor-w="0.385" data-anchor-h="0.34" hidden></span>
+                    
+                    
+                    
+                  </div>
+                  
+                </div>
+                
+                
+                <div class="walkthrough-progress" role="group" aria-label="Walkthrough controls">
+                  <div class="walkthrough-progress-rail">
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="0" type="button" aria-label="Go to Answer Price From Every Angle" title="Answer Price From Every Angle"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="1" type="button" aria-label="Go to The Living-Room Question" title="The Living-Room Question"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="2" type="button" aria-label="Go to Name the Real Competitor" title="Name the Real Competitor"></button>
+                    
+                  </div>
+                  <div class="wt-ctl-row">
+                    <button class="walkthrough-progress-nav" data-progress-nav="prev" type="button" aria-label="Previous stop" title="Previous stop">
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 4l-4 4 4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <button class="wt-ctl-count" type="button" aria-expanded="false" aria-haspopup="true" title="All stops">
+                      <span class="wt-ctl-count-text">3 stops</span>
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 10l4-4 4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <button class="walkthrough-progress-nav" data-progress-nav="next" type="button" aria-label="Next stop" title="Next stop">
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <span class="wt-ctl-gap"></span>
+                    <button class="wt-ctl-btn wt-ctl-restart" type="button" title="Restart the walkthrough">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1 4v6h6M3.51 15a9 9 0 1 0 2.13-9.36L1 10" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      <span class="wt-ctl-label">Restart</span>
+                    </button>
+                    <button class="wt-ctl-btn wt-ctl-skip" type="button" title="Skip the walkthrough">
+                      Skip
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v10M3.5 8.5L8 13l4.5-4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                  </div>
+                  <ol class="wt-chapters" hidden>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="0" type="button">Answer Price From Every Angle</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="1" type="button">The Living-Room Question</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="2" type="button">Name the Real Competitor</button></li>
+                    
+                  </ol>
+                </div>
+                
+              </div>
+
+              <svg class="walkthrough-lines" aria-hidden="true"></svg>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+
+    
+    
+
+
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+    
+
+    
+
+
+    
+
+
+    
+
+    
+    <section class="project-pagination" data-hud-label="Up Next" aria-label="Project pagination">
+      <div class="container">
+        <div class="pagination-grid">
+          <a class="pagination-card pagination-card--prev" href="/projects/lytte-harmoniq/" rel="prev">
+            <span class="pagination-direction" aria-hidden="true">&larr;</span>
+            <div class="pagination-meta">
+              <span class="pagination-label">Previous</span>
+              <span class="pagination-title">Lytte HarmoniQ</span>
+              <span class="pagination-client">HarmoniQ Labs</span>
+            </div>
+            
+            <div class="pagination-thumb">
+              <img src="/assets/images/projects/lytte-harmoniq-hero.webp" alt="" loading="lazy">
+            </div>
+            
+          </a>
+          <a class="pagination-card pagination-card--next" href="/projects/philips-screeneo-u5/" rel="next">
+            <span class="pagination-direction" aria-hidden="true">&rarr;</span>
+            <div class="pagination-meta">
+              <span class="pagination-label">Next</span>
+              <span class="pagination-title">Philips Screeneo U5</span>
+              <span class="pagination-client">Philips</span>
+            </div>
+            
+            <div class="pagination-thumb">
+              <img src="/assets/images/projects/philips-screeneo-u5-hero.webp" alt="" loading="lazy">
+            </div>
+            
+          </a>
+        </div>
+      </div>
+    </section>
+    
+
+
+    
+
+  </main>
+
+<footer class="site-footer" id="contact">
+  <div class="footer-container">
+    <div class="footer-contact">
+      <p class="section-label footer-eyebrow">Contact</p>
+      <svg class="footer-mark" viewBox="0 0 304 288" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="footer-mark-gradient" x1="0" y1="0" x2="304" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#B2DFDB"/>
+            <stop offset=".55" stop-color="#5DBDB4"/>
+            <stop offset="1" stop-color="#26A69A"/>
+          </linearGradient>
+        </defs>
+        <g fill="none" stroke="url(#footer-mark-gradient)" stroke-width="40">
+          <path d="M108,0V224A44,44 0 0 1 20,224" pathLength="1"/>
+          <path d="M218,0V288" pathLength="1"/>
+          <path d="M128,132H198" pathLength="1"/>
+          <path d="M238,20A46,46 0 0 1 238,112" pathLength="1"/>
+        </g>
+      </svg>
+      <nav class="footer-links" aria-label="Contact">
+        <a href="mailto:hello@jakobpicciotto.com" class="footer-link footer-link--email">hello@jakobpicciotto.com</a>
+        <a href="https://www.linkedin.com/in/jakob-picciotto/" class="footer-link" target="_blank" rel="noopener">linkedin.com/in/jakob-picciotto</a>
+      </nav>
+      <p class="footer-location">Seattle, WA</p>
+    </div>
+    <p class="footer-text">&copy; 2026 Jakob Picciotto</p>
+  </div>
+</footer>
+<script src="/assets/js/footer-monogram.js" defer></script>
+
+
+  
+  <script src="/assets/js/project-hud.js" defer></script>
+  <script src="/assets/js/walkthrough-shared.js" defer></script>
+  <script src="/assets/js/walkthrough-geometry.js" defer></script>
+  <script src="/assets/js/walkthrough-pinned.js" defer></script>
+  <script src="/assets/js/walkthrough-mobile.js" defer></script>
+  <script src="/assets/js/walkthrough-static.js" defer></script>
+  <script src="/assets/js/walkthrough-embers.js" defer></script>
+  <script src="/assets/js/document-reader.js" defer></script>
+  <script src="/assets/js/attribution-typewriter.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/storyboard.js" defer></script>
+  <script src="/assets/js/funnel-cohort.js" defer></script>
+  <script src="/assets/js/related-filter.js" defer></script>
+  <script src="/assets/js/focal-crop.js" defer></script>
+  <script src="/assets/js/strategy-section.js" defer></script>
+  <script src="/assets/js/adaptive-glass.js" defer></script>
+  <script src="/assets/js/hero-odometer.js" defer></script>
+  <script src="/assets/js/hero-chips.js" defer></script>
+  <script src="/assets/js/walkthrough-controls.js" defer></script>
+
+</body>
+</html>

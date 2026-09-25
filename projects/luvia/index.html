@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  /* Motion-safe boot flag on <html>, set during head parse (before the body
+     paints). CSS keys :root.js-motion to suppress lines that main.js reveals
+     after first paint — chiefly the metrics attribution, which is split into
+     per-glyph typewriter spans and would otherwise flash its plain text for a
+     frame on load. Set only when JS runs AND reduced motion is not requested,
+     so the no-JS and reduced-motion paths keep their static, visible fallback
+     (they have no scroll ramp to reveal a hidden line). */
+  if (!window.matchMedia || !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.documentElement.classList.add('js-motion');
+  }
+</script>
+<title>Luvia | Jakob Picciotto</title>
+<meta name="description" content="I positioned Luvia as a premium, heirloom-quality object you keep for generations, and wrote the lead-generation page that seeded its Kickstarter launch.">
+
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="canonical" href="https://work.jakobpicciotto.com/projects/luvia/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jakob Picciotto">
+<meta property="og:title" content="Luvia | Jakob Picciotto">
+<meta property="og:description" content="I positioned Luvia as a premium, heirloom-quality object you keep for generations, and wrote the lead-generation page that seeded its Kickstarter launch.">
+<meta property="og:url" content="https://work.jakobpicciotto.com/projects/luvia/">
+<meta property="og:image" content="https://work.jakobpicciotto.com/assets/images/projects/luvia-hero.webp">
+
+<meta property="og:image:width" content="695">
+<meta property="og:image:height" content="460">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Luvia | Jakob Picciotto">
+<meta name="twitter:description" content="I positioned Luvia as a premium, heirloom-quality object you keep for generations, and wrote the lead-generation page that seeded its Kickstarter launch.">
+<meta name="twitter:image" content="https://work.jakobpicciotto.com/assets/images/projects/luvia-hero.webp">
+
+<script src="/assets/debug/browser.js"></script>
+<link rel="preload" href="/assets/fonts/Raleway-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/SourceSans3-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="/assets/images/logos/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/css/fonts.css">
+<link rel="stylesheet" href="/assets/css/style.css">
+
+
+
+
+
+</head>
+<body class="project-page hero-metrics-3up">
+  
+  <script>
+    var _qs = new URLSearchParams(location.search);
+    var layout = _qs.get('layout');
+    if (/^(static|synced|interleaved)$/.test(layout || '')) document.body.classList.add('layout-' + layout);
+  </script>
+  <header class="site-header">
+  <div class="header-container">
+    <a href="/" class="site-logo" aria-label="Jakob Picciotto">
+      <svg class="site-logo-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1938.35 289.61" aria-hidden="true">
+        <defs>
+          <linearGradient id="logo-gradient-light" x1="0" y1="0" x2="304" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#4DB6AC"/>
+            <stop offset=".55" stop-color="#199488"/>
+            <stop offset="1" stop-color="#00796B"/>
+          </linearGradient>
+          <linearGradient id="logo-gradient-dark" x1="0" y1="0" x2="304" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#B2DFDB"/>
+            <stop offset=".55" stop-color="#5DBDB4"/>
+            <stop offset="1" stop-color="#26A69A"/>
+          </linearGradient>
+        </defs>
+        <g>
+          <path class="logo-monogram logo-monogram-light" fill="url(#logo-gradient-light)" fill-rule="evenodd" d="M88,0H128V224H88ZM198,0H238V288H198ZM128,112H198V152H128ZM238,0A66,66 0 0 1 238,132L238,92A26,26 0 0 0 238,40ZM128,224A64,64 0 0 1 0,224L40,224A24,24 0 0 0 88,224Z"/>
+          <path class="logo-monogram logo-monogram-dark" fill="url(#logo-gradient-dark)" fill-rule="evenodd" d="M88,0H128V224H88ZM198,0H238V288H198ZM128,112H198V152H128ZM238,0A66,66 0 0 1 238,132L238,92A26,26 0 0 0 238,40ZM128,224A64,64 0 0 1 0,224L40,224A24,24 0 0 0 88,224Z"/>
+          <g class="logo-text" fill="currentColor">
+            <path d="M482.89,211.42c-4.06,0-7.91-.62-11.54-1.84-3.63-1.23-6.89-3.13-9.78-5.69l9.3-14.59c1.18,1.17,2.62,2.06,4.33,2.64,1.71.59,3.42.88,5.13.88,2.78,0,5.18-.99,7.21-2.97,2.03-1.98,3.05-4.52,3.05-7.61v-86.24h21.48v84.64c0,4.49-.75,8.63-2.24,12.42-1.5,3.79-3.55,7.05-6.17,9.78-2.62,2.72-5.72,4.83-9.3,6.33-3.58,1.5-7.4,2.24-11.46,2.24ZM490.58,84.3v-21.32h21.48v21.32h-21.48Z"/>
+            <path d="M554.54,181.6c-4.06,0-7.85-.67-11.38-2-3.53-1.33-6.57-3.21-9.14-5.61-2.56-2.4-4.57-5.21-6.01-8.42-1.44-3.21-2.16-6.73-2.16-10.58s.88-7.61,2.65-10.98,4.22-6.22,7.37-8.58c3.15-2.35,6.92-4.19,11.3-5.53,4.38-1.33,9.19-2,14.43-2,3.74,0,7.4.32,10.98.96,3.58.64,6.76,1.55,9.54,2.73v-4.81c0-5.56-1.58-9.83-4.73-12.82-3.15-2.99-7.83-4.49-14.03-4.49-4.49,0-8.87.8-13.14,2.4-4.28,1.6-8.66,3.96-13.14,7.05l-6.57-13.63c10.79-7.16,22.44-10.74,34.95-10.74s21.45,2.96,28.13,8.9c6.68,5.93,10.02,14.51,10.02,25.73v26.13c0,2.24.4,3.85,1.2,4.81.8.96,2.11,1.5,3.93,1.6v18.27c-3.63.75-6.79,1.12-9.46,1.12-4.06,0-7.19-.91-9.38-2.72-2.19-1.82-3.55-4.22-4.09-7.21l-.48-4.65c-3.74,4.92-8.28,8.66-13.63,11.22-5.35,2.56-11.06,3.85-17.15,3.85ZM560.63,165.89c3.63,0,7.08-.64,10.34-1.92,3.26-1.28,5.8-2.99,7.61-5.13,2.35-1.82,3.53-3.85,3.53-6.09v-9.62c-2.56-.96-5.35-1.74-8.34-2.32-2.99-.59-5.88-.88-8.66-.88-5.56,0-10.1,1.26-13.63,3.77-3.53,2.51-5.29,5.69-5.29,9.54,0,3.63,1.39,6.65,4.17,9.06,2.78,2.4,6.2,3.61,10.26,3.61Z"/>
+            <path d="M681.01,180l-24.37-36.39-11.54,11.38v25.01h-21.48V62.98h21.48v71.01l33.66-37.83h22.92l-31.26,35.59,33.5,48.25h-22.92Z"/>
+            <path d="M747.53,181.6c-6.84,0-12.98-1.18-18.43-3.53s-10.07-5.53-13.87-9.54c-3.79-4.01-6.71-8.63-8.74-13.87-2.03-5.24-3.05-10.74-3.05-16.51s1.01-11.43,3.05-16.67c2.03-5.23,4.94-9.86,8.74-13.87,3.79-4.01,8.42-7.19,13.87-9.54,5.45-2.35,11.59-3.53,18.43-3.53s12.96,1.18,18.35,3.53c5.4,2.35,9.99,5.53,13.79,9.54,3.79,4.01,6.71,8.63,8.74,13.87,2.03,5.24,3.05,10.8,3.05,16.67s-1.02,11.28-3.05,16.51c-2.03,5.24-4.92,9.86-8.66,13.87-3.74,4.01-8.34,7.19-13.79,9.54s-11.6,3.53-18.43,3.53ZM725.57,138.16c0,3.74.56,7.13,1.68,10.18s2.67,5.69,4.65,7.93c1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.56,1.84,8.66,1.84s5.98-.61,8.66-1.84c2.67-1.23,4.99-2.97,6.97-5.21,1.98-2.24,3.53-4.91,4.65-8.01,1.12-3.1,1.68-6.52,1.68-10.26s-.56-7-1.68-10.1c-1.12-3.1-2.67-5.77-4.65-8.01-1.98-2.24-4.3-3.98-6.97-5.21-2.67-1.23-5.56-1.84-8.66-1.84s-5.99.64-8.66,1.92c-2.67,1.28-5,3.05-6.97,5.29-1.98,2.24-3.53,4.92-4.65,8.01-1.12,3.1-1.68,6.47-1.68,10.1Z"/>
+            <path d="M853.65,181.6c-6.41,0-12.13-1.44-17.15-4.33-5.02-2.88-8.98-6.84-11.86-11.86v14.59h-18.75V62.98h21.48v47.77c2.99-5.13,6.92-9.11,11.78-11.94,4.86-2.83,10.55-4.25,17.07-4.25,5.45,0,10.42,1.18,14.91,3.53,4.49,2.35,8.36,5.5,11.62,9.46,3.26,3.96,5.77,8.6,7.53,13.95,1.76,5.35,2.65,10.96,2.65,16.83s-.99,11.76-2.97,16.99c-1.98,5.24-4.73,9.81-8.26,13.71-3.53,3.9-7.69,6.97-12.5,9.22s-9.99,3.37-15.55,3.37ZM847.72,163.33c3.42,0,6.57-.67,9.46-2,2.89-1.33,5.34-3.13,7.37-5.37,2.03-2.24,3.61-4.86,4.73-7.85,1.12-2.99,1.68-6.2,1.68-9.62s-.54-6.68-1.6-9.78c-1.07-3.1-2.59-5.82-4.57-8.18-1.98-2.35-4.3-4.22-6.97-5.61-2.67-1.39-5.61-2.08-8.82-2.08-4.81,0-9.11,1.58-12.9,4.73-3.79,3.15-6.71,7.03-8.74,11.62v20.04c.75,2.14,1.84,4.06,3.29,5.77,1.44,1.71,3.07,3.18,4.89,4.41,1.82,1.23,3.79,2.19,5.93,2.89,2.14.7,4.22,1.04,6.25,1.04Z"/>
+            <path d="M957.84,181.6c-6.63,0-12.4-1.47-17.31-4.41-4.92-2.94-8.76-6.92-11.54-11.94v48.89h-21.48v-118.14h18.75v14.43c3.1-4.91,7.11-8.79,12.02-11.62,4.91-2.83,10.58-4.25,16.99-4.25,5.66,0,10.9,1.15,15.71,3.45,4.81,2.3,8.95,5.4,12.42,9.3,3.47,3.9,6.2,8.5,8.18,13.79,1.98,5.29,2.97,10.88,2.97,16.75s-.91,11.81-2.73,17.15c-1.82,5.34-4.36,9.99-7.61,13.95-3.26,3.96-7.13,7.05-11.62,9.3-4.49,2.24-9.4,3.37-14.75,3.37ZM950.63,163.33c3.21,0,6.17-.69,8.9-2.08,2.73-1.39,5.05-3.26,6.97-5.61,1.92-2.35,3.42-5.08,4.49-8.18,1.07-3.1,1.6-6.3,1.6-9.62,0-3.53-.59-6.81-1.76-9.86-1.18-3.05-2.81-5.69-4.89-7.93s-4.54-4.01-7.37-5.29c-2.83-1.28-5.91-1.92-9.22-1.92-2.03,0-4.12.35-6.25,1.04-2.14.7-4.12,1.68-5.93,2.97-1.82,1.28-3.45,2.78-4.89,4.49-1.44,1.71-2.54,3.58-3.29,5.61v19.72c1.92,4.81,4.86,8.79,8.82,11.94,3.95,3.15,8.23,4.73,12.82,4.73Z"/>
+            <path d="M1009.13,84.3v-21.32h21.48v21.32h-21.48ZM1009.13,180v-84h21.48v84h-21.48Z"/>
+            <path d="M1044.71,138c0-5.88,1.01-11.43,3.05-16.67,2.03-5.23,4.97-9.83,8.82-13.79,3.85-3.95,8.5-7.11,13.95-9.46,5.45-2.35,11.59-3.53,18.43-3.53,9.19,0,17.02,1.98,23.48,5.93,6.46,3.96,11.3,9.14,14.51,15.55l-21,6.41c-1.82-3.1-4.22-5.48-7.21-7.13-2.99-1.66-6.31-2.49-9.94-2.49-3.1,0-5.99.62-8.66,1.84-2.67,1.23-5,2.94-6.97,5.13-1.98,2.19-3.53,4.84-4.65,7.93-1.12,3.1-1.68,6.52-1.68,10.26s.59,7.16,1.76,10.26c1.17,3.1,2.75,5.77,4.73,8.01,1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.5,1.84,8.5,1.84,3.85,0,7.4-.96,10.66-2.89,3.26-1.92,5.53-4.27,6.81-7.05l21,6.41c-2.88,6.41-7.64,11.65-14.27,15.71-6.63,4.06-14.59,6.09-23.88,6.09-6.84,0-12.98-1.18-18.43-3.53s-10.1-5.53-13.95-9.54c-3.85-4.01-6.81-8.66-8.9-13.95s-3.13-10.82-3.13-16.59Z"/>
+            <path d="M1134.32,138c0-5.88,1.01-11.43,3.05-16.67,2.03-5.23,4.97-9.83,8.82-13.79,3.85-3.95,8.5-7.11,13.95-9.46,5.45-2.35,11.59-3.53,18.43-3.53,9.19,0,17.02,1.98,23.48,5.93,6.46,3.96,11.3,9.14,14.51,15.55l-21,6.41c-1.82-3.1-4.22-5.48-7.21-7.13-2.99-1.66-6.31-2.49-9.94-2.49-3.1,0-5.99.62-8.66,1.84-2.67,1.23-5,2.94-6.97,5.13-1.98,2.19-3.53,4.84-4.65,7.93-1.12,3.1-1.68,6.52-1.68,10.26s.59,7.16,1.76,10.26c1.17,3.1,2.75,5.77,4.73,8.01,1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.5,1.84,8.5,1.84,3.85,0,7.4-.96,10.66-2.89,3.26-1.92,5.53-4.27,6.81-7.05l21,6.41c-2.88,6.41-7.64,11.65-14.27,15.71-6.63,4.06-14.59,6.09-23.88,6.09-6.84,0-12.98-1.18-18.43-3.53s-10.1-5.53-13.95-9.54c-3.85-4.01-6.81-8.66-8.9-13.95s-3.13-10.82-3.13-16.59Z"/>
+            <path d="M1230.02,84.3v-21.32h21.48v21.32h-21.48ZM1230.02,180v-84h21.48v84h-21.48Z"/>
+            <path d="M1309.68,181.6c-6.84,0-12.98-1.18-18.43-3.53s-10.07-5.53-13.87-9.54c-3.79-4.01-6.71-8.63-8.74-13.87-2.03-5.24-3.05-10.74-3.05-16.51s1.01-11.43,3.05-16.67c2.03-5.23,4.94-9.86,8.74-13.87,3.79-4.01,8.42-7.19,13.87-9.54,5.45-2.35,11.59-3.53,18.43-3.53s12.96,1.18,18.35,3.53c5.4,2.35,9.99,5.53,13.79,9.54,3.79,4.01,6.71,8.63,8.74,13.87,2.03,5.24,3.05,10.8,3.05,16.67s-1.02,11.28-3.05,16.51c-2.03,5.24-4.92,9.86-8.66,13.87-3.74,4.01-8.34,7.19-13.79,9.54s-11.6,3.53-18.43,3.53ZM1287.72,138.16c0,3.74.56,7.13,1.68,10.18s2.67,5.69,4.65,7.93c1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.56,1.84,8.66,1.84s5.98-.61,8.66-1.84c2.67-1.23,5-2.97,6.97-5.21,1.98-2.24,3.53-4.91,4.65-8.01,1.12-3.1,1.68-6.52,1.68-10.26s-.56-7-1.68-10.1c-1.12-3.1-2.67-5.77-4.65-8.01-1.98-2.24-4.3-3.98-6.97-5.21-2.67-1.23-5.56-1.84-8.66-1.84s-5.99.64-8.66,1.92c-2.67,1.28-5,3.05-6.97,5.29-1.98,2.24-3.53,4.92-4.65,8.01-1.12,3.1-1.68,6.47-1.68,10.1Z"/>
+            <path d="M1417.23,175.67c-2.89,1.28-6.41,2.56-10.58,3.85-4.17,1.28-8.55,1.92-13.14,1.92-2.99,0-5.8-.38-8.42-1.12-2.62-.75-4.92-1.95-6.89-3.61-1.98-1.66-3.55-3.79-4.73-6.41-1.18-2.62-1.76-5.8-1.76-9.54v-48.25h-11.06v-16.51h11.06v-27.25h21.48v27.25h17.63v16.51h-17.63v41.04c0,2.99.77,5.1,2.32,6.33,1.55,1.23,3.45,1.84,5.69,1.84s4.43-.37,6.57-1.12c2.14-.75,3.85-1.39,5.13-1.92l4.33,16.99Z"/>
+            <path d="M1478.78,175.67c-2.89,1.28-6.41,2.56-10.58,3.85-4.17,1.28-8.55,1.92-13.14,1.92-2.99,0-5.8-.38-8.42-1.12-2.62-.75-4.92-1.95-6.89-3.61-1.98-1.66-3.55-3.79-4.73-6.41-1.18-2.62-1.76-5.8-1.76-9.54v-48.25h-11.06v-16.51h11.06v-27.25h21.48v27.25h17.63v16.51h-17.63v41.04c0,2.99.77,5.1,2.33,6.33,1.55,1.23,3.45,1.84,5.69,1.84s4.43-.37,6.57-1.12c2.14-.75,3.85-1.39,5.13-1.92l4.33,16.99Z"/>
+            <path d="M1526.71,181.6c-6.84,0-12.98-1.18-18.43-3.53s-10.07-5.53-13.87-9.54c-3.79-4.01-6.71-8.63-8.74-13.87-2.03-5.24-3.05-10.74-3.05-16.51s1.01-11.43,3.05-16.67c2.03-5.23,4.94-9.86,8.74-13.87,3.79-4.01,8.42-7.19,13.87-9.54,5.45-2.35,11.59-3.53,18.43-3.53s12.96,1.18,18.35,3.53c5.39,2.35,9.99,5.53,13.79,9.54,3.79,4.01,6.71,8.63,8.74,13.87,2.03,5.24,3.05,10.8,3.05,16.67s-1.02,11.28-3.05,16.51c-2.03,5.24-4.92,9.86-8.66,13.87-3.74,4.01-8.33,7.19-13.79,9.54s-11.6,3.53-18.43,3.53ZM1504.75,138.16c0,3.74.56,7.13,1.68,10.18s2.67,5.69,4.65,7.93c1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.56,1.84,8.66,1.84s5.98-.61,8.66-1.84c2.67-1.23,4.99-2.97,6.97-5.21,1.98-2.24,3.53-4.91,4.65-8.01,1.12-3.1,1.68-6.52,1.68-10.26s-.56-7-1.68-10.1c-1.12-3.1-2.67-5.77-4.65-8.01-1.98-2.24-4.3-3.98-6.97-5.21-2.67-1.23-5.56-1.84-8.66-1.84s-5.99.64-8.66,1.92c-2.67,1.28-5,3.05-6.97,5.29-1.98,2.24-3.53,4.92-4.65,8.01-1.12,3.1-1.68,6.47-1.68,10.1Z"/>
+            <path d="M1584.58,180v-23.08h17.63v23.08h-17.63Z"/>
+            <path d="M1615.83,138c0-5.88,1.01-11.43,3.05-16.67,2.03-5.23,4.97-9.83,8.82-13.79,3.85-3.95,8.5-7.11,13.95-9.46,5.45-2.35,11.59-3.53,18.43-3.53,9.19,0,17.02,1.98,23.48,5.93,6.46,3.96,11.3,9.14,14.51,15.55l-21,6.41c-1.82-3.1-4.22-5.48-7.21-7.13-2.99-1.66-6.31-2.49-9.94-2.49-3.1,0-5.99.62-8.66,1.84-2.67,1.23-5,2.94-6.97,5.13-1.98,2.19-3.53,4.84-4.65,7.93-1.12,3.1-1.68,6.52-1.68,10.26s.59,7.16,1.76,10.26c1.17,3.1,2.75,5.77,4.73,8.01,1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.5,1.84,8.5,1.84,3.85,0,7.4-.96,10.66-2.89,3.26-1.92,5.53-4.27,6.81-7.05l21,6.41c-2.88,6.41-7.64,11.65-14.27,15.71-6.63,4.06-14.59,6.09-23.88,6.09-6.84,0-12.98-1.18-18.43-3.53s-10.1-5.53-13.95-9.54c-3.85-4.01-6.81-8.66-8.9-13.95s-3.13-10.82-3.13-16.59Z"/>
+            <path d="M1749.52,181.6c-6.84,0-12.98-1.18-18.43-3.53s-10.07-5.53-13.87-9.54c-3.79-4.01-6.71-8.63-8.74-13.87-2.03-5.24-3.05-10.74-3.05-16.51s1.01-11.43,3.05-16.67c2.03-5.23,4.94-9.86,8.74-13.87,3.79-4.01,8.42-7.19,13.87-9.54,5.45-2.35,11.59-3.53,18.43-3.53s12.96,1.18,18.35,3.53c5.4,2.35,9.99,5.53,13.79,9.54,3.79,4.01,6.71,8.63,8.74,13.87,2.03,5.24,3.05,10.8,3.05,16.67s-1.02,11.28-3.05,16.51c-2.03,5.24-4.92,9.86-8.66,13.87-3.74,4.01-8.34,7.19-13.79,9.54s-11.6,3.53-18.43,3.53ZM1727.56,138.16c0,3.74.56,7.13,1.68,10.18s2.67,5.69,4.65,7.93c1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.56,1.84,8.66,1.84s5.98-.61,8.66-1.84c2.67-1.23,5-2.97,6.97-5.21,1.98-2.24,3.53-4.91,4.65-8.01,1.12-3.1,1.68-6.52,1.68-10.26s-.56-7-1.68-10.1c-1.12-3.1-2.67-5.77-4.65-8.01-1.98-2.24-4.3-3.98-6.97-5.21-2.67-1.23-5.56-1.84-8.66-1.84s-5.99.64-8.66,1.92c-2.67,1.28-5,3.05-6.97,5.29-1.98,2.24-3.53,4.92-4.65,8.01-1.12,3.1-1.68,6.47-1.68,10.1Z"/>
+            <path d="M1938.35,180h-21.48v-47.13c0-6.73-1.15-11.65-3.45-14.75-2.3-3.1-5.48-4.65-9.54-4.65-4.28,0-8.28,1.63-12.02,4.89-3.74,3.26-6.41,7.51-8.01,12.74v48.89h-21.48v-47.13c0-6.73-1.15-11.65-3.45-14.75-2.3-3.1-5.48-4.65-9.54-4.65s-8.15,1.6-11.94,4.81c-3.79,3.21-6.49,7.43-8.1,12.66v49.05h-21.48v-84h19.4v15.55c3.1-5.45,7.35-9.64,12.74-12.58,5.4-2.94,11.57-4.41,18.51-4.41s12.5,1.71,16.35,5.13c3.85,3.42,6.3,7.64,7.37,12.66,3.42-5.77,7.75-10.18,12.98-13.22,5.23-3.05,11.22-4.57,17.95-4.57,5.13,0,9.35.96,12.66,2.88,3.31,1.92,5.88,4.44,7.69,7.53,1.82,3.1,3.07,6.63,3.77,10.58.69,3.96,1.04,7.96,1.04,12.02v52.42Z"/>
+          </g>
+        </g>
+      </svg>
+    </a>
+    <svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+      <defs>
+        <filter id="glass-refract" x="0%" y="0%" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.015" numOctaves="3" seed="5" result="noise"/>
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+        </filter>
+      </defs>
+    </svg>
+    <nav class="site-nav">
+      <a href="/projects/" class="nav-link" data-nav="projects">Projects</a>
+      
+    </nav>
+    <a href="#contact" class="nav-contact" data-nav="contact" aria-label="Contact">
+      <svg class="nav-contact-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+        <rect x="2.25" y="4.25" width="15.5" height="11.5" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M3.5 6.5l6.5 4.6 6.5-4.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="nav-contact-label">Contact</span>
+    </a>
+    <script>
+      (function() {
+        var path = location.pathname;
+        var active = path.startsWith('/projects') ? 'projects'
+                   : path.startsWith('/about') ? 'about'
+                   : null;
+        if (active) document.querySelector('[data-nav="' + active + '"]').classList.add('active');
+      })();
+    </script>
+  </div>
+</header>
+<script src="/assets/js/header-glass.js" defer></script>
+<script src="/assets/js/nav-submenu.js" defer></script>
+
+
+    <nav class="project-hud" aria-label="Project navigation">
+      <div class="container project-hud-inner">
+        
+        <div class="hud-side">
+          
+          <a class="hud-prev" href="/projects/harry-potter-escape-from-gringotts-hallmark-keepsake-ornament/">
+            <span class="hud-prev-arrow" aria-hidden="true">&larr;</span>
+            <span class="hud-prev-label">Prev</span>
+            <span class="hud-prev-title">Harry Potter™ Keepsake Ornament Set</span>
+          </a>
+          
+        </div>
+        <div class="hud-center">
+          <div class="hud-identity">
+            <span class="hud-title">Luvia</span>
+            
+            
+          </div>
+          <span class="hud-section" aria-hidden="true"></span>
+        </div>
+        <div class="hud-actions">
+          
+          <a class="hud-next" href="/projects/screeneo-u4/">
+            <span class="hud-next-label">Next</span>
+            <span class="hud-next-title">Philips Screeneo U4</span>
+            <span class="hud-next-arrow" aria-hidden="true">&rarr;</span>
+          </a>
+          
+          <button class="hud-top" type="button" aria-label="Back to top">
+            <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M2 7.5 6 3.5 10 7.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+
+  <main class="main-content">
+    
+    <section class="project-hero-section hero-scrolly hero-scrolly--scrim-boost" style="--hero-scrim-boost: 1; --hero-scrim-bottom: 2.9;">
+      <div class="scrolly-scene" data-scene="1">
+        <div class="scrolly-bg">
+          <picture>
+            <source media="(max-width: 768px)" srcset="/assets/images/projects/luvia-bg-mobile.webp">
+            <img id="glass-source-hero" src="/assets/images/projects/luvia-bg-desktop.webp" alt="" fetchpriority="high" decoding="async" data-focal-y="0.52">
+          </picture>
+          
+          <div class="scrolly-overlay"></div>
+        </div>
+      </div>
+
+      <div class="scrolly-content">
+
+        <div class="scrolly-step" data-step="hero">
+          <div class="container">
+            <h1 class="project-title">Luvia</h1>
+
+            
+            <a href="#campaign-walkthrough" class="hero-campaign-link hero-campaign-link--centered hero-campaign-link--below-title hero-campaign-link--sample">
+              Skip to work sample ↓
+            </a>
+            
+
+            <div class="hero-above-fold">
+              <div class="project-info-card">
+                <div class="hero-card-top">
+                  
+                  <div class="hero-role">
+                    <span class="info-card-label">My Role</span>
+                    <span class="hero-role-value">Senior Copywriter</span>
+                    
+                    <span class="hero-role-agency-credit">at
+                      <img src="/assets/images/logos/Rainfactory_logo.webp"
+                           alt="Rainfactory"
+                           width="450" height="98"
+                           class="hero-role-agency-logo">
+                    </span>
+                    
+                  </div>
+                  
+
+                  
+                  <div class="hero-client">
+                    <span class="info-card-label">Client</span>
+                    <div class="client-logos">
+                      <img src="/assets/images/logos/luvia-wordmark.svg"
+                           alt="Luvia"
+                           width="388" height="100"
+                           class="client-logo">
+                      
+                    </div>
+                  </div>
+                  
+                </div>
+
+                
+                <p class="impact-summary">I positioned Luvia as a premium, heirloom-quality object you keep for generations, and wrote the lead-generation page that seeded its Kickstarter launch.</p>
+                
+
+                
+                <div class="hero-deliverables">
+                  <span class="info-card-label">Deliverables</span>
+                  <div class="info-card-deliverables">
+                    
+                    
+                    <span class="deliverable-badge">Brand Voice</span>
+                    
+                    
+                    
+                    <a href="#pre-launch-board" class="deliverable-badge deliverable-badge--link">Landing Page</a>
+                    
+                    
+                    
+                    <a href="#campaign-walkthrough" class="deliverable-badge deliverable-badge--link">Kickstarter Page</a>
+                    
+                    
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="hero-metrics-floor">
+            <div class="container">
+              <div class="metrics-heading-group">
+                <h2 class="metrics-heading">Key Results</h2>
+                
+                
+              </div>
+              <div class="metrics-grid">
+                
+                <div class="metric">
+                  <span class="metric-value">$71,753</span>
+                  <span class="metric-label">In pre-orders</span>
+                </div>
+                
+                
+                <div class="metric">
+                  <span class="metric-value">702</span>
+                  <span class="metric-label">Backers</span>
+                </div>
+                
+                
+                <div class="metric">
+                  <span class="metric-value">23%</span>
+                  <span class="metric-label">Landing-page conversion</span>
+                </div>
+                
+                
+                
+              </div>
+              
+              <div class="scrolly-hero-image">
+                <img src="/assets/images/projects/luvia-hero.webp" alt="Luvia" width="695" height="460">
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+
+        
+        <div class="scrolly-pin-spacer" aria-hidden="true"></div>
+        
+
+        
+
+        
+
+        <div class="scrolly-bottom-fade" aria-hidden="true"></div>
+      </div>
+
+    </section>
+
+    
+  <script>
+    // Metric labels, injected inline right after the hero markup so they exist
+    // at first paint and the columns distribute with no post-load reflow.
+    // Content is data-driven from the project's heroMetricLabels field
+    // (build.js emits it as a JS literal, "null" when absent) — layout comes
+    // from the hero-metrics body class, but the label copy lives with the
+    // project data so each hero (Gringotts 3-up, Screeneo 2-up) reads
+    // correctly. One line per tile: the muted `sub` line was cut 2026-09-13
+    // (Jakob, smts3gkco1pz2: "I don't think I'll ever use subs for key
+    // results metrics"). Per-item leadDesktop optionally swaps the lead for
+    // one self-sufficient line at >=769px ("Email sign-up rate").
+    (function () {
+      var LABELS = [{"lead":"In Pre-Orders"},{"lead":"Customers"},{"lead":"Sign-up rate","leadDesktop":"Email sign-up rate"}];
+      if (!LABELS || !LABELS.length) return;
+      var grid = document.querySelector('.hero-metrics-floor .metrics-grid');
+      if (!grid) return;
+      var metrics = grid.querySelectorAll('.metric');
+      for (var i = 0; i < metrics.length; i++) {
+        var label = metrics[i].querySelector('.metric-label');
+        var parts = LABELS[i];
+        if (!label || !parts) continue;
+        label.textContent = '';
+        var lead = document.createElement('span');
+        lead.className = 'metric-label-lead';
+        lead.textContent = parts.lead;
+        label.appendChild(lead);
+        if (parts.leadDesktop) {
+          lead.classList.add('metric-label-lead--mobile');
+          var leadDesktop = document.createElement('span');
+          leadDesktop.className = 'metric-label-lead metric-label-lead--desktop';
+          leadDesktop.textContent = parts.leadDesktop;
+          label.insertBefore(leadDesktop, lead);
+        }
+      }
+    })();
+  </script>
+
+    
+
+    
+
+    
+
+    
+    <section id="pre-launch" class="prelaunch-section" data-hud-label="Pre-Launch">
+      
+      
+      
+
+
+      
+      
+      
+      <div class="plsb-runway" id="pre-launch-board">
+      <div class="plsb-stage" role="region" aria-roledescription="carousel" aria-label="Pre-launch story highlights">
+      <div class="plsb plsb--xl" aria-label="Pre-launch story beats">
+        
+        <article class="plsb-panel plsb-panel--media" data-dwell="8000" aria-roledescription="slide" aria-label="The product">
+
+          
+          <div class="plsb-canvas plsb-canvas--establish plsb-canvas--corner-fit" style="--scrim-ink: 24, 21, 12; --plsb-scrim-boost: 1.6;">
+            
+            
+            <picture>
+              
+              <img class="plsb-canvas-media" src="/assets/images/projects/luvia-establish.webp"
+                   alt="The Luvia pitcher on a dark concrete kitchen counter in warm raking light — glass body, bamboo lid, a filled glass beside it, with spice jars, a knife block and a bowl of fruit along the counter behind." loading="lazy"
+                   width="2000" height="894"
+                   style="--canvas-pos: 58% 50%; --canvas-scale-m: 1.28;">
+            </picture>
+            
+            <div class="plsb-canvas-scrim plsb-canvas-scrim--establish" aria-hidden="true"></div>
+            
+            <div class="prelaunch-heading prelaunch-heading--canvas">
+              
+              <h2 class="prelaunch-title">Preparing for Kickstarter</h2>
+              
+              <p class="prelaunch-thesis">Kickstarter's early adopters come for breakthrough technology. Luvia was a <b>glass water pitcher</b> — on its face, the opposite.</p>
+              
+              
+              
+              
+              
+              <p class="plsb-text2--marked"><img class="plsb-text2-mark" src="/assets/images/projects/luvia-icon-objective.webp" alt="" loading="lazy" width="451" height="448"><span>The objective: make something with nothing to demo feel worth waiting for.</span></p>
+              
+              
+              
+              
+              
+              
+            </div>
+          </div>
+          
+
+
+          
+        </article>
+        
+        <article class="plsb-panel plsb-panel--bg" style=" --bg-pos: 55% 45%;" data-dwell="11000" aria-roledescription="slide" aria-label="Writing a pitcher like an heirloom">
+
+          
+
+
+          
+          
+          <div class="plsb-bg" aria-hidden="true">
+            <img src="/assets/images/projects/luvia-pouring.webp" alt="" loading="lazy">
+            <div class="plsb-bg-scrim"></div>
+          </div>
+          
+          
+          
+          
+          
+          
+          
+          <div class="plsb-body plsb-body--below">
+            <div class="plsb-copy">
+              <h3>Writing a pitcher like an heirloom</h3>
+              <p>I wrote Luvia as an object you keep, not a gadget you upgrade — an investment in the kitchen it lives in.</p>
+              
+              
+              
+              
+              
+            </div>
+
+            
+            
+            
+            
+            <div class="plsb-vis plsb-vis--duo">
+              <div class="plsb-duo plsb-duo--weigh">
+                
+                <figure class="plsb-duo-item">
+                  <img src="/assets/images/projects/luvia-icon-appliance.webp" alt="" loading="lazy"
+                       width="444" height="448">
+                  <figcaption>An appliance — replaced on schedule</figcaption>
+                </figure>
+                
+                <figure class="plsb-duo-item" style="--icon-scale: 0.8">
+                  <img src="/assets/images/projects/luvia-icon-heirloom.webp" alt="" loading="lazy"
+                       width="394" height="448">
+                  <figcaption>An heirloom — kept</figcaption>
+                </figure>
+                
+              </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+          </div>
+          
+          
+          
+        </article>
+        
+        <article class="plsb-panel plsb-panel--bg" style="--bg-ink: 26, 20, 10; --bg-scrim-m: 1.3; --bg-pos: 30% 50%;" data-dwell="16000" aria-roledescription="slide" aria-label="Where the sentences stretch">
+
+          
+
+
+          
+          
+          <div class="plsb-bg plsb-bg--inked" aria-hidden="true">
+            <img src="/assets/images/projects/luvia-breakfast.webp" alt="" loading="lazy">
+            <div class="plsb-bg-scrim"></div>
+          </div>
+          
+          
+          
+          
+          
+          
+          
+          <div class="plsb-body plsb-body--below">
+            <div class="plsb-copy">
+              <h3>Where the sentences stretch</h3>
+              <p>Most campaign copy rewards compression — a short line, one claim, a next step. Luvia bought room for a more poetic register, and I used it.</p>
+              
+              
+              
+              
+              
+            </div>
+
+            
+            
+            
+            
+            
+            
+            <div class="plsb-vis plsb-vis--swap">
+              <div class="plsb-swap" role="group" aria-label="Twelve lines quoted from the campaign, cycled one at a time on a torn paper scrap, from the manifesto&#39;s opening through the environmental commitments.">
+                
+                
+                <blockquote class="plsb-swap-panel plsb-swap-panel--gold plsb-swap-panel--paper" style="--i: 0">
+                  <span class="plsb-swap-panel-label">From the page</span>
+                  
+                  <div class="plsb-swap-panel-copy">
+                  
+                  <div class="plsb-swap-quotes">
+                    
+                    <div class="plsb-swap-quote">
+                      <p>“Water is the basis of life. Let Luvia greet you every morning with a rejuvenating glass of fresh water — without the slightest hint of plastic.”</p>
+                      
+                    </div>
+                    
+                    <div class="plsb-swap-quote">
+                      <p>“We created Luvia because we believe in a future where consciousness is valued over convenience.”</p>
+                      <cite>The Kickstarter story&#39;s opening</cite>
+                    </div>
+                    
+                    <div class="plsb-swap-quote">
+                      <p>“Luvia is more than just a water filtration pitcher. It's a celebration of the natural world.”</p>
+                      <cite>The opening&#39;s second paragraph</cite>
+                    </div>
+                    
+                    <div class="plsb-swap-quote">
+                      <p>“With its timeless, heirloom-quality design, Luvia is built to last for generations.”</p>
+                      <cite>The manifesto&#39;s close</cite>
+                    </div>
+                    
+                    <div class="plsb-swap-quote">
+                      <p>“Make Luvia the last water filtration pitcher you ever buy.”</p>
+                      <cite>The lifestyle section&#39;s first line</cite>
+                    </div>
+                    
+                    <div class="plsb-swap-quote">
+                      <p>“Crafted by a glass artist, Luvia makes a statement against wastefulness, and represents a step in the direction of responsible consumption.”</p>
+                      <cite>The lifestyle section, one line after its opening ask</cite>
+                    </div>
+                    
+                    <div class="plsb-swap-quote">
+                      <p>“Wow your guests with subtle, Earth-inspired beauty.”</p>
+                      <cite>Under ‘Designed to Impress’</cite>
+                    </div>
+                    
+                    <div class="plsb-swap-quote">
+                      <p>“Luvia makes a statement, but never clashes.”</p>
+                      <cite>Under ‘Elevate Your Space’</cite>
+                    </div>
+                    
+                    <div class="plsb-swap-quote">
+                      <p>“Despite their versatility as a material, plastics take years to decompose. When they do, toxic substances are released into the soil, and microplastics end up in our drinking water and our bodies.”</p>
+                      <cite>The environmental commitments — the villain, drawn at length</cite>
+                    </div>
+                    
+                    <div class="plsb-swap-quote">
+                      <p>“Whether it's because of a more beautified space, the promotion of healthier habits, or a more clarified conscience, early testers are proud to own Luvia.”</p>
+                      <cite>The testimonials intro</cite>
+                    </div>
+                    
+                    <div class="plsb-swap-quote">
+                      <p>“Luvia uses scientific borosilicate glass, which meets pharmaceutical standards and can be deep cleaned when needed to ensure a safe and beautiful drinking experience for decades to come.”</p>
+                      <cite>The sustainability case, sung in the same register</cite>
+                    </div>
+                    
+                    <div class="plsb-swap-quote">
+                      <p>“We demand more from the products we use everyday, and we feel that you deserve the same.”</p>
+                      <cite>The manifesto&#39;s second breath, right after the opening line</cite>
+                    </div>
+                    
+                  </div>
+                  <div class="plsb-swap-qnav" hidden>
+                    <button type="button" class="plsb-swap-qbtn plsb-hold" data-dir="-1" aria-label="Previous quote" disabled>&#8249;</button>
+                    <span class="plsb-swap-qcount" aria-hidden="true"></span>
+                    <button type="button" class="plsb-swap-qbtn plsb-hold" data-dir="1" aria-label="Next quote" disabled>&#8250;</button>
+                  </div>
+                  
+                  </div>
+                </blockquote>
+                
+              </div>
+            </div>
+            
+            
+            
+            
+            
+          </div>
+          
+          
+          
+        </article>
+        
+      </div>
+      <button type="button" class="plsb-arrow plsb-arrow--prev" aria-label="Previous slide" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 5.5 L8 12 L14.5 18.5"/></svg>
+      </button>
+      <button type="button" class="plsb-arrow plsb-arrow--next" aria-label="Next slide" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 5.5 L16 12 L9.5 18.5"/></svg>
+      </button>
+      <div class="plsb-nav" role="group" aria-label="Pre-launch story beats" hidden>
+        <div class="plsb-nav-pill">
+          
+          <button type="button" class="plsb-dot" aria-label="The product — Luvia"></button>
+          
+          <button type="button" class="plsb-dot" aria-label="Writing a pitcher like an heirloom"></button>
+          
+          <button type="button" class="plsb-dot" aria-label="Where the sentences stretch"></button>
+          
+        </div>
+        <button type="button" class="plsb-ctl" data-state="paused" aria-label="Play highlights" hidden>
+          <svg class="plsb-ctl-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5 L18 12 L8 18.5 Z"/></svg>
+          <svg class="plsb-ctl-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 6 V18 M15.5 6 V18"/></svg>
+        </button>
+      </div>
+      </div>
+      </div>
+      
+      
+
+
+      
+
+      <div class="container">
+
+        
+
+
+        
+        <div class="pf-stage">
+        <div class="pf-bar">
+          <div class="pf-heading">
+            
+            <span class="section-label">The result</span>
+            
+            
+            <h3>Watch where 100 cold visitors land</h3>
+            
+          </div>
+          <div class="pf-counters">
+            <span class="pf-count"><b data-pf-count="in">100</b> visitors in</span>
+            <span class="pf-count pf-count--gold"><b data-pf-count="out">23</b> signed up</span>
+          </div>
+        </div>
+        <div class="prelaunch-funnel">
+          <div class="pf-inflow anim-scope">
+            <div class="pf-lbl">
+              <span class="pf-lbl-h">Visitors</span>
+              <span class="pf-lbl-s">Cold traffic, no launch date announced yet</span>
+            </div>
+
+            <svg class="pf-grid" viewBox="0 0 220 258" role="img"
+                 aria-label="100 visitor dots, 23 of them ringed gold, pouring into the luviawater.com landing page below.">
+              <circle cx="20" cy="10" r="5" class="pf-in pf-in--primed" style="--r: 0"/><circle cx="40" cy="10" r="5" class="pf-in" style="--r: 0"/><circle cx="60" cy="10" r="5" class="pf-in pf-in--primed" style="--r: 0"/><circle cx="80" cy="10" r="5" class="pf-in" style="--r: 0"/><circle cx="100" cy="10" r="5" class="pf-in" style="--r: 0"/><circle cx="120" cy="10" r="5" class="pf-in" style="--r: 0"/><circle cx="140" cy="10" r="5" class="pf-in" style="--r: 0"/><circle cx="160" cy="10" r="5" class="pf-in" style="--r: 0"/><circle cx="180" cy="10" r="5" class="pf-in" style="--r: 0"/><circle cx="200" cy="10" r="5" class="pf-in pf-in--primed" style="--r: 0"/><circle cx="20" cy="28" r="5" class="pf-in" style="--r: 1"/><circle cx="40" cy="28" r="5" class="pf-in pf-in--primed" style="--r: 1"/><circle cx="60" cy="28" r="5" class="pf-in" style="--r: 1"/><circle cx="80" cy="28" r="5" class="pf-in" style="--r: 1"/><circle cx="100" cy="28" r="5" class="pf-in" style="--r: 1"/><circle cx="120" cy="28" r="5" class="pf-in" style="--r: 1"/><circle cx="140" cy="28" r="5" class="pf-in" style="--r: 1"/><circle cx="160" cy="28" r="5" class="pf-in" style="--r: 1"/><circle cx="180" cy="28" r="5" class="pf-in pf-in--primed" style="--r: 1"/><circle cx="200" cy="28" r="5" class="pf-in" style="--r: 1"/><circle cx="20" cy="46" r="5" class="pf-in" style="--r: 2"/><circle cx="40" cy="46" r="5" class="pf-in" style="--r: 2"/><circle cx="60" cy="46" r="5" class="pf-in" style="--r: 2"/><circle cx="80" cy="46" r="5" class="pf-in" style="--r: 2"/><circle cx="100" cy="46" r="5" class="pf-in" style="--r: 2"/><circle cx="120" cy="46" r="5" class="pf-in pf-in--primed" style="--r: 2"/><circle cx="140" cy="46" r="5" class="pf-in" style="--r: 2"/><circle cx="160" cy="46" r="5" class="pf-in pf-in--primed" style="--r: 2"/><circle cx="180" cy="46" r="5" class="pf-in" style="--r: 2"/><circle cx="200" cy="46" r="5" class="pf-in" style="--r: 2"/><circle cx="20" cy="64" r="5" class="pf-in" style="--r: 3"/><circle cx="40" cy="64" r="5" class="pf-in" style="--r: 3"/><circle cx="60" cy="64" r="5" class="pf-in" style="--r: 3"/><circle cx="80" cy="64" r="5" class="pf-in" style="--r: 3"/><circle cx="100" cy="64" r="5" class="pf-in pf-in--primed" style="--r: 3"/><circle cx="120" cy="64" r="5" class="pf-in" style="--r: 3"/><circle cx="140" cy="64" r="5" class="pf-in pf-in--primed" style="--r: 3"/><circle cx="160" cy="64" r="5" class="pf-in" style="--r: 3"/><circle cx="180" cy="64" r="5" class="pf-in" style="--r: 3"/><circle cx="200" cy="64" r="5" class="pf-in" style="--r: 3"/><circle cx="20" cy="82" r="5" class="pf-in" style="--r: 4"/><circle cx="40" cy="82" r="5" class="pf-in pf-in--primed" style="--r: 4"/><circle cx="60" cy="82" r="5" class="pf-in" style="--r: 4"/><circle cx="80" cy="82" r="5" class="pf-in pf-in--primed" style="--r: 4"/><circle cx="100" cy="82" r="5" class="pf-in" style="--r: 4"/><circle cx="120" cy="82" r="5" class="pf-in" style="--r: 4"/><circle cx="140" cy="82" r="5" class="pf-in" style="--r: 4"/><circle cx="160" cy="82" r="5" class="pf-in" style="--r: 4"/><circle cx="180" cy="82" r="5" class="pf-in" style="--r: 4"/><circle cx="200" cy="82" r="5" class="pf-in" style="--r: 4"/><circle cx="20" cy="100" r="5" class="pf-in pf-in--primed" style="--r: 5"/><circle cx="40" cy="100" r="5" class="pf-in" style="--r: 5"/><circle cx="60" cy="100" r="5" class="pf-in pf-in--primed" style="--r: 5"/><circle cx="80" cy="100" r="5" class="pf-in" style="--r: 5"/><circle cx="100" cy="100" r="5" class="pf-in" style="--r: 5"/><circle cx="120" cy="100" r="5" class="pf-in" style="--r: 5"/><circle cx="140" cy="100" r="5" class="pf-in" style="--r: 5"/><circle cx="160" cy="100" r="5" class="pf-in" style="--r: 5"/><circle cx="180" cy="100" r="5" class="pf-in" style="--r: 5"/><circle cx="200" cy="100" r="5" class="pf-in pf-in--primed" style="--r: 5"/><circle cx="20" cy="118" r="5" class="pf-in" style="--r: 6"/><circle cx="40" cy="118" r="5" class="pf-in" style="--r: 6"/><circle cx="60" cy="118" r="5" class="pf-in" style="--r: 6"/><circle cx="80" cy="118" r="5" class="pf-in" style="--r: 6"/><circle cx="100" cy="118" r="5" class="pf-in" style="--r: 6"/><circle cx="120" cy="118" r="5" class="pf-in" style="--r: 6"/><circle cx="140" cy="118" r="5" class="pf-in pf-in--primed" style="--r: 6"/><circle cx="160" cy="118" r="5" class="pf-in" style="--r: 6"/><circle cx="180" cy="118" r="5" class="pf-in pf-in--primed" style="--r: 6"/><circle cx="200" cy="118" r="5" class="pf-in" style="--r: 6"/><circle cx="20" cy="136" r="5" class="pf-in" style="--r: 7"/><circle cx="40" cy="136" r="5" class="pf-in" style="--r: 7"/><circle cx="60" cy="136" r="5" class="pf-in" style="--r: 7"/><circle cx="80" cy="136" r="5" class="pf-in" style="--r: 7"/><circle cx="100" cy="136" r="5" class="pf-in" style="--r: 7"/><circle cx="120" cy="136" r="5" class="pf-in pf-in--primed" style="--r: 7"/><circle cx="140" cy="136" r="5" class="pf-in" style="--r: 7"/><circle cx="160" cy="136" r="5" class="pf-in pf-in--primed" style="--r: 7"/><circle cx="180" cy="136" r="5" class="pf-in" style="--r: 7"/><circle cx="200" cy="136" r="5" class="pf-in" style="--r: 7"/><circle cx="20" cy="154" r="5" class="pf-in" style="--r: 8"/><circle cx="40" cy="154" r="5" class="pf-in" style="--r: 8"/><circle cx="60" cy="154" r="5" class="pf-in pf-in--primed" style="--r: 8"/><circle cx="80" cy="154" r="5" class="pf-in" style="--r: 8"/><circle cx="100" cy="154" r="5" class="pf-in pf-in--primed" style="--r: 8"/><circle cx="120" cy="154" r="5" class="pf-in" style="--r: 8"/><circle cx="140" cy="154" r="5" class="pf-in" style="--r: 8"/><circle cx="160" cy="154" r="5" class="pf-in" style="--r: 8"/><circle cx="180" cy="154" r="5" class="pf-in" style="--r: 8"/><circle cx="200" cy="154" r="5" class="pf-in" style="--r: 8"/><circle cx="20" cy="172" r="5" class="pf-in" style="--r: 9"/><circle cx="40" cy="172" r="5" class="pf-in pf-in--primed" style="--r: 9"/><circle cx="60" cy="172" r="5" class="pf-in" style="--r: 9"/><circle cx="80" cy="172" r="5" class="pf-in pf-in--primed" style="--r: 9"/><circle cx="100" cy="172" r="5" class="pf-in" style="--r: 9"/><circle cx="120" cy="172" r="5" class="pf-in" style="--r: 9"/><circle cx="140" cy="172" r="5" class="pf-in" style="--r: 9"/><circle cx="160" cy="172" r="5" class="pf-in" style="--r: 9"/><circle cx="180" cy="172" r="5" class="pf-in pf-in--primed" style="--r: 9"/><circle cx="200" cy="172" r="5" class="pf-in" style="--r: 9"/>
+              <path class="pf-current" d="M 65 184 C 65 214 88 228 102 248"/>
+              <path class="pf-current" d="M 110 184 L 110 250"/>
+              <path class="pf-current" d="M 155 184 C 155 214 132 228 118 248"/>
+            </svg>
+          </div>
+
+          <figure class="pf-node anim-scope">
+            <div class="pf-node-bar">
+              <span class="pf-bdots"><i></i><i></i><i></i></span>
+              <span class="pf-burl">luviawater.com</span>
+            </div>
+            <svg class="pf-funnel" viewBox="0 0 340 430" role="img"
+                 aria-label="The luviawater.com pre-launch landing page: the “Hydration Elevated — The First All Glass Water Filtration Pitcher” hero over the glass pitcher, a “Hurry, pre-orders open soon” band with an 85%-claimed meter and a single email field, and the opening of the “Thoughtfully Designed For You &amp; The Planet” story.">
+              <defs>
+                <clipPath id="pf-funnel-clip">
+                  <path d="M 0 0 H 340 V 180 C 340 255 208 265 208 330 V 430 H 132 V 330 C 132 265 0 255 0 180 Z"/>
+                </clipPath>
+                <linearGradient id="pf-stem-fade" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#10101e" stop-opacity="0"/>
+                  <stop offset="0.45" stop-color="#10101e" stop-opacity="0.72"/>
+                  <stop offset="1" stop-color="#10101e" stop-opacity="0.97"/>
+                </linearGradient>
+              </defs>
+              <g clip-path="url(#pf-funnel-clip)">
+                <image class="pf-page" href="/assets/images/projects/luvia-landing-walkthrough/landing-page.webp"
+                       x="0" y="0" width="340" height="584" preserveAspectRatio="xMidYMin slice"/>
+                <rect x="0" y="170" width="340" height="260" fill="url(#pf-stem-fade)"/>
+              </g>
+              <path class="pf-funnel-outline" d="M 0 0 H 340 V 180 C 340 255 208 265 208 330 V 430 H 132 V 330 C 132 265 0 255 0 180 Z"/>
+            </svg>
+          </figure>
+
+          <div class="pf-landing anim-scope">
+            <span class="pf-drop"><i class="pf-travel"></i></span>
+            <div class="pf-out-grid" role="img"
+                 aria-label="23 gold dots — the launch list.">
+              <i class="pf-out" style="--i:0"></i><i class="pf-out" style="--i:1"></i><i class="pf-out" style="--i:2"></i><i class="pf-out" style="--i:3"></i><i class="pf-out" style="--i:4"></i><i class="pf-out" style="--i:5"></i><i class="pf-out" style="--i:6"></i><i class="pf-out" style="--i:7"></i><i class="pf-out" style="--i:8"></i><i class="pf-out" style="--i:9"></i><i class="pf-out" style="--i:10"></i><i class="pf-out" style="--i:11"></i><i class="pf-out" style="--i:12"></i><i class="pf-out" style="--i:13"></i><i class="pf-out" style="--i:14"></i><i class="pf-out" style="--i:15"></i><i class="pf-out" style="--i:16"></i><i class="pf-out" style="--i:17"></i><i class="pf-out" style="--i:18"></i><i class="pf-out" style="--i:19"></i><i class="pf-out" style="--i:20"></i><i class="pf-out" style="--i:21"></i><i class="pf-out" style="--i:22"></i>
+            </div>
+            <p class="pf-out-stat"><b data-pf-stat>23%</b><span>of visitors signed up for the launch-day deal</span></p>
+          </div>
+        </div>
+        </div>
+        
+
+
+        
+        <div class="pl-handoff-strip">
+          
+          
+          
+          
+          <p class="plsb-bridge">The Kickstarter page opened to that list.</p>
+          
+          <a class="pl-handoff-arrow" href="#campaign-walkthrough" aria-label="Continue to the campaign walkthrough">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 9 L12 15.5 L18.5 9"/></svg>
+          </a>
+          
+        </div>
+        
+      </div>
+    </section>
+    
+
+
+
+
+    
+
+
+
+
+
+
+    
+    <section id="campaign-walkthrough" class="campaign-walkthrough-section" data-entry-pan="true" data-transit-taper="off" data-hud-label="Kickstarter Campaign Page">
+      <div class="campaign-walkthrough-runway">
+        <div class="campaign-walkthrough-sticky">
+          
+          <div class="container container--wide">
+            <div class="campaign-walkthrough-layout">
+
+              <div class="campaign-walkthrough-phone">
+                <div class="wt-phone">
+                  <div class="wt-phone-screen">
+                    <div class="wt-phone-scroll">
+                      <div class="igg-content">
+
+  <div class="igg-block">
+    <div class="igg-ks-bar">
+      <img src="/assets/images/logos/kickstarter-wordmark-green.svg" width="150" height="16" alt="Kickstarter" class="igg-ks-logo">
+    </div>
+    <div class="igg-hero-heading">
+      <p class="igg-hero-title">Luvia &mdash; Hydration Elevated</p>
+      <p class="igg-hero-byline">by <strong>Luvia</strong></p>
+    </div>
+    <img width="866" height="461" src="/assets/images/projects/luvia-kickstarter-walkthrough/luvia-hero-video-still.webp" alt="Campaign video still: the all-glass Luvia pitcher and a filled glass on a blue backdrop — LUVIA, The First All Glass Water Filtration Pitcher — with a play button.">
+    <img width="866" height="72" src="/assets/images/projects/luvia-kickstarter-walkthrough/luvia-hero-badges.webp" alt="Badges row: Project We Love, Seattle WA, Product Design.">
+    <img width="866" height="121" src="/assets/images/projects/luvia-kickstarter-walkthrough/luvia-hero-tabs.webp" class="igg-headline-img--inset" alt="Campaign page tabs: Campaign (selected), Rewards, Creator, and FAQ (25).">
+    <div class="igg-funding igg-funding--ks">
+      <p class="igg-funding-row"><span class="igg-funding-raised">$71,753</span></p>
+      <p class="igg-funding-goal">pledged of $20,000 goal</p>
+      <p class="igg-funding-row"><span class="igg-funding-raised">702</span></p>
+      <p class="igg-funding-goal">backers</p>
+    </div>
+  </div>
+
+  <div class="igg-block" data-focus="manifesto">
+    <img width="866" height="103" src="/assets/images/projects/luvia-kickstarter-walkthrough/02a-manifesto-headline.webp" alt="Smart Hydration Starts Here" class="igg-headline-img igg-headline-img--inset">
+    <p>We created Luvia because we believe in a future where consciousness is valued over convenience. We demand more from the products we use everyday, and we feel that you deserve the same.</p>
+    <p>Luvia is more than just a water filtration pitcher. It&rsquo;s a celebration of the natural world &mdash; an example of how elegance and sustainability can coexist in perfect harmony.</p>
+    <p><strong>With its timeless, heirloom-quality design, Luvia is built to last for generations.</strong></p>
+  </div>
+
+  <div class="igg-block">
+    <video muted loop playsinline preload="metadata" width="670" height="400" aria-label="Looping close-up of the Luvia pitcher's glass and water line in warm evening light" poster="/assets/images/projects/luvia-kickstarter-walkthrough/luvia-manifesto-poster.webp" class="wt-lazy-video">
+      <source src="/assets/images/projects/luvia-kickstarter-walkthrough/luvia-manifesto.webm" type="video/webm">
+      <source src="/assets/images/projects/luvia-kickstarter-walkthrough/luvia-manifesto.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="igg-block" data-focus="press-foodstars">
+    <img width="866" height="1175" loading="lazy" src="/assets/images/projects/luvia-kickstarter-walkthrough/03-press-foodstars.webp" alt="As featured on Gordon Ramsay's Food Stars, plus press coverage from Yahoo and others.">
+  </div>
+
+  <div class="igg-block" data-focus="thoughtfully-designed">
+    <img width="866" height="148" loading="lazy" src="/assets/images/projects/luvia-kickstarter-walkthrough/04a-thoughtful-headline.webp" alt="Thoughtfully Designed For You &amp; The Planet" class="igg-headline-img igg-headline-img--inset">
+    <p>Luvia combines sustainable materials and craftsmanship to create a water filtration pitcher that is both more beautiful and environmentally friendly.</p>
+    <img width="866" height="2404" loading="lazy" src="/assets/images/projects/luvia-kickstarter-walkthrough/04b-thoughtful-cards.webp" data-callout-image="04b-thoughtful-cards.webp" alt="Three photo cards: Clean Design, beautifully accents any space — a couple pours from the pitcher in a kitchen; Clean Water, no leaching of unwanted compounds — the glass base in warm light; Clean Earth, sustainable plastic-free construction — the pitcher on a bed of moss.">
+  </div>
+
+  <div class="igg-block igg-block--joined" data-focus="revolutionary-filter">
+    <img width="866" height="105" loading="lazy" src="/assets/images/projects/luvia-kickstarter-walkthrough/05a-filter-headline.webp" alt="Revolutionary Carbon Foam Filter" class="igg-headline-img igg-headline-img--inset">
+    <p>Our catalytic carbon foam filter is a game-changer in countertop water filtration technology.</p>
+    <p>Its proprietary substrate provides significantly more surface area for water to come into contact with, making it more effective in removing unwanted contaminants compared to the granules common in many pitchers on the market today. Additionally, it's biodegradable, so you won't have to worry about contributing to the micro-plastic problem. Although the biodegradation period is longer than what is considered compostable, it's still landfill-friendly and eco-friendly.</p>
+    <img width="866" height="560" loading="lazy" src="/assets/images/projects/luvia-kickstarter-walkthrough/05c-filter-compare.webp" alt="Two macro photographs compared: the biodegradable Luvia foam filter in greenery beside a pile of non-biodegradable filter granules.">
+  </div>
+  <div class="igg-block">
+    <p><strong>Our filter meets NSF 42, NSF 53, NSF 401 and NSF 473 standards</strong> and has been independently tested to remove a wide range of harmful substances such as chlorine, chloramine, PFOA/PFAS, pharmaceuticals, herbicides/pesticides, trace heavy metals, and more.</p>
+    <img width="866" height="784" loading="lazy" src="/assets/images/projects/luvia-kickstarter-walkthrough/05b-nsf-table.webp" alt="Four-row standards table: NSF/ANSI 42 aesthetic effects — chlorine, taste and odor, chloramine, particulate, iron, manganese, zinc and total dissolved solids; NSF/ANSI 53 health effects — over 50 contaminant reduction claims including lead, copper, cadmium, mercury, cryptosporidium, volatile organic compounds and chromium; NSF/ANSI 401 emerging compounds — prescription drugs, over-the-counter medications, herbicides, pesticides and chemical compounds; NSF/ANSI 473 — PFOA and PFOS acid.">
+    <p>We are committed to providing transparent and comprehensive information about our filter's performance - for those interested in the specifics, here's a technical data sheet from a third party testing facility that details Luvia's quantitative metrics.</p>
+  </div>
+
+  <div class="igg-block">
+    <img width="866" height="100" loading="lazy" src="/assets/images/projects/luvia-kickstarter-walkthrough/06a-setup-headline.webp" alt="Beautifully Simple Filter Setup" class="igg-headline-img igg-headline-img--inset">
+    <p>Compared to other brands, our filter uses significantly less carbon by weight, making it more sustainable and eco-friendly. For comparison:</p>
+    <ul>
+      <li>The production process used to make granular carbon filters used by brands like Brita and PUR require 9-11x more carbon and produce a waste stream of non-biodegradable plastic waste. Also, these filters usually require a plastic housing.</li>
+      <li>Carbon block filters used by brands like Aquasana and Home Master use 5x more carbon in their production process, and they require plastic end caps or a plastic housing.</li>
+    </ul>
+    <p>After the campaign ends, replacement filters will be available on our website. They will start at $9.99 each and will be available in bulk packs at a discounted rate. We're also working on a subscription plan for your convenience.</p>
+  </div>
+
+  <div class="igg-block" data-focus="filter-loop">
+    <video muted loop playsinline preload="metadata" width="670" height="550" aria-label="Animation of the Luvia carbon foam filter dropping into the pitcher's lower reservoir" poster="/assets/images/projects/luvia-kickstarter-walkthrough/luvia-filter-poster.webp" class="wt-lazy-video">
+      <source src="/assets/images/projects/luvia-kickstarter-walkthrough/luvia-filter.webm" type="video/webm">
+      <source src="/assets/images/projects/luvia-kickstarter-walkthrough/luvia-filter.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="igg-block igg-block--joined" data-focus="glass-body">
+    <img width="866" height="100" loading="lazy" src="/assets/images/projects/luvia-kickstarter-walkthrough/07a-glass-headline.webp" alt="3mm Borosilicate Glass Body" class="igg-headline-img igg-headline-img--inset">
+    <p>Our pitcher is formed from <span class="wt-underline">chemically strengthened 3mm borosilicate glass</span>. Borosilicate is an extremely tough, scratch resistant material.</p>
+    <p>This ensures that with proper care, Luvia will be an heirloom item passed down through generations. The glass body is proudly produced in Germany and assembled by master craftsmen in Hungary.</p>
+    <img width="866" height="690" loading="lazy" src="/assets/images/projects/luvia-kickstarter-walkthrough/07b-glass-photo.webp" alt="The empty Luvia glass body with a 3mm wall-thickness callout beside the filled pitcher.">
+  </div>
+
+  <div class="igg-block">
+    <img width="866" height="100" loading="lazy" src="/assets/images/projects/luvia-kickstarter-walkthrough/07c-bamboo-headline.webp" alt="Eco-Friendly Bamboo Lid" class="igg-headline-img igg-headline-img--inset">
+    <p>Our lid is produced from renewable, high-quality bamboo. Durable and water-resistant, this material provides a long-lasting guard against unwanted contaminants.</p>
+    <img width="866" height="485" loading="lazy" src="/assets/images/projects/luvia-kickstarter-walkthrough/07d-bamboo-photo.webp" alt="The round bamboo Luvia lid photographed from above.">
+  </div>
+
+  <div class="igg-block">
+    <img width="866" height="575" loading="lazy" src="/assets/images/projects/luvia-kickstarter-walkthrough/08a-press-strip.webp" alt="Yanko Design pull quote with Businesswire and GadgetFlow logos.">
+  </div>
+
+  <div class="igg-block igg-block--flush" data-focus="plastic-free-run">
+    <img width="866" height="2655" loading="lazy" src="/assets/images/projects/luvia-kickstarter-walkthrough/08b-plasticfree.webp" alt="100% Plastic Free — unlike Brita, LARQ, Soma, PUR, Big Berkey, and LifeStraw. Reduce Plastic Waste — one filter replaces the equivalent of more than 900 plastic water bottles.">
+    <img width="866" height="1215" loading="lazy" src="/assets/images/projects/luvia-kickstarter-walkthrough/09-built-to-sustain.webp" alt="Built to Sustain Life — plastic free, heirloom quality, shatter-resistant glass, one-piece design.">
+  </div>
+
+  <div class="igg-block">
+    <img width="866" height="108" loading="lazy" src="/assets/images/projects/luvia-kickstarter-walkthrough/10a-pure-water-headline.webp" alt="Pure Water. Every Day." class="igg-headline-img">
+    <p>Water is the basis of life. Let Luvia greet you every morning with a rejuvenating glass of fresh water &mdash; without the slightest hint of plastic.</p>
+    <img width="866" height="637" loading="lazy" src="/assets/images/projects/luvia-kickstarter-walkthrough/10b-pure-water-photo.webp" alt="A woman in a green sweater pours water from the Luvia pitcher into a tall glass.">
+  </div>
+
+
+  <div class="igg-block igg-block--joined">
+    <img width="866" height="120" loading="lazy" src="/assets/images/projects/luvia-kickstarter-walkthrough/11b-enjoy-headline.webp" alt="Enjoy it For A Lifetime" class="igg-headline-img igg-headline-img--inset">
+    <p>Make Luvia the last water filtration pitcher you ever buy. Crafted by a glass artist, Luvia makes a statement against wastefulness, and represents a step in the direction of responsible consumption.</p>
+    <img width="866" height="705" loading="lazy" src="/assets/images/projects/luvia-kickstarter-walkthrough/11c-counter-photo.webp" alt="The pitcher and a filled glass on a dark kitchen counter, a cast-iron teapot and a bowl of strawberries beside them.">
+    <img width="866" height="110" loading="lazy" src="/assets/images/projects/luvia-kickstarter-walkthrough/11d-impress-headline.webp" alt="Designed to Impress" class="igg-headline-img igg-headline-img--inset">
+    <p>Luvia&rsquo;s striking design will make it look right at home in any space. Wow your guests with subtle, Earth-inspired beauty.</p>
+    <img width="866" height="656" loading="lazy" src="/assets/images/projects/luvia-kickstarter-walkthrough/11e-livingroom-photo.webp" alt="A couple relaxing in a bright living room, the pitcher and a mug on the wire side table between them.">
+    <img width="866" height="115" loading="lazy" src="/assets/images/projects/luvia-kickstarter-walkthrough/11f-elevate-headline.webp" alt="Elevate Your Space" class="igg-headline-img igg-headline-img--inset">
+    <p>Luvia makes a statement, but never clashes. Compliment any space with this refreshingly minimal yet eye-catching functional display piece.</p>
+    <video muted loop playsinline preload="metadata" width="670" height="430" aria-label="Slideshow of the Luvia pitcher styled in living spaces — a coffee table, a kitchen counter, a dining table" poster="/assets/images/projects/luvia-kickstarter-walkthrough/luvia-elevate-poster.webp" class="wt-lazy-video">
+      <source src="/assets/images/projects/luvia-kickstarter-walkthrough/luvia-elevate.webm" type="video/webm">
+      <source src="/assets/images/projects/luvia-kickstarter-walkthrough/luvia-elevate.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="igg-block">
+    <img width="866" height="78" loading="lazy" src="/assets/images/projects/luvia-kickstarter-walkthrough/12a-decision-headline.webp" alt="A Decision To Be Proud Of" class="igg-headline-img igg-headline-img--inset">
+    <p>Whether it&rsquo;s because of a more beautified space, the promotion of healthier habits, or a more clarified conscience, early testers are proud to own Luvia.</p>
+    <img width="866" height="933" loading="lazy" src="/assets/images/projects/luvia-kickstarter-walkthrough/12b-testimonial-card.webp" alt="Two testimonials on a dark card. 'Love At First Sight' — 'Taking Luvia home, it was love at first sight for the whole family, from my father (he lives with us) to my four-year-old. And the environmental benefits are the icing on the cake.' — Gina W. 'A Great First Step' — 'Buying Luvia won't save the planet overnight, but its plastic-free heirloom design is a great first step in the right direction away from our consumerist mindset.' — Sarah H.">
+    <img width="866" height="202" loading="lazy" src="/assets/images/projects/luvia-kickstarter-walkthrough/12c-kickbooster.webp" alt="Powered by Kickbooster — Learn More.">
+    <p class="igg-caption-center"><em>Earn 10% cash back from your own referral link. Click on the image to learn more!</em></p>
+  </div>
+
+  <div class="igg-block">
+    <img width="866" height="64" loading="lazy" src="/assets/images/projects/luvia-kickstarter-walkthrough/13a-rewards-headline.webp" alt="Rewards Breakdown" class="igg-headline-img igg-headline-img--inset">
+    <img width="866" height="1337" loading="lazy" src="/assets/images/projects/luvia-kickstarter-walkthrough/13b-rewards-cards.webp" alt="Two pledge cards: Save 51% Super Early Bird — 1 Luvia pitcher and 4 filters, $180 struck through to $89, shipping October 2023; Most Popular, Save 54% Super Early Bird — 2 pitchers and 8 filters, $360 struck through to $165.">
+  </div>
+
+  <div class="igg-block" data-focus="simple-idea">
+    <img width="866" height="106" loading="lazy" src="/assets/images/projects/luvia-kickstarter-walkthrough/14a-simple-idea-headline.webp" alt="A Simple Idea, Expertly Executed" class="igg-headline-img igg-headline-img--inset">
+    <p>We knew we wanted Luvia to provide a timeless aesthetic and lasting value, with a design philosophy that prioritizes minimalism and simplicity.</p>
+    <p>However, getting to the final product was anything but simple! Luvia took 7 years of research, design, and painstaking experimentation.</p>
+    <p>And it was all worth it in the end.</p>
+  </div>
+
+
+
+  <div class="igg-block" data-focus="team">
+    <img width="866" height="140" loading="lazy" src="/assets/images/projects/luvia-kickstarter-walkthrough/17a-team-headline.webp" alt="Meet the Luvia Team" class="igg-headline-img igg-headline-img--inset">
+    <p>The Luvia team consists of three friends united by shared values of health, sustainability, and an appreciation for aesthetics. Each of them brings unique strengths and years of experience in their respective fields to the table. Together, they are on a mission to evolve the water filtration pitcher to meet the demands of today.</p>
+    <img width="866" height="1177" loading="lazy" src="/assets/images/projects/luvia-kickstarter-walkthrough/17b-team-members.webp" alt="Three circular portraits with bios. Jacob Shumaker, Founder and CEO — a glass artist whose sculptures and stained glass pieces have been exhibited throughout the West Coast. Koji Minami, Head of Design and Brand Manager — a Seattle designer, former Head of Design at Cut. Benjamin Markus, Head of Production and Brand Manager — fourteen years in animation, VFX and post-production, currently a senior motion designer at Sinch Engage.">
+  </div>
+
+
+  <div class="igg-block" data-focus="risks">
+    <img width="866" height="105" loading="lazy" src="/assets/images/projects/luvia-kickstarter-walkthrough/19a-risks-headline.webp" alt="Risks and challenges" class="igg-headline-img igg-headline-img--inset">
+    <p>We are proud to have partnered with our glass supplier in Germany, a family-owned business with over 40 years of experience in the industry. We have the utmost confidence in their capability to consistently provide us with the highest quality materials. However, since they are based in Germany, one challenge that we could potentially face is the uncertainty that the war in Ukraine poses to the EU. If the war in Ukraine escalates, this could increase pressure on energy pricing in the region, which could affect our current production timeline. With this in mind, we have worked hard to secure a reputable backup supplier in Asia that is ready to jump in at a moment's notice if necessary.</p>
+    <p>Our filter has been developed and refined by a leading water filtration expert based in the USA. They are the trusted filter supplier for some of our biggest competitors, and have an excellent track record spanning over 30 years in the industry. In the very unlikely event that they are unable to deliver, we have formulated a backup plan if necessary, we will take our product to another supplier and work with them to ensure the same level of quality control.</p>
+    <p>We are passionate about our mission, and we take your pledge and interest in Luvia very seriously. We believe that open and frequent communication is essential to establish trust with our valued backers. We are committed to keeping you informed about our progress and are always available to answer any inquiries you may have. We uphold transparency as one of our core values, and we pledge to be forthright with you about any potential risks or obstacles that may arise during the campaign.</p>
+  </div>
+
+  <div class="igg-block" data-focus="environmental">
+    <img width="866" height="95" loading="lazy" src="/assets/images/projects/luvia-kickstarter-walkthrough/20a-env-headline.webp" alt="Environmental commitments" class="igg-headline-img igg-headline-img--inset">
+    <img width="866" height="95" loading="lazy" src="/assets/images/projects/luvia-kickstarter-walkthrough/20b-env-sub-design.webp" alt="Long-lasting design" class="igg-headline-img igg-headline-img--inset">
+    <p>Luvia is an heirloom piece that was thoughtfully designed by a glass artist, and is intended to be passed down for generations. Its simple and minimal aesthetic gives it a timeless appeal that contributes to its lasting value. It also uses the best available materials and construction to ensure that each piece is of the highest quality. The glass is produced in Germany and assembled by master craftsmen in Hungary with great attention to detail. This ensures that with proper care, Luvia will be an heirloom item passed down through generations.</p>
+    <img width="866" height="90" loading="lazy" src="/assets/images/projects/luvia-kickstarter-walkthrough/20c-env-sub-reuse.webp" alt="Reusability and recyclability" class="igg-headline-img igg-headline-img--inset">
+    <p>Luvia uses scientific borosilicate glass, which meets pharmaceutical standards and can be deep cleaned when needed to ensure a safe and beautiful drinking experience for decades to come. Our filter uses eco-friendly materials and production techniques, and requires no additional housing, significantly reducing waste. Each filter is good for 40 gallons of drinking water, or the equivalent of more than 300 plastic water bottles.</p>
+    <img width="866" height="85" loading="lazy" src="/assets/images/projects/luvia-kickstarter-walkthrough/20d-env-sub-materials.webp" alt="Sustainable materials" class="igg-headline-img igg-headline-img--inset">
+    <p>Despite its versatility as a material, plastics take years to decompose. When they do, toxic substances are released into the soil, and microplastics end up in our drinking water and our bodies. Furthermore, if plastics are thrown in the garbage or &ldquo;recycled&rdquo; they either end up in a landfill or they&rsquo;re burned, which releases toxic substances into the earth and air.</p>
+    <p>By using glass, our goal is to provide an alternative to harmful materials that pollute both our bodies and the environment. Glass comes from silica sand &mdash; one of Earth's most abundant resources &mdash; and is composed of completely organic materials. Our product will be packaged in raw cardboard and paper, staying consistent with this commitment to using sustainable materials.</p>
+  </div>
+
+
+</div>
+
+                    </div>
+                    <svg class="walkthrough-spot-svg" viewBox="0 0 492 1016" preserveAspectRatio="none" width="100%" height="100%" aria-hidden="true">
+                      <defs>
+                        <filter id="wt-spot-goo-0" filterUnits="userSpaceOnUse" x="-50" y="-50" width="592" height="1116">
+                          <feGaussianBlur in="SourceGraphic" stdDeviation="0.1" result="blur"/>
+                          <feColorMatrix in="blur" mode="matrix"
+                            values="1 0 0 0 0
+                                    0 1 0 0 0
+                                    0 0 1 0 0
+                                    0 0 0 24 -10" result="goo"/>
+                        </filter>
+                        <mask id="wt-spot-mask-0" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse" x="-50" y="-50" width="592" height="1116">
+                          <rect x="-50" y="-50" width="592" height="1116" fill="white"/>
+                          <g filter="url(#wt-spot-goo-0)">
+                            <rect class="wt-spot-blob wt-spot-blob--trail" fill="black" rx="8" ry="8"/>
+                            <line class="wt-spot-blob wt-spot-blob--bridge" stroke="black" stroke-width="0" stroke-linecap="round" x1="0" y1="0" x2="0" y2="0"/>
+                            <rect class="wt-spot-blob wt-spot-blob--lead"  fill="black" rx="8" ry="8"/>
+                          </g>
+                        </mask>
+                      </defs>
+                      <rect class="wt-spot-overlay" x="0" y="0" width="492" height="1016"
+                            fill="rgba(26,26,46,0.55)" mask="url(#wt-spot-mask-0)"/>
+                    </svg>
+                  </div>
+                  
+                  <svg class="wt-phone-bezel" viewBox="0 0 520 1044" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <mask id="wt-screen-cutout-0">
+                        <rect x="0" y="0" width="520" height="1044" fill="white"/>
+                        <rect x="14" y="14" width="492" height="1016" rx="28" ry="28" fill="black"/>
+                      </mask>
+                    </defs>
+                    <rect x="2" y="2" width="516" height="1040" rx="52" ry="52" fill="#1a1a1a" mask="url(#wt-screen-cutout-0)"/>
+                    <rect x="217" y="24" width="86" height="28" rx="14" ry="14" fill="#000"/>
+                    <rect x="516" y="250" width="6" height="52" rx="2" fill="#1a1a1a"/>
+                    <rect x="-2" y="190" width="6" height="40" rx="2" fill="#1a1a1a"/>
+                    <rect x="-2" y="250" width="6" height="70" rx="2" fill="#1a1a1a"/>
+                  </svg>
+                  
+                </div>
+              </div>
+
+              <div class="campaign-walkthrough-annotations">
+                <div class="walkthrough-heading">
+                  <h2 class="walkthrough-heading-title">Kickstarter Campaign Page</h2>
+                  <p class="walkthrough-heading-subtitle">What I wrote and why.</p>
+                  
+                  <a href="https://www.kickstarter.com/projects/luvia/luvia-hydration-elevated" class="walkthrough-live-link" target="_blank" rel="noopener">View the live campaign on Kickstarter ↗</a>
+                  
+                </div>
+                <div class="walkthrough-annotation-slot">
+                  
+                  <div class="walkthrough-annotation" data-annotation="manifesto">
+                    <span class="walkthrough-annotation-label">The manifesto</span>
+                    
+                    <p class="walkthrough-annotation-text">Kickstarter backers fund what they believe in, so I opened the story on a worldview instead of a product.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="press-foodstars" data-region-y="0.024" data-region-h="0.877">
+                    <span class="walkthrough-annotation-label">The Food Stars feature</span>
+                    
+                    <p class="walkthrough-annotation-text">Before launch a campaign has no backers to point to, so I put the Gordon Ramsay Food Stars feature near the top, where skepticism is highest.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="thoughtfully-designed" data-callout-zoom="true">
+                    <span class="walkthrough-annotation-label">The three-part promise</span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="three-part-promise">I split the promise into three claims, and the page argues each one further down.</p>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="three-part-promise" data-anchor-image="04b-thoughtful-cards.webp" data-anchor-x="0" data-anchor-y="0.0067" data-anchor-w="1" data-anchor-h="0.2978" hidden></span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="clean-water-claim">The middle claim turns clean water into a materials point, no leaching, and leaves the comparison section to prove it.</p>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="clean-water-claim" data-anchor-image="04b-thoughtful-cards.webp" data-anchor-x="0" data-anchor-y="0.3311" data-anchor-w="1" data-anchor-h="0.2962" hidden></span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="clean-earth-claim">The third claim, plastic-free, is where the argument lives; it lands last, so the reader reaches the brand comparison primed.</p>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="clean-earth-claim" data-anchor-image="04b-thoughtful-cards.webp" data-anchor-x="0" data-anchor-y="0.6539" data-anchor-w="1" data-anchor-h="0.2957" hidden></span>
+                    
+                    
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="revolutionary-filter">
+                    <span class="walkthrough-annotation-label">The filter pitch</span>
+                    
+                    <p class="walkthrough-annotation-text">I gave the least photogenic component the page's boldest headline. Framed as an advance over granule-based filters, the catalytic carbon foam becomes the reason to switch pitchers.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="filter-loop">
+                    <span class="walkthrough-annotation-label">A Demonstration That Moves</span>
+                    
+                    <p class="walkthrough-annotation-text">The clip shows the filter dropping into place, just below the section that calls the setup beautifully simple.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="glass-body">
+                    <span class="walkthrough-annotation-label">Glass, Argued in Millimetres</span>
+                    
+                    <p class="walkthrough-annotation-text">Naming the material is what makes plastic-free a spec instead of a slogan.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="plastic-free-run" data-region-y="0.0071" data-region-h="0.2927" data-region-x="0.0069" data-region-w="0.9931" data-region-m-y="0.007" data-region-m-h="0.275" data-region-m-x="0.007" data-region-m-w="0.993">
+                    <span class="walkthrough-annotation-label">The sustainability run</span>
+                    
+                    <p class="walkthrough-annotation-text">I conceptualized the visuals for this run so the images make the case alongside the copy.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="plastic-free-brands" data-focus-ref="plastic-free-run" data-region-y="0.2959" data-region-h="0.0742">
+                    <span class="walkthrough-annotation-label">Named Rivals</span>
+                    
+                    <p class="walkthrough-annotation-text">Brita, LARQ, Soma, and three more: the page names the brands because that is what buyers type. Far more people search for a brand name they already know than for a glass water pitcher.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="bottle-grid" data-focus-ref="plastic-free-run" data-region-y="0.3879" data-region-h="0.31">
+                    <span class="walkthrough-annotation-label">The Count, Drawn</span>
+                    
+                    <p class="walkthrough-annotation-text">The replacement count is drawn before it is written — a field of bottle outlines against one pitcher — so the sentence under the grid only confirms what the eye has done.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="built-to-sustain" data-focus-ref="plastic-free-run" data-region-y="0.724" data-region-h="0.2457">
+                    <span class="walkthrough-annotation-label">Sold as an Heirloom</span>
+                    
+                    <p class="walkthrough-annotation-text">The run ends where a plastic pitcher can't follow: an heirloom claim. Half the six icons are about lasting, and the artisans line above them is the proof.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="simple-idea">
+                    <span class="walkthrough-annotation-label">Confidence in the headline</span>
+                    
+                    <p class="walkthrough-annotation-text">Crowdfunding audiences fear vaporware, so the headline claims competence outright and the section backs it with time served: seven years of research, design, and experimentation.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="team">
+                    <span class="walkthrough-annotation-label">The makers</span>
+                    
+                    <p class="walkthrough-annotation-text">Backers fund people. Real faces and a glass-artist founder turn the brand into a team buyers want to root for.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="risks">
+                    <span class="walkthrough-annotation-label">Honesty as a closing argument</span>
+                    
+                    <p class="walkthrough-annotation-text">Most campaigns treat Kickstarter’s required risks section as a liability. I wrote it as one more trust-builder: what could go wrong and how we’d handle it.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="environmental" data-region-y="0.6104" data-region-h="0.3896">
+                    <span class="walkthrough-annotation-label">The materials case</span>
+                    
+                    <p class="walkthrough-annotation-text">I wrote the sustainable-materials passage — glass over plastic — from first principles: what decomposes, what leaches, what lasts.</p>
+                    
+                  </div>
+                  
+                </div>
+                
+                
+                <div class="walkthrough-progress" role="group" aria-label="Walkthrough controls">
+                  <div class="walkthrough-progress-rail">
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="0" type="button" aria-label="Go to The manifesto" title="The manifesto"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="1" type="button" aria-label="Go to The Food Stars feature" title="The Food Stars feature"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="2" type="button" aria-label="Go to The three-part promise" title="The three-part promise"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="3" type="button" aria-label="Go to The filter pitch" title="The filter pitch"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="4" type="button" aria-label="Go to A Demonstration That Moves" title="A Demonstration That Moves"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="5" type="button" aria-label="Go to Glass, Argued in Millimetres" title="Glass, Argued in Millimetres"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="6" type="button" aria-label="Go to The sustainability run" title="The sustainability run"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="7" type="button" aria-label="Go to Named Rivals" title="Named Rivals"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="8" type="button" aria-label="Go to The Count, Drawn" title="The Count, Drawn"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="9" type="button" aria-label="Go to Sold as an Heirloom" title="Sold as an Heirloom"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="10" type="button" aria-label="Go to Confidence in the headline" title="Confidence in the headline"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="11" type="button" aria-label="Go to The makers" title="The makers"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="12" type="button" aria-label="Go to Honesty as a closing argument" title="Honesty as a closing argument"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="13" type="button" aria-label="Go to The materials case" title="The materials case"></button>
+                    
+                  </div>
+                  <div class="wt-ctl-row">
+                    <button class="walkthrough-progress-nav" data-progress-nav="prev" type="button" aria-label="Previous stop" title="Previous stop">
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 4l-4 4 4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <button class="wt-ctl-count" type="button" aria-expanded="false" aria-haspopup="true" title="All stops">
+                      <span class="wt-ctl-count-text">14 stops</span>
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 10l4-4 4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <button class="walkthrough-progress-nav" data-progress-nav="next" type="button" aria-label="Next stop" title="Next stop">
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <span class="wt-ctl-gap"></span>
+                    <button class="wt-ctl-btn wt-ctl-restart" type="button" title="Restart the walkthrough">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1 4v6h6M3.51 15a9 9 0 1 0 2.13-9.36L1 10" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      <span class="wt-ctl-label">Restart</span>
+                    </button>
+                    <button class="wt-ctl-btn wt-ctl-skip" type="button" title="Skip the walkthrough">
+                      Skip
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v10M3.5 8.5L8 13l4.5-4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                  </div>
+                  <ol class="wt-chapters" hidden>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="0" type="button">The manifesto</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="1" type="button">The Food Stars feature</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="2" type="button">The three-part promise</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="3" type="button">The filter pitch</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="4" type="button">A Demonstration That Moves</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="5" type="button">Glass, Argued in Millimetres</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="6" type="button">The sustainability run</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="7" type="button">Named Rivals</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="8" type="button">The Count, Drawn</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="9" type="button">Sold as an Heirloom</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="10" type="button">Confidence in the headline</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="11" type="button">The makers</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="12" type="button">Honesty as a closing argument</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="13" type="button">The materials case</button></li>
+                    
+                  </ol>
+                </div>
+                
+              </div>
+
+              <svg class="walkthrough-lines" aria-hidden="true"></svg>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+
+    
+    
+
+
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+    
+
+    
+
+
+    
+
+
+    
+
+    
+    <section class="project-pagination" data-hud-label="Up Next" aria-label="Project pagination">
+      <div class="container">
+        <div class="pagination-grid">
+          <a class="pagination-card pagination-card--prev" href="/projects/harry-potter-escape-from-gringotts-hallmark-keepsake-ornament/" rel="prev">
+            <span class="pagination-direction" aria-hidden="true">&larr;</span>
+            <div class="pagination-meta">
+              <span class="pagination-label">Previous</span>
+              <span class="pagination-title">Harry Potter™ Keepsake Ornament Set</span>
+              <span class="pagination-client">Hallmark</span>
+            </div>
+            
+            <div class="pagination-thumb">
+              <img src="/assets/images/projects/harry-potter-tree-hero.webp" alt="" loading="lazy">
+            </div>
+            
+          </a>
+          <a class="pagination-card pagination-card--next" href="/projects/screeneo-u4/" rel="next">
+            <span class="pagination-direction" aria-hidden="true">&rarr;</span>
+            <div class="pagination-meta">
+              <span class="pagination-label">Next</span>
+              <span class="pagination-title">Philips Screeneo U4</span>
+              <span class="pagination-client">Philips</span>
+            </div>
+            
+            <div class="pagination-thumb">
+              <img src="/assets/images/projects/screeneo-u4-hero.webp" alt="" loading="lazy">
+            </div>
+            
+          </a>
+        </div>
+      </div>
+    </section>
+    
+
+
+    
+
+  </main>
+
+<footer class="site-footer" id="contact">
+  <div class="footer-container">
+    <div class="footer-contact">
+      <p class="section-label footer-eyebrow">Contact</p>
+      <svg class="footer-mark" viewBox="0 0 304 288" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="footer-mark-gradient" x1="0" y1="0" x2="304" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#B2DFDB"/>
+            <stop offset=".55" stop-color="#5DBDB4"/>
+            <stop offset="1" stop-color="#26A69A"/>
+          </linearGradient>
+        </defs>
+        <g fill="none" stroke="url(#footer-mark-gradient)" stroke-width="40">
+          <path d="M108,0V224A44,44 0 0 1 20,224" pathLength="1"/>
+          <path d="M218,0V288" pathLength="1"/>
+          <path d="M128,132H198" pathLength="1"/>
+          <path d="M238,20A46,46 0 0 1 238,112" pathLength="1"/>
+        </g>
+      </svg>
+      <nav class="footer-links" aria-label="Contact">
+        <a href="mailto:hello@jakobpicciotto.com" class="footer-link footer-link--email">hello@jakobpicciotto.com</a>
+        <a href="https://www.linkedin.com/in/jakob-picciotto/" class="footer-link" target="_blank" rel="noopener">linkedin.com/in/jakob-picciotto</a>
+      </nav>
+      <p class="footer-location">Seattle, WA</p>
+    </div>
+    <p class="footer-text">&copy; 2026 Jakob Picciotto</p>
+  </div>
+</footer>
+<script src="/assets/js/footer-monogram.js" defer></script>
+
+
+  
+  <script src="/assets/js/project-hud.js" defer></script>
+  <script src="/assets/js/walkthrough-shared.js" defer></script>
+  <script src="/assets/js/walkthrough-geometry.js" defer></script>
+  <script src="/assets/js/walkthrough-pinned.js" defer></script>
+  <script src="/assets/js/walkthrough-mobile.js" defer></script>
+  <script src="/assets/js/walkthrough-static.js" defer></script>
+  <script src="/assets/js/walkthrough-embers.js" defer></script>
+  <script src="/assets/js/document-reader.js" defer></script>
+  <script src="/assets/js/attribution-typewriter.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/storyboard.js" defer></script>
+  <script src="/assets/js/funnel-cohort.js" defer></script>
+  <script src="/assets/js/related-filter.js" defer></script>
+  <script src="/assets/js/focal-crop.js" defer></script>
+  <script src="/assets/js/strategy-section.js" defer></script>
+  <script src="/assets/js/adaptive-glass.js" defer></script>
+  <script src="/assets/js/hero-odometer.js" defer></script>
+  <script src="/assets/js/hero-chips.js" defer></script>
+  <script src="/assets/js/walkthrough-controls.js" defer></script>
+
+</body>
+</html>
