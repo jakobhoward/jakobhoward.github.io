@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+
+  document.documentElement.classList.add('js');
+  if (!window.matchMedia || !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.documentElement.classList.add('js-motion');
+  }
+</script>
+<title>MagicMount Flask | Jakob Picciotto</title>
+<meta name="description" content="Wrote the landing page and Indiegogo campaign for a water bottle that doubles as a phone tripod.">
+
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="canonical" href="https://work.jakobpicciotto.com/projects/scosche-magicmount-flask/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jakob Picciotto">
+<meta property="og:title" content="MagicMount Flask | Jakob Picciotto">
+<meta property="og:description" content="Wrote the landing page and Indiegogo campaign for a water bottle that doubles as a phone tripod.">
+<meta property="og:url" content="https://work.jakobpicciotto.com/projects/scosche-magicmount-flask/">
+<meta property="og:image" content="https://work.jakobpicciotto.com/assets/images/projects/magicmount-flask-hero.webp">
+
+<meta property="og:image:width" content="1390">
+<meta property="og:image:height" content="920">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MagicMount Flask | Jakob Picciotto">
+<meta name="twitter:description" content="Wrote the landing page and Indiegogo campaign for a water bottle that doubles as a phone tripod.">
+<meta name="twitter:image" content="https://work.jakobpicciotto.com/assets/images/projects/magicmount-flask-hero.webp">
+
+<script src="/assets/debug/browser.js"></script>
+<link rel="preload" href="/assets/fonts/Raleway-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/SourceSans3-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="/assets/images/logos/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/css/fonts.css">
+<link rel="stylesheet" href="/assets/css/style.css">
+
+
+
+
+
+</head>
+<body class="project-page hero-metrics-2up">
+  
+  <script>
+    var _qs = new URLSearchParams(location.search);
+    var layout = _qs.get('layout');
+    if (/^(static|synced|interleaved)$/.test(layout || '')) document.body.classList.add('layout-' + layout);
+</script>
+  <header class="site-header">
+  <div class="header-container">
+    <a href="/" class="site-logo" aria-label="Jakob Picciotto">
+      <svg class="site-logo-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1938.35 289.61" aria-hidden="true">
+        <defs>
+          <linearGradient id="logo-gradient-light" x1="0" y1="0" x2="304" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#4DB6AC"/>
+            <stop offset=".55" stop-color="#199488"/>
+            <stop offset="1" stop-color="#00796B"/>
+          </linearGradient>
+          <linearGradient id="logo-gradient-dark" x1="0" y1="0" x2="304" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#B2DFDB"/>
+            <stop offset=".55" stop-color="#5DBDB4"/>
+            <stop offset="1" stop-color="#26A69A"/>
+          </linearGradient>
+        </defs>
+        <g>
+          <path class="logo-monogram logo-monogram-light" fill="url(#logo-gradient-light)" fill-rule="evenodd" d="M88,0H128V224H88ZM198,0H238V288H198ZM128,112H198V152H128ZM238,0A66,66 0 0 1 238,132L238,92A26,26 0 0 0 238,40ZM128,224A64,64 0 0 1 0,224L40,224A24,24 0 0 0 88,224Z"/>
+          <path class="logo-monogram logo-monogram-dark" fill="url(#logo-gradient-dark)" fill-rule="evenodd" d="M88,0H128V224H88ZM198,0H238V288H198ZM128,112H198V152H128ZM238,0A66,66 0 0 1 238,132L238,92A26,26 0 0 0 238,40ZM128,224A64,64 0 0 1 0,224L40,224A24,24 0 0 0 88,224Z"/>
+          <g class="logo-text" fill="currentColor">
+            <path d="M482.89,211.42c-4.06,0-7.91-.62-11.54-1.84-3.63-1.23-6.89-3.13-9.78-5.69l9.3-14.59c1.18,1.17,2.62,2.06,4.33,2.64,1.71.59,3.42.88,5.13.88,2.78,0,5.18-.99,7.21-2.97,2.03-1.98,3.05-4.52,3.05-7.61v-86.24h21.48v84.64c0,4.49-.75,8.63-2.24,12.42-1.5,3.79-3.55,7.05-6.17,9.78-2.62,2.72-5.72,4.83-9.3,6.33-3.58,1.5-7.4,2.24-11.46,2.24ZM490.58,84.3v-21.32h21.48v21.32h-21.48Z"/>
+            <path d="M554.54,181.6c-4.06,0-7.85-.67-11.38-2-3.53-1.33-6.57-3.21-9.14-5.61-2.56-2.4-4.57-5.21-6.01-8.42-1.44-3.21-2.16-6.73-2.16-10.58s.88-7.61,2.65-10.98,4.22-6.22,7.37-8.58c3.15-2.35,6.92-4.19,11.3-5.53,4.38-1.33,9.19-2,14.43-2,3.74,0,7.4.32,10.98.96,3.58.64,6.76,1.55,9.54,2.73v-4.81c0-5.56-1.58-9.83-4.73-12.82-3.15-2.99-7.83-4.49-14.03-4.49-4.49,0-8.87.8-13.14,2.4-4.28,1.6-8.66,3.96-13.14,7.05l-6.57-13.63c10.79-7.16,22.44-10.74,34.95-10.74s21.45,2.96,28.13,8.9c6.68,5.93,10.02,14.51,10.02,25.73v26.13c0,2.24.4,3.85,1.2,4.81.8.96,2.11,1.5,3.93,1.6v18.27c-3.63.75-6.79,1.12-9.46,1.12-4.06,0-7.19-.91-9.38-2.72-2.19-1.82-3.55-4.22-4.09-7.21l-.48-4.65c-3.74,4.92-8.28,8.66-13.63,11.22-5.35,2.56-11.06,3.85-17.15,3.85ZM560.63,165.89c3.63,0,7.08-.64,10.34-1.92,3.26-1.28,5.8-2.99,7.61-5.13,2.35-1.82,3.53-3.85,3.53-6.09v-9.62c-2.56-.96-5.35-1.74-8.34-2.32-2.99-.59-5.88-.88-8.66-.88-5.56,0-10.1,1.26-13.63,3.77-3.53,2.51-5.29,5.69-5.29,9.54,0,3.63,1.39,6.65,4.17,9.06,2.78,2.4,6.2,3.61,10.26,3.61Z"/>
+            <path d="M681.01,180l-24.37-36.39-11.54,11.38v25.01h-21.48V62.98h21.48v71.01l33.66-37.83h22.92l-31.26,35.59,33.5,48.25h-22.92Z"/>
+            <path d="M747.53,181.6c-6.84,0-12.98-1.18-18.43-3.53s-10.07-5.53-13.87-9.54c-3.79-4.01-6.71-8.63-8.74-13.87-2.03-5.24-3.05-10.74-3.05-16.51s1.01-11.43,3.05-16.67c2.03-5.23,4.94-9.86,8.74-13.87,3.79-4.01,8.42-7.19,13.87-9.54,5.45-2.35,11.59-3.53,18.43-3.53s12.96,1.18,18.35,3.53c5.4,2.35,9.99,5.53,13.79,9.54,3.79,4.01,6.71,8.63,8.74,13.87,2.03,5.24,3.05,10.8,3.05,16.67s-1.02,11.28-3.05,16.51c-2.03,5.24-4.92,9.86-8.66,13.87-3.74,4.01-8.34,7.19-13.79,9.54s-11.6,3.53-18.43,3.53ZM725.57,138.16c0,3.74.56,7.13,1.68,10.18s2.67,5.69,4.65,7.93c1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.56,1.84,8.66,1.84s5.98-.61,8.66-1.84c2.67-1.23,4.99-2.97,6.97-5.21,1.98-2.24,3.53-4.91,4.65-8.01,1.12-3.1,1.68-6.52,1.68-10.26s-.56-7-1.68-10.1c-1.12-3.1-2.67-5.77-4.65-8.01-1.98-2.24-4.3-3.98-6.97-5.21-2.67-1.23-5.56-1.84-8.66-1.84s-5.99.64-8.66,1.92c-2.67,1.28-5,3.05-6.97,5.29-1.98,2.24-3.53,4.92-4.65,8.01-1.12,3.1-1.68,6.47-1.68,10.1Z"/>
+            <path d="M853.65,181.6c-6.41,0-12.13-1.44-17.15-4.33-5.02-2.88-8.98-6.84-11.86-11.86v14.59h-18.75V62.98h21.48v47.77c2.99-5.13,6.92-9.11,11.78-11.94,4.86-2.83,10.55-4.25,17.07-4.25,5.45,0,10.42,1.18,14.91,3.53,4.49,2.35,8.36,5.5,11.62,9.46,3.26,3.96,5.77,8.6,7.53,13.95,1.76,5.35,2.65,10.96,2.65,16.83s-.99,11.76-2.97,16.99c-1.98,5.24-4.73,9.81-8.26,13.71-3.53,3.9-7.69,6.97-12.5,9.22s-9.99,3.37-15.55,3.37ZM847.72,163.33c3.42,0,6.57-.67,9.46-2,2.89-1.33,5.34-3.13,7.37-5.37,2.03-2.24,3.61-4.86,4.73-7.85,1.12-2.99,1.68-6.2,1.68-9.62s-.54-6.68-1.6-9.78c-1.07-3.1-2.59-5.82-4.57-8.18-1.98-2.35-4.3-4.22-6.97-5.61-2.67-1.39-5.61-2.08-8.82-2.08-4.81,0-9.11,1.58-12.9,4.73-3.79,3.15-6.71,7.03-8.74,11.62v20.04c.75,2.14,1.84,4.06,3.29,5.77,1.44,1.71,3.07,3.18,4.89,4.41,1.82,1.23,3.79,2.19,5.93,2.89,2.14.7,4.22,1.04,6.25,1.04Z"/>
+            <path d="M957.84,181.6c-6.63,0-12.4-1.47-17.31-4.41-4.92-2.94-8.76-6.92-11.54-11.94v48.89h-21.48v-118.14h18.75v14.43c3.1-4.91,7.11-8.79,12.02-11.62,4.91-2.83,10.58-4.25,16.99-4.25,5.66,0,10.9,1.15,15.71,3.45,4.81,2.3,8.95,5.4,12.42,9.3,3.47,3.9,6.2,8.5,8.18,13.79,1.98,5.29,2.97,10.88,2.97,16.75s-.91,11.81-2.73,17.15c-1.82,5.34-4.36,9.99-7.61,13.95-3.26,3.96-7.13,7.05-11.62,9.3-4.49,2.24-9.4,3.37-14.75,3.37ZM950.63,163.33c3.21,0,6.17-.69,8.9-2.08,2.73-1.39,5.05-3.26,6.97-5.61,1.92-2.35,3.42-5.08,4.49-8.18,1.07-3.1,1.6-6.3,1.6-9.62,0-3.53-.59-6.81-1.76-9.86-1.18-3.05-2.81-5.69-4.89-7.93s-4.54-4.01-7.37-5.29c-2.83-1.28-5.91-1.92-9.22-1.92-2.03,0-4.12.35-6.25,1.04-2.14.7-4.12,1.68-5.93,2.97-1.82,1.28-3.45,2.78-4.89,4.49-1.44,1.71-2.54,3.58-3.29,5.61v19.72c1.92,4.81,4.86,8.79,8.82,11.94,3.95,3.15,8.23,4.73,12.82,4.73Z"/>
+            <path d="M1009.13,84.3v-21.32h21.48v21.32h-21.48ZM1009.13,180v-84h21.48v84h-21.48Z"/>
+            <path d="M1044.71,138c0-5.88,1.01-11.43,3.05-16.67,2.03-5.23,4.97-9.83,8.82-13.79,3.85-3.95,8.5-7.11,13.95-9.46,5.45-2.35,11.59-3.53,18.43-3.53,9.19,0,17.02,1.98,23.48,5.93,6.46,3.96,11.3,9.14,14.51,15.55l-21,6.41c-1.82-3.1-4.22-5.48-7.21-7.13-2.99-1.66-6.31-2.49-9.94-2.49-3.1,0-5.99.62-8.66,1.84-2.67,1.23-5,2.94-6.97,5.13-1.98,2.19-3.53,4.84-4.65,7.93-1.12,3.1-1.68,6.52-1.68,10.26s.59,7.16,1.76,10.26c1.17,3.1,2.75,5.77,4.73,8.01,1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.5,1.84,8.5,1.84,3.85,0,7.4-.96,10.66-2.89,3.26-1.92,5.53-4.27,6.81-7.05l21,6.41c-2.88,6.41-7.64,11.65-14.27,15.71-6.63,4.06-14.59,6.09-23.88,6.09-6.84,0-12.98-1.18-18.43-3.53s-10.1-5.53-13.95-9.54c-3.85-4.01-6.81-8.66-8.9-13.95s-3.13-10.82-3.13-16.59Z"/>
+            <path d="M1134.32,138c0-5.88,1.01-11.43,3.05-16.67,2.03-5.23,4.97-9.83,8.82-13.79,3.85-3.95,8.5-7.11,13.95-9.46,5.45-2.35,11.59-3.53,18.43-3.53,9.19,0,17.02,1.98,23.48,5.93,6.46,3.96,11.3,9.14,14.51,15.55l-21,6.41c-1.82-3.1-4.22-5.48-7.21-7.13-2.99-1.66-6.31-2.49-9.94-2.49-3.1,0-5.99.62-8.66,1.84-2.67,1.23-5,2.94-6.97,5.13-1.98,2.19-3.53,4.84-4.65,7.93-1.12,3.1-1.68,6.52-1.68,10.26s.59,7.16,1.76,10.26c1.17,3.1,2.75,5.77,4.73,8.01,1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.5,1.84,8.5,1.84,3.85,0,7.4-.96,10.66-2.89,3.26-1.92,5.53-4.27,6.81-7.05l21,6.41c-2.88,6.41-7.64,11.65-14.27,15.71-6.63,4.06-14.59,6.09-23.88,6.09-6.84,0-12.98-1.18-18.43-3.53s-10.1-5.53-13.95-9.54c-3.85-4.01-6.81-8.66-8.9-13.95s-3.13-10.82-3.13-16.59Z"/>
+            <path d="M1230.02,84.3v-21.32h21.48v21.32h-21.48ZM1230.02,180v-84h21.48v84h-21.48Z"/>
+            <path d="M1309.68,181.6c-6.84,0-12.98-1.18-18.43-3.53s-10.07-5.53-13.87-9.54c-3.79-4.01-6.71-8.63-8.74-13.87-2.03-5.24-3.05-10.74-3.05-16.51s1.01-11.43,3.05-16.67c2.03-5.23,4.94-9.86,8.74-13.87,3.79-4.01,8.42-7.19,13.87-9.54,5.45-2.35,11.59-3.53,18.43-3.53s12.96,1.18,18.35,3.53c5.4,2.35,9.99,5.53,13.79,9.54,3.79,4.01,6.71,8.63,8.74,13.87,2.03,5.24,3.05,10.8,3.05,16.67s-1.02,11.28-3.05,16.51c-2.03,5.24-4.92,9.86-8.66,13.87-3.74,4.01-8.34,7.19-13.79,9.54s-11.6,3.53-18.43,3.53ZM1287.72,138.16c0,3.74.56,7.13,1.68,10.18s2.67,5.69,4.65,7.93c1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.56,1.84,8.66,1.84s5.98-.61,8.66-1.84c2.67-1.23,5-2.97,6.97-5.21,1.98-2.24,3.53-4.91,4.65-8.01,1.12-3.1,1.68-6.52,1.68-10.26s-.56-7-1.68-10.1c-1.12-3.1-2.67-5.77-4.65-8.01-1.98-2.24-4.3-3.98-6.97-5.21-2.67-1.23-5.56-1.84-8.66-1.84s-5.99.64-8.66,1.92c-2.67,1.28-5,3.05-6.97,5.29-1.98,2.24-3.53,4.92-4.65,8.01-1.12,3.1-1.68,6.47-1.68,10.1Z"/>
+            <path d="M1417.23,175.67c-2.89,1.28-6.41,2.56-10.58,3.85-4.17,1.28-8.55,1.92-13.14,1.92-2.99,0-5.8-.38-8.42-1.12-2.62-.75-4.92-1.95-6.89-3.61-1.98-1.66-3.55-3.79-4.73-6.41-1.18-2.62-1.76-5.8-1.76-9.54v-48.25h-11.06v-16.51h11.06v-27.25h21.48v27.25h17.63v16.51h-17.63v41.04c0,2.99.77,5.1,2.32,6.33,1.55,1.23,3.45,1.84,5.69,1.84s4.43-.37,6.57-1.12c2.14-.75,3.85-1.39,5.13-1.92l4.33,16.99Z"/>
+            <path d="M1478.78,175.67c-2.89,1.28-6.41,2.56-10.58,3.85-4.17,1.28-8.55,1.92-13.14,1.92-2.99,0-5.8-.38-8.42-1.12-2.62-.75-4.92-1.95-6.89-3.61-1.98-1.66-3.55-3.79-4.73-6.41-1.18-2.62-1.76-5.8-1.76-9.54v-48.25h-11.06v-16.51h11.06v-27.25h21.48v27.25h17.63v16.51h-17.63v41.04c0,2.99.77,5.1,2.33,6.33,1.55,1.23,3.45,1.84,5.69,1.84s4.43-.37,6.57-1.12c2.14-.75,3.85-1.39,5.13-1.92l4.33,16.99Z"/>
+            <path d="M1526.71,181.6c-6.84,0-12.98-1.18-18.43-3.53s-10.07-5.53-13.87-9.54c-3.79-4.01-6.71-8.63-8.74-13.87-2.03-5.24-3.05-10.74-3.05-16.51s1.01-11.43,3.05-16.67c2.03-5.23,4.94-9.86,8.74-13.87,3.79-4.01,8.42-7.19,13.87-9.54,5.45-2.35,11.59-3.53,18.43-3.53s12.96,1.18,18.35,3.53c5.39,2.35,9.99,5.53,13.79,9.54,3.79,4.01,6.71,8.63,8.74,13.87,2.03,5.24,3.05,10.8,3.05,16.67s-1.02,11.28-3.05,16.51c-2.03,5.24-4.92,9.86-8.66,13.87-3.74,4.01-8.33,7.19-13.79,9.54s-11.6,3.53-18.43,3.53ZM1504.75,138.16c0,3.74.56,7.13,1.68,10.18s2.67,5.69,4.65,7.93c1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.56,1.84,8.66,1.84s5.98-.61,8.66-1.84c2.67-1.23,4.99-2.97,6.97-5.21,1.98-2.24,3.53-4.91,4.65-8.01,1.12-3.1,1.68-6.52,1.68-10.26s-.56-7-1.68-10.1c-1.12-3.1-2.67-5.77-4.65-8.01-1.98-2.24-4.3-3.98-6.97-5.21-2.67-1.23-5.56-1.84-8.66-1.84s-5.99.64-8.66,1.92c-2.67,1.28-5,3.05-6.97,5.29-1.98,2.24-3.53,4.92-4.65,8.01-1.12,3.1-1.68,6.47-1.68,10.1Z"/>
+            <path d="M1584.58,180v-23.08h17.63v23.08h-17.63Z"/>
+            <path d="M1615.83,138c0-5.88,1.01-11.43,3.05-16.67,2.03-5.23,4.97-9.83,8.82-13.79,3.85-3.95,8.5-7.11,13.95-9.46,5.45-2.35,11.59-3.53,18.43-3.53,9.19,0,17.02,1.98,23.48,5.93,6.46,3.96,11.3,9.14,14.51,15.55l-21,6.41c-1.82-3.1-4.22-5.48-7.21-7.13-2.99-1.66-6.31-2.49-9.94-2.49-3.1,0-5.99.62-8.66,1.84-2.67,1.23-5,2.94-6.97,5.13-1.98,2.19-3.53,4.84-4.65,7.93-1.12,3.1-1.68,6.52-1.68,10.26s.59,7.16,1.76,10.26c1.17,3.1,2.75,5.77,4.73,8.01,1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.5,1.84,8.5,1.84,3.85,0,7.4-.96,10.66-2.89,3.26-1.92,5.53-4.27,6.81-7.05l21,6.41c-2.88,6.41-7.64,11.65-14.27,15.71-6.63,4.06-14.59,6.09-23.88,6.09-6.84,0-12.98-1.18-18.43-3.53s-10.1-5.53-13.95-9.54c-3.85-4.01-6.81-8.66-8.9-13.95s-3.13-10.82-3.13-16.59Z"/>
+            <path d="M1749.52,181.6c-6.84,0-12.98-1.18-18.43-3.53s-10.07-5.53-13.87-9.54c-3.79-4.01-6.71-8.63-8.74-13.87-2.03-5.24-3.05-10.74-3.05-16.51s1.01-11.43,3.05-16.67c2.03-5.23,4.94-9.86,8.74-13.87,3.79-4.01,8.42-7.19,13.87-9.54,5.45-2.35,11.59-3.53,18.43-3.53s12.96,1.18,18.35,3.53c5.4,2.35,9.99,5.53,13.79,9.54,3.79,4.01,6.71,8.63,8.74,13.87,2.03,5.24,3.05,10.8,3.05,16.67s-1.02,11.28-3.05,16.51c-2.03,5.24-4.92,9.86-8.66,13.87-3.74,4.01-8.34,7.19-13.79,9.54s-11.6,3.53-18.43,3.53ZM1727.56,138.16c0,3.74.56,7.13,1.68,10.18s2.67,5.69,4.65,7.93c1.98,2.24,4.3,3.98,6.97,5.21,2.67,1.23,5.56,1.84,8.66,1.84s5.98-.61,8.66-1.84c2.67-1.23,5-2.97,6.97-5.21,1.98-2.24,3.53-4.91,4.65-8.01,1.12-3.1,1.68-6.52,1.68-10.26s-.56-7-1.68-10.1c-1.12-3.1-2.67-5.77-4.65-8.01-1.98-2.24-4.3-3.98-6.97-5.21-2.67-1.23-5.56-1.84-8.66-1.84s-5.99.64-8.66,1.92c-2.67,1.28-5,3.05-6.97,5.29-1.98,2.24-3.53,4.92-4.65,8.01-1.12,3.1-1.68,6.47-1.68,10.1Z"/>
+            <path d="M1938.35,180h-21.48v-47.13c0-6.73-1.15-11.65-3.45-14.75-2.3-3.1-5.48-4.65-9.54-4.65-4.28,0-8.28,1.63-12.02,4.89-3.74,3.26-6.41,7.51-8.01,12.74v48.89h-21.48v-47.13c0-6.73-1.15-11.65-3.45-14.75-2.3-3.1-5.48-4.65-9.54-4.65s-8.15,1.6-11.94,4.81c-3.79,3.21-6.49,7.43-8.1,12.66v49.05h-21.48v-84h19.4v15.55c3.1-5.45,7.35-9.64,12.74-12.58,5.4-2.94,11.57-4.41,18.51-4.41s12.5,1.71,16.35,5.13c3.85,3.42,6.3,7.64,7.37,12.66,3.42-5.77,7.75-10.18,12.98-13.22,5.23-3.05,11.22-4.57,17.95-4.57,5.13,0,9.35.96,12.66,2.88,3.31,1.92,5.88,4.44,7.69,7.53,1.82,3.1,3.07,6.63,3.77,10.58.69,3.96,1.04,7.96,1.04,12.02v52.42Z"/>
+          </g>
+        </g>
+      </svg>
+    </a>
+    <svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+      <defs>
+        <filter id="glass-refract" x="0%" y="0%" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.015" numOctaves="3" seed="5" result="noise"/>
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+        </filter>
+      </defs>
+    </svg>
+    <nav class="site-nav">
+      <a href="/projects/" class="nav-link" data-nav="projects">Projects</a>
+      
+    </nav>
+    <a href="#contact" class="nav-contact" data-nav="contact" aria-label="Contact">
+      <svg class="nav-contact-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+        <rect x="2.25" y="4.25" width="15.5" height="11.5" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M3.5 6.5l6.5 4.6 6.5-4.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="nav-contact-label">Contact</span>
+    </a>
+    <script>
+      (function() {
+        var path = location.pathname;
+        var active = path.startsWith('/projects') ? 'projects'
+                   : path.startsWith('/about') ? 'about'
+                   : null;
+        if (active) document.querySelector('[data-nav="' + active + '"]').classList.add('active');
+      })();
+</script>
+  </div>
+</header>
+<script src="/assets/js/header-glass.js" defer></script>
+<script src="/assets/js/nav-submenu.js" defer></script>
+
+
+    <nav class="project-hud" aria-label="Project navigation">
+      <div class="container project-hud-inner">
+        
+        
+        <div class="hud-side">
+          
+          <a class="hud-prev" href="/projects/save-the-children/" aria-label="Prev Save the Children">
+            <span class="hud-prev-arrow" aria-hidden="true">&larr;</span>
+            <span class="hud-prev-label">Prev</span>
+            <span class="hud-prev-title">Save the Children</span>
+          </a>
+          
+        </div>
+        <div class="hud-center">
+          <div class="hud-identity">
+            <span class="hud-title">MagicMount Flask</span>
+            
+            <span class="hud-client">Scosche</span>
+          </div>
+          <span class="hud-section" aria-hidden="true"></span>
+        </div>
+        <div class="hud-actions">
+          
+          <a class="hud-next" href="/projects/occa-solar/" aria-label="Next Occa Solar">
+            <span class="hud-next-label">Next</span>
+            <span class="hud-next-title">Occa Solar</span>
+            <span class="hud-next-arrow" aria-hidden="true">&rarr;</span>
+          </a>
+          
+          <button class="hud-top" type="button" aria-label="Back to top">
+            <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M2 7.5 6 3.5 10 7.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+
+  <main class="main-content">
+    
+    <section class="project-hero-section hero-scrolly hero-scrolly--scrim-boost" style="--hero-scrim-boost: 1.4; --hero-scrim-bottom: 1.7; --hero-scrim-bottom-m: 2.6;">
+      <div class="scrolly-scene" data-scene="1">
+        <div class="scrolly-bg">
+          
+          <picture>
+            <source media="(max-width: 768px)" srcset="/assets/images/projects/scosche-magicmount-flask-bg-mobile.webp" width="1080" height="1440">
+            <img id="glass-source-hero" src="/assets/images/projects/scosche-magicmount-flask-bg-desktop.webp" alt="" width="2000" height="1324" fetchpriority="high" decoding="async" data-focal-y="0.5" style="--fc-fy: 0.5; --fc-iw-d: 2000; --fc-ih-d: 1324; --fc-iw-m: 1080; --fc-ih-m: 1440;">
+          </picture>
+          
+          <div class="scrolly-overlay"></div>
+        </div>
+      </div>
+
+      <div class="scrolly-content">
+
+        <div class="scrolly-step" data-step="hero">
+          <div class="container">
+            <h1 class="project-title">MagicMount Flask</h1>
+
+            
+            
+            <a href="#campaign-walkthrough" class="hero-campaign-link hero-campaign-link--centered hero-campaign-link--below-title hero-campaign-link--sample">
+              Skip to work sample ↓
+            </a>
+            
+            
+
+            <div class="hero-above-fold">
+              <div class="project-info-card">
+                <div class="hero-card-top">
+                  
+                  <div class="hero-role">
+                    <span class="info-card-label">My Role</span>
+                    <span class="hero-role-value">Senior Copywriter</span>
+                    
+                    <span class="hero-role-agency-credit">at
+                      <img src="/assets/images/logos/Rainfactory_logo.webp"
+                           alt="Rainfactory"
+                           width="450" height="98"
+                           class="hero-role-agency-logo">
+                    </span>
+                    
+                  </div>
+                  
+
+                  
+                  <div class="hero-client">
+                    <span class="info-card-label">Client</span>
+                    <div class="client-logos">
+                      <img src="/assets/images/logos/Scosche_logo_white.webp"
+                           alt="Scosche"
+                           width="1200" height="218"
+                           
+                           class="client-logo">
+                      
+                    </div>
+                  </div>
+                  
+                </div>
+
+                
+                <p class="impact-summary">Wrote the landing page and Indiegogo campaign for a water bottle that doubles as a phone tripod.</p>
+                
+
+                
+                <div class="hero-deliverables">
+                  <span class="info-card-label">Deliverables</span>
+                  <div class="info-card-deliverables">
+                    
+                    
+                    
+                    <a href="#campaign-walkthrough" class="deliverable-badge deliverable-badge--link">Landing Page</a>
+                    
+                    
+                    
+                    <span class="deliverable-badge">Crowdfunding Campaign</span>
+                    
+                    
+
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="hero-metrics-floor">
+            <div class="container">
+              <div class="metrics-heading-group">
+                <h2 class="metrics-heading">Key Results</h2>
+                
+                
+              </div>
+              <div class="metrics-grid">
+                
+                <div class="metric">
+                  <span class="metric-value">$23,097</span>
+                  <span class="metric-label"><span class="metric-label-lead">In pre-orders</span></span>
+                </div>
+                
+                
+                <div class="metric">
+                  <span class="metric-value">419</span>
+                  <span class="metric-label"><span class="metric-label-lead">Customers</span></span>
+                </div>
+                
+                
+                
+                
+              </div>
+              
+              <div class="scrolly-hero-image">
+                <img src="/assets/images/projects/magicmount-flask-funded.webp" alt="MagicMount Flask key art: a phone mounted on the black flask&#39;s lid on a kitchen counter while a woman slices peppers behind it, the INTRODUCING MAGICMOUNT FLASK title, and a pink FULLY FUNDED IN UNDER 7 DAYS band." data-alt-source="visual" width="1390" height="920">
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+
+        
+        <div class="scrolly-pin-spacer" aria-hidden="true"></div>
+        
+
+        
+
+        
+
+        <div class="scrolly-bottom-fade" aria-hidden="true"></div>
+      </div>
+
+    </section>
+
+    
+
+    
+
+    
+
+    
+
+    
+    <section id="pre-launch" class="prelaunch-section" data-hud-label="Approach">
+      
+      
+      
+
+
+      
+      
+      
+      <div class="plsb-runway" id="pre-launch-board">
+      <div class="plsb-stage" role="region" aria-roledescription="carousel" aria-label="Pre-launch story highlights">
+      
+      <div class="plsb plsb--xl" role="group" tabindex="0" aria-label="Pre-launch story beats">
+        
+        
+        
+        <article class="plsb-panel plsb-panel--media" data-dwell="8000" aria-roledescription="slide" aria-label="The campaign">
+
+          
+          <div class="plsb-canvas plsb-canvas--establish" style="">
+            
+            
+            <picture>
+              
+              <source media="(max-width: 760px)" srcset="/assets/images/projects/scosche-magicmount-flask-establish-mobile.webp">
+              
+              <img class="plsb-canvas-media" src="/assets/images/projects/scosche-magicmount-flask-establish.webp"
+                   alt="A woman in a wide-brim hat sits in a camp chair beside an Airstream above a forested lake, the black MagicMount Flask closed on a wood side table and her phone up in her raised hand." loading="lazy"
+                   width="1920" height="1080"
+                   style="--canvas-pos: 62% 50%;">
+            </picture>
+            
+            <div class="plsb-canvas-scrim plsb-canvas-scrim--establish" aria-hidden="true"></div>
+            
+            <div class="prelaunch-heading prelaunch-heading--canvas">
+              
+              <h2 class="prelaunch-title">Making it one product</h2>
+              
+              <p class="prelaunch-thesis">A bottle whose lid is a phone mount reads as two objects taped together. So I sold it as the water bottle you already carry everywhere, with a tripod built into the lid.</p>
+              
+              
+              
+              
+
+              
+              <div class="plsb-delivered" style="--i: 1">
+                <b class="plsb-delivered-title">I delivered</b>
+                <ul aria-label="I delivered">
+                  
+                  <li><img src="/assets/images/projects/scosche-icon-deposit.webp" alt="" loading="lazy" width="448" height="448"><span>Deposit reservation funnel</span></li>
+                  
+                  <li><img src="/assets/images/projects/icon-campaign-indiegogo.webp" alt="" loading="lazy" width="617" height="448"><span>Indiegogo campaign page copy</span></li>
+                  
+                </ul>
+              </div>
+              
+            </div>
+          </div>
+          
+
+
+          
+        </article>
+        
+        
+        
+        
+        <article class="plsb-panel plsb-panel--bg plsb-panel--ledger" style=" --bg-scrim-d: 0.85; --bg-scrim-m: 0.65; --bg-scrim-r: 0.35; --bg-pos: 44% 55%;" data-dwell="13500" aria-roledescription="slide" aria-label="Three things only this bottle does">
+
+          
+
+
+          
+          
+          
+          <div class="plsb-bg" aria-hidden="true">
+            <img src="/assets/images/projects/scosche-magicmount-flask-dogbowl.webp" alt="" loading="lazy">
+            <div class="plsb-bg-scrim"></div>
+          </div>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <div class="plsb-body plsb-body--ledger">
+            <div class="plsb-copy">
+              
+              <h3>Three things only this bottle does</h3>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+
+              
+              
+            </div>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+
+            
+            <figure class="plsb-vis plsb-vis--ledger">
+              <div class="plsb-ledger">
+                <p class="plsb-ledger-label">Against Hydro Flask and Stanley</p>
+                <p class="plsb-ledger-heading">Same steel</p>
+                
+                <div class="plsb-ledger-cols">
+                  
+                  <div class="plsb-ledger-col plsb-ledger-col--chip">
+                    <p class="plsb-ledger-col-label">Matched</p>
+                    <ul class="plsb-ledger-items plsb-ledger-items--chips">
+                      <li class="plsb-ledger-item"><span class="plsb-ledger-name">Insulated steel</span></li><li class="plsb-ledger-item"><span class="plsb-ledger-name">BPA-free</span></li><li class="plsb-ledger-item"><span class="plsb-ledger-name">Dishwasher safe</span></li>
+                    </ul>
+                  </div>
+                  
+                  <div class="plsb-ledger-col plsb-ledger-col--check">
+                    <p class="plsb-ledger-col-label">Unmatched</p>
+                    <ul class="plsb-ledger-items">
+                      <li class="plsb-ledger-item"><span class="plsb-ledger-name">Phone mount</span></li><li class="plsb-ledger-item"><span class="plsb-ledger-name">Hangs magnetically</span></li><li class="plsb-ledger-item"><span class="plsb-ledger-name">Dog bowl base</span></li>
+                    </ul>
+                  </div>
+                  
+                </div>
+                
+              </div>
+              
+            </figure>
+            
+
+
+            
+
+
+            
+
+
+            
+
+            
+          </div>
+          
+          
+          
+          
+        </article>
+        
+        
+      </div>
+      <button type="button" class="plsb-arrow plsb-arrow--prev" aria-label="Previous slide" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 5.5 L8 12 L14.5 18.5"/></svg>
+      </button>
+      <button type="button" class="plsb-arrow plsb-arrow--next" aria-label="Next slide" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 5.5 L16 12 L9.5 18.5"/></svg>
+      </button>
+      <div class="plsb-nav" role="group" aria-label="Pre-launch story beats" hidden>
+        <div class="plsb-nav-pill">
+          
+          <button type="button" class="plsb-dot" aria-label="The campaign — MagicMount Flask"></button>
+          
+          <button type="button" class="plsb-dot" aria-label="Three things only this bottle does"></button>
+          
+        </div>
+        <button type="button" class="plsb-ctl" data-state="paused" aria-label="Play highlights" hidden>
+          <svg class="plsb-ctl-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5 L18 12 L8 18.5 Z"/></svg>
+          <svg class="plsb-ctl-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 6 V18 M15.5 6 V18"/></svg>
+        </button>
+      </div>
+      </div>
+      </div>
+      
+      
+
+
+      
+
+      <div class="container">
+
+        
+
+
+        
+
+
+        
+      </div>
+    </section>
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    
+    <section id="campaign-walkthrough" class="campaign-walkthrough-section campaign-walkthrough-section--browser" data-wt-desktop-capture data-wt-address="getmagicmountflask.com" style="--wt-wide-act: 2.2;" data-entry-pan="true" data-transit-taper="off" data-hud-label="Pre-Launch Landing Page">
+      <div class="campaign-walkthrough-runway">
+        <div class="campaign-walkthrough-sticky">
+          
+          <div class="container container--wide">
+            <div class="campaign-walkthrough-layout">
+
+              <div class="campaign-walkthrough-phone">
+                <div class="wt-phone wt-phone--browser">
+                  <div class="wt-phone-screen">
+                    <div class="wt-phone-scroll">
+                      <div class="igg-content">
+
+
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="78" src="/assets/images/projects/scosche-magicmount-flask-walkthrough/01-masthead.webp" alt="Page masthead: the MagicMount wordmark on black, with a yellow Get Discount button at the right." data-alt-source="visual">
+  </div>
+
+  <div class="igg-block" data-focus="hero">
+    <img width="2000" height="1041" loading="lazy" data-callout-image="02-hero.webp" src="/assets/images/projects/scosche-magicmount-flask-walkthrough/02-hero.webp" alt="MagicMount Flask. Headline: The Water Bottle Phone Holder. The sturdy, 3-in-1 insulated water bottle and phone mount with a hidden dog bowl. A yellow Get Discount button sits below. Beside the copy runs the page's hero film: a man works at a laptop with the black Flask on the desk and his phone mounted to its lid.">
+  </div>
+
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="279" loading="lazy" src="/assets/images/projects/scosche-magicmount-flask-walkthrough/03-launch-urgency.webp" data-alt-source="visual" alt="Hurry, launching soon! Sign up now to access the launch-day deal of up to 45%. A yellow progress bar beneath is filled almost to the end and labeled 99% Claimed.">
+  </div>
+
+  <div class="igg-block igg-form" style="--igg-form-bg: #FFFFFF; --igg-form-ink: #000000; --igg-form-btn: #F4D93E; --igg-form-btn-ink: #000000; --igg-form-face: 'Jost', 'Futura', 'Avenir Next', 'Century Gothic', 'Helvetica Neue', Arial, sans-serif;">
+    <div class="igg-form-row"><span class="igg-form-field">Enter your email address</span><span class="igg-form-btn">Get Discount</span></div>
+  </div>
+
+  <div class="igg-block" data-focus="tripod-argument">
+    <img width="2000" height="877" loading="lazy" data-callout-image="04-tripod-argument.webp" src="/assets/images/projects/scosche-magicmount-flask-walkthrough/04-tripod-argument.webp" alt="A Phone Tripod You'll Always Bring. You don't carry a tripod everywhere you go, but it's a great idea to carry a water bottle! That's why we made MagicMount Flask. After all, the best phone stand is the one you have with you. Three captioned photos follow: a woman drinking from the white bottle, labeled 22oz or 32oz Insulated Water Bottle; the bottle standing at a skatepark filming a rider, labeled MagSafe Compatible Phone Mount; and a dog drinking from the detached silicone base, labeled Anti-Slip Dog Bowl Base.">
+  </div>
+
+  <div class="igg-block" data-focus="benefit-grid">
+    <img data-alt-source="visual" width="2000" height="1136" loading="lazy" src="/assets/images/projects/scosche-magicmount-flask-walkthrough/05-benefit-grid.webp" alt="Six benefit blocks arranged around the white Flask, which stands with a phone mounted to its lid. Fits any phone, with or without a case. Super strong: Neodymium magnets can hold up to 3.5lbs on steel surfaces. Sturdy no-tip: water-weighted bottle keeps it from tipping over. Grippy anti-slip: silicone base doubles as a dog bowl. Camera friendly design: adjustable counterbalance for angles, landscape and portrait, illustrated by a dark diagram marking the bottle's center of gravity. Built to last: BPA-free, double-wall insulated stainless steel, hot up to 12 hours and cold up to 24 hours.">
+  </div>
+
+  <div class="igg-block">
+    <img width="2000" height="587" loading="lazy" src="/assets/images/projects/scosche-magicmount-flask-walkthrough/06-compatibility.webp" alt="Camera-friendly MagSafe tripod fits smartphones of any size and weight, with or without the case, for both selfie cameras and back cameras. A row of phone-brand logos follows — Apple, Samsung, Google Pixel, OnePlus, Huawei, Sony, Motorola, Xiaomi and LG — above the line: and many more!">
+  </div>
+
+  <div class="igg-block">
+    <img width="2000" height="1022" loading="lazy" src="/assets/images/projects/scosche-magicmount-flask-walkthrough/07-authority.webp" alt="Only from Scosche: The Ultimate Authority in Phone Mounts. We proudly claim the top spot and maintain our relentless pursuit of excellence in the world of phone mounts. Three gray quote cards follow. Magnetic attachment performed the best: the MagicMount Dash's magnetic attachment performed the best in our testing, holding even a large iPhone XS Max securely everywhere we drove — New York Times. Very impressive: buy this Magicmount Dash immediately, very impressive in quality, durability and functionality, and I intend on having one for every vehicle I own from now on — Best Buy Customer. The ultimate phone mount: the Scosche MagicGrip is a fantastic, do-it-all window and dash phone mount, with Qi-certified wireless charging, auto-sensing arms that close on their own, and an all-around good grip — Car and Driver.">
+  </div>
+
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="164" loading="lazy" src="/assets/images/projects/scosche-magicmount-flask-walkthrough/08-waitlist.webp" alt="A full-width yellow band reading Join Waitlist & Get Important Launch Updates.">
+  </div>
+
+  <div class="igg-block igg-form" style="--igg-form-bg: #F6D83E; --igg-form-ink: #000000; --igg-form-btn: #000000; --igg-form-btn-ink: #FFFFFF; --igg-form-face: 'Jost', 'Futura', 'Avenir Next', 'Century Gothic', 'Helvetica Neue', Arial, sans-serif;">
+    <div class="igg-form-row"><span class="igg-form-field">Enter your email address</span><span class="igg-form-btn">Get Discount</span></div>
+  </div>
+
+  <div class="igg-block">
+    <img width="2000" height="620" loading="lazy" src="/assets/images/projects/scosche-magicmount-flask-walkthrough/09-any-phone.webp" alt="iPhone, Android, & more: Use It With Any Phone. Beside the copy, the white Flask stands next to a phone shown from the back.">
+  </div>
+
+  <div class="igg-block" data-focus="magnets">
+    <img width="2000" height="1042" loading="lazy" src="/assets/images/projects/scosche-magicmount-flask-walkthrough/10-magnets.webp" data-callout-image="10-magnets.webp" alt="Powerful magnets: Hang Up Your Water. Photo of a tattooed arm pressing the black Flask against the steel upright of a gym rack." data-alt-source="visual">
+  </div>
+
+  <div class="igg-block" data-focus="counterbalance">
+    <img width="2000" height="1041" loading="lazy" src="/assets/images/projects/scosche-magicmount-flask-walkthrough/11-counterbalance.webp" data-callout-image="11-counterbalance.webp" alt="Innovative counter-balance: Adjust to Any Viewing Angle. Photo of a woman in a kitchen tilting her phone where it sits mounted on the black Flask's lid.">
+  </div>
+
+  <div class="igg-block">
+    <img width="2000" height="1041" loading="lazy" src="/assets/images/projects/scosche-magicmount-flask-walkthrough/12-cup-holder.webp" data-callout-image="12-cup-holder.webp" alt="Cup holder friendly: Declutter Your Car. Photo of a hand lowering the white Flask into a vehicle's center-console cup holder.">
+  </div>
+
+  <div class="igg-block igg-block--joined" data-focus="dog-bowl">
+    <img width="2000" height="1040" loading="lazy" src="/assets/images/projects/scosche-magicmount-flask-walkthrough/13-dog-bowl.webp" data-callout-image="13-dog-bowl.webp" alt="Silicone dog bowl: Keep Dogs Hydrated & Cool. Photo of a dog drinking from the Flask's silicone base, set on the ground as a bowl.">
+  </div>
+
+  <div class="igg-block igg-block--joined" data-focus="magsafe-adapter">
+    <img width="2000" height="1043" loading="lazy" src="/assets/images/projects/scosche-magicmount-flask-walkthrough/14-magsafe-adapter.webp" data-callout-image="14-magsafe-adapter.webp" alt="MagSafe + MagicRing adapter: Snap in Place. Compatible with MagSafe, a feature built into the iPhone 12 and newer that uses magnets to securely snap accessories in place. For Androids, older iPhones, or iPhone SE, just add the included MagicRing adapter and it will attach just like, well, magic! Photo of the black Flask holding a phone upright beside a coiled gym rope.">
+  </div>
+
+  <div class="igg-block igg-block--joined">
+    <div class="igg-marquee">
+      <div class="igg-marquee-lane">
+        <div class="igg-marquee-track">
+          <span class="igg-marquee-item">Fits any phone</span>
+          <span class="igg-marquee-item">Super strong</span>
+          <span class="igg-marquee-item">Sturdy no-tip</span>
+          <span class="igg-marquee-item">Grippy anti-slip</span>
+          <span class="igg-marquee-item">Camera friendly design</span>
+          <span class="igg-marquee-item">Built to last</span>
+        </div>
+        <div class="igg-marquee-track" aria-hidden="true">
+          <span class="igg-marquee-item">Fits any phone</span>
+          <span class="igg-marquee-item">Super strong</span>
+          <span class="igg-marquee-item">Sturdy no-tip</span>
+          <span class="igg-marquee-item">Grippy anti-slip</span>
+          <span class="igg-marquee-item">Camera friendly design</span>
+          <span class="igg-marquee-item">Built to last</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="igg-block igg-block--joined">
+    <img width="2000" height="872" loading="lazy" src="/assets/images/projects/scosche-magicmount-flask-walkthrough/15a-close-headline.webp" data-alt-source="visual" alt="Three lifestyle photos: filming a cutting board, working at a laptop, and stretching on a yoga mat, each with the Flask holding the phone. Below them the page turns dark for its sign-off: Stay Hydrated and Picture Ready! Preorders Open February 2024.">
+  </div>
+
+</div>
+
+                    </div>
+                    <svg class="walkthrough-spot-svg" viewBox="0 0 896 672" preserveAspectRatio="none" width="100%" height="100%" aria-hidden="true">
+                      <defs>
+                        <filter id="wt-spot-goo-0" filterUnits="userSpaceOnUse" x="-50" y="-50" width="996" height="772">
+                          <feGaussianBlur in="SourceGraphic" stdDeviation="0.1" result="blur"/>
+                          <feColorMatrix in="blur" mode="matrix"
+                            values="1 0 0 0 0
+                                    0 1 0 0 0
+                                    0 0 1 0 0
+                                    0 0 0 24 -10" result="goo"/>
+                        </filter>
+                        <mask id="wt-spot-mask-0" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse" x="-50" y="-50" width="996" height="772">
+                          <rect x="-50" y="-50" width="996" height="772" fill="white"/>
+                          <g filter="url(#wt-spot-goo-0)">
+                            <rect class="wt-spot-blob wt-spot-blob--trail" fill="black" rx="8" ry="8"/>
+                            <line class="wt-spot-blob wt-spot-blob--bridge" stroke="black" stroke-width="0" stroke-linecap="round" x1="0" y1="0" x2="0" y2="0"/>
+                            <rect class="wt-spot-blob wt-spot-blob--lead"  fill="black" rx="8" ry="8"/>
+                          </g>
+                        </mask>
+                      </defs>
+                      <rect class="wt-spot-overlay" x="0" y="0" width="896" height="672"
+                            fill="rgba(26,26,46,0.55)" mask="url(#wt-spot-mask-0)"/>
+                    </svg>
+                  </div>
+                  
+                  <div class="wt-browser-chrome" aria-hidden="true">
+                    <span class="wt-browser-dot wt-browser-dot--close"></span>
+                    <span class="wt-browser-dot wt-browser-dot--min"></span>
+                    <span class="wt-browser-dot wt-browser-dot--max"></span>
+                    <span class="wt-browser-url">getmagicmountflask.com</span>
+                  </div>
+                  
+                </div>
+              </div>
+
+              <div class="campaign-walkthrough-annotations">
+                <div class="walkthrough-heading">
+                  <h2 class="walkthrough-heading-title">Pre-Launch Landing Page</h2>
+                  <p class="walkthrough-heading-subtitle">What I wrote and why.</p>
+                </div>
+                <div class="walkthrough-annotation-slot">
+                  
+                  <div class="walkthrough-annotation" data-annotation="hero" data-hold-scale="1.25" data-region-y="0.202" data-region-h="0.596" data-region-x="0.094" data-region-w="0.309">
+                    <span class="walkthrough-annotation-label">Naming the Collision</span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="hero">I let the headline say the clumsy compound out loud. The line beneath fuses the halves into one product.</p>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="hero" data-anchor-image="02-hero.webp" data-anchor-x="0.094" data-anchor-y="0.202" data-anchor-w="0.309" data-anchor-h="0.596" hidden></span>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="hero" data-anchor-image="02-hero.webp" data-anchor-x="0.1815" data-anchor-y="0.3266" data-anchor-w="0.1155" data-anchor-h="0.0519" data-anchor-underline="true" hidden></span>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="hero" data-anchor-image="02-hero.webp" data-anchor-x="0.1065" data-anchor-y="0.4198" data-anchor-w="0.256" data-anchor-h="0.049" data-anchor-underline="true" hidden></span>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="hero" data-anchor-image="02-hero.webp" data-anchor-x="0.1065" data-anchor-y="0.512" data-anchor-w="0.136" data-anchor-h="0.049" data-anchor-underline="true" hidden></span>
+                    
+                    
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="tripod-argument" data-hold-scale="1.25" data-region-y="0.07" data-region-h="0.34" data-region-x="0.17" data-region-w="0.655" data-region-m-y="0.07" data-region-m-h="0.34" data-region-m-x="0.17" data-region-m-w="0.45" data-region-m-x2="0.375">
+                    <span class="walkthrough-annotation-label">What’s Already in the Bag</span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="tripod-argument">The tripod you own is never with you. Your water bottle is, so I built the opening argument on that gap.</p>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="tripod-argument" data-anchor-image="04-tripod-argument.webp" data-anchor-x="0.17" data-anchor-y="0.07" data-anchor-w="0.655" data-anchor-h="0.34" hidden></span>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="tripod-argument" data-anchor-image="04-tripod-argument.webp" data-anchor-x="0.1935" data-anchor-y="0.2486" data-anchor-w="0.407" data-anchor-h="0.0308" data-anchor-underline="true" hidden></span>
+                    
+                    
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="benefit-grid" data-hold-scale="1.15" data-region-y="0.1142" data-region-h="0.7786" data-region-x="0.1205" data-region-w="0.7975" data-region-m-y="0.1142" data-region-m-h="0.7786" data-region-m-x="0.12" data-region-m-w="0.45" data-region-m-x2="0.465">
+                    <span class="walkthrough-annotation-label">Written to Be Scanned</span>
+                    
+                    <p class="walkthrough-annotation-text">I kept every label to two or three words so the grid reads at a glance.</p>
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="magnets" data-hold-scale="1.25" data-region-y="0.33" data-region-h="0.32" data-region-x="0.19" data-region-w="0.782" data-region-m-y="0.33" data-region-m-h="0.32" data-region-m-x="0.19" data-region-m-w="0.45" data-region-m-x2="0.52">
+                    <span class="walkthrough-annotation-label">From Feature to Instruction</span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="magnets-line">The grid lists the magnets. Here the headline tells you what to do with them.</p>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="magnets-line" data-anchor-image="10-magnets.webp" data-anchor-x="0.612" data-anchor-y="0.33" data-anchor-w="0.36" data-anchor-h="0.32" hidden></span>
+                    
+                    
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="counterbalance" data-hold-scale="1.25" data-region-y="0.07" data-region-h="0.86" data-region-x="0.04" data-region-w="0.94" data-region-m-y="0.07" data-region-m-h="0.86" data-region-m-x="0.04" data-region-m-w="0.46" data-region-m-x2="0.52">
+                    <span class="walkthrough-annotation-label">A Physics Claim, Photographed</span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="counterbalance-line">The feature grid drew the counter-balance as a diagram. Here a phone tilts on the lid in a kitchen, so the angle promise is shown in use.</p>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="counterbalance-line" data-anchor-image="11-counterbalance.webp" data-anchor-x="0.5" data-anchor-y="0" data-anchor-w="0.5" data-anchor-h="1" hidden></span>
+                    
+                    
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="dog-bowl" data-hold-scale="1.25" data-region-y="0.3356" data-region-h="0.3192" data-region-x="0.0285" data-region-w="0.94" data-region-m-y="0.3" data-region-m-h="0.4" data-region-m-x="0" data-region-m-w="0.42">
+                    <span class="walkthrough-annotation-label">The Dog Bowl Gets Its Section</span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="dog-bowl-line">The hero only hints at the dog bowl. This is where owners get the full pitch. Everyone else has already been sold.</p>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="dog-bowl-line" data-anchor-image="13-dog-bowl.webp" data-anchor-x="0.0285" data-anchor-y="0.3356" data-anchor-w="0.3415" data-anchor-h="0.3192" hidden></span>
+                    
+                    
+                    
+                  </div>
+                  
+                  <div class="walkthrough-annotation" data-annotation="magsafe-adapter" data-hold-scale="1.25" data-region-y="0.2627" data-region-h="0.4775" data-region-x="0.612" data-region-w="0.36">
+                    <span class="walkthrough-annotation-label">Answering the Excluded Phone</span>
+                    
+                    
+                    <p class="walkthrough-annotation-text walkthrough-callout-text" data-callout-ref="magsafe-copy">MagSafe quietly disqualifies most Android phones and every older iPhone. The page answers that in copy, so an excluded reader learns they’re covered without hunting.</p>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="magsafe-copy" data-anchor-image="14-magsafe-adapter.webp" data-anchor-x="0.632" data-anchor-y="0.588" data-anchor-w="0.318" data-anchor-h="0.125" hidden></span>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="magsafe-copy" data-anchor-image="14-magsafe-adapter.webp" data-anchor-x="0.6465" data-anchor-y="0.6031" data-anchor-w="0.261" data-anchor-h="0.0259" data-anchor-underline="true" hidden></span>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="magsafe-copy" data-anchor-image="14-magsafe-adapter.webp" data-anchor-x="0.6465" data-anchor-y="0.6366" data-anchor-w="0.284" data-anchor-h="0.0249" data-anchor-underline="true" hidden></span>
+                    
+                    <span class="walkthrough-callout-anchor" data-callout-ref="magsafe-copy" data-anchor-image="14-magsafe-adapter.webp" data-anchor-x="0.6465" data-anchor-y="0.6731" data-anchor-w="0.0305" data-anchor-h="0.0239" data-anchor-underline="true" hidden></span>
+                    
+                    
+                    
+                  </div>
+                  
+                </div>
+                
+                
+                <div class="walkthrough-progress" role="group" aria-label="Walkthrough controls">
+                  <div class="walkthrough-progress-rail">
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="0" type="button" aria-label="Go to Naming the Collision" title="Naming the Collision"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="1" type="button" aria-label="Go to What’s Already in the Bag" title="What’s Already in the Bag"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="2" type="button" aria-label="Go to Written to Be Scanned" title="Written to Be Scanned"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="3" type="button" aria-label="Go to From Feature to Instruction" title="From Feature to Instruction"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="4" type="button" aria-label="Go to A Physics Claim, Photographed" title="A Physics Claim, Photographed"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="5" type="button" aria-label="Go to The Dog Bowl Gets Its Section" title="The Dog Bowl Gets Its Section"></button>
+                    
+                    <button class="walkthrough-progress-dot" data-progress-dot="6" type="button" aria-label="Go to Answering the Excluded Phone" title="Answering the Excluded Phone"></button>
+                    
+                  </div>
+                  <div class="wt-ctl-row">
+                    <button class="walkthrough-progress-nav" data-progress-nav="prev" type="button" aria-label="Previous stop" title="Previous stop">
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 4l-4 4 4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <button class="wt-ctl-count" type="button" aria-expanded="false" title="All stops">
+                      <span class="wt-ctl-count-text">7 stops</span>
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 10l4-4 4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <button class="walkthrough-progress-nav" data-progress-nav="next" type="button" aria-label="Next stop" title="Next stop">
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <span class="wt-ctl-gap"></span>
+                    <button class="wt-ctl-btn wt-ctl-restart" type="button" title="Restart the walkthrough">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1 4v6h6M3.51 15a9 9 0 1 0 2.13-9.36L1 10" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      <span class="wt-ctl-label">Restart</span>
+                    </button>
+                    <button class="wt-ctl-btn wt-ctl-skip" type="button" title="Skip the walkthrough">
+                      Skip
+                      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v10M3.5 8.5L8 13l4.5-4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                  </div>
+                  <ol class="wt-chapters" hidden>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="0" type="button">Naming the Collision</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="1" type="button">What’s Already in the Bag</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="2" type="button">Written to Be Scanned</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="3" type="button">From Feature to Instruction</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="4" type="button">A Physics Claim, Photographed</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="5" type="button">The Dog Bowl Gets Its Section</button></li>
+                    
+                    <li><button class="wt-chapter" data-wt-chapter="6" type="button">Answering the Excluded Phone</button></li>
+                    
+                  </ol>
+                </div>
+                
+              </div>
+
+              <svg class="walkthrough-lines" aria-hidden="true"></svg>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+
+    
+    
+
+
+
+
+
+
+    
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+
+    
+    
+
+
+
+    
+
+
+    
+
+
+    
+
+    
+    <section class="project-pagination" data-hud-label="Up Next" aria-label="Project pagination">
+      <div class="container">
+        
+        <div class="pagination-grid">
+          <a class="pagination-card pagination-card--prev" href="/projects/save-the-children/" rel="prev">
+            <span class="pagination-direction" aria-hidden="true">&larr;</span>
+            <div class="pagination-meta">
+              <span class="pagination-label">Previous</span>
+              <span class="pagination-title">Save the Children</span>
+              
+            </div>
+            
+            <div class="pagination-thumb">
+              <img src="/assets/images/projects/save-the-children-hero.webp" alt="" loading="lazy">
+            </div>
+            
+          </a>
+          <a class="pagination-card pagination-card--next" href="/projects/occa-solar/" rel="next">
+            <span class="pagination-direction" aria-hidden="true">&rarr;</span>
+            <div class="pagination-meta">
+              <span class="pagination-label">Next</span>
+              <span class="pagination-title">Occa Solar</span>
+              <span class="pagination-client">Namene Solar</span>
+            </div>
+            
+            <div class="pagination-thumb">
+              <img src="/assets/images/projects/occa-solar-hero.webp" alt="" loading="lazy">
+            </div>
+            
+          </a>
+        </div>
+      </div>
+    </section>
+    
+
+
+    
+
+  </main>
+
+<footer class="site-footer" id="contact">
+  <div class="footer-container">
+    <div class="footer-contact">
+      <p class="section-label footer-eyebrow">Contact</p>
+      <svg class="footer-mark" viewBox="0 0 304 288" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="footer-mark-gradient" x1="0" y1="0" x2="304" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#B2DFDB"/>
+            <stop offset=".55" stop-color="#5DBDB4"/>
+            <stop offset="1" stop-color="#26A69A"/>
+          </linearGradient>
+        </defs>
+        <g fill="none" stroke="url(#footer-mark-gradient)" stroke-width="40">
+          <path d="M108,0V224A44,44 0 0 1 20,224" pathLength="1"/>
+          <path d="M218,0V288" pathLength="1"/>
+          <path d="M128,132H198" pathLength="1"/>
+          <path d="M238,20A46,46 0 0 1 238,112" pathLength="1"/>
+        </g>
+      </svg>
+      <nav class="footer-links" aria-label="Contact">
+        <a href="mailto:hello@jakobpicciotto.com" class="footer-link footer-link--email">hello@jakobpicciotto.com</a>
+        <a href="https://www.linkedin.com/in/jakob-picciotto/" class="footer-link" target="_blank" rel="noopener">linkedin.com/in/jakob-picciotto</a>
+      </nav>
+      <p class="footer-location">Seattle, WA</p>
+    </div>
+    <p class="footer-text">&copy; 2026 Jakob Picciotto</p>
+  </div>
+</footer>
+<script src="/assets/js/footer-monogram.js" defer></script>
+
+
+  
+  <script src="/assets/js/project-hud.js" defer></script>
+  <script src="/assets/js/motion/viewport.js" defer></script>
+  <script src="/assets/js/walkthrough-shared.js" defer></script>
+  <script src="/assets/js/walkthrough-geometry.js" defer></script>
+  <script src="/assets/js/motion/callout-graph.js" defer></script>
+  <script src="/assets/js/motion/spotlight-pinned.js" defer></script>
+  <script src="/assets/js/motion/connector-lines.js" defer></script>
+  <script src="/assets/js/motion/keyboard-nav-pinned.js" defer></script>
+  <script src="/assets/js/motion/spotlight-synced.js" defer></script>
+  <script src="/assets/js/motion/keyboard-nav-synced.js" defer></script>
+  <script src="/assets/js/motion/walkthrough-interleaved.js" defer></script>
+  <script src="/assets/js/motion/elastic-dwell.js" defer></script>
+  <script src="/assets/js/motion/storyboard-catch.js" defer></script>
+  <script src="/assets/js/walkthrough-pinned.js" defer></script>
+  <script src="/assets/js/walkthrough-mobile.js" defer></script>
+  <script src="/assets/js/walkthrough-static.js" defer></script>
+  <script src="/assets/js/walkthrough-embers.js" defer></script>
+  <script src="/assets/js/walkthrough-carousel.js" defer></script>
+  <script src="/assets/js/walkthrough-before-after.js" defer></script>
+  <script src="/assets/js/document-reader.js" defer></script>
+  <script src="/assets/js/attribution-typewriter.js" defer></script>
+  <script src="/assets/js/motion/key-results-entrance-scrubbed.js" defer></script>
+  <script src="/assets/js/motion/key-results-entrance-native.js" defer></script>
+  <script src="/assets/js/motion/key-results.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/storyboard.js" defer></script>
+  <script src="/assets/js/motion/storyboard-linger.js" defer></script>
+  <script src="/assets/js/funnel-cohort.js" defer></script>
+  <script src="/assets/js/related-filter.js" defer></script>
+  <script src="/assets/js/focal-crop.js" defer></script>
+  <script src="/assets/js/strategy-section.js" defer></script>
+  <script src="/assets/js/adaptive-glass.js" defer></script>
+  <script src="/assets/js/hero-odometer.js" defer></script>
+  <script src="/assets/js/hero-chips.js" defer></script>
+  <script src="/assets/js/walkthrough-controls.js" defer></script>
+  <script src="/assets/js/media-warm.js" defer></script>
+
+
+
+
+
+
+
+</body>
+</html>
